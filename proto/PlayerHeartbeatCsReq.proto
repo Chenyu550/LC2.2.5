@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message PlayerHeartbeatCsReq {
+  uint64 client_time_ms = 8;
+}

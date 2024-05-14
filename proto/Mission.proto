@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MissionStatus.proto";
+
+message Mission {
+    uint32 progress = 8;
+    uint32 id = 1;
+    MissionStatus status = 10;
+}

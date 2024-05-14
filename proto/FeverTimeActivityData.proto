@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "FeverTimeActivityType.proto";
+
+message FeverTimeActivityData {
+	uint32 CFCGEFHACCP = 11; // stage_id or score
+	uint32 IJKNFHDJGMG = 3;
+	FeverTimeActivityType activity_type = 10;
+}

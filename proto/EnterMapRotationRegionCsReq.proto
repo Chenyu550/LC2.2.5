@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MotionInfo.proto";
+
+message EnterMapRotationRegionCsReq {
+    MotionInfo motion = 7;
+}

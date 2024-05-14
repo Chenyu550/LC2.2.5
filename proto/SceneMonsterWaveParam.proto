@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message SceneMonsterWaveParam {
+    uint32 hard_level_group = 15;
+    uint32 level = 7;
+    uint32 elite_group = 14;
+}

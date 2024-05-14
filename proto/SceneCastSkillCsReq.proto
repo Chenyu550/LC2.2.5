@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "MotionInfo.proto";
+
+message SceneCastSkillCsReq {
+    uint32 skill_index = 4;
+    repeated uint32 assist_monster_entity_id_list = 13;
+    repeated uint32 hit_target_entity_id_list = 15;
+    uint32 attacked_group_id = 8;
+    MotionInfo target_motion = 2;
+    uint32 caster_id = 5;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message TakeOffRelicCsReq {
+    uint32 base_avatar_id = 1;
+	uint32 dress_avatar_id = 8;
+    repeated uint32 slot_list = 6;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+import "ItemCostList.proto";
+
+message ComposeSelectedRelicCsReq {
+    uint32 compose_id = 3;
+    ItemCostList compose_item_list = 13;
+    uint32 main_affix_id = 11;
+    uint32 compose_relic_id = 4;
+    uint32 count = 10;
+}

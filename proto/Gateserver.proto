@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_package = "emu.lunarcore.proto";
+
+message Gateserver {
+    string lua_url = 3;//13
+    string region_name = 9;
+    string ex_resource_url = 5;//12
+    string ifix_version = 570;//687
+    string asset_bundle_url = 7;//14
+    uint32 port = 11;//3
+    string ip = 2;//15
+    string msg = 6;//4
+    string ifix_url = 696;
+    string mdk_res_version = 1895;
+    string client_secret_key = 605;
+	bool use_tcp = 1887;//849
+    bool unk1 = 8;
+    bool unk2 = 12;
+    bool unk3 = 33;
+    bool unk4 = 859;
+    bool unk5 = 1213;
+    bool unk6 = 1236;
+	bool unk7 = 1698;
+}
