@@ -35,10 +35,8 @@ jobs:
             key: ${{ runner.os }}-gradle-${{ hashFiles('*.gradle', 'gradle.properties', '**/*.accesswidener') }}
             restore-keys: |
               ${{ runner.os }}-gradle-
-        - name: proto
-          run: export GENERATE_PROTO=true
         - name: Run Gradle
-          run: chmod +x gradlew && ./gradlew && ./gradlew jar
+          run: chmod +x gradlew && ./gradlew && ./gradlew -DGENERATE_PROTO=true jar
         - name: Upload build
           uses: actions/upload-artifact@v3
           with:
