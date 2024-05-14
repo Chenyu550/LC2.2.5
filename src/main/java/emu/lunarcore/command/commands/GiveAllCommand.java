@@ -109,8 +109,6 @@ public class GiveAllCommand implements CommandHandler {
                 for (var excel : GameData.getAvatarExcelMap().values()) {
                     // Get avatar id
                     GameAvatar avatar = target.getAvatarById(excel.getAvatarID());
-
-                    if (excel.getAvatarID() > 2000) continue;
                     
                     // Add avatar
                     if (avatar == null) {

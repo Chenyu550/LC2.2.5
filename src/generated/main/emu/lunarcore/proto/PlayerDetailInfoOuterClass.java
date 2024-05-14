@@ -45,6 +45,16 @@ public final class PlayerDetailInfoOuterClass {
     private int platformType;
 
     /**
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
+     */
+    private final PlayerRecordInfoOuterClass.PlayerRecordInfo recordInfo = PlayerRecordInfoOuterClass.PlayerRecordInfo.newInstance();
+
+    /**
+     * <code>optional .PlayerDisplaySettings display_settings = 757;</code>
+     */
+    private final PlayerDisplaySettingsOuterClass.PlayerDisplaySettings displaySettings = PlayerDisplaySettingsOuterClass.PlayerDisplaySettings.newInstance();
+
+    /**
      * <code>optional string signature = 3;</code>
      */
     private final Utf8String signature = Utf8String.newEmptyInstance();
@@ -53,16 +63,6 @@ public final class PlayerDetailInfoOuterClass {
      * <code>optional string nickname = 4;</code>
      */
     private final Utf8String nickname = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string display_avatar_info = 13;</code>
-     */
-    private final Utf8String displayAvatarInfo = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string record_info = 757;</code>
-     */
-    private final Utf8String recordInfo = Utf8String.newEmptyInstance();
 
     private PlayerDetailInfo() {
     }
@@ -285,11 +285,126 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
+     * @return whether the recordInfo field is set
+     */
+    public boolean hasRecordInfo() {
+      return (bitField0_ & 0x00000020) != 0;
+    }
+
+    /**
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
+     * @return this
+     */
+    public PlayerDetailInfo clearRecordInfo() {
+      bitField0_ &= ~0x00000020;
+      recordInfo.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableRecordInfo()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public PlayerRecordInfoOuterClass.PlayerRecordInfo getRecordInfo() {
+      return recordInfo;
+    }
+
+    /**
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public PlayerRecordInfoOuterClass.PlayerRecordInfo getMutableRecordInfo() {
+      bitField0_ |= 0x00000020;
+      return recordInfo;
+    }
+
+    /**
+     * <code>optional .PlayerRecordInfo record_info = 7;</code>
+     * @param value the recordInfo to set
+     * @return this
+     */
+    public PlayerDetailInfo setRecordInfo(final PlayerRecordInfoOuterClass.PlayerRecordInfo value) {
+      bitField0_ |= 0x00000020;
+      recordInfo.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional .PlayerDisplaySettings display_settings = 757;</code>
+     * @return whether the displaySettings field is set
+     */
+    public boolean hasDisplaySettings() {
+      return (bitField0_ & 0x00000040) != 0;
+    }
+
+    /**
+     * <code>optional .PlayerDisplaySettings display_settings = 757;</code>
+     * @return this
+     */
+    public PlayerDetailInfo clearDisplaySettings() {
+      bitField0_ &= ~0x00000040;
+      displaySettings.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional .PlayerDisplaySettings display_settings = 757;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableDisplaySettings()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public PlayerDisplaySettingsOuterClass.PlayerDisplaySettings getDisplaySettings() {
+      return displaySettings;
+    }
+
+    /**
+     * <code>optional .PlayerDisplaySettings display_settings = 757;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public PlayerDisplaySettingsOuterClass.PlayerDisplaySettings getMutableDisplaySettings() {
+      bitField0_ |= 0x00000040;
+      return displaySettings;
+    }
+
+    /**
+     * <code>optional .PlayerDisplaySettings display_settings = 757;</code>
+     * @param value the displaySettings to set
+     * @return this
+     */
+    public PlayerDetailInfo setDisplaySettings(
+        final PlayerDisplaySettingsOuterClass.PlayerDisplaySettings value) {
+      bitField0_ |= 0x00000040;
+      displaySettings.copyFrom(value);
+      return this;
+    }
+
+    /**
      * <code>optional string signature = 3;</code>
      * @return whether the signature field is set
      */
     public boolean hasSignature() {
-      return (bitField0_ & 0x00000020) != 0;
+      return (bitField0_ & 0x00000080) != 0;
     }
 
     /**
@@ -297,7 +412,7 @@ public final class PlayerDetailInfoOuterClass {
      * @return this
      */
     public PlayerDetailInfo clearSignature() {
-      bitField0_ &= ~0x00000020;
+      bitField0_ &= ~0x00000080;
       signature.clear();
       return this;
     }
@@ -323,7 +438,7 @@ public final class PlayerDetailInfoOuterClass {
      * @return internal {@code Utf8String} representation of signature for modifications
      */
     public Utf8String getMutableSignatureBytes() {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000080;
       return this.signature;
     }
 
@@ -333,7 +448,7 @@ public final class PlayerDetailInfoOuterClass {
      * @return this
      */
     public PlayerDetailInfo setSignature(final CharSequence value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000080;
       signature.copyFrom(value);
       return this;
     }
@@ -344,7 +459,7 @@ public final class PlayerDetailInfoOuterClass {
      * @return this
      */
     public PlayerDetailInfo setSignature(final Utf8String value) {
-      bitField0_ |= 0x00000020;
+      bitField0_ |= 0x00000080;
       signature.copyFrom(value);
       return this;
     }
@@ -354,7 +469,7 @@ public final class PlayerDetailInfoOuterClass {
      * @return whether the nickname field is set
      */
     public boolean hasNickname() {
-      return (bitField0_ & 0x00000040) != 0;
+      return (bitField0_ & 0x00000100) != 0;
     }
 
     /**
@@ -362,7 +477,7 @@ public final class PlayerDetailInfoOuterClass {
      * @return this
      */
     public PlayerDetailInfo clearNickname() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000100;
       nickname.clear();
       return this;
     }
@@ -388,7 +503,7 @@ public final class PlayerDetailInfoOuterClass {
      * @return internal {@code Utf8String} representation of nickname for modifications
      */
     public Utf8String getMutableNicknameBytes() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000100;
       return this.nickname;
     }
 
@@ -398,7 +513,7 @@ public final class PlayerDetailInfoOuterClass {
      * @return this
      */
     public PlayerDetailInfo setNickname(final CharSequence value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000100;
       nickname.copyFrom(value);
       return this;
     }
@@ -409,138 +524,8 @@ public final class PlayerDetailInfoOuterClass {
      * @return this
      */
     public PlayerDetailInfo setNickname(final Utf8String value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000100;
       nickname.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string display_avatar_info = 13;</code>
-     * @return whether the displayAvatarInfo field is set
-     */
-    public boolean hasDisplayAvatarInfo() {
-      return (bitField0_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>optional string display_avatar_info = 13;</code>
-     * @return this
-     */
-    public PlayerDetailInfo clearDisplayAvatarInfo() {
-      bitField0_ &= ~0x00000080;
-      displayAvatarInfo.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string display_avatar_info = 13;</code>
-     * @return the displayAvatarInfo
-     */
-    public String getDisplayAvatarInfo() {
-      return displayAvatarInfo.getString();
-    }
-
-    /**
-     * <code>optional string display_avatar_info = 13;</code>
-     * @return internal {@code Utf8String} representation of displayAvatarInfo for reading
-     */
-    public Utf8String getDisplayAvatarInfoBytes() {
-      return this.displayAvatarInfo;
-    }
-
-    /**
-     * <code>optional string display_avatar_info = 13;</code>
-     * @return internal {@code Utf8String} representation of displayAvatarInfo for modifications
-     */
-    public Utf8String getMutableDisplayAvatarInfoBytes() {
-      bitField0_ |= 0x00000080;
-      return this.displayAvatarInfo;
-    }
-
-    /**
-     * <code>optional string display_avatar_info = 13;</code>
-     * @param value the displayAvatarInfo to set
-     * @return this
-     */
-    public PlayerDetailInfo setDisplayAvatarInfo(final CharSequence value) {
-      bitField0_ |= 0x00000080;
-      displayAvatarInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string display_avatar_info = 13;</code>
-     * @param value the displayAvatarInfo to set
-     * @return this
-     */
-    public PlayerDetailInfo setDisplayAvatarInfo(final Utf8String value) {
-      bitField0_ |= 0x00000080;
-      displayAvatarInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string record_info = 757;</code>
-     * @return whether the recordInfo field is set
-     */
-    public boolean hasRecordInfo() {
-      return (bitField0_ & 0x00000100) != 0;
-    }
-
-    /**
-     * <code>optional string record_info = 757;</code>
-     * @return this
-     */
-    public PlayerDetailInfo clearRecordInfo() {
-      bitField0_ &= ~0x00000100;
-      recordInfo.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string record_info = 757;</code>
-     * @return the recordInfo
-     */
-    public String getRecordInfo() {
-      return recordInfo.getString();
-    }
-
-    /**
-     * <code>optional string record_info = 757;</code>
-     * @return internal {@code Utf8String} representation of recordInfo for reading
-     */
-    public Utf8String getRecordInfoBytes() {
-      return this.recordInfo;
-    }
-
-    /**
-     * <code>optional string record_info = 757;</code>
-     * @return internal {@code Utf8String} representation of recordInfo for modifications
-     */
-    public Utf8String getMutableRecordInfoBytes() {
-      bitField0_ |= 0x00000100;
-      return this.recordInfo;
-    }
-
-    /**
-     * <code>optional string record_info = 757;</code>
-     * @param value the recordInfo to set
-     * @return this
-     */
-    public PlayerDetailInfo setRecordInfo(final CharSequence value) {
-      bitField0_ |= 0x00000100;
-      recordInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string record_info = 757;</code>
-     * @param value the recordInfo to set
-     * @return this
-     */
-    public PlayerDetailInfo setRecordInfo(final Utf8String value) {
-      bitField0_ |= 0x00000100;
-      recordInfo.copyFrom(value);
       return this;
     }
 
@@ -554,10 +539,10 @@ public final class PlayerDetailInfoOuterClass {
         worldLevel = other.worldLevel;
         level = other.level;
         platformType = other.platformType;
+        recordInfo.copyFrom(other.recordInfo);
+        displaySettings.copyFrom(other.displaySettings);
         signature.copyFrom(other.signature);
         nickname.copyFrom(other.nickname);
-        displayAvatarInfo.copyFrom(other.displayAvatarInfo);
-        recordInfo.copyFrom(other.recordInfo);
       }
       return this;
     }
@@ -583,17 +568,17 @@ public final class PlayerDetailInfoOuterClass {
       if (other.hasPlatformType()) {
         setPlatformTypeValue(other.platformType);
       }
+      if (other.hasRecordInfo()) {
+        getMutableRecordInfo().mergeFrom(other.recordInfo);
+      }
+      if (other.hasDisplaySettings()) {
+        getMutableDisplaySettings().mergeFrom(other.displaySettings);
+      }
       if (other.hasSignature()) {
         getMutableSignatureBytes().copyFrom(other.signature);
       }
       if (other.hasNickname()) {
         getMutableNicknameBytes().copyFrom(other.nickname);
-      }
-      if (other.hasDisplayAvatarInfo()) {
-        getMutableDisplayAvatarInfoBytes().copyFrom(other.displayAvatarInfo);
-      }
-      if (other.hasRecordInfo()) {
-        getMutableRecordInfoBytes().copyFrom(other.recordInfo);
       }
       return this;
     }
@@ -610,10 +595,10 @@ public final class PlayerDetailInfoOuterClass {
       worldLevel = 0;
       level = 0;
       platformType = 0;
+      recordInfo.clear();
+      displaySettings.clear();
       signature.clear();
       nickname.clear();
-      displayAvatarInfo.clear();
-      recordInfo.clear();
       return this;
     }
 
@@ -624,10 +609,10 @@ public final class PlayerDetailInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      recordInfo.clearQuick();
+      displaySettings.clearQuick();
       signature.clear();
       nickname.clear();
-      displayAvatarInfo.clear();
-      recordInfo.clear();
       return this;
     }
 
@@ -646,10 +631,10 @@ public final class PlayerDetailInfoOuterClass {
         && (!hasWorldLevel() || worldLevel == other.worldLevel)
         && (!hasLevel() || level == other.level)
         && (!hasPlatformType() || platformType == other.platformType)
+        && (!hasRecordInfo() || recordInfo.equals(other.recordInfo))
+        && (!hasDisplaySettings() || displaySettings.equals(other.displaySettings))
         && (!hasSignature() || signature.equals(other.signature))
-        && (!hasNickname() || nickname.equals(other.nickname))
-        && (!hasDisplayAvatarInfo() || displayAvatarInfo.equals(other.displayAvatarInfo))
-        && (!hasRecordInfo() || recordInfo.equals(other.recordInfo));
+        && (!hasNickname() || nickname.equals(other.nickname));
     }
 
     @Override
@@ -675,20 +660,20 @@ public final class PlayerDetailInfoOuterClass {
         output.writeEnumNoTag(platformType);
       }
       if ((bitField0_ & 0x00000020) != 0) {
+        output.writeRawByte((byte) 58);
+        output.writeMessageNoTag(recordInfo);
+      }
+      if ((bitField0_ & 0x00000040) != 0) {
+        output.writeRawLittleEndian16((short) 12202);
+        output.writeMessageNoTag(displaySettings);
+      }
+      if ((bitField0_ & 0x00000080) != 0) {
         output.writeRawByte((byte) 26);
         output.writeStringNoTag(signature);
       }
-      if ((bitField0_ & 0x00000040) != 0) {
+      if ((bitField0_ & 0x00000100) != 0) {
         output.writeRawByte((byte) 34);
         output.writeStringNoTag(nickname);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
-        output.writeRawByte((byte) 106);
-        output.writeStringNoTag(displayAvatarInfo);
-      }
-      if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawLittleEndian16((short) 12202);
-        output.writeStringNoTag(recordInfo);
       }
     }
 
@@ -711,16 +696,16 @@ public final class PlayerDetailInfoOuterClass {
         size += 1 + ProtoSink.computeEnumSizeNoTag(platformType);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(signature);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(recordInfo);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(nickname);
+        size += 2 + ProtoSink.computeMessageSizeNoTag(displaySettings);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(displayAvatarInfo);
+        size += 1 + ProtoSink.computeStringSizeNoTag(signature);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        size += 2 + ProtoSink.computeStringSizeNoTag(recordInfo);
+        size += 1 + ProtoSink.computeStringSizeNoTag(nickname);
       }
       return size;
     }
@@ -776,6 +761,24 @@ public final class PlayerDetailInfoOuterClass {
               bitField0_ |= 0x00000010;
             }
             tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
+            // recordInfo
+            input.readMessage(recordInfo);
+            bitField0_ |= 0x00000020;
+            tag = input.readTag();
+            if (tag != 6058) {
+              break;
+            }
+          }
+          case 6058: {
+            // displaySettings
+            input.readMessage(displaySettings);
+            bitField0_ |= 0x00000040;
+            tag = input.readTag();
             if (tag != 26) {
               break;
             }
@@ -783,7 +786,7 @@ public final class PlayerDetailInfoOuterClass {
           case 26: {
             // signature
             input.readString(signature);
-            bitField0_ |= 0x00000020;
+            bitField0_ |= 0x00000080;
             tag = input.readTag();
             if (tag != 34) {
               break;
@@ -792,24 +795,6 @@ public final class PlayerDetailInfoOuterClass {
           case 34: {
             // nickname
             input.readString(nickname);
-            bitField0_ |= 0x00000040;
-            tag = input.readTag();
-            if (tag != 106) {
-              break;
-            }
-          }
-          case 106: {
-            // displayAvatarInfo
-            input.readString(displayAvatarInfo);
-            bitField0_ |= 0x00000080;
-            tag = input.readTag();
-            if (tag != 6058) {
-              break;
-            }
-          }
-          case 6058: {
-            // recordInfo
-            input.readString(recordInfo);
             bitField0_ |= 0x00000100;
             tag = input.readTag();
             if (tag != 0) {
@@ -849,16 +834,16 @@ public final class PlayerDetailInfoOuterClass {
         output.writeEnum(FieldNames.platformType, platformType, PlatformTypeOuterClass.PlatformType.converter());
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeString(FieldNames.signature, signature);
+        output.writeMessage(FieldNames.recordInfo, recordInfo);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeString(FieldNames.nickname, nickname);
+        output.writeMessage(FieldNames.displaySettings, displaySettings);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeString(FieldNames.displayAvatarInfo, displayAvatarInfo);
+        output.writeString(FieldNames.signature, signature);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeString(FieldNames.recordInfo, recordInfo);
+        output.writeString(FieldNames.nickname, nickname);
       }
       output.endObject();
     }
@@ -933,11 +918,35 @@ public final class PlayerDetailInfoOuterClass {
             }
             break;
           }
+          case 734573727:
+          case 1317125084: {
+            if (input.isAtField(FieldNames.recordInfo)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(recordInfo);
+                bitField0_ |= 0x00000020;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 239490821:
+          case 1126534912: {
+            if (input.isAtField(FieldNames.displaySettings)) {
+              if (!input.trySkipNullValue()) {
+                input.readMessage(displaySettings);
+                bitField0_ |= 0x00000040;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 1073584312: {
             if (input.isAtField(FieldNames.signature)) {
               if (!input.trySkipNullValue()) {
                 input.readString(signature);
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x00000080;
               }
             } else {
               input.skipUnknownField();
@@ -948,30 +957,6 @@ public final class PlayerDetailInfoOuterClass {
             if (input.isAtField(FieldNames.nickname)) {
               if (!input.trySkipNullValue()) {
                 input.readString(nickname);
-                bitField0_ |= 0x00000040;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 2117840905:
-          case 245477335: {
-            if (input.isAtField(FieldNames.displayAvatarInfo)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(displayAvatarInfo);
-                bitField0_ |= 0x00000080;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 734573727:
-          case 1317125084: {
-            if (input.isAtField(FieldNames.recordInfo)) {
-              if (!input.trySkipNullValue()) {
-                input.readString(recordInfo);
                 bitField0_ |= 0x00000100;
               }
             } else {
@@ -1042,13 +1027,13 @@ public final class PlayerDetailInfoOuterClass {
 
       static final FieldName platformType = FieldName.forField("platformType", "platform_type");
 
+      static final FieldName recordInfo = FieldName.forField("recordInfo", "record_info");
+
+      static final FieldName displaySettings = FieldName.forField("displaySettings", "display_settings");
+
       static final FieldName signature = FieldName.forField("signature");
 
       static final FieldName nickname = FieldName.forField("nickname");
-
-      static final FieldName displayAvatarInfo = FieldName.forField("displayAvatarInfo", "display_avatar_info");
-
-      static final FieldName recordInfo = FieldName.forField("recordInfo", "record_info");
     }
   }
 }

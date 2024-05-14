@@ -50,7 +50,7 @@ public class GameAvatar implements GameEntity {
     @Setter private int level;
     @Setter private int exp;
     @Setter private int promotion;
-    @Setter private boolean isMarked;
+    @Setter private boolean marked;
     
     private int rewards; // Previously known as "taken rewards"
     private long timestamp;
@@ -115,7 +115,7 @@ public class GameAvatar implements GameEntity {
     public void setEntityId(int entityId) {
         this.entityId = entityId;
     }
-
+    
     @Override
     public Position getPos() {
         return this.getOwner().getPos();
@@ -281,12 +281,6 @@ public class GameAvatar implements GameEntity {
 
         return null;
     }
-    
-    public void mark(boolean isMarked) {
-        this.setMarked(isMarked);
-        this.save();
-        getOwner().sendPacket(new PacketPlayerSyncScNotify(this));
-    }
 
     // Proto
 
@@ -355,10 +349,8 @@ public class GameAvatar implements GameEntity {
                 .setWorldLevel(this.getOwner().getWorldLevel());
 
         // Skill tree
-        if (!this.isHero()) {
-            for (var skill : getSkills().entrySet()) {
-                proto.addSkilltreeList(AvatarSkillTree.newInstance().setPointId(skill.getKey()).setLevel(skill.getValue()));
-            }
+        for (var skill : getSkills().entrySet()) {
+            proto.addSkilltreeList(AvatarSkillTree.newInstance().setPointId(skill.getKey()).setLevel(skill.getValue()));
         }
 
         // Build equips

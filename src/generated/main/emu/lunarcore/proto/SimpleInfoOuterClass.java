@@ -71,9 +71,9 @@ public final class SimpleInfoOuterClass {
     private final Utf8String signature = Utf8String.newEmptyInstance();
 
     /**
-     * <code>repeated .AssistSimpleInfo simple_avatar_info = 7;</code>
+     * <code>repeated .AssistSimpleInfo assist_simple_info = 7;</code>
      */
-    private final RepeatedMessage<AssistSimpleInfoOuterClass.AssistSimpleInfo> simpleAvatarInfo = RepeatedMessage.newEmptyInstance(AssistSimpleInfoOuterClass.AssistSimpleInfo.getFactory());
+    private final RepeatedMessage<AssistSimpleInfoOuterClass.AssistSimpleInfo> assistSimpleInfo = RepeatedMessage.newEmptyInstance(AssistSimpleInfoOuterClass.AssistSimpleInfo.getFactory());
 
     private SimpleInfo() {
     }
@@ -562,39 +562,39 @@ public final class SimpleInfoOuterClass {
     }
 
     /**
-     * <code>repeated .AssistSimpleInfo simple_avatar_info = 7;</code>
-     * @return whether the simpleAvatarInfo field is set
+     * <code>repeated .AssistSimpleInfo assist_simple_info = 7;</code>
+     * @return whether the assistSimpleInfo field is set
      */
-    public boolean hasSimpleAvatarInfo() {
+    public boolean hasAssistSimpleInfo() {
       return (bitField0_ & 0x00000400) != 0;
     }
 
     /**
-     * <code>repeated .AssistSimpleInfo simple_avatar_info = 7;</code>
+     * <code>repeated .AssistSimpleInfo assist_simple_info = 7;</code>
      * @return this
      */
-    public SimpleInfo clearSimpleAvatarInfo() {
+    public SimpleInfo clearAssistSimpleInfo() {
       bitField0_ &= ~0x00000400;
-      simpleAvatarInfo.clear();
+      assistSimpleInfo.clear();
       return this;
     }
 
     /**
-     * <code>repeated .AssistSimpleInfo simple_avatar_info = 7;</code>
+     * <code>repeated .AssistSimpleInfo assist_simple_info = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableSimpleAvatarInfo()} if you want to modify it.
+     * Use {@link #getMutableAssistSimpleInfo()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<AssistSimpleInfoOuterClass.AssistSimpleInfo> getSimpleAvatarInfo() {
-      return simpleAvatarInfo;
+    public RepeatedMessage<AssistSimpleInfoOuterClass.AssistSimpleInfo> getAssistSimpleInfo() {
+      return assistSimpleInfo;
     }
 
     /**
-     * <code>repeated .AssistSimpleInfo simple_avatar_info = 7;</code>
+     * <code>repeated .AssistSimpleInfo assist_simple_info = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -602,32 +602,32 @@ public final class SimpleInfoOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<AssistSimpleInfoOuterClass.AssistSimpleInfo> getMutableSimpleAvatarInfo(
+    public RepeatedMessage<AssistSimpleInfoOuterClass.AssistSimpleInfo> getMutableAssistSimpleInfo(
         ) {
       bitField0_ |= 0x00000400;
-      return simpleAvatarInfo;
+      return assistSimpleInfo;
     }
 
     /**
-     * <code>repeated .AssistSimpleInfo simple_avatar_info = 7;</code>
-     * @param value the simpleAvatarInfo to add
+     * <code>repeated .AssistSimpleInfo assist_simple_info = 7;</code>
+     * @param value the assistSimpleInfo to add
      * @return this
      */
-    public SimpleInfo addSimpleAvatarInfo(final AssistSimpleInfoOuterClass.AssistSimpleInfo value) {
+    public SimpleInfo addAssistSimpleInfo(final AssistSimpleInfoOuterClass.AssistSimpleInfo value) {
       bitField0_ |= 0x00000400;
-      simpleAvatarInfo.add(value);
+      assistSimpleInfo.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .AssistSimpleInfo simple_avatar_info = 7;</code>
-     * @param values the simpleAvatarInfo to add
+     * <code>repeated .AssistSimpleInfo assist_simple_info = 7;</code>
+     * @param values the assistSimpleInfo to add
      * @return this
      */
-    public SimpleInfo addAllSimpleAvatarInfo(
+    public SimpleInfo addAllAssistSimpleInfo(
         final AssistSimpleInfoOuterClass.AssistSimpleInfo... values) {
       bitField0_ |= 0x00000400;
-      simpleAvatarInfo.addAll(values);
+      assistSimpleInfo.addAll(values);
       return this;
     }
 
@@ -646,7 +646,7 @@ public final class SimpleInfoOuterClass {
         isBanned = other.isBanned;
         nickname.copyFrom(other.nickname);
         signature.copyFrom(other.signature);
-        simpleAvatarInfo.copyFrom(other.simpleAvatarInfo);
+        assistSimpleInfo.copyFrom(other.assistSimpleInfo);
       }
       return this;
     }
@@ -687,8 +687,8 @@ public final class SimpleInfoOuterClass {
       if (other.hasSignature()) {
         getMutableSignatureBytes().copyFrom(other.signature);
       }
-      if (other.hasSimpleAvatarInfo()) {
-        getMutableSimpleAvatarInfo().addAll(other.simpleAvatarInfo);
+      if (other.hasAssistSimpleInfo()) {
+        getMutableAssistSimpleInfo().addAll(other.assistSimpleInfo);
       }
       return this;
     }
@@ -710,7 +710,7 @@ public final class SimpleInfoOuterClass {
       isBanned = false;
       nickname.clear();
       signature.clear();
-      simpleAvatarInfo.clear();
+      assistSimpleInfo.clear();
       return this;
     }
 
@@ -723,7 +723,7 @@ public final class SimpleInfoOuterClass {
       bitField0_ = 0;
       nickname.clear();
       signature.clear();
-      simpleAvatarInfo.clearQuick();
+      assistSimpleInfo.clearQuick();
       return this;
     }
 
@@ -747,7 +747,7 @@ public final class SimpleInfoOuterClass {
         && (!hasIsBanned() || isBanned == other.isBanned)
         && (!hasNickname() || nickname.equals(other.nickname))
         && (!hasSignature() || signature.equals(other.signature))
-        && (!hasSimpleAvatarInfo() || simpleAvatarInfo.equals(other.simpleAvatarInfo));
+        && (!hasAssistSimpleInfo() || assistSimpleInfo.equals(other.assistSimpleInfo));
     }
 
     @Override
@@ -793,9 +793,9 @@ public final class SimpleInfoOuterClass {
         output.writeStringNoTag(signature);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        for (int i = 0; i < simpleAvatarInfo.length(); i++) {
+        for (int i = 0; i < assistSimpleInfo.length(); i++) {
           output.writeRawByte((byte) 58);
-          output.writeMessageNoTag(simpleAvatarInfo.get(i));
+          output.writeMessageNoTag(assistSimpleInfo.get(i));
         }
       }
     }
@@ -834,7 +834,7 @@ public final class SimpleInfoOuterClass {
         size += 1 + ProtoSink.computeStringSizeNoTag(signature);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        size += (1 * simpleAvatarInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(simpleAvatarInfo);
+        size += (1 * assistSimpleInfo.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(assistSimpleInfo);
       }
       return size;
     }
@@ -943,8 +943,8 @@ public final class SimpleInfoOuterClass {
             }
           }
           case 58: {
-            // simpleAvatarInfo
-            tag = input.readRepeatedMessage(simpleAvatarInfo, tag);
+            // assistSimpleInfo
+            tag = input.readRepeatedMessage(assistSimpleInfo, tag);
             bitField0_ |= 0x00000400;
             if (tag != 0) {
               break;
@@ -998,7 +998,7 @@ public final class SimpleInfoOuterClass {
         output.writeString(FieldNames.signature, signature);
       }
       if ((bitField0_ & 0x00000400) != 0) {
-        output.writeRepeatedMessage(FieldNames.simpleAvatarInfo, simpleAvatarInfo);
+        output.writeRepeatedMessage(FieldNames.assistSimpleInfo, assistSimpleInfo);
       }
       output.endObject();
     }
@@ -1136,11 +1136,11 @@ public final class SimpleInfoOuterClass {
             }
             break;
           }
-          case 272129273:
-          case 338092231: {
-            if (input.isAtField(FieldNames.simpleAvatarInfo)) {
+          case 773591241:
+          case -143608251: {
+            if (input.isAtField(FieldNames.assistSimpleInfo)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(simpleAvatarInfo);
+                input.readRepeatedMessage(assistSimpleInfo);
                 bitField0_ |= 0x00000400;
               }
             } else {
@@ -1220,7 +1220,7 @@ public final class SimpleInfoOuterClass {
 
       static final FieldName signature = FieldName.forField("signature");
 
-      static final FieldName simpleAvatarInfo = FieldName.forField("simpleAvatarInfo", "simple_avatar_info");
+      static final FieldName assistSimpleInfo = FieldName.forField("assistSimpleInfo", "assist_simple_info");
     }
   }
 }

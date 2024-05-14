@@ -34,7 +34,6 @@ public class HttpServer {
     private Object2ObjectMap<String, RegionInfo> regions;
     private String regionList;
 
-
     public HttpServer(ServerType type) {
         this.type = type;
         this.app = Javalin.create();
@@ -76,34 +75,8 @@ public class HttpServer {
     public void forceRegionListRefresh() {
         this.nextRegionUpdate = 0;
     }
-
-    public String getRegionList() {
-        synchronized (this.regions) {
-            // Check if region list needs to be cached
-            if (System.currentTimeMillis() > this.nextRegionUpdate || this.regionList == null) {
-                // Clear regions first
-                this.regions.clear();
-
-                // Pull region infos from database
-                LunarCore.getAccountDatabase().getObjects(RegionInfo.class)
-                    .forEach(region -> {
-                        this.regions.put(region.getId(), region);
-                    });
-
-                // Serialize to proto
-                DispatchRegionData regionData = DispatchRegionData.newInstance();
-                regions.values().stream().map(RegionInfo::toProto).forEach(regionData::addRegionList);
-
-                // Set region list cache
-                this.regionList = Utils.base64Encode(regionData.toByteArray());
-                this.nextRegionUpdate = System.currentTimeMillis() + getServerConfig().regionListRefresh;
-            }
-        }
-
-        return regionList;
-    }
     
-    public String getRegionListIOS() {
+    public String getRegionList() {
         synchronized (this.regions) {
             // Check if region list needs to be cached
             if (System.currentTimeMillis() > this.nextRegionUpdate || this.regionList == null) {
@@ -118,7 +91,7 @@ public class HttpServer {
 
                 // Serialize to proto
                 DispatchRegionData regionData = DispatchRegionData.newInstance();
-                regions.values().stream().map(RegionInfo::toProtoIOS).forEach(regionData::addRegionList);
+                regions.values().stream().map(RegionInfo::toProto).forEach(regionData::addRegionList);
                 
                 // Set region list cache
                 this.regionList = Utils.base64Encode(regionData.toByteArray());
@@ -174,22 +147,22 @@ public class HttpServer {
         // === AUTHENTICATION === hkrpg-sdk-os-static.hoyoverse.com
 
         // Username & Password login (from client). Returns a session key to the client.
-        getApp().post("/*/mdk/shield/api/login", new UsernameLoginHandler());
+        getApp().post("/hkrpg_global/mdk/shield/api/login", new UsernameLoginHandler());
         // Cached session key verify (from registry). Returns a session key to the client.
-        getApp().post("/*/mdk/shield/api/verify", new TokenLoginHandler());
+        getApp().post("/hkrpg_global/mdk/shield/api/verify", new TokenLoginHandler());
 
         // Exchange session key for login token (combo token)
-        getApp().post("/*/combo/granter/login/v2/login", new ComboTokenGranterHandler());
+        getApp().post("/hkrpg_global/combo/granter/login/v2/login", new ComboTokenGranterHandler());
 
         // Config
-        getApp().get("/*/combo/granter/api/getConfig", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"protocol\":true,\"qr_enabled\":false,\"log_level\":\"INFO\",\"announce_url\":\"\",\"push_alias_type\":0,\"disable_ysdk_guard\":true,\"enable_announce_pic_popup\":false,\"app_name\":\"崩�??RPG\",\"qr_enabled_apps\":{\"bbs\":false,\"cloud\":false},\"qr_app_icons\":{\"app\":\"\",\"bbs\":\"\",\"cloud\":\"\"},\"qr_cloud_display_name\":\"\",\"enable_user_center\":true,\"functional_switch_configs\":{}}}"));
-        getApp().get("/*/mdk/shield/api/loadConfig", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"id\":24,\"game_key\":\"hkrpg_global\",\"client\":\"PC\",\"identity\":\"I_IDENTITY\",\"guest\":false,\"ignore_versions\":\"\",\"scene\":\"S_NORMAL\",\"name\":\"崩�??RPG\",\"disable_regist\":false,\"enable_email_captcha\":false,\"thirdparty\":[\"fb\",\"tw\",\"gl\",\"ap\"],\"disable_mmt\":false,\"server_guest\":false,\"thirdparty_ignore\":{},\"enable_ps_bind_account\":false,\"thirdparty_login_configs\":{\"tw\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":2592000},\"ap\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":604800},\"fb\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":2592000},\"gl\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":604800}},\"initialize_firebase\":false,\"bbs_auth_login\":false,\"bbs_auth_login_ignore\":[],\"fetch_instance_id\":false,\"enable_flash_login\":false}}"));
+        getApp().get("/hkrpg_global/combo/granter/api/getConfig", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"protocol\":true,\"qr_enabled\":false,\"log_level\":\"INFO\",\"announce_url\":\"\",\"push_alias_type\":0,\"disable_ysdk_guard\":true,\"enable_announce_pic_popup\":false,\"app_name\":\"崩�??RPG\",\"qr_enabled_apps\":{\"bbs\":false,\"cloud\":false},\"qr_app_icons\":{\"app\":\"\",\"bbs\":\"\",\"cloud\":\"\"},\"qr_cloud_display_name\":\"\",\"enable_user_center\":true,\"functional_switch_configs\":{}}}"));
+        getApp().get("/hkrpg_global/mdk/shield/api/loadConfig", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"id\":24,\"game_key\":\"hkrpg_global\",\"client\":\"PC\",\"identity\":\"I_IDENTITY\",\"guest\":false,\"ignore_versions\":\"\",\"scene\":\"S_NORMAL\",\"name\":\"崩�??RPG\",\"disable_regist\":false,\"enable_email_captcha\":false,\"thirdparty\":[\"fb\",\"tw\",\"gl\",\"ap\"],\"disable_mmt\":false,\"server_guest\":false,\"thirdparty_ignore\":{},\"enable_ps_bind_account\":false,\"thirdparty_login_configs\":{\"tw\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":2592000},\"ap\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":604800},\"fb\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":2592000},\"gl\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":604800}},\"initialize_firebase\":false,\"bbs_auth_login\":false,\"bbs_auth_login_ignore\":[],\"fetch_instance_id\":false,\"enable_flash_login\":false}}"));
 
         // === EXTRA ===
 
         // hkrpg-sdk-os.hoyoverse.com
-        getApp().post("/*/combo/granter/api/compareProtocolVersion", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"modified\":false,\"protocol\":null}}"));
-        getApp().get("/*/mdk/agreement/api/getAgreementInfos", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"marketing_agreements\":[]}}"));
+        getApp().post("/hkrpg_global/combo/granter/api/compareProtocolVersion", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"modified\":false,\"protocol\":null}}"));
+        getApp().get("/hkrpg_global/mdk/agreement/api/getAgreementInfos", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"marketing_agreements\":[]}}"));
 
         // sdk-os-static.hoyoverse.com
         getApp().get("/combo/box/api/config/sdk/combo", new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"vals\":{\"kibana_pc_config\":\"{ \\\"enable\\\": 0, \\\"level\\\": \\\"Info\\\",\\\"modules\\\": [\\\"download\\\"] }\\n\",\"network_report_config\":\"{ \\\"enable\\\": 0, \\\"status_codes\\\": [206], \\\"url_paths\\\": [\\\"dataUpload\\\", \\\"red_dot\\\"] }\\n\",\"list_price_tierv2_enable\":\"false\\n\",\"pay_payco_centered_host\":\"bill.payco.com\",\"telemetry_config\":\"{\\n \\\"dataupload_enable\\\": 0,\\n}\",\"enable_web_dpi\":\"true\"}}}"));
@@ -201,11 +174,6 @@ public class HttpServer {
 
         // abtest-api-data-sg.hoyoverse.com
         getApp().post("/data_abtest_api/config/experiment/list", new HttpJsonResponse("{\"retcode\":0,\"success\":true,\"message\":\"\",\"data\":[{\"code\":1000,\"type\":2,\"config_id\":\"14\",\"period_id\":\"6125_197\",\"version\":\"1\",\"configs\":{\"cardType\":\"direct\"}}]}"));
-        
-        // sdk-common-api.mihoyo.com
-        if (LunarCore.getConfig().getWatermarkData().useWatermark) {
-            getApp().post("/sdk_global/marker/api/genMark", new WatermarkHandler());
-        }
     
         // Add mode
         this.modes.add("DISPATCH");

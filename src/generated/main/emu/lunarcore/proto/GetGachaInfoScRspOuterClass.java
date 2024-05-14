@@ -25,6 +25,11 @@ public final class GetGachaInfoScRspOuterClass {
     private int retcode;
 
     /**
+     * <code>optional uint32 gacha_random = 8;</code>
+     */
+    private int gachaRandom;
+
+    /**
      * <code>repeated .GachaInfo gacha_info_list = 9;</code>
      */
     private final RepeatedMessage<GachaInfoOuterClass.GachaInfo> gachaInfoList = RepeatedMessage.newEmptyInstance(GachaInfoOuterClass.GachaInfo.getFactory());
@@ -77,11 +82,48 @@ public final class GetGachaInfoScRspOuterClass {
     }
 
     /**
+     * <code>optional uint32 gacha_random = 8;</code>
+     * @return whether the gachaRandom field is set
+     */
+    public boolean hasGachaRandom() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 gacha_random = 8;</code>
+     * @return this
+     */
+    public GetGachaInfoScRsp clearGachaRandom() {
+      bitField0_ &= ~0x00000002;
+      gachaRandom = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 gacha_random = 8;</code>
+     * @return the gachaRandom
+     */
+    public int getGachaRandom() {
+      return gachaRandom;
+    }
+
+    /**
+     * <code>optional uint32 gacha_random = 8;</code>
+     * @param value the gachaRandom to set
+     * @return this
+     */
+    public GetGachaInfoScRsp setGachaRandom(final int value) {
+      bitField0_ |= 0x00000002;
+      gachaRandom = value;
+      return this;
+    }
+
+    /**
      * <code>repeated .GachaInfo gacha_info_list = 9;</code>
      * @return whether the gachaInfoList field is set
      */
     public boolean hasGachaInfoList() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
@@ -89,7 +131,7 @@ public final class GetGachaInfoScRspOuterClass {
      * @return this
      */
     public GetGachaInfoScRsp clearGachaInfoList() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       gachaInfoList.clear();
       return this;
     }
@@ -118,7 +160,7 @@ public final class GetGachaInfoScRspOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<GachaInfoOuterClass.GachaInfo> getMutableGachaInfoList() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       return gachaInfoList;
     }
 
@@ -128,7 +170,7 @@ public final class GetGachaInfoScRspOuterClass {
      * @return this
      */
     public GetGachaInfoScRsp addGachaInfoList(final GachaInfoOuterClass.GachaInfo value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       gachaInfoList.add(value);
       return this;
     }
@@ -139,7 +181,7 @@ public final class GetGachaInfoScRspOuterClass {
      * @return this
      */
     public GetGachaInfoScRsp addAllGachaInfoList(final GachaInfoOuterClass.GachaInfo... values) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       gachaInfoList.addAll(values);
       return this;
     }
@@ -150,6 +192,7 @@ public final class GetGachaInfoScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
+        gachaRandom = other.gachaRandom;
         gachaInfoList.copyFrom(other.gachaInfoList);
       }
       return this;
@@ -163,6 +206,9 @@ public final class GetGachaInfoScRspOuterClass {
       cachedSize = -1;
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
+      }
+      if (other.hasGachaRandom()) {
+        setGachaRandom(other.gachaRandom);
       }
       if (other.hasGachaInfoList()) {
         getMutableGachaInfoList().addAll(other.gachaInfoList);
@@ -178,6 +224,7 @@ public final class GetGachaInfoScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
+      gachaRandom = 0;
       gachaInfoList.clear();
       return this;
     }
@@ -204,6 +251,7 @@ public final class GetGachaInfoScRspOuterClass {
       GetGachaInfoScRsp other = (GetGachaInfoScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
+        && (!hasGachaRandom() || gachaRandom == other.gachaRandom)
         && (!hasGachaInfoList() || gachaInfoList.equals(other.gachaInfoList));
     }
 
@@ -214,6 +262,10 @@ public final class GetGachaInfoScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 64);
+        output.writeUInt32NoTag(gachaRandom);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < gachaInfoList.length(); i++) {
           output.writeRawByte((byte) 74);
           output.writeMessageNoTag(gachaInfoList.get(i));
@@ -228,6 +280,9 @@ public final class GetGachaInfoScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(gachaRandom);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         size += (1 * gachaInfoList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(gachaInfoList);
       }
       return size;
@@ -245,6 +300,15 @@ public final class GetGachaInfoScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
+            if (tag != 64) {
+              break;
+            }
+          }
+          case 64: {
+            // gachaRandom
+            gachaRandom = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
             if (tag != 74) {
               break;
             }
@@ -252,7 +316,7 @@ public final class GetGachaInfoScRspOuterClass {
           case 74: {
             // gachaInfoList
             tag = input.readRepeatedMessage(gachaInfoList, tag);
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
             }
@@ -278,6 +342,9 @@ public final class GetGachaInfoScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeUInt32(FieldNames.gachaRandom, gachaRandom);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedMessage(FieldNames.gachaInfoList, gachaInfoList);
       }
       output.endObject();
@@ -301,12 +368,24 @@ public final class GetGachaInfoScRspOuterClass {
             }
             break;
           }
+          case -1635961627:
+          case -47579616: {
+            if (input.isAtField(FieldNames.gachaRandom)) {
+              if (!input.trySkipNullValue()) {
+                gachaRandom = input.readUInt32();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -273788402:
           case 1953910546: {
             if (input.isAtField(FieldNames.gachaInfoList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(gachaInfoList);
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -367,6 +446,8 @@ public final class GetGachaInfoScRspOuterClass {
      */
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
+
+      static final FieldName gachaRandom = FieldName.forField("gachaRandom", "gacha_random");
 
       static final FieldName gachaInfoList = FieldName.forField("gachaInfoList", "gacha_info_list");
     }

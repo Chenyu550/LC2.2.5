@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message PlayerSettingInfo {
-  bool NODHLKCFLPA = 9;
-  bool HMAMGFJANGO = 2;
-  bool PMBBEIEHBML = 10;
-}

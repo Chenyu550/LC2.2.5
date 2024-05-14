@@ -14,10 +14,6 @@ import us.hebi.quickbuf.RepeatedMessage;
 
 public final class SyncRogueCommonActionResultScNotifyOuterClass {
   /**
-   * <pre>
-   *  ADBBKEPKAND
-   * </pre>
-   *
    * Protobuf type {@code SyncRogueCommonActionResultScNotify}
    */
   public static final class SyncRogueCommonActionResultScNotify extends ProtoMessage<SyncRogueCommonActionResultScNotify> implements Cloneable {
@@ -42,10 +38,6 @@ public final class SyncRogueCommonActionResultScNotifyOuterClass {
     }
 
     /**
-     * <pre>
-     *  ADBBKEPKAND
-     * </pre>
-     *
      * @return a new empty instance of {@code SyncRogueCommonActionResultScNotify}
      */
     public static SyncRogueCommonActionResultScNotify newInstance() {

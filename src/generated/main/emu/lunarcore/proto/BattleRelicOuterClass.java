@@ -40,21 +40,6 @@ public final class BattleRelicOuterClass {
     private int uniqueId;
 
     /**
-     * <code>optional uint32 set_id = 6;</code>
-     */
-    private int setId;
-
-    /**
-     * <code>optional uint32 type = 7;</code>
-     */
-    private int type;
-
-    /**
-     * <code>optional uint32 rarity = 8;</code>
-     */
-    private int rarity;
-
-    /**
      * <code>repeated .RelicAffix sub_affix_list = 4;</code>
      */
     private final RepeatedMessage<RelicAffixOuterClass.RelicAffix> subAffixList = RepeatedMessage.newEmptyInstance(RelicAffixOuterClass.RelicAffix.getFactory());
@@ -218,122 +203,11 @@ public final class BattleRelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 set_id = 6;</code>
-     * @return whether the setId field is set
-     */
-    public boolean hasSetId() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>optional uint32 set_id = 6;</code>
-     * @return this
-     */
-    public BattleRelic clearSetId() {
-      bitField0_ &= ~0x00000010;
-      setId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 set_id = 6;</code>
-     * @return the setId
-     */
-    public int getSetId() {
-      return setId;
-    }
-
-    /**
-     * <code>optional uint32 set_id = 6;</code>
-     * @param value the setId to set
-     * @return this
-     */
-    public BattleRelic setSetId(final int value) {
-      bitField0_ |= 0x00000010;
-      setId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 type = 7;</code>
-     * @return whether the type field is set
-     */
-    public boolean hasType() {
-      return (bitField0_ & 0x00000020) != 0;
-    }
-
-    /**
-     * <code>optional uint32 type = 7;</code>
-     * @return this
-     */
-    public BattleRelic clearType() {
-      bitField0_ &= ~0x00000020;
-      type = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 type = 7;</code>
-     * @return the type
-     */
-    public int getType() {
-      return type;
-    }
-
-    /**
-     * <code>optional uint32 type = 7;</code>
-     * @param value the type to set
-     * @return this
-     */
-    public BattleRelic setType(final int value) {
-      bitField0_ |= 0x00000020;
-      type = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 rarity = 8;</code>
-     * @return whether the rarity field is set
-     */
-    public boolean hasRarity() {
-      return (bitField0_ & 0x00000040) != 0;
-    }
-
-    /**
-     * <code>optional uint32 rarity = 8;</code>
-     * @return this
-     */
-    public BattleRelic clearRarity() {
-      bitField0_ &= ~0x00000040;
-      rarity = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 rarity = 8;</code>
-     * @return the rarity
-     */
-    public int getRarity() {
-      return rarity;
-    }
-
-    /**
-     * <code>optional uint32 rarity = 8;</code>
-     * @param value the rarity to set
-     * @return this
-     */
-    public BattleRelic setRarity(final int value) {
-      bitField0_ |= 0x00000040;
-      rarity = value;
-      return this;
-    }
-
-    /**
      * <code>repeated .RelicAffix sub_affix_list = 4;</code>
      * @return whether the subAffixList field is set
      */
     public boolean hasSubAffixList() {
-      return (bitField0_ & 0x00000080) != 0;
+      return (bitField0_ & 0x00000010) != 0;
     }
 
     /**
@@ -341,7 +215,7 @@ public final class BattleRelicOuterClass {
      * @return this
      */
     public BattleRelic clearSubAffixList() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000010;
       subAffixList.clear();
       return this;
     }
@@ -370,7 +244,7 @@ public final class BattleRelicOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<RelicAffixOuterClass.RelicAffix> getMutableSubAffixList() {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000010;
       return subAffixList;
     }
 
@@ -380,7 +254,7 @@ public final class BattleRelicOuterClass {
      * @return this
      */
     public BattleRelic addSubAffixList(final RelicAffixOuterClass.RelicAffix value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000010;
       subAffixList.add(value);
       return this;
     }
@@ -391,7 +265,7 @@ public final class BattleRelicOuterClass {
      * @return this
      */
     public BattleRelic addAllSubAffixList(final RelicAffixOuterClass.RelicAffix... values) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000010;
       subAffixList.addAll(values);
       return this;
     }
@@ -405,9 +279,6 @@ public final class BattleRelicOuterClass {
         level = other.level;
         mainAffixId = other.mainAffixId;
         uniqueId = other.uniqueId;
-        setId = other.setId;
-        type = other.type;
-        rarity = other.rarity;
         subAffixList.copyFrom(other.subAffixList);
       }
       return this;
@@ -431,15 +302,6 @@ public final class BattleRelicOuterClass {
       if (other.hasUniqueId()) {
         setUniqueId(other.uniqueId);
       }
-      if (other.hasSetId()) {
-        setSetId(other.setId);
-      }
-      if (other.hasType()) {
-        setType(other.type);
-      }
-      if (other.hasRarity()) {
-        setRarity(other.rarity);
-      }
       if (other.hasSubAffixList()) {
         getMutableSubAffixList().addAll(other.subAffixList);
       }
@@ -457,9 +319,6 @@ public final class BattleRelicOuterClass {
       level = 0;
       mainAffixId = 0;
       uniqueId = 0;
-      setId = 0;
-      type = 0;
-      rarity = 0;
       subAffixList.clear();
       return this;
     }
@@ -489,9 +348,6 @@ public final class BattleRelicOuterClass {
         && (!hasLevel() || level == other.level)
         && (!hasMainAffixId() || mainAffixId == other.mainAffixId)
         && (!hasUniqueId() || uniqueId == other.uniqueId)
-        && (!hasSetId() || setId == other.setId)
-        && (!hasType() || type == other.type)
-        && (!hasRarity() || rarity == other.rarity)
         && (!hasSubAffixList() || subAffixList.equals(other.subAffixList));
     }
 
@@ -514,18 +370,6 @@ public final class BattleRelicOuterClass {
         output.writeUInt32NoTag(uniqueId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 48);
-        output.writeUInt32NoTag(setId);
-      }
-      if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(type);
-      }
-      if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 64);
-        output.writeUInt32NoTag(rarity);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
         for (int i = 0; i < subAffixList.length(); i++) {
           output.writeRawByte((byte) 34);
           output.writeMessageNoTag(subAffixList.get(i));
@@ -549,15 +393,6 @@ public final class BattleRelicOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(uniqueId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(setId);
-      }
-      if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(type);
-      }
-      if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(rarity);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
         size += (1 * subAffixList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(subAffixList);
       }
       return size;
@@ -602,33 +437,6 @@ public final class BattleRelicOuterClass {
             uniqueId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 48) {
-              break;
-            }
-          }
-          case 48: {
-            // setId
-            setId = input.readUInt32();
-            bitField0_ |= 0x00000010;
-            tag = input.readTag();
-            if (tag != 56) {
-              break;
-            }
-          }
-          case 56: {
-            // type
-            type = input.readUInt32();
-            bitField0_ |= 0x00000020;
-            tag = input.readTag();
-            if (tag != 64) {
-              break;
-            }
-          }
-          case 64: {
-            // rarity
-            rarity = input.readUInt32();
-            bitField0_ |= 0x00000040;
-            tag = input.readTag();
             if (tag != 34) {
               break;
             }
@@ -636,7 +444,7 @@ public final class BattleRelicOuterClass {
           case 34: {
             // subAffixList
             tag = input.readRepeatedMessage(subAffixList, tag);
-            bitField0_ |= 0x00000080;
+            bitField0_ |= 0x00000010;
             if (tag != 0) {
               break;
             }
@@ -671,15 +479,6 @@ public final class BattleRelicOuterClass {
         output.writeUInt32(FieldNames.uniqueId, uniqueId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeUInt32(FieldNames.setId, setId);
-      }
-      if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.type, type);
-      }
-      if ((bitField0_ & 0x00000040) != 0) {
-        output.writeUInt32(FieldNames.rarity, rarity);
-      }
-      if ((bitField0_ & 0x00000080) != 0) {
         output.writeRepeatedMessage(FieldNames.subAffixList, subAffixList);
       }
       output.endObject();
@@ -738,46 +537,12 @@ public final class BattleRelicOuterClass {
             }
             break;
           }
-          case 109327645:
-          case -905788904: {
-            if (input.isAtField(FieldNames.setId)) {
-              if (!input.trySkipNullValue()) {
-                setId = input.readUInt32();
-                bitField0_ |= 0x00000010;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 3575610: {
-            if (input.isAtField(FieldNames.type)) {
-              if (!input.trySkipNullValue()) {
-                type = input.readUInt32();
-                bitField0_ |= 0x00000020;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -938161749: {
-            if (input.isAtField(FieldNames.rarity)) {
-              if (!input.trySkipNullValue()) {
-                rarity = input.readUInt32();
-                bitField0_ |= 0x00000040;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case -600836050:
           case 919890188: {
             if (input.isAtField(FieldNames.subAffixList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(subAffixList);
-                bitField0_ |= 0x00000080;
+                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -843,12 +608,6 @@ public final class BattleRelicOuterClass {
       static final FieldName mainAffixId = FieldName.forField("mainAffixId", "main_affix_id");
 
       static final FieldName uniqueId = FieldName.forField("uniqueId", "unique_id");
-
-      static final FieldName setId = FieldName.forField("setId", "set_id");
-
-      static final FieldName type = FieldName.forField("type");
-
-      static final FieldName rarity = FieldName.forField("rarity");
 
       static final FieldName subAffixList = FieldName.forField("subAffixList", "sub_affix_list");
     }

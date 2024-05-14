@@ -21,35 +21,27 @@ public final class RogueMiracleOuterClass {
 
     /**
      * <pre>
-     *  4 12
+     *  was set to 3 in pcap
      * </pre>
      *
-     * <code>optional uint32 use_count = 1;</code>
+     * <code>optional uint32 NKBEHFHLPEF = 1;</code>
      */
-    private int useCount;
+    private int nKBEHFHLPEF;
 
     /**
-     * <pre>
-     *  1 12
-     * </pre>
-     *
-     * <code>optional uint32 total_count = 4;</code>
+     * <code>optional uint32 MMFONFFPNJM = 4;</code>
      */
-    private int totalCount;
+    private int mMFONFFPNJM;
 
     /**
-     * <pre>
-     *  1 4
-     * </pre>
-     *
      * <code>optional uint32 miracle_id = 12;</code>
      */
     private int miracleId;
 
     /**
-     * <code>repeated .RogueMiracle.EffectCountEntry effect_count = 10;</code>
+     * <code>repeated .RogueMiracle.KONAGCDHKKHEntry KONAGCDHKKH = 10;</code>
      */
-    private final RepeatedMessage<EffectCountEntry> effectCount = RepeatedMessage.newEmptyInstance(EffectCountEntry.getFactory());
+    private final RepeatedMessage<KONAGCDHKKHEntry> kONAGCDHKKH = RepeatedMessage.newEmptyInstance(KONAGCDHKKHEntry.getFactory());
 
     private RogueMiracle() {
     }
@@ -63,115 +55,95 @@ public final class RogueMiracleOuterClass {
 
     /**
      * <pre>
-     *  4 12
+     *  was set to 3 in pcap
      * </pre>
      *
-     * <code>optional uint32 use_count = 1;</code>
-     * @return whether the useCount field is set
+     * <code>optional uint32 NKBEHFHLPEF = 1;</code>
+     * @return whether the nKBEHFHLPEF field is set
      */
-    public boolean hasUseCount() {
+    public boolean hasNKBEHFHLPEF() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     *  4 12
+     *  was set to 3 in pcap
      * </pre>
      *
-     * <code>optional uint32 use_count = 1;</code>
+     * <code>optional uint32 NKBEHFHLPEF = 1;</code>
      * @return this
      */
-    public RogueMiracle clearUseCount() {
+    public RogueMiracle clearNKBEHFHLPEF() {
       bitField0_ &= ~0x00000001;
-      useCount = 0;
+      nKBEHFHLPEF = 0;
       return this;
     }
 
     /**
      * <pre>
-     *  4 12
+     *  was set to 3 in pcap
      * </pre>
      *
-     * <code>optional uint32 use_count = 1;</code>
-     * @return the useCount
+     * <code>optional uint32 NKBEHFHLPEF = 1;</code>
+     * @return the nKBEHFHLPEF
      */
-    public int getUseCount() {
-      return useCount;
+    public int getNKBEHFHLPEF() {
+      return nKBEHFHLPEF;
     }
 
     /**
      * <pre>
-     *  4 12
+     *  was set to 3 in pcap
      * </pre>
      *
-     * <code>optional uint32 use_count = 1;</code>
-     * @param value the useCount to set
+     * <code>optional uint32 NKBEHFHLPEF = 1;</code>
+     * @param value the nKBEHFHLPEF to set
      * @return this
      */
-    public RogueMiracle setUseCount(final int value) {
+    public RogueMiracle setNKBEHFHLPEF(final int value) {
       bitField0_ |= 0x00000001;
-      useCount = value;
+      nKBEHFHLPEF = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  1 12
-     * </pre>
-     *
-     * <code>optional uint32 total_count = 4;</code>
-     * @return whether the totalCount field is set
+     * <code>optional uint32 MMFONFFPNJM = 4;</code>
+     * @return whether the mMFONFFPNJM field is set
      */
-    public boolean hasTotalCount() {
+    public boolean hasMMFONFFPNJM() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <pre>
-     *  1 12
-     * </pre>
-     *
-     * <code>optional uint32 total_count = 4;</code>
+     * <code>optional uint32 MMFONFFPNJM = 4;</code>
      * @return this
      */
-    public RogueMiracle clearTotalCount() {
+    public RogueMiracle clearMMFONFFPNJM() {
       bitField0_ &= ~0x00000002;
-      totalCount = 0;
+      mMFONFFPNJM = 0;
       return this;
     }
 
     /**
-     * <pre>
-     *  1 12
-     * </pre>
-     *
-     * <code>optional uint32 total_count = 4;</code>
-     * @return the totalCount
+     * <code>optional uint32 MMFONFFPNJM = 4;</code>
+     * @return the mMFONFFPNJM
      */
-    public int getTotalCount() {
-      return totalCount;
+    public int getMMFONFFPNJM() {
+      return mMFONFFPNJM;
     }
 
     /**
-     * <pre>
-     *  1 12
-     * </pre>
-     *
-     * <code>optional uint32 total_count = 4;</code>
-     * @param value the totalCount to set
+     * <code>optional uint32 MMFONFFPNJM = 4;</code>
+     * @param value the mMFONFFPNJM to set
      * @return this
      */
-    public RogueMiracle setTotalCount(final int value) {
+    public RogueMiracle setMMFONFFPNJM(final int value) {
       bitField0_ |= 0x00000002;
-      totalCount = value;
+      mMFONFFPNJM = value;
       return this;
     }
 
     /**
-     * <pre>
-     *  1 4
-     * </pre>
-     *
      * <code>optional uint32 miracle_id = 12;</code>
      * @return whether the miracleId field is set
      */
@@ -180,10 +152,6 @@ public final class RogueMiracleOuterClass {
     }
 
     /**
-     * <pre>
-     *  1 4
-     * </pre>
-     *
      * <code>optional uint32 miracle_id = 12;</code>
      * @return this
      */
@@ -194,10 +162,6 @@ public final class RogueMiracleOuterClass {
     }
 
     /**
-     * <pre>
-     *  1 4
-     * </pre>
-     *
      * <code>optional uint32 miracle_id = 12;</code>
      * @return the miracleId
      */
@@ -206,10 +170,6 @@ public final class RogueMiracleOuterClass {
     }
 
     /**
-     * <pre>
-     *  1 4
-     * </pre>
-     *
      * <code>optional uint32 miracle_id = 12;</code>
      * @param value the miracleId to set
      * @return this
@@ -221,39 +181,39 @@ public final class RogueMiracleOuterClass {
     }
 
     /**
-     * <code>repeated .RogueMiracle.EffectCountEntry effect_count = 10;</code>
-     * @return whether the effectCount field is set
+     * <code>repeated .RogueMiracle.KONAGCDHKKHEntry KONAGCDHKKH = 10;</code>
+     * @return whether the kONAGCDHKKH field is set
      */
-    public boolean hasEffectCount() {
+    public boolean hasKONAGCDHKKH() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>repeated .RogueMiracle.EffectCountEntry effect_count = 10;</code>
+     * <code>repeated .RogueMiracle.KONAGCDHKKHEntry KONAGCDHKKH = 10;</code>
      * @return this
      */
-    public RogueMiracle clearEffectCount() {
+    public RogueMiracle clearKONAGCDHKKH() {
       bitField0_ &= ~0x00000008;
-      effectCount.clear();
+      kONAGCDHKKH.clear();
       return this;
     }
 
     /**
-     * <code>repeated .RogueMiracle.EffectCountEntry effect_count = 10;</code>
+     * <code>repeated .RogueMiracle.KONAGCDHKKHEntry KONAGCDHKKH = 10;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
      *
-     * Use {@link #getMutableEffectCount()} if you want to modify it.
+     * Use {@link #getMutableKONAGCDHKKH()} if you want to modify it.
      *
      * @return internal storage object for reading
      */
-    public RepeatedMessage<EffectCountEntry> getEffectCount() {
-      return effectCount;
+    public RepeatedMessage<KONAGCDHKKHEntry> getKONAGCDHKKH() {
+      return kONAGCDHKKH;
     }
 
     /**
-     * <code>repeated .RogueMiracle.EffectCountEntry effect_count = 10;</code>
+     * <code>repeated .RogueMiracle.KONAGCDHKKHEntry KONAGCDHKKH = 10;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -261,30 +221,30 @@ public final class RogueMiracleOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public RepeatedMessage<EffectCountEntry> getMutableEffectCount() {
+    public RepeatedMessage<KONAGCDHKKHEntry> getMutableKONAGCDHKKH() {
       bitField0_ |= 0x00000008;
-      return effectCount;
+      return kONAGCDHKKH;
     }
 
     /**
-     * <code>repeated .RogueMiracle.EffectCountEntry effect_count = 10;</code>
-     * @param value the effectCount to add
+     * <code>repeated .RogueMiracle.KONAGCDHKKHEntry KONAGCDHKKH = 10;</code>
+     * @param value the kONAGCDHKKH to add
      * @return this
      */
-    public RogueMiracle addEffectCount(final EffectCountEntry value) {
+    public RogueMiracle addKONAGCDHKKH(final KONAGCDHKKHEntry value) {
       bitField0_ |= 0x00000008;
-      effectCount.add(value);
+      kONAGCDHKKH.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .RogueMiracle.EffectCountEntry effect_count = 10;</code>
-     * @param values the effectCount to add
+     * <code>repeated .RogueMiracle.KONAGCDHKKHEntry KONAGCDHKKH = 10;</code>
+     * @param values the kONAGCDHKKH to add
      * @return this
      */
-    public RogueMiracle addAllEffectCount(final EffectCountEntry... values) {
+    public RogueMiracle addAllKONAGCDHKKH(final KONAGCDHKKHEntry... values) {
       bitField0_ |= 0x00000008;
-      effectCount.addAll(values);
+      kONAGCDHKKH.addAll(values);
       return this;
     }
 
@@ -293,10 +253,10 @@ public final class RogueMiracleOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        useCount = other.useCount;
-        totalCount = other.totalCount;
+        nKBEHFHLPEF = other.nKBEHFHLPEF;
+        mMFONFFPNJM = other.mMFONFFPNJM;
         miracleId = other.miracleId;
-        effectCount.copyFrom(other.effectCount);
+        kONAGCDHKKH.copyFrom(other.kONAGCDHKKH);
       }
       return this;
     }
@@ -307,17 +267,17 @@ public final class RogueMiracleOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasUseCount()) {
-        setUseCount(other.useCount);
+      if (other.hasNKBEHFHLPEF()) {
+        setNKBEHFHLPEF(other.nKBEHFHLPEF);
       }
-      if (other.hasTotalCount()) {
-        setTotalCount(other.totalCount);
+      if (other.hasMMFONFFPNJM()) {
+        setMMFONFFPNJM(other.mMFONFFPNJM);
       }
       if (other.hasMiracleId()) {
         setMiracleId(other.miracleId);
       }
-      if (other.hasEffectCount()) {
-        getMutableEffectCount().addAll(other.effectCount);
+      if (other.hasKONAGCDHKKH()) {
+        getMutableKONAGCDHKKH().addAll(other.kONAGCDHKKH);
       }
       return this;
     }
@@ -329,10 +289,10 @@ public final class RogueMiracleOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      useCount = 0;
-      totalCount = 0;
+      nKBEHFHLPEF = 0;
+      mMFONFFPNJM = 0;
       miracleId = 0;
-      effectCount.clear();
+      kONAGCDHKKH.clear();
       return this;
     }
 
@@ -343,7 +303,7 @@ public final class RogueMiracleOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      effectCount.clearQuick();
+      kONAGCDHKKH.clearQuick();
       return this;
     }
 
@@ -357,30 +317,30 @@ public final class RogueMiracleOuterClass {
       }
       RogueMiracle other = (RogueMiracle) o;
       return bitField0_ == other.bitField0_
-        && (!hasUseCount() || useCount == other.useCount)
-        && (!hasTotalCount() || totalCount == other.totalCount)
+        && (!hasNKBEHFHLPEF() || nKBEHFHLPEF == other.nKBEHFHLPEF)
+        && (!hasMMFONFFPNJM() || mMFONFFPNJM == other.mMFONFFPNJM)
         && (!hasMiracleId() || miracleId == other.miracleId)
-        && (!hasEffectCount() || effectCount.equals(other.effectCount));
+        && (!hasKONAGCDHKKH() || kONAGCDHKKH.equals(other.kONAGCDHKKH));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(useCount);
+        output.writeUInt32NoTag(nKBEHFHLPEF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 32);
-        output.writeUInt32NoTag(totalCount);
+        output.writeUInt32NoTag(mMFONFFPNJM);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(miracleId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        for (int i = 0; i < effectCount.length(); i++) {
+        for (int i = 0; i < kONAGCDHKKH.length(); i++) {
           output.writeRawByte((byte) 82);
-          output.writeMessageNoTag(effectCount.get(i));
+          output.writeMessageNoTag(kONAGCDHKKH.get(i));
         }
       }
     }
@@ -389,16 +349,16 @@ public final class RogueMiracleOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(useCount);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(nKBEHFHLPEF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(totalCount);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mMFONFFPNJM);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(miracleId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += (1 * effectCount.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(effectCount);
+        size += (1 * kONAGCDHKKH.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(kONAGCDHKKH);
       }
       return size;
     }
@@ -411,8 +371,8 @@ public final class RogueMiracleOuterClass {
       while (true) {
         switch (tag) {
           case 8: {
-            // useCount
-            useCount = input.readUInt32();
+            // nKBEHFHLPEF
+            nKBEHFHLPEF = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 32) {
@@ -420,8 +380,8 @@ public final class RogueMiracleOuterClass {
             }
           }
           case 32: {
-            // totalCount
-            totalCount = input.readUInt32();
+            // mMFONFFPNJM
+            mMFONFFPNJM = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 96) {
@@ -438,8 +398,8 @@ public final class RogueMiracleOuterClass {
             }
           }
           case 82: {
-            // effectCount
-            tag = input.readRepeatedMessage(effectCount, tag);
+            // kONAGCDHKKH
+            tag = input.readRepeatedMessage(kONAGCDHKKH, tag);
             bitField0_ |= 0x00000008;
             if (tag != 0) {
               break;
@@ -463,16 +423,16 @@ public final class RogueMiracleOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.useCount, useCount);
+        output.writeUInt32(FieldNames.nKBEHFHLPEF, nKBEHFHLPEF);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.totalCount, totalCount);
+        output.writeUInt32(FieldNames.mMFONFFPNJM, mMFONFFPNJM);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.miracleId, miracleId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRepeatedMessage(FieldNames.effectCount, effectCount);
+        output.writeRepeatedMessage(FieldNames.kONAGCDHKKH, kONAGCDHKKH);
       }
       output.endObject();
     }
@@ -484,11 +444,10 @@ public final class RogueMiracleOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -309069880:
-          case -200869801: {
-            if (input.isAtField(FieldNames.useCount)) {
+          case -2066312081: {
+            if (input.isAtField(FieldNames.nKBEHFHLPEF)) {
               if (!input.trySkipNullValue()) {
-                useCount = input.readUInt32();
+                nKBEHFHLPEF = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -496,11 +455,10 @@ public final class RogueMiracleOuterClass {
             }
             break;
           }
-          case -731385813:
-          case -407761836: {
-            if (input.isAtField(FieldNames.totalCount)) {
+          case 1974288326: {
+            if (input.isAtField(FieldNames.mMFONFFPNJM)) {
               if (!input.trySkipNullValue()) {
-                totalCount = input.readUInt32();
+                mMFONFFPNJM = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -520,11 +478,10 @@ public final class RogueMiracleOuterClass {
             }
             break;
           }
-          case 1635252734:
-          case -56410911: {
-            if (input.isAtField(FieldNames.effectCount)) {
+          case -1329612143: {
+            if (input.isAtField(FieldNames.kONAGCDHKKH)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(effectCount);
+                input.readRepeatedMessage(kONAGCDHKKH);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -572,9 +529,9 @@ public final class RogueMiracleOuterClass {
     }
 
     /**
-     * Protobuf type {@code EffectCountEntry}
+     * Protobuf type {@code KONAGCDHKKHEntry}
      */
-    public static final class EffectCountEntry extends ProtoMessage<EffectCountEntry> implements Cloneable {
+    public static final class KONAGCDHKKHEntry extends ProtoMessage<KONAGCDHKKHEntry> implements Cloneable {
       private static final long serialVersionUID = 0L;
 
       /**
@@ -587,14 +544,14 @@ public final class RogueMiracleOuterClass {
        */
       private int value_;
 
-      private EffectCountEntry() {
+      private KONAGCDHKKHEntry() {
       }
 
       /**
-       * @return a new empty instance of {@code EffectCountEntry}
+       * @return a new empty instance of {@code KONAGCDHKKHEntry}
        */
-      public static EffectCountEntry newInstance() {
-        return new EffectCountEntry();
+      public static KONAGCDHKKHEntry newInstance() {
+        return new KONAGCDHKKHEntry();
       }
 
       /**
@@ -609,7 +566,7 @@ public final class RogueMiracleOuterClass {
        * <code>optional uint32 key = 1;</code>
        * @return this
        */
-      public EffectCountEntry clearKey() {
+      public KONAGCDHKKHEntry clearKey() {
         bitField0_ &= ~0x00000001;
         key = 0;
         return this;
@@ -628,7 +585,7 @@ public final class RogueMiracleOuterClass {
        * @param value the key to set
        * @return this
        */
-      public EffectCountEntry setKey(final int value) {
+      public KONAGCDHKKHEntry setKey(final int value) {
         bitField0_ |= 0x00000001;
         key = value;
         return this;
@@ -646,7 +603,7 @@ public final class RogueMiracleOuterClass {
        * <code>optional uint32 value = 2;</code>
        * @return this
        */
-      public EffectCountEntry clearValue() {
+      public KONAGCDHKKHEntry clearValue() {
         bitField0_ &= ~0x00000002;
         value_ = 0;
         return this;
@@ -665,14 +622,14 @@ public final class RogueMiracleOuterClass {
        * @param value the value_ to set
        * @return this
        */
-      public EffectCountEntry setValue(final int value) {
+      public KONAGCDHKKHEntry setValue(final int value) {
         bitField0_ |= 0x00000002;
         value_ = value;
         return this;
       }
 
       @Override
-      public EffectCountEntry copyFrom(final EffectCountEntry other) {
+      public KONAGCDHKKHEntry copyFrom(final KONAGCDHKKHEntry other) {
         cachedSize = other.cachedSize;
         if ((bitField0_ | other.bitField0_) != 0) {
           bitField0_ = other.bitField0_;
@@ -683,7 +640,7 @@ public final class RogueMiracleOuterClass {
       }
 
       @Override
-      public EffectCountEntry mergeFrom(final EffectCountEntry other) {
+      public KONAGCDHKKHEntry mergeFrom(final KONAGCDHKKHEntry other) {
         if (other.isEmpty()) {
           return this;
         }
@@ -698,7 +655,7 @@ public final class RogueMiracleOuterClass {
       }
 
       @Override
-      public EffectCountEntry clear() {
+      public KONAGCDHKKHEntry clear() {
         if (isEmpty()) {
           return this;
         }
@@ -710,7 +667,7 @@ public final class RogueMiracleOuterClass {
       }
 
       @Override
-      public EffectCountEntry clearQuick() {
+      public KONAGCDHKKHEntry clearQuick() {
         if (isEmpty()) {
           return this;
         }
@@ -724,10 +681,10 @@ public final class RogueMiracleOuterClass {
         if (o == this) {
           return true;
         }
-        if (!(o instanceof EffectCountEntry)) {
+        if (!(o instanceof KONAGCDHKKHEntry)) {
           return false;
         }
-        EffectCountEntry other = (EffectCountEntry) o;
+        KONAGCDHKKHEntry other = (KONAGCDHKKHEntry) o;
         return bitField0_ == other.bitField0_
           && (!hasKey() || key == other.key)
           && (!hasValue() || value_ == other.value_);
@@ -759,7 +716,7 @@ public final class RogueMiracleOuterClass {
 
       @Override
       @SuppressWarnings("fallthrough")
-      public EffectCountEntry mergeFrom(final ProtoSource input) throws IOException {
+      public KONAGCDHKKHEntry mergeFrom(final ProtoSource input) throws IOException {
         // Enabled Fall-Through Optimization (QuickBuffers)
         int tag = input.readTag();
         while (true) {
@@ -809,7 +766,7 @@ public final class RogueMiracleOuterClass {
       }
 
       @Override
-      public EffectCountEntry mergeFrom(final JsonSource input) throws IOException {
+      public KONAGCDHKKHEntry mergeFrom(final JsonSource input) throws IOException {
         if (!input.beginObject()) {
           return this;
         }
@@ -848,8 +805,8 @@ public final class RogueMiracleOuterClass {
       }
 
       @Override
-      public EffectCountEntry clone() {
-        return new EffectCountEntry().copyFrom(this);
+      public KONAGCDHKKHEntry clone() {
+        return new KONAGCDHKKHEntry().copyFrom(this);
       }
 
       @Override
@@ -857,32 +814,32 @@ public final class RogueMiracleOuterClass {
         return ((bitField0_) == 0);
       }
 
-      public static EffectCountEntry parseFrom(final byte[] data) throws
+      public static KONAGCDHKKHEntry parseFrom(final byte[] data) throws
           InvalidProtocolBufferException {
-        return ProtoMessage.mergeFrom(new EffectCountEntry(), data).checkInitialized();
+        return ProtoMessage.mergeFrom(new KONAGCDHKKHEntry(), data).checkInitialized();
       }
 
-      public static EffectCountEntry parseFrom(final ProtoSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new EffectCountEntry(), input).checkInitialized();
+      public static KONAGCDHKKHEntry parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new KONAGCDHKKHEntry(), input).checkInitialized();
       }
 
-      public static EffectCountEntry parseFrom(final JsonSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new EffectCountEntry(), input).checkInitialized();
+      public static KONAGCDHKKHEntry parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new KONAGCDHKKHEntry(), input).checkInitialized();
       }
 
       /**
-       * @return factory for creating EffectCountEntry messages
+       * @return factory for creating KONAGCDHKKHEntry messages
        */
-      public static MessageFactory<EffectCountEntry> getFactory() {
-        return EffectCountEntryFactory.INSTANCE;
+      public static MessageFactory<KONAGCDHKKHEntry> getFactory() {
+        return KONAGCDHKKHEntryFactory.INSTANCE;
       }
 
-      private enum EffectCountEntryFactory implements MessageFactory<EffectCountEntry> {
+      private enum KONAGCDHKKHEntryFactory implements MessageFactory<KONAGCDHKKHEntry> {
         INSTANCE;
 
         @Override
-        public EffectCountEntry create() {
-          return EffectCountEntry.newInstance();
+        public KONAGCDHKKHEntry create() {
+          return KONAGCDHKKHEntry.newInstance();
         }
       }
 
@@ -909,13 +866,13 @@ public final class RogueMiracleOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName useCount = FieldName.forField("useCount", "use_count");
+      static final FieldName nKBEHFHLPEF = FieldName.forField("NKBEHFHLPEF");
 
-      static final FieldName totalCount = FieldName.forField("totalCount", "total_count");
+      static final FieldName mMFONFFPNJM = FieldName.forField("MMFONFFPNJM");
 
       static final FieldName miracleId = FieldName.forField("miracleId", "miracle_id");
 
-      static final FieldName effectCount = FieldName.forField("effectCount", "effect_count");
+      static final FieldName kONAGCDHKKH = FieldName.forField("KONAGCDHKKH");
     }
   }
 }

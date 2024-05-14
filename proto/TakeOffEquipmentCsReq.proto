@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message TakeOffEquipmentCsReq {
-	uint32 base_avatar_id = 14;
-    uint32 dress_avatar_id = 8;
-}

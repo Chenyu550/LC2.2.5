@@ -255,6 +255,7 @@ public class ResourceLoader {
             
             // Check if we are missing group infos
             if (floor.getGroups().size() == 0) {
+                LunarCore.getLogger().warn("Floor " + floor.getFloorID() + " is missing group infos.");
                 missingGroupInfos = true;
             }
 
@@ -284,13 +285,8 @@ public class ResourceLoader {
             }
             
             // Get file
-            var name = LunarCore.getConfig().getResourceDir() + "/" + summonUnitExcel.getJsonPath();
-            File file = new File(name);
-            if (!file.exists())
-            {
-                LunarCore.getLogger().info("file not found: " + name);
-                continue;
-            }
+            File file = new File(LunarCore.getConfig().getResourceDir() + "/" + summonUnitExcel.getJsonPath());
+            if (!file.exists()) continue;
             
             try (FileReader reader = new FileReader(file)) {
                 SummonUnitInfo info = gson.fromJson(reader, SummonUnitInfo.class);
@@ -305,7 +301,7 @@ public class ResourceLoader {
         
         // Notify the server owner if we are missing any files
         if (count < GameData.getSummonUnitExcelMap().size()) {
-            LunarCore.getLogger().warn("Some summon unit configs are missing: " + count + "/" + GameData.getSummonUnitExcelMap().size() + ", please check your resources folder: {resources}/Config/ConfigSummonUnit. Character summon techniques may not work!");
+            LunarCore.getLogger().warn("Summon unit configs are missing, please check your resources folder: {resources}/Config/ConfigSummonUnit. Character summon techniques may not work!");
         }
         
         // Reset loaded count

@@ -26,7 +26,7 @@ public class GameServerPacketHandler {
             if (opcode == null || opcode.disabled() || opcode.value() <= 0) {
                 return;
             }
-
+            
             this.handlers.put(opcode.value(), handlerClass.getDeclaredConstructor().newInstance());
         } catch (Exception e) {
             e.printStackTrace();
@@ -46,10 +46,6 @@ public class GameServerPacketHandler {
 
     public void handle(GameSession session, int cmdId, byte[] data) {
         PacketHandler handler = this.handlers.get(cmdId);
-
-        if (cmdId != CmdId.PlayerHeartBeatCsReq && cmdId != CmdId.SceneEntityMoveCsReq) {
-            LunarCore.getLogger().info("Received a packet " + CmdIdUtils.getCmdIdName(cmdId));
-        }
 
         if (handler != null) {
             // Check cooldown to prevent packet spam
@@ -80,7 +76,7 @@ public class GameServerPacketHandler {
                         return;
                     }
                 }
-
+                
                 // Handle packet
                 handler.handle(session, data);
             } catch (Exception ex) {

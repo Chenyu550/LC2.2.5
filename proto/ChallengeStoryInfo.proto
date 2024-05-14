@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-import "ChallengeStoryBuffInfo.proto";
-
-message ChallengeStoryInfo {
-    ChallengeStoryBuffInfo cur_story_buffs = 5;
-}

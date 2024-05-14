@@ -20,11 +20,6 @@ public final class SearchPlayerCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional bool DNLHBKKENHJ = 5;</code>
-     */
-    private boolean dNLHBKKENHJ;
-
-    /**
      * <code>repeated uint32 search_uid_list = 1;</code>
      */
     private final RepeatedInt searchUidList = RepeatedInt.newEmptyInstance();
@@ -40,48 +35,11 @@ public final class SearchPlayerCsReqOuterClass {
     }
 
     /**
-     * <code>optional bool DNLHBKKENHJ = 5;</code>
-     * @return whether the dNLHBKKENHJ field is set
-     */
-    public boolean hasDNLHBKKENHJ() {
-      return (bitField0_ & 0x00000001) != 0;
-    }
-
-    /**
-     * <code>optional bool DNLHBKKENHJ = 5;</code>
-     * @return this
-     */
-    public SearchPlayerCsReq clearDNLHBKKENHJ() {
-      bitField0_ &= ~0x00000001;
-      dNLHBKKENHJ = false;
-      return this;
-    }
-
-    /**
-     * <code>optional bool DNLHBKKENHJ = 5;</code>
-     * @return the dNLHBKKENHJ
-     */
-    public boolean getDNLHBKKENHJ() {
-      return dNLHBKKENHJ;
-    }
-
-    /**
-     * <code>optional bool DNLHBKKENHJ = 5;</code>
-     * @param value the dNLHBKKENHJ to set
-     * @return this
-     */
-    public SearchPlayerCsReq setDNLHBKKENHJ(final boolean value) {
-      bitField0_ |= 0x00000001;
-      dNLHBKKENHJ = value;
-      return this;
-    }
-
-    /**
      * <code>repeated uint32 search_uid_list = 1;</code>
      * @return whether the searchUidList field is set
      */
     public boolean hasSearchUidList() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
@@ -89,7 +47,7 @@ public final class SearchPlayerCsReqOuterClass {
      * @return this
      */
     public SearchPlayerCsReq clearSearchUidList() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       searchUidList.clear();
       return this;
     }
@@ -118,7 +76,7 @@ public final class SearchPlayerCsReqOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedInt getMutableSearchUidList() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       return searchUidList;
     }
 
@@ -128,7 +86,7 @@ public final class SearchPlayerCsReqOuterClass {
      * @return this
      */
     public SearchPlayerCsReq addSearchUidList(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       searchUidList.add(value);
       return this;
     }
@@ -139,7 +97,7 @@ public final class SearchPlayerCsReqOuterClass {
      * @return this
      */
     public SearchPlayerCsReq addAllSearchUidList(final int... values) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       searchUidList.addAll(values);
       return this;
     }
@@ -149,7 +107,6 @@ public final class SearchPlayerCsReqOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        dNLHBKKENHJ = other.dNLHBKKENHJ;
         searchUidList.copyFrom(other.searchUidList);
       }
       return this;
@@ -161,9 +118,6 @@ public final class SearchPlayerCsReqOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasDNLHBKKENHJ()) {
-        setDNLHBKKENHJ(other.dNLHBKKENHJ);
-      }
       if (other.hasSearchUidList()) {
         getMutableSearchUidList().addAll(other.searchUidList);
       }
@@ -177,7 +131,6 @@ public final class SearchPlayerCsReqOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      dNLHBKKENHJ = false;
       searchUidList.clear();
       return this;
     }
@@ -203,17 +156,12 @@ public final class SearchPlayerCsReqOuterClass {
       }
       SearchPlayerCsReq other = (SearchPlayerCsReq) o;
       return bitField0_ == other.bitField0_
-        && (!hasDNLHBKKENHJ() || dNLHBKKENHJ == other.dNLHBKKENHJ)
         && (!hasSearchUidList() || searchUidList.equals(other.searchUidList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeBoolNoTag(dNLHBKKENHJ);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < searchUidList.length(); i++) {
           output.writeRawByte((byte) 8);
           output.writeUInt32NoTag(searchUidList.array()[i]);
@@ -225,9 +173,6 @@ public final class SearchPlayerCsReqOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 2;
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         size += (1 * searchUidList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(searchUidList);
       }
       return size;
@@ -240,19 +185,10 @@ public final class SearchPlayerCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
-            // dNLHBKKENHJ
-            dNLHBKKENHJ = input.readBool();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 10) {
-              break;
-            }
-          }
           case 10: {
             // searchUidList [packed=true]
             input.readPackedUInt32(searchUidList, tag);
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -271,7 +207,7 @@ public final class SearchPlayerCsReqOuterClass {
           case 8: {
             // searchUidList [packed=false]
             tag = input.readRepeatedUInt32(searchUidList, tag);
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000001;
             break;
           }
         }
@@ -282,9 +218,6 @@ public final class SearchPlayerCsReqOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeBool(FieldNames.dNLHBKKENHJ, dNLHBKKENHJ);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRepeatedUInt32(FieldNames.searchUidList, searchUidList);
       }
       output.endObject();
@@ -297,23 +230,12 @@ public final class SearchPlayerCsReqOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1583198535: {
-            if (input.isAtField(FieldNames.dNLHBKKENHJ)) {
-              if (!input.trySkipNullValue()) {
-                dNLHBKKENHJ = input.readBool();
-                bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case 881018438:
           case -85426204: {
             if (input.isAtField(FieldNames.searchUidList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedUInt32(searchUidList);
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000001;
               }
             } else {
               input.skipUnknownField();
@@ -373,8 +295,6 @@ public final class SearchPlayerCsReqOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName dNLHBKKENHJ = FieldName.forField("DNLHBKKENHJ");
-
       static final FieldName searchUidList = FieldName.forField("searchUidList", "search_uid_list");
     }
   }

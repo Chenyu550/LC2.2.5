@@ -26,11 +26,7 @@ public final class PVEBattleResultCsReqOuterClass {
     private int stageId;
 
     /**
-     * <pre>
-     *  5 10
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 4;</code>
+     * <code>optional uint32 cost_time = 5;</code>
      */
     private int costTime;
 
@@ -40,7 +36,7 @@ public final class PVEBattleResultCsReqOuterClass {
     private int battleId;
 
     /**
-     * <code>optional uint32 client_res_version = 9;</code>
+     * <code>optional uint32 client_res_version = 10;</code>
      */
     private int clientResVersion;
 
@@ -117,11 +113,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  5 10
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 4;</code>
+     * <code>optional uint32 cost_time = 5;</code>
      * @return whether the costTime field is set
      */
     public boolean hasCostTime() {
@@ -129,11 +121,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  5 10
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 4;</code>
+     * <code>optional uint32 cost_time = 5;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearCostTime() {
@@ -143,11 +131,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  5 10
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 4;</code>
+     * <code>optional uint32 cost_time = 5;</code>
      * @return the costTime
      */
     public int getCostTime() {
@@ -155,11 +139,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  5 10
-     * </pre>
-     *
-     * <code>optional uint32 cost_time = 4;</code>
+     * <code>optional uint32 cost_time = 5;</code>
      * @param value the costTime to set
      * @return this
      */
@@ -207,7 +187,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_res_version = 9;</code>
+     * <code>optional uint32 client_res_version = 10;</code>
      * @return whether the clientResVersion field is set
      */
     public boolean hasClientResVersion() {
@@ -215,7 +195,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_res_version = 9;</code>
+     * <code>optional uint32 client_res_version = 10;</code>
      * @return this
      */
     public PVEBattleResultCsReq clearClientResVersion() {
@@ -225,7 +205,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_res_version = 9;</code>
+     * <code>optional uint32 client_res_version = 10;</code>
      * @return the clientResVersion
      */
     public int getClientResVersion() {
@@ -233,7 +213,7 @@ public final class PVEBattleResultCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 client_res_version = 9;</code>
+     * <code>optional uint32 client_res_version = 10;</code>
      * @param value the clientResVersion to set
      * @return this
      */
@@ -661,7 +641,7 @@ public final class PVEBattleResultCsReqOuterClass {
         output.writeUInt32NoTag(stageId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(costTime);
       }
       if ((bitField0_ & 0x00000004) != 0) {
@@ -669,7 +649,7 @@ public final class PVEBattleResultCsReqOuterClass {
         output.writeUInt32NoTag(battleId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 72);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(clientResVersion);
       }
       if ((bitField0_ & 0x00000010) != 0) {
@@ -741,11 +721,11 @@ public final class PVEBattleResultCsReqOuterClass {
             stageId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 40) {
               break;
             }
           }
-          case 32: {
+          case 40: {
             // costTime
             costTime = input.readUInt32();
             bitField0_ |= 0x00000002;
@@ -759,11 +739,11 @@ public final class PVEBattleResultCsReqOuterClass {
             battleId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 72) {
+            if (tag != 80) {
               break;
             }
           }
-          case 72: {
+          case 80: {
             // clientResVersion
             clientResVersion = input.readUInt32();
             bitField0_ |= 0x00000008;

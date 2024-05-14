@@ -6,13 +6,13 @@ import java.time.ZoneOffset;
 import emu.lunarcore.util.Position;
 
 public class GameConstants {
-    public static String VERSION = "XeonSucks_SR_2.1.5";
+    public static String VERSION = "2.2.0";
     
     public static final ZoneOffset CURRENT_ZONEOFFSET = ZoneOffset.systemDefault().getRules().getOffset(Instant.now());
     public static final int CURRENT_TIMEZONE = CURRENT_ZONEOFFSET.getTotalSeconds() / 3600;
 
     // Game
-    public static final String DEFAULT_NAME = "Trailblazer";
+    public static final String DEFAULT_NAME = "A Nameless";
     public static final int[] DEFAULT_HEAD_ICONS = {208001, 208002};
     public static final int TRAILBLAZER_AVATAR_ID = 8001;
     public static final int MAX_TRAILBLAZER_LEVEL = 70;
@@ -35,7 +35,7 @@ public class GameConstants {
     public static final int RELIC_REMAINS_ID = 235;
     
     public static final int INVENTORY_MAX_EQUIPMENT = 1500;
-    public static final int INVENTORY_MAX_RELIC = 1500;
+    public static final int INVENTORY_MAX_RELIC = 2000;
     public static final int INVENTORY_MAX_MATERIAL = 2000;
     
     // Start position

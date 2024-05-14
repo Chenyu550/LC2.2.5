@@ -10,7 +10,6 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
-import us.hebi.quickbuf.RepeatedEnum;
 import us.hebi.quickbuf.RepeatedMessage;
 
 public final class GetBagScRspOuterClass {
@@ -26,16 +25,6 @@ public final class GetBagScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>repeated .TurnFoodSwitch turn_food_switch = 10;</code>
-     */
-    private final RepeatedEnum<TurnFoodSwitchOuterClass.TurnFoodSwitch> turnFoodSwitch = RepeatedEnum.newEmptyInstance(TurnFoodSwitchOuterClass.TurnFoodSwitch.converter());
-
-    /**
-     * <code>repeated .PileItem pile_item_list = 1;</code>
-     */
-    private final RepeatedMessage<PileItemOuterClass.PileItem> pileItemList = RepeatedMessage.newEmptyInstance(PileItemOuterClass.PileItem.getFactory());
-
-    /**
      * <code>repeated .Material material_list = 7;</code>
      */
     private final RepeatedMessage<MaterialOuterClass.Material> materialList = RepeatedMessage.newEmptyInstance(MaterialOuterClass.Material.getFactory());
@@ -44,11 +33,6 @@ public final class GetBagScRspOuterClass {
      * <code>repeated .Relic relic_list = 8;</code>
      */
     private final RepeatedMessage<RelicOuterClass.Relic> relicList = RepeatedMessage.newEmptyInstance(RelicOuterClass.Relic.getFactory());
-
-    /**
-     * <code>repeated .WaitDelResource wait_del_resource_list = 12;</code>
-     */
-    private final RepeatedMessage<WaitDelResourceOuterClass.WaitDelResource> waitDelResourceList = RepeatedMessage.newEmptyInstance(WaitDelResourceOuterClass.WaitDelResource.getFactory());
 
     /**
      * <code>repeated .Equipment equipment_list = 15;</code>
@@ -103,148 +87,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TurnFoodSwitch turn_food_switch = 10;</code>
-     * @return whether the turnFoodSwitch field is set
-     */
-    public boolean hasTurnFoodSwitch() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>repeated .TurnFoodSwitch turn_food_switch = 10;</code>
-     * @return this
-     */
-    public GetBagScRsp clearTurnFoodSwitch() {
-      bitField0_ &= ~0x00000002;
-      turnFoodSwitch.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .TurnFoodSwitch turn_food_switch = 10;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableTurnFoodSwitch()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedEnum<TurnFoodSwitchOuterClass.TurnFoodSwitch> getTurnFoodSwitch() {
-      return turnFoodSwitch;
-    }
-
-    /**
-     * <code>repeated .TurnFoodSwitch turn_food_switch = 10;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedEnum<TurnFoodSwitchOuterClass.TurnFoodSwitch> getMutableTurnFoodSwitch() {
-      bitField0_ |= 0x00000002;
-      return turnFoodSwitch;
-    }
-
-    /**
-     * <code>repeated .TurnFoodSwitch turn_food_switch = 10;</code>
-     * @param value the turnFoodSwitch to add
-     * @return this
-     */
-    public GetBagScRsp addTurnFoodSwitch(final TurnFoodSwitchOuterClass.TurnFoodSwitch value) {
-      bitField0_ |= 0x00000002;
-      turnFoodSwitch.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .TurnFoodSwitch turn_food_switch = 10;</code>
-     * @param values the turnFoodSwitch to add
-     * @return this
-     */
-    public GetBagScRsp addAllTurnFoodSwitch(
-        final TurnFoodSwitchOuterClass.TurnFoodSwitch... values) {
-      bitField0_ |= 0x00000002;
-      turnFoodSwitch.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated .PileItem pile_item_list = 1;</code>
-     * @return whether the pileItemList field is set
-     */
-    public boolean hasPileItemList() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>repeated .PileItem pile_item_list = 1;</code>
-     * @return this
-     */
-    public GetBagScRsp clearPileItemList() {
-      bitField0_ &= ~0x00000004;
-      pileItemList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .PileItem pile_item_list = 1;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutablePileItemList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<PileItemOuterClass.PileItem> getPileItemList() {
-      return pileItemList;
-    }
-
-    /**
-     * <code>repeated .PileItem pile_item_list = 1;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<PileItemOuterClass.PileItem> getMutablePileItemList() {
-      bitField0_ |= 0x00000004;
-      return pileItemList;
-    }
-
-    /**
-     * <code>repeated .PileItem pile_item_list = 1;</code>
-     * @param value the pileItemList to add
-     * @return this
-     */
-    public GetBagScRsp addPileItemList(final PileItemOuterClass.PileItem value) {
-      bitField0_ |= 0x00000004;
-      pileItemList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .PileItem pile_item_list = 1;</code>
-     * @param values the pileItemList to add
-     * @return this
-     */
-    public GetBagScRsp addAllPileItemList(final PileItemOuterClass.PileItem... values) {
-      bitField0_ |= 0x00000004;
-      pileItemList.addAll(values);
-      return this;
-    }
-
-    /**
      * <code>repeated .Material material_list = 7;</code>
      * @return whether the materialList field is set
      */
     public boolean hasMaterialList() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
@@ -252,7 +99,7 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp clearMaterialList() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000002;
       materialList.clear();
       return this;
     }
@@ -281,7 +128,7 @@ public final class GetBagScRspOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<MaterialOuterClass.Material> getMutableMaterialList() {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000002;
       return materialList;
     }
 
@@ -291,7 +138,7 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp addMaterialList(final MaterialOuterClass.Material value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000002;
       materialList.add(value);
       return this;
     }
@@ -302,7 +149,7 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp addAllMaterialList(final MaterialOuterClass.Material... values) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000002;
       materialList.addAll(values);
       return this;
     }
@@ -312,7 +159,7 @@ public final class GetBagScRspOuterClass {
      * @return whether the relicList field is set
      */
     public boolean hasRelicList() {
-      return (bitField0_ & 0x00000010) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
@@ -320,7 +167,7 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp clearRelicList() {
-      bitField0_ &= ~0x00000010;
+      bitField0_ &= ~0x00000004;
       relicList.clear();
       return this;
     }
@@ -349,7 +196,7 @@ public final class GetBagScRspOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<RelicOuterClass.Relic> getMutableRelicList() {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000004;
       return relicList;
     }
 
@@ -359,7 +206,7 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp addRelicList(final RelicOuterClass.Relic value) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000004;
       relicList.add(value);
       return this;
     }
@@ -370,79 +217,8 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp addAllRelicList(final RelicOuterClass.Relic... values) {
-      bitField0_ |= 0x00000010;
+      bitField0_ |= 0x00000004;
       relicList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated .WaitDelResource wait_del_resource_list = 12;</code>
-     * @return whether the waitDelResourceList field is set
-     */
-    public boolean hasWaitDelResourceList() {
-      return (bitField0_ & 0x00000020) != 0;
-    }
-
-    /**
-     * <code>repeated .WaitDelResource wait_del_resource_list = 12;</code>
-     * @return this
-     */
-    public GetBagScRsp clearWaitDelResourceList() {
-      bitField0_ &= ~0x00000020;
-      waitDelResourceList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .WaitDelResource wait_del_resource_list = 12;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableWaitDelResourceList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<WaitDelResourceOuterClass.WaitDelResource> getWaitDelResourceList() {
-      return waitDelResourceList;
-    }
-
-    /**
-     * <code>repeated .WaitDelResource wait_del_resource_list = 12;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<WaitDelResourceOuterClass.WaitDelResource> getMutableWaitDelResourceList(
-        ) {
-      bitField0_ |= 0x00000020;
-      return waitDelResourceList;
-    }
-
-    /**
-     * <code>repeated .WaitDelResource wait_del_resource_list = 12;</code>
-     * @param value the waitDelResourceList to add
-     * @return this
-     */
-    public GetBagScRsp addWaitDelResourceList(
-        final WaitDelResourceOuterClass.WaitDelResource value) {
-      bitField0_ |= 0x00000020;
-      waitDelResourceList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .WaitDelResource wait_del_resource_list = 12;</code>
-     * @param values the waitDelResourceList to add
-     * @return this
-     */
-    public GetBagScRsp addAllWaitDelResourceList(
-        final WaitDelResourceOuterClass.WaitDelResource... values) {
-      bitField0_ |= 0x00000020;
-      waitDelResourceList.addAll(values);
       return this;
     }
 
@@ -451,7 +227,7 @@ public final class GetBagScRspOuterClass {
      * @return whether the equipmentList field is set
      */
     public boolean hasEquipmentList() {
-      return (bitField0_ & 0x00000040) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
@@ -459,7 +235,7 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp clearEquipmentList() {
-      bitField0_ &= ~0x00000040;
+      bitField0_ &= ~0x00000008;
       equipmentList.clear();
       return this;
     }
@@ -488,7 +264,7 @@ public final class GetBagScRspOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<EquipmentOuterClass.Equipment> getMutableEquipmentList() {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000008;
       return equipmentList;
     }
 
@@ -498,7 +274,7 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp addEquipmentList(final EquipmentOuterClass.Equipment value) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000008;
       equipmentList.add(value);
       return this;
     }
@@ -509,7 +285,7 @@ public final class GetBagScRspOuterClass {
      * @return this
      */
     public GetBagScRsp addAllEquipmentList(final EquipmentOuterClass.Equipment... values) {
-      bitField0_ |= 0x00000040;
+      bitField0_ |= 0x00000008;
       equipmentList.addAll(values);
       return this;
     }
@@ -520,11 +296,8 @@ public final class GetBagScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        turnFoodSwitch.copyFrom(other.turnFoodSwitch);
-        pileItemList.copyFrom(other.pileItemList);
         materialList.copyFrom(other.materialList);
         relicList.copyFrom(other.relicList);
-        waitDelResourceList.copyFrom(other.waitDelResourceList);
         equipmentList.copyFrom(other.equipmentList);
       }
       return this;
@@ -539,20 +312,11 @@ public final class GetBagScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasTurnFoodSwitch()) {
-        getMutableTurnFoodSwitch().addAll(other.turnFoodSwitch);
-      }
-      if (other.hasPileItemList()) {
-        getMutablePileItemList().addAll(other.pileItemList);
-      }
       if (other.hasMaterialList()) {
         getMutableMaterialList().addAll(other.materialList);
       }
       if (other.hasRelicList()) {
         getMutableRelicList().addAll(other.relicList);
-      }
-      if (other.hasWaitDelResourceList()) {
-        getMutableWaitDelResourceList().addAll(other.waitDelResourceList);
       }
       if (other.hasEquipmentList()) {
         getMutableEquipmentList().addAll(other.equipmentList);
@@ -568,11 +332,8 @@ public final class GetBagScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      turnFoodSwitch.clear();
-      pileItemList.clear();
       materialList.clear();
       relicList.clear();
-      waitDelResourceList.clear();
       equipmentList.clear();
       return this;
     }
@@ -584,11 +345,8 @@ public final class GetBagScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      turnFoodSwitch.clear();
-      pileItemList.clearQuick();
       materialList.clearQuick();
       relicList.clearQuick();
-      waitDelResourceList.clearQuick();
       equipmentList.clearQuick();
       return this;
     }
@@ -604,11 +362,8 @@ public final class GetBagScRspOuterClass {
       GetBagScRsp other = (GetBagScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasTurnFoodSwitch() || turnFoodSwitch.equals(other.turnFoodSwitch))
-        && (!hasPileItemList() || pileItemList.equals(other.pileItemList))
         && (!hasMaterialList() || materialList.equals(other.materialList))
         && (!hasRelicList() || relicList.equals(other.relicList))
-        && (!hasWaitDelResourceList() || waitDelResourceList.equals(other.waitDelResourceList))
         && (!hasEquipmentList() || equipmentList.equals(other.equipmentList));
     }
 
@@ -619,36 +374,18 @@ public final class GetBagScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < turnFoodSwitch.length(); i++) {
-          output.writeRawByte((byte) 80);
-          output.writeEnumNoTag(turnFoodSwitch.array()[i]);
-        }
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < pileItemList.length(); i++) {
-          output.writeRawByte((byte) 10);
-          output.writeMessageNoTag(pileItemList.get(i));
-        }
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < materialList.length(); i++) {
           output.writeRawByte((byte) 58);
           output.writeMessageNoTag(materialList.get(i));
         }
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < relicList.length(); i++) {
           output.writeRawByte((byte) 66);
           output.writeMessageNoTag(relicList.get(i));
         }
       }
-      if ((bitField0_ & 0x00000020) != 0) {
-        for (int i = 0; i < waitDelResourceList.length(); i++) {
-          output.writeRawByte((byte) 98);
-          output.writeMessageNoTag(waitDelResourceList.get(i));
-        }
-      }
-      if ((bitField0_ & 0x00000040) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < equipmentList.length(); i++) {
           output.writeRawByte((byte) 122);
           output.writeMessageNoTag(equipmentList.get(i));
@@ -663,21 +400,12 @@ public final class GetBagScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * turnFoodSwitch.length()) + ProtoSink.computeRepeatedEnumSizeNoTag(turnFoodSwitch);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * pileItemList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(pileItemList);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * materialList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(materialList);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         size += (1 * relicList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(relicList);
       }
-      if ((bitField0_ & 0x00000020) != 0) {
-        size += (1 * waitDelResourceList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(waitDelResourceList);
-      }
-      if ((bitField0_ & 0x00000040) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * equipmentList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(equipmentList);
       }
       return size;
@@ -695,23 +423,6 @@ public final class GetBagScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 82) {
-              break;
-            }
-          }
-          case 82: {
-            // turnFoodSwitch [packed=true]
-            input.readPackedEnum(turnFoodSwitch, tag);
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 10) {
-              break;
-            }
-          }
-          case 10: {
-            // pileItemList
-            tag = input.readRepeatedMessage(pileItemList, tag);
-            bitField0_ |= 0x00000004;
             if (tag != 58) {
               break;
             }
@@ -719,7 +430,7 @@ public final class GetBagScRspOuterClass {
           case 58: {
             // materialList
             tag = input.readRepeatedMessage(materialList, tag);
-            bitField0_ |= 0x00000008;
+            bitField0_ |= 0x00000002;
             if (tag != 66) {
               break;
             }
@@ -727,15 +438,7 @@ public final class GetBagScRspOuterClass {
           case 66: {
             // relicList
             tag = input.readRepeatedMessage(relicList, tag);
-            bitField0_ |= 0x00000010;
-            if (tag != 98) {
-              break;
-            }
-          }
-          case 98: {
-            // waitDelResourceList
-            tag = input.readRepeatedMessage(waitDelResourceList, tag);
-            bitField0_ |= 0x00000020;
+            bitField0_ |= 0x00000004;
             if (tag != 122) {
               break;
             }
@@ -743,7 +446,7 @@ public final class GetBagScRspOuterClass {
           case 122: {
             // equipmentList
             tag = input.readRepeatedMessage(equipmentList, tag);
-            bitField0_ |= 0x00000040;
+            bitField0_ |= 0x00000008;
             if (tag != 0) {
               break;
             }
@@ -758,12 +461,6 @@ public final class GetBagScRspOuterClass {
             tag = input.readTag();
             break;
           }
-          case 80: {
-            // turnFoodSwitch [packed=false]
-            tag = input.readRepeatedEnum(turnFoodSwitch, tag);
-            bitField0_ |= 0x00000002;
-            break;
-          }
         }
       }
     }
@@ -775,21 +472,12 @@ public final class GetBagScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedEnum(FieldNames.turnFoodSwitch, turnFoodSwitch);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.pileItemList, pileItemList);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedMessage(FieldNames.materialList, materialList);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRepeatedMessage(FieldNames.relicList, relicList);
       }
-      if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRepeatedMessage(FieldNames.waitDelResourceList, waitDelResourceList);
-      }
-      if ((bitField0_ & 0x00000040) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedMessage(FieldNames.equipmentList, equipmentList);
       }
       output.endObject();
@@ -813,36 +501,12 @@ public final class GetBagScRspOuterClass {
             }
             break;
           }
-          case 544544143:
-          case -1134449293: {
-            if (input.isAtField(FieldNames.turnFoodSwitch)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedEnum(turnFoodSwitch, TurnFoodSwitchOuterClass.TurnFoodSwitch.converter());
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1200058787:
-          case -913307779: {
-            if (input.isAtField(FieldNames.pileItemList)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(pileItemList);
-                bitField0_ |= 0x00000004;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case -2115854747:
           case -1149360970: {
             if (input.isAtField(FieldNames.materialList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(materialList);
-                bitField0_ |= 0x00000008;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -854,19 +518,7 @@ public final class GetBagScRspOuterClass {
             if (input.isAtField(FieldNames.relicList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(relicList);
-                bitField0_ |= 0x00000010;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -299057342:
-          case -402862927: {
-            if (input.isAtField(FieldNames.waitDelResourceList)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(waitDelResourceList);
-                bitField0_ |= 0x00000020;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -878,7 +530,7 @@ public final class GetBagScRspOuterClass {
             if (input.isAtField(FieldNames.equipmentList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(equipmentList);
-                bitField0_ |= 0x00000040;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -939,15 +591,9 @@ public final class GetBagScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName turnFoodSwitch = FieldName.forField("turnFoodSwitch", "turn_food_switch");
-
-      static final FieldName pileItemList = FieldName.forField("pileItemList", "pile_item_list");
-
       static final FieldName materialList = FieldName.forField("materialList", "material_list");
 
       static final FieldName relicList = FieldName.forField("relicList", "relic_list");
-
-      static final FieldName waitDelResourceList = FieldName.forField("waitDelResourceList", "wait_del_resource_list");
 
       static final FieldName equipmentList = FieldName.forField("equipmentList", "equipment_list");
     }

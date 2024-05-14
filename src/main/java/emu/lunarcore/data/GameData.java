@@ -42,7 +42,6 @@ public class GameData {
     @Getter private static Int2ObjectMap<TextJoinExcel> textJoinExcelMap = new Int2ObjectLinkedOpenHashMap<>();
     @Getter private static Int2ObjectMap<ChatBubbleExcel> chatBubbleExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<PhoneThemeExcel> phoneThemeExcelMap = new Int2ObjectOpenHashMap<>();
-    @Getter private static Int2ObjectMap<MainMissionExcel> mainMissionExcelMap = new Int2ObjectOpenHashMap<>();
 
     @Getter private static Int2ObjectMap<ChallengeGroupExcel> challengeGroupExcelMap = new Int2ObjectOpenHashMap<>();
     @Getter private static Int2ObjectMap<ChallengeExcel> challengeExcelMap = new Int2ObjectOpenHashMap<>();
@@ -210,9 +209,5 @@ public class GameData {
     
     public static RogueBuffExcel getRogueBuffExcel(int rogueBuffId, int level) {
         return rogueBuffExcelMap.get((rogueBuffId << 4) + level);
-    }
-
-    public static Int2ObjectMap<MainMissionExcel> getAllMainMissionExcel() {
-        return mainMissionExcelMap;
     }
 }

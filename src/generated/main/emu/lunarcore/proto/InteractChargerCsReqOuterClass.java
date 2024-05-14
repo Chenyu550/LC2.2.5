@@ -19,10 +19,6 @@ public final class InteractChargerCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     *  obf: GLOGIAFNKHA
-     * </pre>
-     *
      * <code>optional .ChargerInfo charger_info = 7;</code>
      */
     private final ChargerInfoOuterClass.ChargerInfo chargerInfo = ChargerInfoOuterClass.ChargerInfo.newInstance();
@@ -38,10 +34,6 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  obf: GLOGIAFNKHA
-     * </pre>
-     *
      * <code>optional .ChargerInfo charger_info = 7;</code>
      * @return whether the chargerInfo field is set
      */
@@ -50,10 +42,6 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  obf: GLOGIAFNKHA
-     * </pre>
-     *
      * <code>optional .ChargerInfo charger_info = 7;</code>
      * @return this
      */
@@ -64,10 +52,6 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  obf: GLOGIAFNKHA
-     * </pre>
-     *
      * <code>optional .ChargerInfo charger_info = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -82,10 +66,6 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  obf: GLOGIAFNKHA
-     * </pre>
-     *
      * <code>optional .ChargerInfo charger_info = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -100,10 +80,6 @@ public final class InteractChargerCsReqOuterClass {
     }
 
     /**
-     * <pre>
-     *  obf: GLOGIAFNKHA
-     * </pre>
-     *
      * <code>optional .ChargerInfo charger_info = 7;</code>
      * @param value the chargerInfo to set
      * @return this

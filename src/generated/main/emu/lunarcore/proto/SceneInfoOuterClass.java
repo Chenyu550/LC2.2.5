@@ -12,6 +12,7 @@ import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
 import us.hebi.quickbuf.RepeatedInt;
 import us.hebi.quickbuf.RepeatedMessage;
+import us.hebi.quickbuf.Utf8String;
 
 public final class SceneInfoOuterClass {
   /**
@@ -26,9 +27,9 @@ public final class SceneInfoOuterClass {
     private int gameModeType;
 
     /**
-     * <code>optional uint32 world_id = 2;</code>
+     * <code>optional uint32 leader_entity_id = 2;</code>
      */
-    private int worldId;
+    private int leaderEntityId;
 
     /**
      * <code>optional uint32 plane_id = 5;</code>
@@ -46,9 +47,9 @@ public final class SceneInfoOuterClass {
     private int floorId;
 
     /**
-     * <code>optional uint32 leader_entity_id = 12;</code>
+     * <code>optional uint32 world_id = 12;</code>
      */
-    private int leaderEntityId;
+    private int worldId;
 
     /**
      * <code>optional uint32 entry_id = 15;</code>
@@ -74,6 +75,11 @@ public final class SceneInfoOuterClass {
      * <code>repeated .SceneEntityGroupInfo entity_group_list = 497;</code>
      */
     private final RepeatedMessage<SceneEntityGroupInfoOuterClass.SceneEntityGroupInfo> entityGroupList = RepeatedMessage.newEmptyInstance(SceneEntityGroupInfoOuterClass.SceneEntityGroupInfo.getFactory());
+
+    /**
+     * <code>repeated .SceneInfo.ExtraDataEntry extra_data = 1331;</code>
+     */
+    private final RepeatedMessage<ExtraDataEntry> extraData = RepeatedMessage.newEmptyInstance(ExtraDataEntry.getFactory());
 
     /**
      * <code>repeated .SceneGroupState group_state_list = 1768;</code>
@@ -128,39 +134,39 @@ public final class SceneInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 world_id = 2;</code>
-     * @return whether the worldId field is set
+     * <code>optional uint32 leader_entity_id = 2;</code>
+     * @return whether the leaderEntityId field is set
      */
-    public boolean hasWorldId() {
+    public boolean hasLeaderEntityId() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 world_id = 2;</code>
+     * <code>optional uint32 leader_entity_id = 2;</code>
      * @return this
      */
-    public SceneInfo clearWorldId() {
+    public SceneInfo clearLeaderEntityId() {
       bitField0_ &= ~0x00000002;
-      worldId = 0;
+      leaderEntityId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 world_id = 2;</code>
-     * @return the worldId
+     * <code>optional uint32 leader_entity_id = 2;</code>
+     * @return the leaderEntityId
      */
-    public int getWorldId() {
-      return worldId;
+    public int getLeaderEntityId() {
+      return leaderEntityId;
     }
 
     /**
-     * <code>optional uint32 world_id = 2;</code>
-     * @param value the worldId to set
+     * <code>optional uint32 leader_entity_id = 2;</code>
+     * @param value the leaderEntityId to set
      * @return this
      */
-    public SceneInfo setWorldId(final int value) {
+    public SceneInfo setLeaderEntityId(final int value) {
       bitField0_ |= 0x00000002;
-      worldId = value;
+      leaderEntityId = value;
       return this;
     }
 
@@ -276,39 +282,39 @@ public final class SceneInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 leader_entity_id = 12;</code>
-     * @return whether the leaderEntityId field is set
+     * <code>optional uint32 world_id = 12;</code>
+     * @return whether the worldId field is set
      */
-    public boolean hasLeaderEntityId() {
+    public boolean hasWorldId() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional uint32 leader_entity_id = 12;</code>
+     * <code>optional uint32 world_id = 12;</code>
      * @return this
      */
-    public SceneInfo clearLeaderEntityId() {
+    public SceneInfo clearWorldId() {
       bitField0_ &= ~0x00000020;
-      leaderEntityId = 0;
+      worldId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 leader_entity_id = 12;</code>
-     * @return the leaderEntityId
+     * <code>optional uint32 world_id = 12;</code>
+     * @return the worldId
      */
-    public int getLeaderEntityId() {
-      return leaderEntityId;
+    public int getWorldId() {
+      return worldId;
     }
 
     /**
-     * <code>optional uint32 leader_entity_id = 12;</code>
-     * @param value the leaderEntityId to set
+     * <code>optional uint32 world_id = 12;</code>
+     * @param value the worldId to set
      * @return this
      */
-    public SceneInfo setLeaderEntityId(final int value) {
+    public SceneInfo setWorldId(final int value) {
       bitField0_ |= 0x00000020;
-      leaderEntityId = value;
+      worldId = value;
       return this;
     }
 
@@ -626,11 +632,79 @@ public final class SceneInfoOuterClass {
     }
 
     /**
+     * <code>repeated .SceneInfo.ExtraDataEntry extra_data = 1331;</code>
+     * @return whether the extraData field is set
+     */
+    public boolean hasExtraData() {
+      return (bitField0_ & 0x00000800) != 0;
+    }
+
+    /**
+     * <code>repeated .SceneInfo.ExtraDataEntry extra_data = 1331;</code>
+     * @return this
+     */
+    public SceneInfo clearExtraData() {
+      bitField0_ &= ~0x00000800;
+      extraData.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .SceneInfo.ExtraDataEntry extra_data = 1331;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableExtraData()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<ExtraDataEntry> getExtraData() {
+      return extraData;
+    }
+
+    /**
+     * <code>repeated .SceneInfo.ExtraDataEntry extra_data = 1331;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<ExtraDataEntry> getMutableExtraData() {
+      bitField0_ |= 0x00000800;
+      return extraData;
+    }
+
+    /**
+     * <code>repeated .SceneInfo.ExtraDataEntry extra_data = 1331;</code>
+     * @param value the extraData to add
+     * @return this
+     */
+    public SceneInfo addExtraData(final ExtraDataEntry value) {
+      bitField0_ |= 0x00000800;
+      extraData.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .SceneInfo.ExtraDataEntry extra_data = 1331;</code>
+     * @param values the extraData to add
+     * @return this
+     */
+    public SceneInfo addAllExtraData(final ExtraDataEntry... values) {
+      bitField0_ |= 0x00000800;
+      extraData.addAll(values);
+      return this;
+    }
+
+    /**
      * <code>repeated .SceneGroupState group_state_list = 1768;</code>
      * @return whether the groupStateList field is set
      */
     public boolean hasGroupStateList() {
-      return (bitField0_ & 0x00000800) != 0;
+      return (bitField0_ & 0x00001000) != 0;
     }
 
     /**
@@ -638,7 +712,7 @@ public final class SceneInfoOuterClass {
      * @return this
      */
     public SceneInfo clearGroupStateList() {
-      bitField0_ &= ~0x00000800;
+      bitField0_ &= ~0x00001000;
       groupStateList.clear();
       return this;
     }
@@ -667,7 +741,7 @@ public final class SceneInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<SceneGroupStateOuterClass.SceneGroupState> getMutableGroupStateList() {
-      bitField0_ |= 0x00000800;
+      bitField0_ |= 0x00001000;
       return groupStateList;
     }
 
@@ -677,7 +751,7 @@ public final class SceneInfoOuterClass {
      * @return this
      */
     public SceneInfo addGroupStateList(final SceneGroupStateOuterClass.SceneGroupState value) {
-      bitField0_ |= 0x00000800;
+      bitField0_ |= 0x00001000;
       groupStateList.add(value);
       return this;
     }
@@ -689,7 +763,7 @@ public final class SceneInfoOuterClass {
      */
     public SceneInfo addAllGroupStateList(
         final SceneGroupStateOuterClass.SceneGroupState... values) {
-      bitField0_ |= 0x00000800;
+      bitField0_ |= 0x00001000;
       groupStateList.addAll(values);
       return this;
     }
@@ -700,16 +774,17 @@ public final class SceneInfoOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         gameModeType = other.gameModeType;
-        worldId = other.worldId;
+        leaderEntityId = other.leaderEntityId;
         planeId = other.planeId;
         clientPosVersion = other.clientPosVersion;
         floorId = other.floorId;
-        leaderEntityId = other.leaderEntityId;
+        worldId = other.worldId;
         entryId = other.entryId;
         groupIdList.copyFrom(other.groupIdList);
         lightenSectionList.copyFrom(other.lightenSectionList);
         entityList.copyFrom(other.entityList);
         entityGroupList.copyFrom(other.entityGroupList);
+        extraData.copyFrom(other.extraData);
         groupStateList.copyFrom(other.groupStateList);
       }
       return this;
@@ -724,8 +799,8 @@ public final class SceneInfoOuterClass {
       if (other.hasGameModeType()) {
         setGameModeType(other.gameModeType);
       }
-      if (other.hasWorldId()) {
-        setWorldId(other.worldId);
+      if (other.hasLeaderEntityId()) {
+        setLeaderEntityId(other.leaderEntityId);
       }
       if (other.hasPlaneId()) {
         setPlaneId(other.planeId);
@@ -736,8 +811,8 @@ public final class SceneInfoOuterClass {
       if (other.hasFloorId()) {
         setFloorId(other.floorId);
       }
-      if (other.hasLeaderEntityId()) {
-        setLeaderEntityId(other.leaderEntityId);
+      if (other.hasWorldId()) {
+        setWorldId(other.worldId);
       }
       if (other.hasEntryId()) {
         setEntryId(other.entryId);
@@ -754,6 +829,9 @@ public final class SceneInfoOuterClass {
       if (other.hasEntityGroupList()) {
         getMutableEntityGroupList().addAll(other.entityGroupList);
       }
+      if (other.hasExtraData()) {
+        getMutableExtraData().addAll(other.extraData);
+      }
       if (other.hasGroupStateList()) {
         getMutableGroupStateList().addAll(other.groupStateList);
       }
@@ -768,16 +846,17 @@ public final class SceneInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       gameModeType = 0;
-      worldId = 0;
+      leaderEntityId = 0;
       planeId = 0;
       clientPosVersion = 0;
       floorId = 0;
-      leaderEntityId = 0;
+      worldId = 0;
       entryId = 0;
       groupIdList.clear();
       lightenSectionList.clear();
       entityList.clear();
       entityGroupList.clear();
+      extraData.clear();
       groupStateList.clear();
       return this;
     }
@@ -793,6 +872,7 @@ public final class SceneInfoOuterClass {
       lightenSectionList.clear();
       entityList.clearQuick();
       entityGroupList.clearQuick();
+      extraData.clearQuick();
       groupStateList.clearQuick();
       return this;
     }
@@ -808,16 +888,17 @@ public final class SceneInfoOuterClass {
       SceneInfo other = (SceneInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasGameModeType() || gameModeType == other.gameModeType)
-        && (!hasWorldId() || worldId == other.worldId)
+        && (!hasLeaderEntityId() || leaderEntityId == other.leaderEntityId)
         && (!hasPlaneId() || planeId == other.planeId)
         && (!hasClientPosVersion() || clientPosVersion == other.clientPosVersion)
         && (!hasFloorId() || floorId == other.floorId)
-        && (!hasLeaderEntityId() || leaderEntityId == other.leaderEntityId)
+        && (!hasWorldId() || worldId == other.worldId)
         && (!hasEntryId() || entryId == other.entryId)
         && (!hasGroupIdList() || groupIdList.equals(other.groupIdList))
         && (!hasLightenSectionList() || lightenSectionList.equals(other.lightenSectionList))
         && (!hasEntityList() || entityList.equals(other.entityList))
         && (!hasEntityGroupList() || entityGroupList.equals(other.entityGroupList))
+        && (!hasExtraData() || extraData.equals(other.extraData))
         && (!hasGroupStateList() || groupStateList.equals(other.groupStateList));
     }
 
@@ -829,7 +910,7 @@ public final class SceneInfoOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(worldId);
+        output.writeUInt32NoTag(leaderEntityId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 40);
@@ -845,7 +926,7 @@ public final class SceneInfoOuterClass {
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(leaderEntityId);
+        output.writeUInt32NoTag(worldId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 120);
@@ -876,6 +957,12 @@ public final class SceneInfoOuterClass {
         }
       }
       if ((bitField0_ & 0x00000800) != 0) {
+        for (int i = 0; i < extraData.length(); i++) {
+          output.writeRawLittleEndian16((short) 21402);
+          output.writeMessageNoTag(extraData.get(i));
+        }
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
         for (int i = 0; i < groupStateList.length(); i++) {
           output.writeRawLittleEndian16((short) 28354);
           output.writeMessageNoTag(groupStateList.get(i));
@@ -890,7 +977,7 @@ public final class SceneInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(gameModeType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(worldId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(leaderEntityId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(planeId);
@@ -902,7 +989,7 @@ public final class SceneInfoOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(floorId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(leaderEntityId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(worldId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
@@ -920,6 +1007,9 @@ public final class SceneInfoOuterClass {
         size += (2 * entityGroupList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(entityGroupList);
       }
       if ((bitField0_ & 0x00000800) != 0) {
+        size += (2 * extraData.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(extraData);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
         size += (2 * groupStateList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(groupStateList);
       }
       return size;
@@ -942,8 +1032,8 @@ public final class SceneInfoOuterClass {
             }
           }
           case 16: {
-            // worldId
-            worldId = input.readUInt32();
+            // leaderEntityId
+            leaderEntityId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 40) {
@@ -978,8 +1068,8 @@ public final class SceneInfoOuterClass {
             }
           }
           case 96: {
-            // leaderEntityId
-            leaderEntityId = input.readUInt32();
+            // worldId
+            worldId = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 120) {
@@ -1025,6 +1115,14 @@ public final class SceneInfoOuterClass {
             // entityGroupList
             tag = input.readRepeatedMessage(entityGroupList, tag);
             bitField0_ |= 0x00000400;
+            if (tag != 10650) {
+              break;
+            }
+          }
+          case 10650: {
+            // extraData
+            tag = input.readRepeatedMessage(extraData, tag);
+            bitField0_ |= 0x00000800;
             if (tag != 14146) {
               break;
             }
@@ -1032,7 +1130,7 @@ public final class SceneInfoOuterClass {
           case 14146: {
             // groupStateList
             tag = input.readRepeatedMessage(groupStateList, tag);
-            bitField0_ |= 0x00000800;
+            bitField0_ |= 0x00001000;
             if (tag != 0) {
               break;
             }
@@ -1070,7 +1168,7 @@ public final class SceneInfoOuterClass {
         output.writeUInt32(FieldNames.gameModeType, gameModeType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.worldId, worldId);
+        output.writeUInt32(FieldNames.leaderEntityId, leaderEntityId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.planeId, planeId);
@@ -1082,7 +1180,7 @@ public final class SceneInfoOuterClass {
         output.writeUInt32(FieldNames.floorId, floorId);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.leaderEntityId, leaderEntityId);
+        output.writeUInt32(FieldNames.worldId, worldId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeUInt32(FieldNames.entryId, entryId);
@@ -1100,6 +1198,9 @@ public final class SceneInfoOuterClass {
         output.writeRepeatedMessage(FieldNames.entityGroupList, entityGroupList);
       }
       if ((bitField0_ & 0x00000800) != 0) {
+        output.writeRepeatedMessage(FieldNames.extraData, extraData);
+      }
+      if ((bitField0_ & 0x00001000) != 0) {
         output.writeRepeatedMessage(FieldNames.groupStateList, groupStateList);
       }
       output.endObject();
@@ -1124,11 +1225,11 @@ public final class SceneInfoOuterClass {
             }
             break;
           }
-          case 1525188685:
-          case 36230376: {
-            if (input.isAtField(FieldNames.worldId)) {
+          case 1693061255:
+          case 794634049: {
+            if (input.isAtField(FieldNames.leaderEntityId)) {
               if (!input.trySkipNullValue()) {
-                worldId = input.readUInt32();
+                leaderEntityId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -1172,11 +1273,11 @@ public final class SceneInfoOuterClass {
             }
             break;
           }
-          case 1693061255:
-          case 794634049: {
-            if (input.isAtField(FieldNames.leaderEntityId)) {
+          case 1525188685:
+          case 36230376: {
+            if (input.isAtField(FieldNames.worldId)) {
               if (!input.trySkipNullValue()) {
-                leaderEntityId = input.readUInt32();
+                worldId = input.readUInt32();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -1244,12 +1345,24 @@ public final class SceneInfoOuterClass {
             }
             break;
           }
+          case -253792294:
+          case 747380345: {
+            if (input.isAtField(FieldNames.extraData)) {
+              if (!input.trySkipNullValue()) {
+                input.readRepeatedMessage(extraData);
+                bitField0_ |= 0x00000800;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 1415397648:
           case 1198817612: {
             if (input.isAtField(FieldNames.groupStateList)) {
               if (!input.trySkipNullValue()) {
                 input.readRepeatedMessage(groupStateList);
-                bitField0_ |= 0x00000800;
+                bitField0_ |= 0x00001000;
               }
             } else {
               input.skipUnknownField();
@@ -1295,6 +1408,360 @@ public final class SceneInfoOuterClass {
       return SceneInfoFactory.INSTANCE;
     }
 
+    /**
+     * Protobuf type {@code ExtraDataEntry}
+     */
+    public static final class ExtraDataEntry extends ProtoMessage<ExtraDataEntry> implements Cloneable {
+      private static final long serialVersionUID = 0L;
+
+      /**
+       * <code>optional sint32 value = 2;</code>
+       */
+      private int value_;
+
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      private final Utf8String key = Utf8String.newEmptyInstance();
+
+      private ExtraDataEntry() {
+      }
+
+      /**
+       * @return a new empty instance of {@code ExtraDataEntry}
+       */
+      public static ExtraDataEntry newInstance() {
+        return new ExtraDataEntry();
+      }
+
+      /**
+       * <code>optional sint32 value = 2;</code>
+       * @return whether the value_ field is set
+       */
+      public boolean hasValue() {
+        return (bitField0_ & 0x00000001) != 0;
+      }
+
+      /**
+       * <code>optional sint32 value = 2;</code>
+       * @return this
+       */
+      public ExtraDataEntry clearValue() {
+        bitField0_ &= ~0x00000001;
+        value_ = 0;
+        return this;
+      }
+
+      /**
+       * <code>optional sint32 value = 2;</code>
+       * @return the value_
+       */
+      public int getValue() {
+        return value_;
+      }
+
+      /**
+       * <code>optional sint32 value = 2;</code>
+       * @param value the value_ to set
+       * @return this
+       */
+      public ExtraDataEntry setValue(final int value) {
+        bitField0_ |= 0x00000001;
+        value_ = value;
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return whether the key field is set
+       */
+      public boolean hasKey() {
+        return (bitField0_ & 0x00000002) != 0;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return this
+       */
+      public ExtraDataEntry clearKey() {
+        bitField0_ &= ~0x00000002;
+        key.clear();
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return the key
+       */
+      public String getKey() {
+        return key.getString();
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return internal {@code Utf8String} representation of key for reading
+       */
+      public Utf8String getKeyBytes() {
+        return this.key;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @return internal {@code Utf8String} representation of key for modifications
+       */
+      public Utf8String getMutableKeyBytes() {
+        bitField0_ |= 0x00000002;
+        return this.key;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @param value the key to set
+       * @return this
+       */
+      public ExtraDataEntry setKey(final CharSequence value) {
+        bitField0_ |= 0x00000002;
+        key.copyFrom(value);
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       * @param value the key to set
+       * @return this
+       */
+      public ExtraDataEntry setKey(final Utf8String value) {
+        bitField0_ |= 0x00000002;
+        key.copyFrom(value);
+        return this;
+      }
+
+      @Override
+      public ExtraDataEntry copyFrom(final ExtraDataEntry other) {
+        cachedSize = other.cachedSize;
+        if ((bitField0_ | other.bitField0_) != 0) {
+          bitField0_ = other.bitField0_;
+          value_ = other.value_;
+          key.copyFrom(other.key);
+        }
+        return this;
+      }
+
+      @Override
+      public ExtraDataEntry mergeFrom(final ExtraDataEntry other) {
+        if (other.isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        if (other.hasValue()) {
+          setValue(other.value_);
+        }
+        if (other.hasKey()) {
+          getMutableKeyBytes().copyFrom(other.key);
+        }
+        return this;
+      }
+
+      @Override
+      public ExtraDataEntry clear() {
+        if (isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        bitField0_ = 0;
+        value_ = 0;
+        key.clear();
+        return this;
+      }
+
+      @Override
+      public ExtraDataEntry clearQuick() {
+        if (isEmpty()) {
+          return this;
+        }
+        cachedSize = -1;
+        bitField0_ = 0;
+        key.clear();
+        return this;
+      }
+
+      @Override
+      public boolean equals(Object o) {
+        if (o == this) {
+          return true;
+        }
+        if (!(o instanceof ExtraDataEntry)) {
+          return false;
+        }
+        ExtraDataEntry other = (ExtraDataEntry) o;
+        return bitField0_ == other.bitField0_
+          && (!hasValue() || value_ == other.value_)
+          && (!hasKey() || key.equals(other.key));
+      }
+
+      @Override
+      public void writeTo(final ProtoSink output) throws IOException {
+        if ((bitField0_ & 0x00000001) != 0) {
+          output.writeRawByte((byte) 16);
+          output.writeSInt32NoTag(value_);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          output.writeRawByte((byte) 10);
+          output.writeStringNoTag(key);
+        }
+      }
+
+      @Override
+      protected int computeSerializedSize() {
+        int size = 0;
+        if ((bitField0_ & 0x00000001) != 0) {
+          size += 1 + ProtoSink.computeSInt32SizeNoTag(value_);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          size += 1 + ProtoSink.computeStringSizeNoTag(key);
+        }
+        return size;
+      }
+
+      @Override
+      @SuppressWarnings("fallthrough")
+      public ExtraDataEntry mergeFrom(final ProtoSource input) throws IOException {
+        // Enabled Fall-Through Optimization (QuickBuffers)
+        int tag = input.readTag();
+        while (true) {
+          switch (tag) {
+            case 16: {
+              // value_
+              value_ = input.readSInt32();
+              bitField0_ |= 0x00000001;
+              tag = input.readTag();
+              if (tag != 10) {
+                break;
+              }
+            }
+            case 10: {
+              // key
+              input.readString(key);
+              bitField0_ |= 0x00000002;
+              tag = input.readTag();
+              if (tag != 0) {
+                break;
+              }
+            }
+            case 0: {
+              return this;
+            }
+            default: {
+              if (!input.skipField(tag)) {
+                return this;
+              }
+              tag = input.readTag();
+              break;
+            }
+          }
+        }
+      }
+
+      @Override
+      public void writeTo(final JsonSink output) throws IOException {
+        output.beginObject();
+        if ((bitField0_ & 0x00000001) != 0) {
+          output.writeSInt32(FieldNames.value_, value_);
+        }
+        if ((bitField0_ & 0x00000002) != 0) {
+          output.writeString(FieldNames.key, key);
+        }
+        output.endObject();
+      }
+
+      @Override
+      public ExtraDataEntry mergeFrom(final JsonSource input) throws IOException {
+        if (!input.beginObject()) {
+          return this;
+        }
+        while (!input.isAtEnd()) {
+          switch (input.readFieldHash()) {
+            case 111972721: {
+              if (input.isAtField(FieldNames.value_)) {
+                if (!input.trySkipNullValue()) {
+                  value_ = input.readSInt32();
+                  bitField0_ |= 0x00000001;
+                }
+              } else {
+                input.skipUnknownField();
+              }
+              break;
+            }
+            case 106079: {
+              if (input.isAtField(FieldNames.key)) {
+                if (!input.trySkipNullValue()) {
+                  input.readString(key);
+                  bitField0_ |= 0x00000002;
+                }
+              } else {
+                input.skipUnknownField();
+              }
+              break;
+            }
+            default: {
+              input.skipUnknownField();
+              break;
+            }
+          }
+        }
+        input.endObject();
+        return this;
+      }
+
+      @Override
+      public ExtraDataEntry clone() {
+        return new ExtraDataEntry().copyFrom(this);
+      }
+
+      @Override
+      public boolean isEmpty() {
+        return ((bitField0_) == 0);
+      }
+
+      public static ExtraDataEntry parseFrom(final byte[] data) throws
+          InvalidProtocolBufferException {
+        return ProtoMessage.mergeFrom(new ExtraDataEntry(), data).checkInitialized();
+      }
+
+      public static ExtraDataEntry parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new ExtraDataEntry(), input).checkInitialized();
+      }
+
+      public static ExtraDataEntry parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new ExtraDataEntry(), input).checkInitialized();
+      }
+
+      /**
+       * @return factory for creating ExtraDataEntry messages
+       */
+      public static MessageFactory<ExtraDataEntry> getFactory() {
+        return ExtraDataEntryFactory.INSTANCE;
+      }
+
+      private enum ExtraDataEntryFactory implements MessageFactory<ExtraDataEntry> {
+        INSTANCE;
+
+        @Override
+        public ExtraDataEntry create() {
+          return ExtraDataEntry.newInstance();
+        }
+      }
+
+      /**
+       * Contains name constants used for serializing JSON
+       */
+      static class FieldNames {
+        static final FieldName value_ = FieldName.forField("value");
+
+        static final FieldName key = FieldName.forField("key");
+      }
+    }
+
     private enum SceneInfoFactory implements MessageFactory<SceneInfo> {
       INSTANCE;
 
@@ -1310,7 +1777,7 @@ public final class SceneInfoOuterClass {
     static class FieldNames {
       static final FieldName gameModeType = FieldName.forField("gameModeType", "game_mode_type");
 
-      static final FieldName worldId = FieldName.forField("worldId", "world_id");
+      static final FieldName leaderEntityId = FieldName.forField("leaderEntityId", "leader_entity_id");
 
       static final FieldName planeId = FieldName.forField("planeId", "plane_id");
 
@@ -1318,7 +1785,7 @@ public final class SceneInfoOuterClass {
 
       static final FieldName floorId = FieldName.forField("floorId", "floor_id");
 
-      static final FieldName leaderEntityId = FieldName.forField("leaderEntityId", "leader_entity_id");
+      static final FieldName worldId = FieldName.forField("worldId", "world_id");
 
       static final FieldName entryId = FieldName.forField("entryId", "entry_id");
 
@@ -1329,6 +1796,8 @@ public final class SceneInfoOuterClass {
       static final FieldName entityList = FieldName.forField("entityList", "entity_list");
 
       static final FieldName entityGroupList = FieldName.forField("entityGroupList", "entity_group_list");
+
+      static final FieldName extraData = FieldName.forField("extraData", "extra_data");
 
       static final FieldName groupStateList = FieldName.forField("groupStateList", "group_state_list");
     }

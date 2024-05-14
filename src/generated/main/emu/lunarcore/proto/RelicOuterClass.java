@@ -35,9 +35,9 @@ public final class RelicOuterClass {
     private int exp;
 
     /**
-     * <code>optional uint32 dress_avatar_id = 10;</code>
+     * <code>optional uint32 base_avatar_id = 10;</code>
      */
-    private int dressAvatarId;
+    private int baseAvatarId;
 
     /**
      * <code>optional uint32 tid = 13;</code>
@@ -45,9 +45,9 @@ public final class RelicOuterClass {
     private int tid;
 
     /**
-     * <code>optional uint32 base_avatar_id = 14;</code>
+     * <code>optional uint32 equip_avatar_id = 14;</code>
      */
-    private int baseAvatarId;
+    private int equipAvatarId;
 
     /**
      * <code>optional uint32 main_affix_id = 15;</code>
@@ -191,39 +191,39 @@ public final class RelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 dress_avatar_id = 10;</code>
-     * @return whether the dressAvatarId field is set
+     * <code>optional uint32 base_avatar_id = 10;</code>
+     * @return whether the baseAvatarId field is set
      */
-    public boolean hasDressAvatarId() {
+    public boolean hasBaseAvatarId() {
       return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
-     * <code>optional uint32 dress_avatar_id = 10;</code>
+     * <code>optional uint32 base_avatar_id = 10;</code>
      * @return this
      */
-    public Relic clearDressAvatarId() {
+    public Relic clearBaseAvatarId() {
       bitField0_ &= ~0x00000008;
-      dressAvatarId = 0;
+      baseAvatarId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 dress_avatar_id = 10;</code>
-     * @return the dressAvatarId
+     * <code>optional uint32 base_avatar_id = 10;</code>
+     * @return the baseAvatarId
      */
-    public int getDressAvatarId() {
-      return dressAvatarId;
+    public int getBaseAvatarId() {
+      return baseAvatarId;
     }
 
     /**
-     * <code>optional uint32 dress_avatar_id = 10;</code>
-     * @param value the dressAvatarId to set
+     * <code>optional uint32 base_avatar_id = 10;</code>
+     * @param value the baseAvatarId to set
      * @return this
      */
-    public Relic setDressAvatarId(final int value) {
+    public Relic setBaseAvatarId(final int value) {
       bitField0_ |= 0x00000008;
-      dressAvatarId = value;
+      baseAvatarId = value;
       return this;
     }
 
@@ -265,39 +265,39 @@ public final class RelicOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 14;</code>
-     * @return whether the baseAvatarId field is set
+     * <code>optional uint32 equip_avatar_id = 14;</code>
+     * @return whether the equipAvatarId field is set
      */
-    public boolean hasBaseAvatarId() {
+    public boolean hasEquipAvatarId() {
       return (bitField0_ & 0x00000020) != 0;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 14;</code>
+     * <code>optional uint32 equip_avatar_id = 14;</code>
      * @return this
      */
-    public Relic clearBaseAvatarId() {
+    public Relic clearEquipAvatarId() {
       bitField0_ &= ~0x00000020;
-      baseAvatarId = 0;
+      equipAvatarId = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 14;</code>
-     * @return the baseAvatarId
+     * <code>optional uint32 equip_avatar_id = 14;</code>
+     * @return the equipAvatarId
      */
-    public int getBaseAvatarId() {
-      return baseAvatarId;
+    public int getEquipAvatarId() {
+      return equipAvatarId;
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 14;</code>
-     * @param value the baseAvatarId to set
+     * <code>optional uint32 equip_avatar_id = 14;</code>
+     * @param value the equipAvatarId to set
      * @return this
      */
-    public Relic setBaseAvatarId(final int value) {
+    public Relic setEquipAvatarId(final int value) {
       bitField0_ |= 0x00000020;
-      baseAvatarId = value;
+      equipAvatarId = value;
       return this;
     }
 
@@ -488,9 +488,9 @@ public final class RelicOuterClass {
         uniqueId = other.uniqueId;
         level = other.level;
         exp = other.exp;
-        dressAvatarId = other.dressAvatarId;
-        tid = other.tid;
         baseAvatarId = other.baseAvatarId;
+        tid = other.tid;
+        equipAvatarId = other.equipAvatarId;
         mainAffixId = other.mainAffixId;
         isDiscarded = other.isDiscarded;
         isProtected = other.isProtected;
@@ -514,14 +514,14 @@ public final class RelicOuterClass {
       if (other.hasExp()) {
         setExp(other.exp);
       }
-      if (other.hasDressAvatarId()) {
-        setDressAvatarId(other.dressAvatarId);
+      if (other.hasBaseAvatarId()) {
+        setBaseAvatarId(other.baseAvatarId);
       }
       if (other.hasTid()) {
         setTid(other.tid);
       }
-      if (other.hasBaseAvatarId()) {
-        setBaseAvatarId(other.baseAvatarId);
+      if (other.hasEquipAvatarId()) {
+        setEquipAvatarId(other.equipAvatarId);
       }
       if (other.hasMainAffixId()) {
         setMainAffixId(other.mainAffixId);
@@ -548,9 +548,9 @@ public final class RelicOuterClass {
       uniqueId = 0;
       level = 0;
       exp = 0;
-      dressAvatarId = 0;
-      tid = 0;
       baseAvatarId = 0;
+      tid = 0;
+      equipAvatarId = 0;
       mainAffixId = 0;
       isDiscarded = false;
       isProtected = false;
@@ -582,9 +582,9 @@ public final class RelicOuterClass {
         && (!hasUniqueId() || uniqueId == other.uniqueId)
         && (!hasLevel() || level == other.level)
         && (!hasExp() || exp == other.exp)
-        && (!hasDressAvatarId() || dressAvatarId == other.dressAvatarId)
-        && (!hasTid() || tid == other.tid)
         && (!hasBaseAvatarId() || baseAvatarId == other.baseAvatarId)
+        && (!hasTid() || tid == other.tid)
+        && (!hasEquipAvatarId() || equipAvatarId == other.equipAvatarId)
         && (!hasMainAffixId() || mainAffixId == other.mainAffixId)
         && (!hasIsDiscarded() || isDiscarded == other.isDiscarded)
         && (!hasIsProtected() || isProtected == other.isProtected)
@@ -607,7 +607,7 @@ public final class RelicOuterClass {
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 80);
-        output.writeUInt32NoTag(dressAvatarId);
+        output.writeUInt32NoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 104);
@@ -615,7 +615,7 @@ public final class RelicOuterClass {
       }
       if ((bitField0_ & 0x00000020) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(baseAvatarId);
+        output.writeUInt32NoTag(equipAvatarId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 120);
@@ -650,13 +650,13 @@ public final class RelicOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(exp);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(dressAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(tid);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(baseAvatarId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(equipAvatarId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(mainAffixId);
@@ -708,8 +708,8 @@ public final class RelicOuterClass {
             }
           }
           case 80: {
-            // dressAvatarId
-            dressAvatarId = input.readUInt32();
+            // baseAvatarId
+            baseAvatarId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 104) {
@@ -726,8 +726,8 @@ public final class RelicOuterClass {
             }
           }
           case 112: {
-            // baseAvatarId
-            baseAvatarId = input.readUInt32();
+            // equipAvatarId
+            equipAvatarId = input.readUInt32();
             bitField0_ |= 0x00000020;
             tag = input.readTag();
             if (tag != 120) {
@@ -796,13 +796,13 @@ public final class RelicOuterClass {
         output.writeUInt32(FieldNames.exp, exp);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeUInt32(FieldNames.dressAvatarId, dressAvatarId);
+        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeUInt32(FieldNames.tid, tid);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeUInt32(FieldNames.baseAvatarId, baseAvatarId);
+        output.writeUInt32(FieldNames.equipAvatarId, equipAvatarId);
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeUInt32(FieldNames.mainAffixId, mainAffixId);
@@ -860,11 +860,11 @@ public final class RelicOuterClass {
             }
             break;
           }
-          case 480419755:
-          case -1385631303: {
-            if (input.isAtField(FieldNames.dressAvatarId)) {
+          case 118022725:
+          case -1756826157: {
+            if (input.isAtField(FieldNames.baseAvatarId)) {
               if (!input.trySkipNullValue()) {
-                dressAvatarId = input.readUInt32();
+                baseAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -883,11 +883,11 @@ public final class RelicOuterClass {
             }
             break;
           }
-          case 118022725:
-          case -1756826157: {
-            if (input.isAtField(FieldNames.baseAvatarId)) {
+          case 169047204:
+          case 33057906: {
+            if (input.isAtField(FieldNames.equipAvatarId)) {
               if (!input.trySkipNullValue()) {
-                baseAvatarId = input.readUInt32();
+                equipAvatarId = input.readUInt32();
                 bitField0_ |= 0x00000020;
               }
             } else {
@@ -1001,11 +1001,11 @@ public final class RelicOuterClass {
 
       static final FieldName exp = FieldName.forField("exp");
 
-      static final FieldName dressAvatarId = FieldName.forField("dressAvatarId", "dress_avatar_id");
+      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
 
       static final FieldName tid = FieldName.forField("tid");
 
-      static final FieldName baseAvatarId = FieldName.forField("baseAvatarId", "base_avatar_id");
+      static final FieldName equipAvatarId = FieldName.forField("equipAvatarId", "equip_avatar_id");
 
       static final FieldName mainAffixId = FieldName.forField("mainAffixId", "main_affix_id");
 

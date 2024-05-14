@@ -21,14 +21,9 @@ public class QueryDispatchHandler implements Handler {
         if (LunarCore.getConfig().getLogOptions().connections) {
             LunarCore.getLogger().info("Client request: query_dispatch");
         }
-
+        
         // Send region list to client
-        if (ctx.fullUrl().contains("iOS")) {
-            ctx.result(server.getRegionListIOS());
-        } else {
-            // Send region list to client
-            ctx.result(server.getRegionList());
-        }
+        ctx.result(server.getRegionList());
     }
 
 }

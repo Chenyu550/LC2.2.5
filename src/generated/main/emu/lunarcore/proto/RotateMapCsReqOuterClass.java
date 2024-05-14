@@ -30,9 +30,9 @@ public final class RotateMapCsReqOuterClass {
     private int unkInt;
 
     /**
-     * <code>optional .RotateMapCsReq.OCNLBAGJONP rogue_map = 6;</code>
+     * <code>optional .RotateMapCsReq.NewMapRot rogue_map = 6;</code>
      */
-    private final OCNLBAGJONP rogueMap = OCNLBAGJONP.newInstance();
+    private final NewMapRot rogueMap = NewMapRot.newInstance();
 
     /**
      * <code>optional .MotionInfo motion = 12;</code>
@@ -124,7 +124,7 @@ public final class RotateMapCsReqOuterClass {
     }
 
     /**
-     * <code>optional .RotateMapCsReq.OCNLBAGJONP rogue_map = 6;</code>
+     * <code>optional .RotateMapCsReq.NewMapRot rogue_map = 6;</code>
      * @return whether the rogueMap field is set
      */
     public boolean hasRogueMap() {
@@ -132,7 +132,7 @@ public final class RotateMapCsReqOuterClass {
     }
 
     /**
-     * <code>optional .RotateMapCsReq.OCNLBAGJONP rogue_map = 6;</code>
+     * <code>optional .RotateMapCsReq.NewMapRot rogue_map = 6;</code>
      * @return this
      */
     public RotateMapCsReq clearRogueMap() {
@@ -142,7 +142,7 @@ public final class RotateMapCsReqOuterClass {
     }
 
     /**
-     * <code>optional .RotateMapCsReq.OCNLBAGJONP rogue_map = 6;</code>
+     * <code>optional .RotateMapCsReq.NewMapRot rogue_map = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -151,12 +151,12 @@ public final class RotateMapCsReqOuterClass {
      *
      * @return internal storage object for reading
      */
-    public OCNLBAGJONP getRogueMap() {
+    public NewMapRot getRogueMap() {
       return rogueMap;
     }
 
     /**
-     * <code>optional .RotateMapCsReq.OCNLBAGJONP rogue_map = 6;</code>
+     * <code>optional .RotateMapCsReq.NewMapRot rogue_map = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -164,17 +164,17 @@ public final class RotateMapCsReqOuterClass {
      *
      * @return internal storage object for modifications
      */
-    public OCNLBAGJONP getMutableRogueMap() {
+    public NewMapRot getMutableRogueMap() {
       bitField0_ |= 0x00000004;
       return rogueMap;
     }
 
     /**
-     * <code>optional .RotateMapCsReq.OCNLBAGJONP rogue_map = 6;</code>
+     * <code>optional .RotateMapCsReq.NewMapRot rogue_map = 6;</code>
      * @param value the rogueMap to set
      * @return this
      */
-    public RotateMapCsReq setRogueMap(final OCNLBAGJONP value) {
+    public RotateMapCsReq setRogueMap(final NewMapRot value) {
       bitField0_ |= 0x00000004;
       rogueMap.copyFrom(value);
       return this;
@@ -521,9 +521,9 @@ public final class RotateMapCsReqOuterClass {
     }
 
     /**
-     * Protobuf type {@code OJMHCNLOLPH}
+     * Protobuf type {@code Vector4}
      */
-    public static final class OJMHCNLOLPH extends ProtoMessage<OJMHCNLOLPH> implements Cloneable {
+    public static final class Vector4 extends ProtoMessage<Vector4> implements Cloneable {
       private static final long serialVersionUID = 0L;
 
       /**
@@ -542,18 +542,18 @@ public final class RotateMapCsReqOuterClass {
       private float y;
 
       /**
-       * <code>optional float GHDEDODMHLD = 12;</code>
+       * <code>optional float w = 12;</code>
        */
-      private float gHDEDODMHLD;
+      private float w;
 
-      private OJMHCNLOLPH() {
+      private Vector4() {
       }
 
       /**
-       * @return a new empty instance of {@code OJMHCNLOLPH}
+       * @return a new empty instance of {@code Vector4}
        */
-      public static OJMHCNLOLPH newInstance() {
-        return new OJMHCNLOLPH();
+      public static Vector4 newInstance() {
+        return new Vector4();
       }
 
       /**
@@ -568,7 +568,7 @@ public final class RotateMapCsReqOuterClass {
        * <code>optional float x = 8;</code>
        * @return this
        */
-      public OJMHCNLOLPH clearX() {
+      public Vector4 clearX() {
         bitField0_ &= ~0x00000001;
         x = 0F;
         return this;
@@ -587,7 +587,7 @@ public final class RotateMapCsReqOuterClass {
        * @param value the x to set
        * @return this
        */
-      public OJMHCNLOLPH setX(final float value) {
+      public Vector4 setX(final float value) {
         bitField0_ |= 0x00000001;
         x = value;
         return this;
@@ -605,7 +605,7 @@ public final class RotateMapCsReqOuterClass {
        * <code>optional float z = 10;</code>
        * @return this
        */
-      public OJMHCNLOLPH clearZ() {
+      public Vector4 clearZ() {
         bitField0_ &= ~0x00000002;
         z = 0F;
         return this;
@@ -624,7 +624,7 @@ public final class RotateMapCsReqOuterClass {
        * @param value the z to set
        * @return this
        */
-      public OJMHCNLOLPH setZ(final float value) {
+      public Vector4 setZ(final float value) {
         bitField0_ |= 0x00000002;
         z = value;
         return this;
@@ -642,7 +642,7 @@ public final class RotateMapCsReqOuterClass {
        * <code>optional float y = 11;</code>
        * @return this
        */
-      public OJMHCNLOLPH clearY() {
+      public Vector4 clearY() {
         bitField0_ &= ~0x00000004;
         y = 0F;
         return this;
@@ -661,64 +661,64 @@ public final class RotateMapCsReqOuterClass {
        * @param value the y to set
        * @return this
        */
-      public OJMHCNLOLPH setY(final float value) {
+      public Vector4 setY(final float value) {
         bitField0_ |= 0x00000004;
         y = value;
         return this;
       }
 
       /**
-       * <code>optional float GHDEDODMHLD = 12;</code>
-       * @return whether the gHDEDODMHLD field is set
+       * <code>optional float w = 12;</code>
+       * @return whether the w field is set
        */
-      public boolean hasGHDEDODMHLD() {
+      public boolean hasW() {
         return (bitField0_ & 0x00000008) != 0;
       }
 
       /**
-       * <code>optional float GHDEDODMHLD = 12;</code>
+       * <code>optional float w = 12;</code>
        * @return this
        */
-      public OJMHCNLOLPH clearGHDEDODMHLD() {
+      public Vector4 clearW() {
         bitField0_ &= ~0x00000008;
-        gHDEDODMHLD = 0F;
+        w = 0F;
         return this;
       }
 
       /**
-       * <code>optional float GHDEDODMHLD = 12;</code>
-       * @return the gHDEDODMHLD
+       * <code>optional float w = 12;</code>
+       * @return the w
        */
-      public float getGHDEDODMHLD() {
-        return gHDEDODMHLD;
+      public float getW() {
+        return w;
       }
 
       /**
-       * <code>optional float GHDEDODMHLD = 12;</code>
-       * @param value the gHDEDODMHLD to set
+       * <code>optional float w = 12;</code>
+       * @param value the w to set
        * @return this
        */
-      public OJMHCNLOLPH setGHDEDODMHLD(final float value) {
+      public Vector4 setW(final float value) {
         bitField0_ |= 0x00000008;
-        gHDEDODMHLD = value;
+        w = value;
         return this;
       }
 
       @Override
-      public OJMHCNLOLPH copyFrom(final OJMHCNLOLPH other) {
+      public Vector4 copyFrom(final Vector4 other) {
         cachedSize = other.cachedSize;
         if ((bitField0_ | other.bitField0_) != 0) {
           bitField0_ = other.bitField0_;
           x = other.x;
           z = other.z;
           y = other.y;
-          gHDEDODMHLD = other.gHDEDODMHLD;
+          w = other.w;
         }
         return this;
       }
 
       @Override
-      public OJMHCNLOLPH mergeFrom(final OJMHCNLOLPH other) {
+      public Vector4 mergeFrom(final Vector4 other) {
         if (other.isEmpty()) {
           return this;
         }
@@ -732,14 +732,14 @@ public final class RotateMapCsReqOuterClass {
         if (other.hasY()) {
           setY(other.y);
         }
-        if (other.hasGHDEDODMHLD()) {
-          setGHDEDODMHLD(other.gHDEDODMHLD);
+        if (other.hasW()) {
+          setW(other.w);
         }
         return this;
       }
 
       @Override
-      public OJMHCNLOLPH clear() {
+      public Vector4 clear() {
         if (isEmpty()) {
           return this;
         }
@@ -748,12 +748,12 @@ public final class RotateMapCsReqOuterClass {
         x = 0F;
         z = 0F;
         y = 0F;
-        gHDEDODMHLD = 0F;
+        w = 0F;
         return this;
       }
 
       @Override
-      public OJMHCNLOLPH clearQuick() {
+      public Vector4 clearQuick() {
         if (isEmpty()) {
           return this;
         }
@@ -767,15 +767,15 @@ public final class RotateMapCsReqOuterClass {
         if (o == this) {
           return true;
         }
-        if (!(o instanceof OJMHCNLOLPH)) {
+        if (!(o instanceof Vector4)) {
           return false;
         }
-        OJMHCNLOLPH other = (OJMHCNLOLPH) o;
+        Vector4 other = (Vector4) o;
         return bitField0_ == other.bitField0_
           && (!hasX() || ProtoUtil.isEqual(x, other.x))
           && (!hasZ() || ProtoUtil.isEqual(z, other.z))
           && (!hasY() || ProtoUtil.isEqual(y, other.y))
-          && (!hasGHDEDODMHLD() || ProtoUtil.isEqual(gHDEDODMHLD, other.gHDEDODMHLD));
+          && (!hasW() || ProtoUtil.isEqual(w, other.w));
       }
 
       @Override
@@ -794,7 +794,7 @@ public final class RotateMapCsReqOuterClass {
         }
         if ((bitField0_ & 0x00000008) != 0) {
           output.writeRawByte((byte) 101);
-          output.writeFloatNoTag(gHDEDODMHLD);
+          output.writeFloatNoTag(w);
         }
       }
 
@@ -818,7 +818,7 @@ public final class RotateMapCsReqOuterClass {
 
       @Override
       @SuppressWarnings("fallthrough")
-      public OJMHCNLOLPH mergeFrom(final ProtoSource input) throws IOException {
+      public Vector4 mergeFrom(final ProtoSource input) throws IOException {
         // Enabled Fall-Through Optimization (QuickBuffers)
         int tag = input.readTag();
         while (true) {
@@ -851,8 +851,8 @@ public final class RotateMapCsReqOuterClass {
               }
             }
             case 101: {
-              // gHDEDODMHLD
-              gHDEDODMHLD = input.readFloat();
+              // w
+              w = input.readFloat();
               bitField0_ |= 0x00000008;
               tag = input.readTag();
               if (tag != 0) {
@@ -886,13 +886,13 @@ public final class RotateMapCsReqOuterClass {
           output.writeFloat(FieldNames.y, y);
         }
         if ((bitField0_ & 0x00000008) != 0) {
-          output.writeFloat(FieldNames.gHDEDODMHLD, gHDEDODMHLD);
+          output.writeFloat(FieldNames.w, w);
         }
         output.endObject();
       }
 
       @Override
-      public OJMHCNLOLPH mergeFrom(final JsonSource input) throws IOException {
+      public Vector4 mergeFrom(final JsonSource input) throws IOException {
         if (!input.beginObject()) {
           return this;
         }
@@ -931,10 +931,10 @@ public final class RotateMapCsReqOuterClass {
               }
               break;
             }
-            case -104012406: {
-              if (input.isAtField(FieldNames.gHDEDODMHLD)) {
+            case 119: {
+              if (input.isAtField(FieldNames.w)) {
                 if (!input.trySkipNullValue()) {
-                  gHDEDODMHLD = input.readFloat();
+                  w = input.readFloat();
                   bitField0_ |= 0x00000008;
                 }
               } else {
@@ -953,8 +953,8 @@ public final class RotateMapCsReqOuterClass {
       }
 
       @Override
-      public OJMHCNLOLPH clone() {
-        return new OJMHCNLOLPH().copyFrom(this);
+      public Vector4 clone() {
+        return new Vector4().copyFrom(this);
       }
 
       @Override
@@ -962,31 +962,31 @@ public final class RotateMapCsReqOuterClass {
         return ((bitField0_) == 0);
       }
 
-      public static OJMHCNLOLPH parseFrom(final byte[] data) throws InvalidProtocolBufferException {
-        return ProtoMessage.mergeFrom(new OJMHCNLOLPH(), data).checkInitialized();
+      public static Vector4 parseFrom(final byte[] data) throws InvalidProtocolBufferException {
+        return ProtoMessage.mergeFrom(new Vector4(), data).checkInitialized();
       }
 
-      public static OJMHCNLOLPH parseFrom(final ProtoSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new OJMHCNLOLPH(), input).checkInitialized();
+      public static Vector4 parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new Vector4(), input).checkInitialized();
       }
 
-      public static OJMHCNLOLPH parseFrom(final JsonSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new OJMHCNLOLPH(), input).checkInitialized();
+      public static Vector4 parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new Vector4(), input).checkInitialized();
       }
 
       /**
-       * @return factory for creating OJMHCNLOLPH messages
+       * @return factory for creating Vector4 messages
        */
-      public static MessageFactory<OJMHCNLOLPH> getFactory() {
-        return OJMHCNLOLPHFactory.INSTANCE;
+      public static MessageFactory<Vector4> getFactory() {
+        return Vector4Factory.INSTANCE;
       }
 
-      private enum OJMHCNLOLPHFactory implements MessageFactory<OJMHCNLOLPH> {
+      private enum Vector4Factory implements MessageFactory<Vector4> {
         INSTANCE;
 
         @Override
-        public OJMHCNLOLPH create() {
-          return OJMHCNLOLPH.newInstance();
+        public Vector4 create() {
+          return Vector4.newInstance();
         }
       }
 
@@ -1000,70 +1000,70 @@ public final class RotateMapCsReqOuterClass {
 
         static final FieldName y = FieldName.forField("y");
 
-        static final FieldName gHDEDODMHLD = FieldName.forField("GHDEDODMHLD");
+        static final FieldName w = FieldName.forField("w");
       }
     }
 
     /**
-     * Protobuf type {@code OCNLBAGJONP}
+     * Protobuf type {@code NewMapRot}
      */
-    public static final class OCNLBAGJONP extends ProtoMessage<OCNLBAGJONP> implements Cloneable {
+    public static final class NewMapRot extends ProtoMessage<NewMapRot> implements Cloneable {
       private static final long serialVersionUID = 0L;
 
       /**
-       * <code>optional .Vector IENLJAFIBOL = 2;</code>
+       * <code>optional .Vector vector3 = 2;</code>
        */
-      private final VectorOuterClass.Vector iENLJAFIBOL = VectorOuterClass.Vector.newInstance();
+      private final VectorOuterClass.Vector vector3 = VectorOuterClass.Vector.newInstance();
 
       /**
-       * <code>optional .RotateMapCsReq.OJMHCNLOLPH JBCABOABIDI = 9;</code>
+       * <code>optional .RotateMapCsReq.Vector4 vector4 = 10;</code>
        */
-      private final OJMHCNLOLPH jBCABOABIDI = OJMHCNLOLPH.newInstance();
+      private final Vector4 vector4 = Vector4.newInstance();
 
-      private OCNLBAGJONP() {
+      private NewMapRot() {
       }
 
       /**
-       * @return a new empty instance of {@code OCNLBAGJONP}
+       * @return a new empty instance of {@code NewMapRot}
        */
-      public static OCNLBAGJONP newInstance() {
-        return new OCNLBAGJONP();
+      public static NewMapRot newInstance() {
+        return new NewMapRot();
       }
 
       /**
-       * <code>optional .Vector IENLJAFIBOL = 2;</code>
-       * @return whether the iENLJAFIBOL field is set
+       * <code>optional .Vector vector3 = 2;</code>
+       * @return whether the vector3 field is set
        */
-      public boolean hasIENLJAFIBOL() {
+      public boolean hasVector3() {
         return (bitField0_ & 0x00000001) != 0;
       }
 
       /**
-       * <code>optional .Vector IENLJAFIBOL = 2;</code>
+       * <code>optional .Vector vector3 = 2;</code>
        * @return this
        */
-      public OCNLBAGJONP clearIENLJAFIBOL() {
+      public NewMapRot clearVector3() {
         bitField0_ &= ~0x00000001;
-        iENLJAFIBOL.clear();
+        vector3.clear();
         return this;
       }
 
       /**
-       * <code>optional .Vector IENLJAFIBOL = 2;</code>
+       * <code>optional .Vector vector3 = 2;</code>
        *
        * This method returns the internal storage object without modifying any has state.
        * The returned object should not be modified and be treated as read-only.
        *
-       * Use {@link #getMutableIENLJAFIBOL()} if you want to modify it.
+       * Use {@link #getMutableVector3()} if you want to modify it.
        *
        * @return internal storage object for reading
        */
-      public VectorOuterClass.Vector getIENLJAFIBOL() {
-        return iENLJAFIBOL;
+      public VectorOuterClass.Vector getVector3() {
+        return vector3;
       }
 
       /**
-       * <code>optional .Vector IENLJAFIBOL = 2;</code>
+       * <code>optional .Vector vector3 = 2;</code>
        *
        * This method returns the internal storage object and sets the corresponding
        * has state. The returned object will become part of this message and its
@@ -1071,56 +1071,56 @@ public final class RotateMapCsReqOuterClass {
        *
        * @return internal storage object for modifications
        */
-      public VectorOuterClass.Vector getMutableIENLJAFIBOL() {
+      public VectorOuterClass.Vector getMutableVector3() {
         bitField0_ |= 0x00000001;
-        return iENLJAFIBOL;
+        return vector3;
       }
 
       /**
-       * <code>optional .Vector IENLJAFIBOL = 2;</code>
-       * @param value the iENLJAFIBOL to set
+       * <code>optional .Vector vector3 = 2;</code>
+       * @param value the vector3 to set
        * @return this
        */
-      public OCNLBAGJONP setIENLJAFIBOL(final VectorOuterClass.Vector value) {
+      public NewMapRot setVector3(final VectorOuterClass.Vector value) {
         bitField0_ |= 0x00000001;
-        iENLJAFIBOL.copyFrom(value);
+        vector3.copyFrom(value);
         return this;
       }
 
       /**
-       * <code>optional .RotateMapCsReq.OJMHCNLOLPH JBCABOABIDI = 9;</code>
-       * @return whether the jBCABOABIDI field is set
+       * <code>optional .RotateMapCsReq.Vector4 vector4 = 10;</code>
+       * @return whether the vector4 field is set
        */
-      public boolean hasJBCABOABIDI() {
+      public boolean hasVector4() {
         return (bitField0_ & 0x00000002) != 0;
       }
 
       /**
-       * <code>optional .RotateMapCsReq.OJMHCNLOLPH JBCABOABIDI = 9;</code>
+       * <code>optional .RotateMapCsReq.Vector4 vector4 = 10;</code>
        * @return this
        */
-      public OCNLBAGJONP clearJBCABOABIDI() {
+      public NewMapRot clearVector4() {
         bitField0_ &= ~0x00000002;
-        jBCABOABIDI.clear();
+        vector4.clear();
         return this;
       }
 
       /**
-       * <code>optional .RotateMapCsReq.OJMHCNLOLPH JBCABOABIDI = 9;</code>
+       * <code>optional .RotateMapCsReq.Vector4 vector4 = 10;</code>
        *
        * This method returns the internal storage object without modifying any has state.
        * The returned object should not be modified and be treated as read-only.
        *
-       * Use {@link #getMutableJBCABOABIDI()} if you want to modify it.
+       * Use {@link #getMutableVector4()} if you want to modify it.
        *
        * @return internal storage object for reading
        */
-      public OJMHCNLOLPH getJBCABOABIDI() {
-        return jBCABOABIDI;
+      public Vector4 getVector4() {
+        return vector4;
       }
 
       /**
-       * <code>optional .RotateMapCsReq.OJMHCNLOLPH JBCABOABIDI = 9;</code>
+       * <code>optional .RotateMapCsReq.Vector4 vector4 = 10;</code>
        *
        * This method returns the internal storage object and sets the corresponding
        * has state. The returned object will become part of this message and its
@@ -1128,69 +1128,69 @@ public final class RotateMapCsReqOuterClass {
        *
        * @return internal storage object for modifications
        */
-      public OJMHCNLOLPH getMutableJBCABOABIDI() {
+      public Vector4 getMutableVector4() {
         bitField0_ |= 0x00000002;
-        return jBCABOABIDI;
+        return vector4;
       }
 
       /**
-       * <code>optional .RotateMapCsReq.OJMHCNLOLPH JBCABOABIDI = 9;</code>
-       * @param value the jBCABOABIDI to set
+       * <code>optional .RotateMapCsReq.Vector4 vector4 = 10;</code>
+       * @param value the vector4 to set
        * @return this
        */
-      public OCNLBAGJONP setJBCABOABIDI(final OJMHCNLOLPH value) {
+      public NewMapRot setVector4(final Vector4 value) {
         bitField0_ |= 0x00000002;
-        jBCABOABIDI.copyFrom(value);
+        vector4.copyFrom(value);
         return this;
       }
 
       @Override
-      public OCNLBAGJONP copyFrom(final OCNLBAGJONP other) {
+      public NewMapRot copyFrom(final NewMapRot other) {
         cachedSize = other.cachedSize;
         if ((bitField0_ | other.bitField0_) != 0) {
           bitField0_ = other.bitField0_;
-          iENLJAFIBOL.copyFrom(other.iENLJAFIBOL);
-          jBCABOABIDI.copyFrom(other.jBCABOABIDI);
+          vector3.copyFrom(other.vector3);
+          vector4.copyFrom(other.vector4);
         }
         return this;
       }
 
       @Override
-      public OCNLBAGJONP mergeFrom(final OCNLBAGJONP other) {
+      public NewMapRot mergeFrom(final NewMapRot other) {
         if (other.isEmpty()) {
           return this;
         }
         cachedSize = -1;
-        if (other.hasIENLJAFIBOL()) {
-          getMutableIENLJAFIBOL().mergeFrom(other.iENLJAFIBOL);
+        if (other.hasVector3()) {
+          getMutableVector3().mergeFrom(other.vector3);
         }
-        if (other.hasJBCABOABIDI()) {
-          getMutableJBCABOABIDI().mergeFrom(other.jBCABOABIDI);
+        if (other.hasVector4()) {
+          getMutableVector4().mergeFrom(other.vector4);
         }
         return this;
       }
 
       @Override
-      public OCNLBAGJONP clear() {
+      public NewMapRot clear() {
         if (isEmpty()) {
           return this;
         }
         cachedSize = -1;
         bitField0_ = 0;
-        iENLJAFIBOL.clear();
-        jBCABOABIDI.clear();
+        vector3.clear();
+        vector4.clear();
         return this;
       }
 
       @Override
-      public OCNLBAGJONP clearQuick() {
+      public NewMapRot clearQuick() {
         if (isEmpty()) {
           return this;
         }
         cachedSize = -1;
         bitField0_ = 0;
-        iENLJAFIBOL.clearQuick();
-        jBCABOABIDI.clearQuick();
+        vector3.clearQuick();
+        vector4.clearQuick();
         return this;
       }
 
@@ -1199,24 +1199,24 @@ public final class RotateMapCsReqOuterClass {
         if (o == this) {
           return true;
         }
-        if (!(o instanceof OCNLBAGJONP)) {
+        if (!(o instanceof NewMapRot)) {
           return false;
         }
-        OCNLBAGJONP other = (OCNLBAGJONP) o;
+        NewMapRot other = (NewMapRot) o;
         return bitField0_ == other.bitField0_
-          && (!hasIENLJAFIBOL() || iENLJAFIBOL.equals(other.iENLJAFIBOL))
-          && (!hasJBCABOABIDI() || jBCABOABIDI.equals(other.jBCABOABIDI));
+          && (!hasVector3() || vector3.equals(other.vector3))
+          && (!hasVector4() || vector4.equals(other.vector4));
       }
 
       @Override
       public void writeTo(final ProtoSink output) throws IOException {
         if ((bitField0_ & 0x00000001) != 0) {
           output.writeRawByte((byte) 18);
-          output.writeMessageNoTag(iENLJAFIBOL);
+          output.writeMessageNoTag(vector3);
         }
         if ((bitField0_ & 0x00000002) != 0) {
-          output.writeRawByte((byte) 74);
-          output.writeMessageNoTag(jBCABOABIDI);
+          output.writeRawByte((byte) 82);
+          output.writeMessageNoTag(vector4);
         }
       }
 
@@ -1224,33 +1224,33 @@ public final class RotateMapCsReqOuterClass {
       protected int computeSerializedSize() {
         int size = 0;
         if ((bitField0_ & 0x00000001) != 0) {
-          size += 1 + ProtoSink.computeMessageSizeNoTag(iENLJAFIBOL);
+          size += 1 + ProtoSink.computeMessageSizeNoTag(vector3);
         }
         if ((bitField0_ & 0x00000002) != 0) {
-          size += 1 + ProtoSink.computeMessageSizeNoTag(jBCABOABIDI);
+          size += 1 + ProtoSink.computeMessageSizeNoTag(vector4);
         }
         return size;
       }
 
       @Override
       @SuppressWarnings("fallthrough")
-      public OCNLBAGJONP mergeFrom(final ProtoSource input) throws IOException {
+      public NewMapRot mergeFrom(final ProtoSource input) throws IOException {
         // Enabled Fall-Through Optimization (QuickBuffers)
         int tag = input.readTag();
         while (true) {
           switch (tag) {
             case 18: {
-              // iENLJAFIBOL
-              input.readMessage(iENLJAFIBOL);
+              // vector3
+              input.readMessage(vector3);
               bitField0_ |= 0x00000001;
               tag = input.readTag();
-              if (tag != 74) {
+              if (tag != 82) {
                 break;
               }
             }
-            case 74: {
-              // jBCABOABIDI
-              input.readMessage(jBCABOABIDI);
+            case 82: {
+              // vector4
+              input.readMessage(vector4);
               bitField0_ |= 0x00000002;
               tag = input.readTag();
               if (tag != 0) {
@@ -1275,25 +1275,25 @@ public final class RotateMapCsReqOuterClass {
       public void writeTo(final JsonSink output) throws IOException {
         output.beginObject();
         if ((bitField0_ & 0x00000001) != 0) {
-          output.writeMessage(FieldNames.iENLJAFIBOL, iENLJAFIBOL);
+          output.writeMessage(FieldNames.vector3, vector3);
         }
         if ((bitField0_ & 0x00000002) != 0) {
-          output.writeMessage(FieldNames.jBCABOABIDI, jBCABOABIDI);
+          output.writeMessage(FieldNames.vector4, vector4);
         }
         output.endObject();
       }
 
       @Override
-      public OCNLBAGJONP mergeFrom(final JsonSource input) throws IOException {
+      public NewMapRot mergeFrom(final JsonSource input) throws IOException {
         if (!input.beginObject()) {
           return this;
         }
         while (!input.isAtEnd()) {
           switch (input.readFieldHash()) {
-            case 237656587: {
-              if (input.isAtField(FieldNames.iENLJAFIBOL)) {
+            case 337790800: {
+              if (input.isAtField(FieldNames.vector3)) {
                 if (!input.trySkipNullValue()) {
-                  input.readMessage(iENLJAFIBOL);
+                  input.readMessage(vector3);
                   bitField0_ |= 0x00000001;
                 }
               } else {
@@ -1301,10 +1301,10 @@ public final class RotateMapCsReqOuterClass {
               }
               break;
             }
-            case 1627224650: {
-              if (input.isAtField(FieldNames.jBCABOABIDI)) {
+            case 337790801: {
+              if (input.isAtField(FieldNames.vector4)) {
                 if (!input.trySkipNullValue()) {
-                  input.readMessage(jBCABOABIDI);
+                  input.readMessage(vector4);
                   bitField0_ |= 0x00000002;
                 }
               } else {
@@ -1323,8 +1323,8 @@ public final class RotateMapCsReqOuterClass {
       }
 
       @Override
-      public OCNLBAGJONP clone() {
-        return new OCNLBAGJONP().copyFrom(this);
+      public NewMapRot clone() {
+        return new NewMapRot().copyFrom(this);
       }
 
       @Override
@@ -1332,31 +1332,31 @@ public final class RotateMapCsReqOuterClass {
         return ((bitField0_) == 0);
       }
 
-      public static OCNLBAGJONP parseFrom(final byte[] data) throws InvalidProtocolBufferException {
-        return ProtoMessage.mergeFrom(new OCNLBAGJONP(), data).checkInitialized();
+      public static NewMapRot parseFrom(final byte[] data) throws InvalidProtocolBufferException {
+        return ProtoMessage.mergeFrom(new NewMapRot(), data).checkInitialized();
       }
 
-      public static OCNLBAGJONP parseFrom(final ProtoSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new OCNLBAGJONP(), input).checkInitialized();
+      public static NewMapRot parseFrom(final ProtoSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new NewMapRot(), input).checkInitialized();
       }
 
-      public static OCNLBAGJONP parseFrom(final JsonSource input) throws IOException {
-        return ProtoMessage.mergeFrom(new OCNLBAGJONP(), input).checkInitialized();
+      public static NewMapRot parseFrom(final JsonSource input) throws IOException {
+        return ProtoMessage.mergeFrom(new NewMapRot(), input).checkInitialized();
       }
 
       /**
-       * @return factory for creating OCNLBAGJONP messages
+       * @return factory for creating NewMapRot messages
        */
-      public static MessageFactory<OCNLBAGJONP> getFactory() {
-        return OCNLBAGJONPFactory.INSTANCE;
+      public static MessageFactory<NewMapRot> getFactory() {
+        return NewMapRotFactory.INSTANCE;
       }
 
-      private enum OCNLBAGJONPFactory implements MessageFactory<OCNLBAGJONP> {
+      private enum NewMapRotFactory implements MessageFactory<NewMapRot> {
         INSTANCE;
 
         @Override
-        public OCNLBAGJONP create() {
-          return OCNLBAGJONP.newInstance();
+        public NewMapRot create() {
+          return NewMapRot.newInstance();
         }
       }
 
@@ -1364,9 +1364,9 @@ public final class RotateMapCsReqOuterClass {
        * Contains name constants used for serializing JSON
        */
       static class FieldNames {
-        static final FieldName iENLJAFIBOL = FieldName.forField("IENLJAFIBOL");
+        static final FieldName vector3 = FieldName.forField("vector3");
 
-        static final FieldName jBCABOABIDI = FieldName.forField("JBCABOABIDI");
+        static final FieldName vector4 = FieldName.forField("vector4");
       }
     }
 

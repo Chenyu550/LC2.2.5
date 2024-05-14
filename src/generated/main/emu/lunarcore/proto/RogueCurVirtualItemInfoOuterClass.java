@@ -19,6 +19,10 @@ public final class RogueCurVirtualItemInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *  idk, isnt being used by official server
+     * </pre>
+     *
      * <code>optional uint32 cur_rogue_ability_point = 1;</code>
      */
     private int curRogueAbilityPoint;
@@ -39,6 +43,10 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  idk, isnt being used by official server
+     * </pre>
+     *
      * <code>optional uint32 cur_rogue_ability_point = 1;</code>
      * @return whether the curRogueAbilityPoint field is set
      */
@@ -47,6 +55,10 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  idk, isnt being used by official server
+     * </pre>
+     *
      * <code>optional uint32 cur_rogue_ability_point = 1;</code>
      * @return this
      */
@@ -57,6 +69,10 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  idk, isnt being used by official server
+     * </pre>
+     *
      * <code>optional uint32 cur_rogue_ability_point = 1;</code>
      * @return the curRogueAbilityPoint
      */
@@ -65,6 +81,10 @@ public final class RogueCurVirtualItemInfoOuterClass {
     }
 
     /**
+     * <pre>
+     *  idk, isnt being used by official server
+     * </pre>
+     *
      * <code>optional uint32 cur_rogue_ability_point = 1;</code>
      * @param value the curRogueAbilityPoint to set
      * @return this

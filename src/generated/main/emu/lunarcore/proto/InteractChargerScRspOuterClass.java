@@ -19,10 +19,6 @@ public final class InteractChargerScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * 4
-     * </pre>
-     *
      * <code>optional uint32 retcode = 2;</code>
      */
     private int retcode;
@@ -48,10 +44,6 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * 4
-     * </pre>
-     *
      * <code>optional uint32 retcode = 2;</code>
      * @return whether the retcode field is set
      */
@@ -60,10 +52,6 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * 4
-     * </pre>
-     *
      * <code>optional uint32 retcode = 2;</code>
      * @return this
      */
@@ -74,10 +62,6 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * 4
-     * </pre>
-     *
      * <code>optional uint32 retcode = 2;</code>
      * @return the retcode
      */
@@ -86,10 +70,6 @@ public final class InteractChargerScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * 4
-     * </pre>
-     *
      * <code>optional uint32 retcode = 2;</code>
      * @param value the retcode to set
      * @return this

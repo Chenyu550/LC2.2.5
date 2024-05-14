@@ -76,14 +76,14 @@ public final class PVEBattleResultScRspOuterClass {
     private final ItemListOuterClass.ItemList unk3 = ItemListOuterClass.ItemList.newInstance();
 
     /**
-     * <code>optional string res_version = 3;</code>
-     */
-    private final Utf8String resVersion = Utf8String.newEmptyInstance();
-
-    /**
-     * <code>optional string bin_version = 8;</code>
+     * <code>optional string bin_version = 3;</code>
      */
     private final Utf8String binVersion = Utf8String.newEmptyInstance();
+
+    /**
+     * <code>optional string res_version = 8;</code>
+     */
+    private final Utf8String resVersion = Utf8String.newEmptyInstance();
 
     /**
      * <code>repeated .BattleAvatar battle_avatar_list = 7;</code>
@@ -614,90 +614,25 @@ public final class PVEBattleResultScRspOuterClass {
     }
 
     /**
-     * <code>optional string res_version = 3;</code>
-     * @return whether the resVersion field is set
+     * <code>optional string bin_version = 3;</code>
+     * @return whether the binVersion field is set
      */
-    public boolean hasResVersion() {
+    public boolean hasBinVersion() {
       return (bitField0_ & 0x00000800) != 0;
     }
 
     /**
-     * <code>optional string res_version = 3;</code>
-     * @return this
-     */
-    public PVEBattleResultScRsp clearResVersion() {
-      bitField0_ &= ~0x00000800;
-      resVersion.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional string res_version = 3;</code>
-     * @return the resVersion
-     */
-    public String getResVersion() {
-      return resVersion.getString();
-    }
-
-    /**
-     * <code>optional string res_version = 3;</code>
-     * @return internal {@code Utf8String} representation of resVersion for reading
-     */
-    public Utf8String getResVersionBytes() {
-      return this.resVersion;
-    }
-
-    /**
-     * <code>optional string res_version = 3;</code>
-     * @return internal {@code Utf8String} representation of resVersion for modifications
-     */
-    public Utf8String getMutableResVersionBytes() {
-      bitField0_ |= 0x00000800;
-      return this.resVersion;
-    }
-
-    /**
-     * <code>optional string res_version = 3;</code>
-     * @param value the resVersion to set
-     * @return this
-     */
-    public PVEBattleResultScRsp setResVersion(final CharSequence value) {
-      bitField0_ |= 0x00000800;
-      resVersion.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string res_version = 3;</code>
-     * @param value the resVersion to set
-     * @return this
-     */
-    public PVEBattleResultScRsp setResVersion(final Utf8String value) {
-      bitField0_ |= 0x00000800;
-      resVersion.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional string bin_version = 8;</code>
-     * @return whether the binVersion field is set
-     */
-    public boolean hasBinVersion() {
-      return (bitField0_ & 0x00001000) != 0;
-    }
-
-    /**
-     * <code>optional string bin_version = 8;</code>
+     * <code>optional string bin_version = 3;</code>
      * @return this
      */
     public PVEBattleResultScRsp clearBinVersion() {
-      bitField0_ &= ~0x00001000;
+      bitField0_ &= ~0x00000800;
       binVersion.clear();
       return this;
     }
 
     /**
-     * <code>optional string bin_version = 8;</code>
+     * <code>optional string bin_version = 3;</code>
      * @return the binVersion
      */
     public String getBinVersion() {
@@ -705,7 +640,7 @@ public final class PVEBattleResultScRspOuterClass {
     }
 
     /**
-     * <code>optional string bin_version = 8;</code>
+     * <code>optional string bin_version = 3;</code>
      * @return internal {@code Utf8String} representation of binVersion for reading
      */
     public Utf8String getBinVersionBytes() {
@@ -713,33 +648,98 @@ public final class PVEBattleResultScRspOuterClass {
     }
 
     /**
-     * <code>optional string bin_version = 8;</code>
+     * <code>optional string bin_version = 3;</code>
      * @return internal {@code Utf8String} representation of binVersion for modifications
      */
     public Utf8String getMutableBinVersionBytes() {
-      bitField0_ |= 0x00001000;
+      bitField0_ |= 0x00000800;
       return this.binVersion;
     }
 
     /**
-     * <code>optional string bin_version = 8;</code>
+     * <code>optional string bin_version = 3;</code>
      * @param value the binVersion to set
      * @return this
      */
     public PVEBattleResultScRsp setBinVersion(final CharSequence value) {
-      bitField0_ |= 0x00001000;
+      bitField0_ |= 0x00000800;
       binVersion.copyFrom(value);
       return this;
     }
 
     /**
-     * <code>optional string bin_version = 8;</code>
+     * <code>optional string bin_version = 3;</code>
      * @param value the binVersion to set
      * @return this
      */
     public PVEBattleResultScRsp setBinVersion(final Utf8String value) {
-      bitField0_ |= 0x00001000;
+      bitField0_ |= 0x00000800;
       binVersion.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string res_version = 8;</code>
+     * @return whether the resVersion field is set
+     */
+    public boolean hasResVersion() {
+      return (bitField0_ & 0x00001000) != 0;
+    }
+
+    /**
+     * <code>optional string res_version = 8;</code>
+     * @return this
+     */
+    public PVEBattleResultScRsp clearResVersion() {
+      bitField0_ &= ~0x00001000;
+      resVersion.clear();
+      return this;
+    }
+
+    /**
+     * <code>optional string res_version = 8;</code>
+     * @return the resVersion
+     */
+    public String getResVersion() {
+      return resVersion.getString();
+    }
+
+    /**
+     * <code>optional string res_version = 8;</code>
+     * @return internal {@code Utf8String} representation of resVersion for reading
+     */
+    public Utf8String getResVersionBytes() {
+      return this.resVersion;
+    }
+
+    /**
+     * <code>optional string res_version = 8;</code>
+     * @return internal {@code Utf8String} representation of resVersion for modifications
+     */
+    public Utf8String getMutableResVersionBytes() {
+      bitField0_ |= 0x00001000;
+      return this.resVersion;
+    }
+
+    /**
+     * <code>optional string res_version = 8;</code>
+     * @param value the resVersion to set
+     * @return this
+     */
+    public PVEBattleResultScRsp setResVersion(final CharSequence value) {
+      bitField0_ |= 0x00001000;
+      resVersion.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <code>optional string res_version = 8;</code>
+     * @param value the resVersion to set
+     * @return this
+     */
+    public PVEBattleResultScRsp setResVersion(final Utf8String value) {
+      bitField0_ |= 0x00001000;
+      resVersion.copyFrom(value);
       return this;
     }
 
@@ -829,8 +829,8 @@ public final class PVEBattleResultScRspOuterClass {
         unk1.copyFrom(other.unk1);
         unk2.copyFrom(other.unk2);
         unk3.copyFrom(other.unk3);
-        resVersion.copyFrom(other.resVersion);
         binVersion.copyFrom(other.binVersion);
+        resVersion.copyFrom(other.resVersion);
         battleAvatarList.copyFrom(other.battleAvatarList);
       }
       return this;
@@ -875,11 +875,11 @@ public final class PVEBattleResultScRspOuterClass {
       if (other.hasUnk3()) {
         getMutableUnk3().mergeFrom(other.unk3);
       }
-      if (other.hasResVersion()) {
-        getMutableResVersionBytes().copyFrom(other.resVersion);
-      }
       if (other.hasBinVersion()) {
         getMutableBinVersionBytes().copyFrom(other.binVersion);
+      }
+      if (other.hasResVersion()) {
+        getMutableResVersionBytes().copyFrom(other.resVersion);
       }
       if (other.hasBattleAvatarList()) {
         getMutableBattleAvatarList().addAll(other.battleAvatarList);
@@ -905,8 +905,8 @@ public final class PVEBattleResultScRspOuterClass {
       unk1.clear();
       unk2.clear();
       unk3.clear();
-      resVersion.clear();
       binVersion.clear();
+      resVersion.clear();
       battleAvatarList.clear();
       return this;
     }
@@ -922,8 +922,8 @@ public final class PVEBattleResultScRspOuterClass {
       unk1.clearQuick();
       unk2.clearQuick();
       unk3.clearQuick();
-      resVersion.clear();
       binVersion.clear();
+      resVersion.clear();
       battleAvatarList.clearQuick();
       return this;
     }
@@ -949,8 +949,8 @@ public final class PVEBattleResultScRspOuterClass {
         && (!hasUnk1() || unk1.equals(other.unk1))
         && (!hasUnk2() || unk2.equals(other.unk2))
         && (!hasUnk3() || unk3.equals(other.unk3))
-        && (!hasResVersion() || resVersion.equals(other.resVersion))
         && (!hasBinVersion() || binVersion.equals(other.binVersion))
+        && (!hasResVersion() || resVersion.equals(other.resVersion))
         && (!hasBattleAvatarList() || battleAvatarList.equals(other.battleAvatarList));
     }
 
@@ -1002,11 +1002,11 @@ public final class PVEBattleResultScRspOuterClass {
       }
       if ((bitField0_ & 0x00000800) != 0) {
         output.writeRawByte((byte) 26);
-        output.writeStringNoTag(resVersion);
+        output.writeStringNoTag(binVersion);
       }
       if ((bitField0_ & 0x00001000) != 0) {
         output.writeRawByte((byte) 66);
-        output.writeStringNoTag(binVersion);
+        output.writeStringNoTag(resVersion);
       }
       if ((bitField0_ & 0x00002000) != 0) {
         for (int i = 0; i < battleAvatarList.length(); i++) {
@@ -1053,10 +1053,10 @@ public final class PVEBattleResultScRspOuterClass {
         size += 2 + ProtoSink.computeMessageSizeNoTag(unk3);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(resVersion);
+        size += 1 + ProtoSink.computeStringSizeNoTag(binVersion);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        size += 1 + ProtoSink.computeStringSizeNoTag(binVersion);
+        size += 1 + ProtoSink.computeStringSizeNoTag(resVersion);
       }
       if ((bitField0_ & 0x00002000) != 0) {
         size += (1 * battleAvatarList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(battleAvatarList);
@@ -1174,8 +1174,8 @@ public final class PVEBattleResultScRspOuterClass {
             }
           }
           case 26: {
-            // resVersion
-            input.readString(resVersion);
+            // binVersion
+            input.readString(binVersion);
             bitField0_ |= 0x00000800;
             tag = input.readTag();
             if (tag != 66) {
@@ -1183,8 +1183,8 @@ public final class PVEBattleResultScRspOuterClass {
             }
           }
           case 66: {
-            // binVersion
-            input.readString(binVersion);
+            // resVersion
+            input.readString(resVersion);
             bitField0_ |= 0x00001000;
             tag = input.readTag();
             if (tag != 58) {
@@ -1250,10 +1250,10 @@ public final class PVEBattleResultScRspOuterClass {
         output.writeMessage(FieldNames.unk3, unk3);
       }
       if ((bitField0_ & 0x00000800) != 0) {
-        output.writeString(FieldNames.resVersion, resVersion);
+        output.writeString(FieldNames.binVersion, binVersion);
       }
       if ((bitField0_ & 0x00001000) != 0) {
-        output.writeString(FieldNames.binVersion, binVersion);
+        output.writeString(FieldNames.resVersion, resVersion);
       }
       if ((bitField0_ & 0x00002000) != 0) {
         output.writeRepeatedMessage(FieldNames.battleAvatarList, battleAvatarList);
@@ -1401,11 +1401,11 @@ public final class PVEBattleResultScRspOuterClass {
             }
             break;
           }
-          case 1778976792:
-          case -351019975: {
-            if (input.isAtField(FieldNames.resVersion)) {
+          case 1864225233:
+          case -2003285600: {
+            if (input.isAtField(FieldNames.binVersion)) {
               if (!input.trySkipNullValue()) {
-                input.readString(resVersion);
+                input.readString(binVersion);
                 bitField0_ |= 0x00000800;
               }
             } else {
@@ -1413,11 +1413,11 @@ public final class PVEBattleResultScRspOuterClass {
             }
             break;
           }
-          case 1864225233:
-          case -2003285600: {
-            if (input.isAtField(FieldNames.binVersion)) {
+          case 1778976792:
+          case -351019975: {
+            if (input.isAtField(FieldNames.resVersion)) {
               if (!input.trySkipNullValue()) {
-                input.readString(binVersion);
+                input.readString(resVersion);
                 bitField0_ |= 0x00001000;
               }
             } else {
@@ -1512,9 +1512,9 @@ public final class PVEBattleResultScRspOuterClass {
 
       static final FieldName unk3 = FieldName.forField("unk3");
 
-      static final FieldName resVersion = FieldName.forField("resVersion", "res_version");
-
       static final FieldName binVersion = FieldName.forField("binVersion", "bin_version");
+
+      static final FieldName resVersion = FieldName.forField("resVersion", "res_version");
 
       static final FieldName battleAvatarList = FieldName.forField("battleAvatarList", "battle_avatar_list");
     }

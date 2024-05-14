@@ -19,19 +19,14 @@ public final class PropExtraInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .PropChessRogueInfo chess_rogue_info = 11;</code>
-     */
-    private final PropChessRogueInfoOuterClass.PropChessRogueInfo chessRogueInfo = PropChessRogueInfoOuterClass.PropChessRogueInfo.newInstance();
-
-    /**
-     * <code>optional .PropRogueInfo rogue_info = 12;</code>
+     * <pre>
+     *  PropAeonInfo aeon_info = 5;
+     *  PropChessInfo chess_rogue_info = 4;
+     * </pre>
+     *
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      */
     private final PropRogueInfoOuterClass.PropRogueInfo rogueInfo = PropRogueInfoOuterClass.PropRogueInfo.newInstance();
-
-    /**
-     * <code>optional .PropAeonInfo aeon_info = 15;</code>
-     */
-    private final PropAeonInfoOuterClass.PropAeonInfo aeonInfo = PropAeonInfoOuterClass.PropAeonInfo.newInstance();
 
     private PropExtraInfo() {
     }
@@ -43,84 +38,52 @@ public final class PropExtraInfoOuterClass {
       return new PropExtraInfo();
     }
 
+    public boolean hasInfo() {
+      return (((bitField0_ & 0x00000001)) != 0);
+    }
+
+    public PropExtraInfo clearInfo() {
+      if (hasInfo()) {
+        clearRogueInfo();
+      }
+      return this;
+    }
+
     /**
-     * <code>optional .PropChessRogueInfo chess_rogue_info = 11;</code>
-     * @return whether the chessRogueInfo field is set
+     * <pre>
+     *  PropAeonInfo aeon_info = 5;
+     *  PropChessInfo chess_rogue_info = 4;
+     * </pre>
+     *
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
+     * @return whether the rogueInfo field is set
      */
-    public boolean hasChessRogueInfo() {
+    public boolean hasRogueInfo() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional .PropChessRogueInfo chess_rogue_info = 11;</code>
-     * @return this
-     */
-    public PropExtraInfo clearChessRogueInfo() {
-      bitField0_ &= ~0x00000001;
-      chessRogueInfo.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .PropChessRogueInfo chess_rogue_info = 11;</code>
+     * <pre>
+     *  PropAeonInfo aeon_info = 5;
+     *  PropChessInfo chess_rogue_info = 4;
+     * </pre>
      *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableChessRogueInfo()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public PropChessRogueInfoOuterClass.PropChessRogueInfo getChessRogueInfo() {
-      return chessRogueInfo;
-    }
-
-    /**
-     * <code>optional .PropChessRogueInfo chess_rogue_info = 11;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public PropChessRogueInfoOuterClass.PropChessRogueInfo getMutableChessRogueInfo() {
-      bitField0_ |= 0x00000001;
-      return chessRogueInfo;
-    }
-
-    /**
-     * <code>optional .PropChessRogueInfo chess_rogue_info = 11;</code>
-     * @param value the chessRogueInfo to set
-     * @return this
-     */
-    public PropExtraInfo setChessRogueInfo(
-        final PropChessRogueInfoOuterClass.PropChessRogueInfo value) {
-      bitField0_ |= 0x00000001;
-      chessRogueInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional .PropRogueInfo rogue_info = 12;</code>
-     * @return whether the rogueInfo field is set
-     */
-    public boolean hasRogueInfo() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional .PropRogueInfo rogue_info = 12;</code>
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      * @return this
      */
     public PropExtraInfo clearRogueInfo() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       rogueInfo.clear();
       return this;
     }
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 12;</code>
+     * <pre>
+     *  PropAeonInfo aeon_info = 5;
+     *  PropChessInfo chess_rogue_info = 4;
+     * </pre>
+     *
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -134,7 +97,12 @@ public final class PropExtraInfoOuterClass {
     }
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 12;</code>
+     * <pre>
+     *  PropAeonInfo aeon_info = 5;
+     *  PropChessInfo chess_rogue_info = 4;
+     * </pre>
+     *
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -143,75 +111,23 @@ public final class PropExtraInfoOuterClass {
      * @return internal storage object for modifications
      */
     public PropRogueInfoOuterClass.PropRogueInfo getMutableRogueInfo() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       return rogueInfo;
     }
 
     /**
-     * <code>optional .PropRogueInfo rogue_info = 12;</code>
+     * <pre>
+     *  PropAeonInfo aeon_info = 5;
+     *  PropChessInfo chess_rogue_info = 4;
+     * </pre>
+     *
+     * <code>optional .PropRogueInfo rogue_info = 11;</code>
      * @param value the rogueInfo to set
      * @return this
      */
     public PropExtraInfo setRogueInfo(final PropRogueInfoOuterClass.PropRogueInfo value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       rogueInfo.copyFrom(value);
-      return this;
-    }
-
-    /**
-     * <code>optional .PropAeonInfo aeon_info = 15;</code>
-     * @return whether the aeonInfo field is set
-     */
-    public boolean hasAeonInfo() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional .PropAeonInfo aeon_info = 15;</code>
-     * @return this
-     */
-    public PropExtraInfo clearAeonInfo() {
-      bitField0_ &= ~0x00000004;
-      aeonInfo.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .PropAeonInfo aeon_info = 15;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableAeonInfo()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public PropAeonInfoOuterClass.PropAeonInfo getAeonInfo() {
-      return aeonInfo;
-    }
-
-    /**
-     * <code>optional .PropAeonInfo aeon_info = 15;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public PropAeonInfoOuterClass.PropAeonInfo getMutableAeonInfo() {
-      bitField0_ |= 0x00000004;
-      return aeonInfo;
-    }
-
-    /**
-     * <code>optional .PropAeonInfo aeon_info = 15;</code>
-     * @param value the aeonInfo to set
-     * @return this
-     */
-    public PropExtraInfo setAeonInfo(final PropAeonInfoOuterClass.PropAeonInfo value) {
-      bitField0_ |= 0x00000004;
-      aeonInfo.copyFrom(value);
       return this;
     }
 
@@ -220,9 +136,7 @@ public final class PropExtraInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        chessRogueInfo.copyFrom(other.chessRogueInfo);
         rogueInfo.copyFrom(other.rogueInfo);
-        aeonInfo.copyFrom(other.aeonInfo);
       }
       return this;
     }
@@ -233,14 +147,8 @@ public final class PropExtraInfoOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasChessRogueInfo()) {
-        getMutableChessRogueInfo().mergeFrom(other.chessRogueInfo);
-      }
       if (other.hasRogueInfo()) {
         getMutableRogueInfo().mergeFrom(other.rogueInfo);
-      }
-      if (other.hasAeonInfo()) {
-        getMutableAeonInfo().mergeFrom(other.aeonInfo);
       }
       return this;
     }
@@ -252,9 +160,7 @@ public final class PropExtraInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      chessRogueInfo.clear();
       rogueInfo.clear();
-      aeonInfo.clear();
       return this;
     }
 
@@ -265,9 +171,7 @@ public final class PropExtraInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      chessRogueInfo.clearQuick();
       rogueInfo.clearQuick();
-      aeonInfo.clearQuick();
       return this;
     }
 
@@ -281,24 +185,14 @@ public final class PropExtraInfoOuterClass {
       }
       PropExtraInfo other = (PropExtraInfo) o;
       return bitField0_ == other.bitField0_
-        && (!hasChessRogueInfo() || chessRogueInfo.equals(other.chessRogueInfo))
-        && (!hasRogueInfo() || rogueInfo.equals(other.rogueInfo))
-        && (!hasAeonInfo() || aeonInfo.equals(other.aeonInfo));
+        && (!hasRogueInfo() || rogueInfo.equals(other.rogueInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 90);
-        output.writeMessageNoTag(chessRogueInfo);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 98);
         output.writeMessageNoTag(rogueInfo);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 122);
-        output.writeMessageNoTag(aeonInfo);
       }
     }
 
@@ -306,13 +200,7 @@ public final class PropExtraInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(chessRogueInfo);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(rogueInfo);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(aeonInfo);
       }
       return size;
     }
@@ -325,27 +213,9 @@ public final class PropExtraInfoOuterClass {
       while (true) {
         switch (tag) {
           case 90: {
-            // chessRogueInfo
-            input.readMessage(chessRogueInfo);
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 98) {
-              break;
-            }
-          }
-          case 98: {
             // rogueInfo
             input.readMessage(rogueInfo);
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 122) {
-              break;
-            }
-          }
-          case 122: {
-            // aeonInfo
-            input.readMessage(aeonInfo);
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -369,13 +239,7 @@ public final class PropExtraInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeMessage(FieldNames.chessRogueInfo, chessRogueInfo);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.rogueInfo, rogueInfo);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeMessage(FieldNames.aeonInfo, aeonInfo);
       }
       output.endObject();
     }
@@ -387,36 +251,12 @@ public final class PropExtraInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -2057768312:
-          case 1888241298: {
-            if (input.isAtField(FieldNames.chessRogueInfo)) {
-              if (!input.trySkipNullValue()) {
-                input.readMessage(chessRogueInfo);
-                bitField0_ |= 0x00000001;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case 655808936:
           case -1124583437: {
             if (input.isAtField(FieldNames.rogueInfo)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(rogueInfo);
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case -20823983:
-          case -625367446: {
-            if (input.isAtField(FieldNames.aeonInfo)) {
-              if (!input.trySkipNullValue()) {
-                input.readMessage(aeonInfo);
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000001;
               }
             } else {
               input.skipUnknownField();
@@ -475,11 +315,7 @@ public final class PropExtraInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName chessRogueInfo = FieldName.forField("chessRogueInfo", "chess_rogue_info");
-
       static final FieldName rogueInfo = FieldName.forField("rogueInfo", "rogue_info");
-
-      static final FieldName aeonInfo = FieldName.forField("aeonInfo", "aeon_info");
     }
   }
 }

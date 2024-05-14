@@ -29,10 +29,6 @@ public final class UnlockedMusicOuterClass {
     private int groupId;
 
     /**
-     * <pre>
-     *  is_played
-     * </pre>
-     *
      * <code>optional bool unkbool = 3;</code>
      */
     private boolean unkbool;
@@ -122,10 +118,6 @@ public final class UnlockedMusicOuterClass {
     }
 
     /**
-     * <pre>
-     *  is_played
-     * </pre>
-     *
      * <code>optional bool unkbool = 3;</code>
      * @return whether the unkbool field is set
      */
@@ -134,10 +126,6 @@ public final class UnlockedMusicOuterClass {
     }
 
     /**
-     * <pre>
-     *  is_played
-     * </pre>
-     *
      * <code>optional bool unkbool = 3;</code>
      * @return this
      */
@@ -148,10 +136,6 @@ public final class UnlockedMusicOuterClass {
     }
 
     /**
-     * <pre>
-     *  is_played
-     * </pre>
-     *
      * <code>optional bool unkbool = 3;</code>
      * @return the unkbool
      */
@@ -160,10 +144,6 @@ public final class UnlockedMusicOuterClass {
     }
 
     /**
-     * <pre>
-     *  is_played
-     * </pre>
-     *
      * <code>optional bool unkbool = 3;</code>
      * @param value the unkbool to set
      * @return this

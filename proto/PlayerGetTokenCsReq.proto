@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message PlayerGetTokenCsReq {
-    string account_uid = 6;
-    uint32 platform_type = 15;
-    string token = 9;
-}

@@ -19,6 +19,10 @@ public final class RogueRoomOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * uint32 LELFKONOLPP = 4;
+     * </pre>
+     *
      * <code>optional uint32 room_id = 2;</code>
      */
     private int roomId;
@@ -29,6 +33,10 @@ public final class RogueRoomOuterClass {
     private int siteId;
 
     /**
+     * <pre>
+     * RogueRoomStatus EPLFPIFPEEM = 8;
+     * </pre>
+     *
      * <code>optional .RogueRoomStatus room_status = 8;</code>
      */
     private int roomStatus;
@@ -44,6 +52,10 @@ public final class RogueRoomOuterClass {
     }
 
     /**
+     * <pre>
+     * uint32 LELFKONOLPP = 4;
+     * </pre>
+     *
      * <code>optional uint32 room_id = 2;</code>
      * @return whether the roomId field is set
      */
@@ -52,6 +64,10 @@ public final class RogueRoomOuterClass {
     }
 
     /**
+     * <pre>
+     * uint32 LELFKONOLPP = 4;
+     * </pre>
+     *
      * <code>optional uint32 room_id = 2;</code>
      * @return this
      */
@@ -62,6 +78,10 @@ public final class RogueRoomOuterClass {
     }
 
     /**
+     * <pre>
+     * uint32 LELFKONOLPP = 4;
+     * </pre>
+     *
      * <code>optional uint32 room_id = 2;</code>
      * @return the roomId
      */
@@ -70,6 +90,10 @@ public final class RogueRoomOuterClass {
     }
 
     /**
+     * <pre>
+     * uint32 LELFKONOLPP = 4;
+     * </pre>
+     *
      * <code>optional uint32 room_id = 2;</code>
      * @param value the roomId to set
      * @return this
@@ -118,6 +142,10 @@ public final class RogueRoomOuterClass {
     }
 
     /**
+     * <pre>
+     * RogueRoomStatus EPLFPIFPEEM = 8;
+     * </pre>
+     *
      * <code>optional .RogueRoomStatus room_status = 8;</code>
      * @return whether the roomStatus field is set
      */
@@ -126,6 +154,10 @@ public final class RogueRoomOuterClass {
     }
 
     /**
+     * <pre>
+     * RogueRoomStatus EPLFPIFPEEM = 8;
+     * </pre>
+     *
      * <code>optional .RogueRoomStatus room_status = 8;</code>
      * @return this
      */
@@ -136,6 +168,10 @@ public final class RogueRoomOuterClass {
     }
 
     /**
+     * <pre>
+     * RogueRoomStatus EPLFPIFPEEM = 8;
+     * </pre>
+     *
      * <code>optional .RogueRoomStatus room_status = 8;</code>
      * @return the roomStatus
      */
@@ -169,6 +205,10 @@ public final class RogueRoomOuterClass {
     }
 
     /**
+     * <pre>
+     * RogueRoomStatus EPLFPIFPEEM = 8;
+     * </pre>
+     *
      * <code>optional .RogueRoomStatus room_status = 8;</code>
      * @param value the roomStatus to set
      * @return this

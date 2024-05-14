@@ -13,6 +13,10 @@ import us.hebi.quickbuf.ProtoSource;
 
 public final class RogueVirtualItemDataOuterClass {
   /**
+   * <pre>
+   *  pure guess
+   * </pre>
+   *
    * Protobuf type {@code RogueVirtualItemData}
    */
   public static final class RogueVirtualItemData extends ProtoMessage<RogueVirtualItemData> implements Cloneable {
@@ -24,14 +28,18 @@ public final class RogueVirtualItemDataOuterClass {
     private int num;
 
     /**
-     * <code>optional uint32 HEMPKBBNDJJ = 14;</code>
+     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
      */
-    private int hEMPKBBNDJJ;
+    private int mDBPDPDDHBC;
 
     private RogueVirtualItemData() {
     }
 
     /**
+     * <pre>
+     *  pure guess
+     * </pre>
+     *
      * @return a new empty instance of {@code RogueVirtualItemData}
      */
     public static RogueVirtualItemData newInstance() {
@@ -76,39 +84,39 @@ public final class RogueVirtualItemDataOuterClass {
     }
 
     /**
-     * <code>optional uint32 HEMPKBBNDJJ = 14;</code>
-     * @return whether the hEMPKBBNDJJ field is set
+     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
+     * @return whether the mDBPDPDDHBC field is set
      */
-    public boolean hasHEMPKBBNDJJ() {
+    public boolean hasMDBPDPDDHBC() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>optional uint32 HEMPKBBNDJJ = 14;</code>
+     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
      * @return this
      */
-    public RogueVirtualItemData clearHEMPKBBNDJJ() {
+    public RogueVirtualItemData clearMDBPDPDDHBC() {
       bitField0_ &= ~0x00000002;
-      hEMPKBBNDJJ = 0;
+      mDBPDPDDHBC = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 HEMPKBBNDJJ = 14;</code>
-     * @return the hEMPKBBNDJJ
+     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
+     * @return the mDBPDPDDHBC
      */
-    public int getHEMPKBBNDJJ() {
-      return hEMPKBBNDJJ;
+    public int getMDBPDPDDHBC() {
+      return mDBPDPDDHBC;
     }
 
     /**
-     * <code>optional uint32 HEMPKBBNDJJ = 14;</code>
-     * @param value the hEMPKBBNDJJ to set
+     * <code>optional uint32 MDBPDPDDHBC = 14;</code>
+     * @param value the mDBPDPDDHBC to set
      * @return this
      */
-    public RogueVirtualItemData setHEMPKBBNDJJ(final int value) {
+    public RogueVirtualItemData setMDBPDPDDHBC(final int value) {
       bitField0_ |= 0x00000002;
-      hEMPKBBNDJJ = value;
+      mDBPDPDDHBC = value;
       return this;
     }
 
@@ -118,7 +126,7 @@ public final class RogueVirtualItemDataOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         num = other.num;
-        hEMPKBBNDJJ = other.hEMPKBBNDJJ;
+        mDBPDPDDHBC = other.mDBPDPDDHBC;
       }
       return this;
     }
@@ -132,8 +140,8 @@ public final class RogueVirtualItemDataOuterClass {
       if (other.hasNum()) {
         setNum(other.num);
       }
-      if (other.hasHEMPKBBNDJJ()) {
-        setHEMPKBBNDJJ(other.hEMPKBBNDJJ);
+      if (other.hasMDBPDPDDHBC()) {
+        setMDBPDPDDHBC(other.mDBPDPDDHBC);
       }
       return this;
     }
@@ -146,7 +154,7 @@ public final class RogueVirtualItemDataOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       num = 0;
-      hEMPKBBNDJJ = 0;
+      mDBPDPDDHBC = 0;
       return this;
     }
 
@@ -171,7 +179,7 @@ public final class RogueVirtualItemDataOuterClass {
       RogueVirtualItemData other = (RogueVirtualItemData) o;
       return bitField0_ == other.bitField0_
         && (!hasNum() || num == other.num)
-        && (!hasHEMPKBBNDJJ() || hEMPKBBNDJJ == other.hEMPKBBNDJJ);
+        && (!hasMDBPDPDDHBC() || mDBPDPDDHBC == other.mDBPDPDDHBC);
     }
 
     @Override
@@ -182,7 +190,7 @@ public final class RogueVirtualItemDataOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(hEMPKBBNDJJ);
+        output.writeUInt32NoTag(mDBPDPDDHBC);
       }
     }
 
@@ -193,7 +201,7 @@ public final class RogueVirtualItemDataOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(num);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(hEMPKBBNDJJ);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(mDBPDPDDHBC);
       }
       return size;
     }
@@ -215,8 +223,8 @@ public final class RogueVirtualItemDataOuterClass {
             }
           }
           case 112: {
-            // hEMPKBBNDJJ
-            hEMPKBBNDJJ = input.readUInt32();
+            // mDBPDPDDHBC
+            mDBPDPDDHBC = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -244,7 +252,7 @@ public final class RogueVirtualItemDataOuterClass {
         output.writeUInt32(FieldNames.num, num);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.hEMPKBBNDJJ, hEMPKBBNDJJ);
+        output.writeUInt32(FieldNames.mDBPDPDDHBC, mDBPDPDDHBC);
       }
       output.endObject();
     }
@@ -267,10 +275,10 @@ public final class RogueVirtualItemDataOuterClass {
             }
             break;
           }
-          case -1159008671: {
-            if (input.isAtField(FieldNames.hEMPKBBNDJJ)) {
+          case -170385096: {
+            if (input.isAtField(FieldNames.mDBPDPDDHBC)) {
               if (!input.trySkipNullValue()) {
-                hEMPKBBNDJJ = input.readUInt32();
+                mDBPDPDDHBC = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -333,7 +341,7 @@ public final class RogueVirtualItemDataOuterClass {
     static class FieldNames {
       static final FieldName num = FieldName.forField("num");
 
-      static final FieldName hEMPKBBNDJJ = FieldName.forField("HEMPKBBNDJJ");
+      static final FieldName mDBPDPDDHBC = FieldName.forField("MDBPDPDDHBC");
     }
   }
 }

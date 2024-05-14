@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message NpcRogueInfo {
-	uint32 dialogue_group_id = 10;
-	uint32 rogue_npc_id = 8; // 10 4 3
-	bool finish_dialogue = 1; // 13 6
-}

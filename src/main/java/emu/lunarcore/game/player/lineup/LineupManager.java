@@ -161,7 +161,6 @@ public class LineupManager {
         
         if (slot >= 0 && slot < lineup.size()) {
             lineup.setLeader(slot);
-            lineup.save();
             return true;
         }
 

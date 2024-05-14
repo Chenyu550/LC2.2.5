@@ -26,9 +26,6 @@ public class Config {
     public ServerRates serverRates = new ServerRates();
     public LogOptions logOptions = new LogOptions();
     public DownloadData downloadData = new DownloadData();
-    public AnnounceData announceData = new AnnounceData();
-    public DeviceAuthData deviceAuthData = new DeviceAuthData();
-    public WatermarkData watermarkData = new WatermarkData();
 
     public String resourceDir = "./resources";
     public String dataDir = "./data";
@@ -102,7 +99,7 @@ public class Config {
     @Getter
     public static class GameServerConfig extends ServerConfig {
         public String id = "lunar_rail_test";
-        public String name = "XeonSucks SR";
+        public String name = "Lunar Core";
         public String description = "A LunarCore server";
         public int kcpInterval = 40;
         public Integer kcpTimeout = 30;
@@ -178,7 +175,7 @@ public class Config {
         public WelcomeMail() {
             this.title = "Welcome to a LunarCore server";
             this.sender = "Server";
-            this.content = "Welcome to XeonSucks SR! Please take these items as a starter gift. For a list of commands, type /help in the server chat window. Check out our <a type=OpenURL1 href=https://discord.gg/cfPKJ6N5hw>Discord</a> and <a type=OpenURL1 href=https://github.com/Melledy/LunarCore>Github</a> for more information about the server.";
+            this.content = "Welcome to Lunar Core! Please take these items as a starter gift. For a list of commands, type /help in the server chat window. Check out our <a type=OpenURL1 href=https://discord.gg/cfPKJ6N5hw>Discord</a> and <a type=OpenURL1 href=https://github.com/Melledy/LunarCore>Github</a> for more information about the server.";
             this.attachments = List.of(
                 new ItemParam(2, 1000000),
                 new ItemParam(101, 100),
@@ -203,25 +200,6 @@ public class Config {
         public String exResourceUrl = null;
         public String luaUrl = null;
         public String ifixUrl = null;
-    }
-
-    @Getter
-    public static class AnnounceData {
-        public boolean useBanner = false;
-        public String bannerText = "";
-        public int bannerFrequency = 0;
-    }
-    
-    @Getter
-    public static class DeviceAuthData {
-        public boolean useDeviceAuth = false;
-        public String endpointUrl = null;
-    }
-
-    @Getter
-    public static class WatermarkData {
-        public boolean useWatermark = false;
-        public String watermarkUrl = "https://z1.wzznft.com/i/2024/04/05/hbmcok.png";
     }
 
     public void validate() {

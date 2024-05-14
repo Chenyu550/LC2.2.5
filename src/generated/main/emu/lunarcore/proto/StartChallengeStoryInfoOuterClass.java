@@ -33,6 +33,17 @@ public final class StartChallengeStoryInfoOuterClass {
       return new StartChallengeStoryInfo();
     }
 
+    public boolean hasBuffInfo() {
+      return (((bitField0_ & 0x00000001)) != 0);
+    }
+
+    public StartChallengeStoryInfo clearBuffInfo() {
+      if (hasBuffInfo()) {
+        clearStoryBuffInfo();
+      }
+      return this;
+    }
+
     /**
      * <code>optional .StartChallengeStoryBuffInfo story_buff_info = 14;</code>
      * @return whether the storyBuffInfo field is set

@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message GetPrivateChatHistoryCsReq {
-  	uint32 to_uid = 5;
-  	uint32 sender_uid = 9;
-}

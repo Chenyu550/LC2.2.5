@@ -25,11 +25,6 @@ public final class RogueDialogueEventParamOuterClass {
     private float ratio;
 
     /**
-     * <code>optional int32 int_value = 5;</code>
-     */
-    private int intValue;
-
-    /**
      * <code>optional uint32 dialogue_event_id = 8;</code>
      */
     private int dialogueEventId;
@@ -38,6 +33,11 @@ public final class RogueDialogueEventParamOuterClass {
      * <code>optional uint32 arg_id = 14;</code>
      */
     private int argId;
+
+    /**
+     * <code>optional sint32 int_value = 5;</code>
+     */
+    private int intValue;
 
     /**
      * <code>optional bool is_valid = 11;</code>
@@ -92,48 +92,11 @@ public final class RogueDialogueEventParamOuterClass {
     }
 
     /**
-     * <code>optional int32 int_value = 5;</code>
-     * @return whether the intValue field is set
-     */
-    public boolean hasIntValue() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional int32 int_value = 5;</code>
-     * @return this
-     */
-    public RogueDialogueEventParam clearIntValue() {
-      bitField0_ &= ~0x00000002;
-      intValue = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional int32 int_value = 5;</code>
-     * @return the intValue
-     */
-    public int getIntValue() {
-      return intValue;
-    }
-
-    /**
-     * <code>optional int32 int_value = 5;</code>
-     * @param value the intValue to set
-     * @return this
-     */
-    public RogueDialogueEventParam setIntValue(final int value) {
-      bitField0_ |= 0x00000002;
-      intValue = value;
-      return this;
-    }
-
-    /**
      * <code>optional uint32 dialogue_event_id = 8;</code>
      * @return whether the dialogueEventId field is set
      */
     public boolean hasDialogueEventId() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
@@ -141,7 +104,7 @@ public final class RogueDialogueEventParamOuterClass {
      * @return this
      */
     public RogueDialogueEventParam clearDialogueEventId() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       dialogueEventId = 0;
       return this;
     }
@@ -160,7 +123,7 @@ public final class RogueDialogueEventParamOuterClass {
      * @return this
      */
     public RogueDialogueEventParam setDialogueEventId(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       dialogueEventId = value;
       return this;
     }
@@ -170,7 +133,7 @@ public final class RogueDialogueEventParamOuterClass {
      * @return whether the argId field is set
      */
     public boolean hasArgId() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
@@ -178,7 +141,7 @@ public final class RogueDialogueEventParamOuterClass {
      * @return this
      */
     public RogueDialogueEventParam clearArgId() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       argId = 0;
       return this;
     }
@@ -197,8 +160,45 @@ public final class RogueDialogueEventParamOuterClass {
      * @return this
      */
     public RogueDialogueEventParam setArgId(final int value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       argId = value;
+      return this;
+    }
+
+    /**
+     * <code>optional sint32 int_value = 5;</code>
+     * @return whether the intValue field is set
+     */
+    public boolean hasIntValue() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <code>optional sint32 int_value = 5;</code>
+     * @return this
+     */
+    public RogueDialogueEventParam clearIntValue() {
+      bitField0_ &= ~0x00000008;
+      intValue = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional sint32 int_value = 5;</code>
+     * @return the intValue
+     */
+    public int getIntValue() {
+      return intValue;
+    }
+
+    /**
+     * <code>optional sint32 int_value = 5;</code>
+     * @param value the intValue to set
+     * @return this
+     */
+    public RogueDialogueEventParam setIntValue(final int value) {
+      bitField0_ |= 0x00000008;
+      intValue = value;
       return this;
     }
 
@@ -245,9 +245,9 @@ public final class RogueDialogueEventParamOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         ratio = other.ratio;
-        intValue = other.intValue;
         dialogueEventId = other.dialogueEventId;
         argId = other.argId;
+        intValue = other.intValue;
         isValid = other.isValid;
       }
       return this;
@@ -262,14 +262,14 @@ public final class RogueDialogueEventParamOuterClass {
       if (other.hasRatio()) {
         setRatio(other.ratio);
       }
-      if (other.hasIntValue()) {
-        setIntValue(other.intValue);
-      }
       if (other.hasDialogueEventId()) {
         setDialogueEventId(other.dialogueEventId);
       }
       if (other.hasArgId()) {
         setArgId(other.argId);
+      }
+      if (other.hasIntValue()) {
+        setIntValue(other.intValue);
       }
       if (other.hasIsValid()) {
         setIsValid(other.isValid);
@@ -285,9 +285,9 @@ public final class RogueDialogueEventParamOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       ratio = 0F;
-      intValue = 0;
       dialogueEventId = 0;
       argId = 0;
+      intValue = 0;
       isValid = false;
       return this;
     }
@@ -313,9 +313,9 @@ public final class RogueDialogueEventParamOuterClass {
       RogueDialogueEventParam other = (RogueDialogueEventParam) o;
       return bitField0_ == other.bitField0_
         && (!hasRatio() || ProtoUtil.isEqual(ratio, other.ratio))
-        && (!hasIntValue() || intValue == other.intValue)
         && (!hasDialogueEventId() || dialogueEventId == other.dialogueEventId)
         && (!hasArgId() || argId == other.argId)
+        && (!hasIntValue() || intValue == other.intValue)
         && (!hasIsValid() || isValid == other.isValid);
     }
 
@@ -326,16 +326,16 @@ public final class RogueDialogueEventParamOuterClass {
         output.writeFloatNoTag(ratio);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeInt32NoTag(intValue);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(dialogueEventId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(argId);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 40);
+        output.writeSInt32NoTag(intValue);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeRawByte((byte) 88);
@@ -350,13 +350,13 @@ public final class RogueDialogueEventParamOuterClass {
         size += 5;
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeInt32SizeNoTag(intValue);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(dialogueEventId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(argId);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        size += 1 + ProtoSink.computeSInt32SizeNoTag(intValue);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         size += 2;
@@ -376,15 +376,6 @@ public final class RogueDialogueEventParamOuterClass {
             ratio = input.readFloat();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 40) {
-              break;
-            }
-          }
-          case 40: {
-            // intValue
-            intValue = input.readInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
             if (tag != 64) {
               break;
             }
@@ -392,7 +383,7 @@ public final class RogueDialogueEventParamOuterClass {
           case 64: {
             // dialogueEventId
             dialogueEventId = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 112) {
               break;
@@ -401,6 +392,15 @@ public final class RogueDialogueEventParamOuterClass {
           case 112: {
             // argId
             argId = input.readUInt32();
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 40) {
+              break;
+            }
+          }
+          case 40: {
+            // intValue
+            intValue = input.readSInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 88) {
@@ -437,13 +437,13 @@ public final class RogueDialogueEventParamOuterClass {
         output.writeFloat(FieldNames.ratio, ratio);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeInt32(FieldNames.intValue, intValue);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.dialogueEventId, dialogueEventId);
       }
-      if ((bitField0_ & 0x00000008) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.argId, argId);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeSInt32(FieldNames.intValue, intValue);
       }
       if ((bitField0_ & 0x00000010) != 0) {
         output.writeBool(FieldNames.isValid, isValid);
@@ -469,24 +469,12 @@ public final class RogueDialogueEventParamOuterClass {
             }
             break;
           }
-          case 556050114:
-          case 334404897: {
-            if (input.isAtField(FieldNames.intValue)) {
-              if (!input.trySkipNullValue()) {
-                intValue = input.readInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
           case 88389725:
           case 1671736167: {
             if (input.isAtField(FieldNames.dialogueEventId)) {
               if (!input.trySkipNullValue()) {
                 dialogueEventId = input.readUInt32();
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -498,6 +486,18 @@ public final class RogueDialogueEventParamOuterClass {
             if (input.isAtField(FieldNames.argId)) {
               if (!input.trySkipNullValue()) {
                 argId = input.readUInt32();
+                bitField0_ |= 0x00000004;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
+          case 556050114:
+          case 334404897: {
+            if (input.isAtField(FieldNames.intValue)) {
+              if (!input.trySkipNullValue()) {
+                intValue = input.readSInt32();
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -572,11 +572,11 @@ public final class RogueDialogueEventParamOuterClass {
     static class FieldNames {
       static final FieldName ratio = FieldName.forField("ratio");
 
-      static final FieldName intValue = FieldName.forField("intValue", "int_value");
-
       static final FieldName dialogueEventId = FieldName.forField("dialogueEventId", "dialogue_event_id");
 
       static final FieldName argId = FieldName.forField("argId", "arg_id");
+
+      static final FieldName intValue = FieldName.forField("intValue", "int_value");
 
       static final FieldName isValid = FieldName.forField("isValid", "is_valid");
     }

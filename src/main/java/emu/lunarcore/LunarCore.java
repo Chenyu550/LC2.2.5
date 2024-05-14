@@ -29,9 +29,7 @@ import lombok.Getter;
 public class LunarCore {
     private static final Logger log = LoggerFactory.getLogger(LunarCore.class);
     private static File configFile = new File("./config.json");
-    private static File hotfixFile = new File("./hotfix.json");
     @Getter private static Config config;
-    @Getter private static Hotfix hotfix;
 
     @Getter private static DatabaseManager accountDatabase;
     @Getter private static DatabaseManager gameDatabase;
@@ -62,13 +60,12 @@ public class LunarCore {
 
         // Load config
         LunarCore.loadConfig();
-        LunarCore.loadHotfix();
         LunarCore.updateServerTimeOffset();
     }
 
     public static void main(String[] args) {
         // Start Server
-        LunarCore.getLogger().info("Starting XeonSucks SR " + getJarVersion());
+        LunarCore.getLogger().info("Starting Lunar Core " + getJarVersion());
         LunarCore.getLogger().info("Git hash: " + getGitHash());
         LunarCore.getLogger().info("Game version: " + GameConstants.VERSION);
         boolean generateHandbook = true;
@@ -201,25 +198,6 @@ public class LunarCore {
         LunarCore.saveConfig();
     }
 
-    public static void loadHotfix() {
-        // Load from file
-        try (FileReader file = new FileReader(hotfixFile)) {
-            LunarCore.hotfix = JsonUtils.loadToClass(file, Hotfix.class);
-        } catch (Exception e) {
-            // Ignored
-        }
-
-        // Sanity check
-        if (LunarCore.getHotfix() == null) {
-            LunarCore.hotfix = new Hotfix();
-        } else {
-            LunarCore.getHotfix().validate();
-        }
-
-        // Save hotfix
-        LunarCore.saveHotfix();
-    }
-
     public static void saveConfig() {
         try (FileWriter file = new FileWriter(configFile)) {
             Gson gson = new GsonBuilder()
@@ -231,20 +209,6 @@ public class LunarCore {
             file.write(gson.toJson(config));
         } catch (Exception e) {
             getLogger().error("Config save error");
-        }
-    }
-
-    public static void saveHotfix() {
-        try (FileWriter file = new FileWriter(hotfixFile)) {
-            Gson gson = new GsonBuilder()
-                .setDateFormat("dd-MM-yyyy hh:mm:ss")
-                .setPrettyPrinting()
-                .serializeNulls()
-                .create();
-
-            file.write(gson.toJson(hotfix));
-        } catch (Exception e) {
-            getLogger().error("Hotfix save error");
         }
     }
 

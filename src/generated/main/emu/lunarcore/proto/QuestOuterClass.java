@@ -10,7 +10,6 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
-import us.hebi.quickbuf.RepeatedInt;
 
 public final class QuestOuterClass {
   /**
@@ -38,11 +37,6 @@ public final class QuestOuterClass {
      * <code>optional .QuestStatus status = 8;</code>
      */
     private int status;
-
-    /**
-     * <code>repeated uint32 IOIPJKJIHJB = 5;</code>
-     */
-    private final RepeatedInt iOIPJKJIHJB = RepeatedInt.newEmptyInstance();
 
     private Quest() {
     }
@@ -227,74 +221,6 @@ public final class QuestOuterClass {
       return this;
     }
 
-    /**
-     * <code>repeated uint32 IOIPJKJIHJB = 5;</code>
-     * @return whether the iOIPJKJIHJB field is set
-     */
-    public boolean hasIOIPJKJIHJB() {
-      return (bitField0_ & 0x00000010) != 0;
-    }
-
-    /**
-     * <code>repeated uint32 IOIPJKJIHJB = 5;</code>
-     * @return this
-     */
-    public Quest clearIOIPJKJIHJB() {
-      bitField0_ &= ~0x00000010;
-      iOIPJKJIHJB.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 IOIPJKJIHJB = 5;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableIOIPJKJIHJB()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedInt getIOIPJKJIHJB() {
-      return iOIPJKJIHJB;
-    }
-
-    /**
-     * <code>repeated uint32 IOIPJKJIHJB = 5;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedInt getMutableIOIPJKJIHJB() {
-      bitField0_ |= 0x00000010;
-      return iOIPJKJIHJB;
-    }
-
-    /**
-     * <code>repeated uint32 IOIPJKJIHJB = 5;</code>
-     * @param value the iOIPJKJIHJB to add
-     * @return this
-     */
-    public Quest addIOIPJKJIHJB(final int value) {
-      bitField0_ |= 0x00000010;
-      iOIPJKJIHJB.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated uint32 IOIPJKJIHJB = 5;</code>
-     * @param values the iOIPJKJIHJB to add
-     * @return this
-     */
-    public Quest addAllIOIPJKJIHJB(final int... values) {
-      bitField0_ |= 0x00000010;
-      iOIPJKJIHJB.addAll(values);
-      return this;
-    }
-
     @Override
     public Quest copyFrom(final Quest other) {
       cachedSize = other.cachedSize;
@@ -304,7 +230,6 @@ public final class QuestOuterClass {
         progress = other.progress;
         id = other.id;
         status = other.status;
-        iOIPJKJIHJB.copyFrom(other.iOIPJKJIHJB);
       }
       return this;
     }
@@ -327,9 +252,6 @@ public final class QuestOuterClass {
       if (other.hasStatus()) {
         setStatusValue(other.status);
       }
-      if (other.hasIOIPJKJIHJB()) {
-        getMutableIOIPJKJIHJB().addAll(other.iOIPJKJIHJB);
-      }
       return this;
     }
 
@@ -344,7 +266,6 @@ public final class QuestOuterClass {
       progress = 0;
       id = 0;
       status = 0;
-      iOIPJKJIHJB.clear();
       return this;
     }
 
@@ -355,7 +276,6 @@ public final class QuestOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      iOIPJKJIHJB.clear();
       return this;
     }
 
@@ -372,8 +292,7 @@ public final class QuestOuterClass {
         && (!hasFinishTime() || finishTime == other.finishTime)
         && (!hasProgress() || progress == other.progress)
         && (!hasId() || id == other.id)
-        && (!hasStatus() || status == other.status)
-        && (!hasIOIPJKJIHJB() || iOIPJKJIHJB.equals(other.iOIPJKJIHJB));
+        && (!hasStatus() || status == other.status);
     }
 
     @Override
@@ -394,12 +313,6 @@ public final class QuestOuterClass {
         output.writeRawByte((byte) 64);
         output.writeEnumNoTag(status);
       }
-      if ((bitField0_ & 0x00000010) != 0) {
-        for (int i = 0; i < iOIPJKJIHJB.length(); i++) {
-          output.writeRawByte((byte) 40);
-          output.writeUInt32NoTag(iOIPJKJIHJB.array()[i]);
-        }
-      }
     }
 
     @Override
@@ -416,9 +329,6 @@ public final class QuestOuterClass {
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeEnumSizeNoTag(status);
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
-        size += (1 * iOIPJKJIHJB.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(iOIPJKJIHJB);
       }
       return size;
     }
@@ -465,15 +375,6 @@ public final class QuestOuterClass {
               bitField0_ |= 0x00000008;
             }
             tag = input.readTag();
-            if (tag != 42) {
-              break;
-            }
-          }
-          case 42: {
-            // iOIPJKJIHJB [packed=true]
-            input.readPackedUInt32(iOIPJKJIHJB, tag);
-            bitField0_ |= 0x00000010;
-            tag = input.readTag();
             if (tag != 0) {
               break;
             }
@@ -486,12 +387,6 @@ public final class QuestOuterClass {
               return this;
             }
             tag = input.readTag();
-            break;
-          }
-          case 40: {
-            // iOIPJKJIHJB [packed=false]
-            tag = input.readRepeatedUInt32(iOIPJKJIHJB, tag);
-            bitField0_ |= 0x00000010;
             break;
           }
         }
@@ -512,9 +407,6 @@ public final class QuestOuterClass {
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeEnum(FieldNames.status, status, QuestStatusOuterClass.QuestStatus.converter());
-      }
-      if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRepeatedUInt32(FieldNames.iOIPJKJIHJB, iOIPJKJIHJB);
       }
       output.endObject();
     }
@@ -570,17 +462,6 @@ public final class QuestOuterClass {
                 } else {
                   input.skipUnknownEnumValue();
                 }
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 1686124499: {
-            if (input.isAtField(FieldNames.iOIPJKJIHJB)) {
-              if (!input.trySkipNullValue()) {
-                input.readRepeatedUInt32(iOIPJKJIHJB);
-                bitField0_ |= 0x00000010;
               }
             } else {
               input.skipUnknownField();
@@ -646,8 +527,6 @@ public final class QuestOuterClass {
       static final FieldName id = FieldName.forField("id");
 
       static final FieldName status = FieldName.forField("status");
-
-      static final FieldName iOIPJKJIHJB = FieldName.forField("IOIPJKJIHJB");
     }
   }
 }

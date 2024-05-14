@@ -25,14 +25,14 @@ public final class GetChallengeScRspOuterClass {
     private int retcode;
 
     /**
+     * <code>repeated .ChallengeReward challenge_reward_list = 7;</code>
+     */
+    private final RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> challengeRewardList = RepeatedMessage.newEmptyInstance(ChallengeRewardOuterClass.ChallengeReward.getFactory());
+
+    /**
      * <code>repeated .Challenge challenge_list = 11;</code>
      */
     private final RepeatedMessage<ChallengeOuterClass.Challenge> challengeList = RepeatedMessage.newEmptyInstance(ChallengeOuterClass.Challenge.getFactory());
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 13;</code>
-     */
-    private final RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> challengeRewardList = RepeatedMessage.newEmptyInstance(ChallengeRewardOuterClass.ChallengeReward.getFactory());
 
     private GetChallengeScRsp() {
     }
@@ -82,11 +82,82 @@ public final class GetChallengeScRspOuterClass {
     }
 
     /**
+     * <code>repeated .ChallengeReward challenge_reward_list = 7;</code>
+     * @return whether the challengeRewardList field is set
+     */
+    public boolean hasChallengeRewardList() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>repeated .ChallengeReward challenge_reward_list = 7;</code>
+     * @return this
+     */
+    public GetChallengeScRsp clearChallengeRewardList() {
+      bitField0_ &= ~0x00000002;
+      challengeRewardList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .ChallengeReward challenge_reward_list = 7;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableChallengeRewardList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> getChallengeRewardList() {
+      return challengeRewardList;
+    }
+
+    /**
+     * <code>repeated .ChallengeReward challenge_reward_list = 7;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> getMutableChallengeRewardList(
+        ) {
+      bitField0_ |= 0x00000002;
+      return challengeRewardList;
+    }
+
+    /**
+     * <code>repeated .ChallengeReward challenge_reward_list = 7;</code>
+     * @param value the challengeRewardList to add
+     * @return this
+     */
+    public GetChallengeScRsp addChallengeRewardList(
+        final ChallengeRewardOuterClass.ChallengeReward value) {
+      bitField0_ |= 0x00000002;
+      challengeRewardList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .ChallengeReward challenge_reward_list = 7;</code>
+     * @param values the challengeRewardList to add
+     * @return this
+     */
+    public GetChallengeScRsp addAllChallengeRewardList(
+        final ChallengeRewardOuterClass.ChallengeReward... values) {
+      bitField0_ |= 0x00000002;
+      challengeRewardList.addAll(values);
+      return this;
+    }
+
+    /**
      * <code>repeated .Challenge challenge_list = 11;</code>
      * @return whether the challengeList field is set
      */
     public boolean hasChallengeList() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
@@ -94,7 +165,7 @@ public final class GetChallengeScRspOuterClass {
      * @return this
      */
     public GetChallengeScRsp clearChallengeList() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       challengeList.clear();
       return this;
     }
@@ -123,7 +194,7 @@ public final class GetChallengeScRspOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<ChallengeOuterClass.Challenge> getMutableChallengeList() {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       return challengeList;
     }
 
@@ -133,7 +204,7 @@ public final class GetChallengeScRspOuterClass {
      * @return this
      */
     public GetChallengeScRsp addChallengeList(final ChallengeOuterClass.Challenge value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       challengeList.add(value);
       return this;
     }
@@ -144,79 +215,8 @@ public final class GetChallengeScRspOuterClass {
      * @return this
      */
     public GetChallengeScRsp addAllChallengeList(final ChallengeOuterClass.Challenge... values) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       challengeList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 13;</code>
-     * @return whether the challengeRewardList field is set
-     */
-    public boolean hasChallengeRewardList() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 13;</code>
-     * @return this
-     */
-    public GetChallengeScRsp clearChallengeRewardList() {
-      bitField0_ &= ~0x00000004;
-      challengeRewardList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 13;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableChallengeRewardList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> getChallengeRewardList() {
-      return challengeRewardList;
-    }
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 13;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<ChallengeRewardOuterClass.ChallengeReward> getMutableChallengeRewardList(
-        ) {
-      bitField0_ |= 0x00000004;
-      return challengeRewardList;
-    }
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 13;</code>
-     * @param value the challengeRewardList to add
-     * @return this
-     */
-    public GetChallengeScRsp addChallengeRewardList(
-        final ChallengeRewardOuterClass.ChallengeReward value) {
-      bitField0_ |= 0x00000004;
-      challengeRewardList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .ChallengeReward challenge_reward_list = 13;</code>
-     * @param values the challengeRewardList to add
-     * @return this
-     */
-    public GetChallengeScRsp addAllChallengeRewardList(
-        final ChallengeRewardOuterClass.ChallengeReward... values) {
-      bitField0_ |= 0x00000004;
-      challengeRewardList.addAll(values);
       return this;
     }
 
@@ -226,8 +226,8 @@ public final class GetChallengeScRspOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         retcode = other.retcode;
-        challengeList.copyFrom(other.challengeList);
         challengeRewardList.copyFrom(other.challengeRewardList);
+        challengeList.copyFrom(other.challengeList);
       }
       return this;
     }
@@ -241,11 +241,11 @@ public final class GetChallengeScRspOuterClass {
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
-      if (other.hasChallengeList()) {
-        getMutableChallengeList().addAll(other.challengeList);
-      }
       if (other.hasChallengeRewardList()) {
         getMutableChallengeRewardList().addAll(other.challengeRewardList);
+      }
+      if (other.hasChallengeList()) {
+        getMutableChallengeList().addAll(other.challengeList);
       }
       return this;
     }
@@ -258,8 +258,8 @@ public final class GetChallengeScRspOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       retcode = 0;
-      challengeList.clear();
       challengeRewardList.clear();
+      challengeList.clear();
       return this;
     }
 
@@ -270,8 +270,8 @@ public final class GetChallengeScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      challengeList.clearQuick();
       challengeRewardList.clearQuick();
+      challengeList.clearQuick();
       return this;
     }
 
@@ -286,8 +286,8 @@ public final class GetChallengeScRspOuterClass {
       GetChallengeScRsp other = (GetChallengeScRsp) o;
       return bitField0_ == other.bitField0_
         && (!hasRetcode() || retcode == other.retcode)
-        && (!hasChallengeList() || challengeList.equals(other.challengeList))
-        && (!hasChallengeRewardList() || challengeRewardList.equals(other.challengeRewardList));
+        && (!hasChallengeRewardList() || challengeRewardList.equals(other.challengeRewardList))
+        && (!hasChallengeList() || challengeList.equals(other.challengeList));
     }
 
     @Override
@@ -297,15 +297,15 @@ public final class GetChallengeScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < challengeList.length(); i++) {
-          output.writeRawByte((byte) 90);
-          output.writeMessageNoTag(challengeList.get(i));
+        for (int i = 0; i < challengeRewardList.length(); i++) {
+          output.writeRawByte((byte) 58);
+          output.writeMessageNoTag(challengeRewardList.get(i));
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < challengeRewardList.length(); i++) {
-          output.writeRawByte((byte) 106);
-          output.writeMessageNoTag(challengeRewardList.get(i));
+        for (int i = 0; i < challengeList.length(); i++) {
+          output.writeRawByte((byte) 90);
+          output.writeMessageNoTag(challengeList.get(i));
         }
       }
     }
@@ -317,10 +317,10 @@ public final class GetChallengeScRspOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * challengeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(challengeList);
+        size += (1 * challengeRewardList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(challengeRewardList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * challengeRewardList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(challengeRewardList);
+        size += (1 * challengeList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(challengeList);
       }
       return size;
     }
@@ -337,6 +337,14 @@ public final class GetChallengeScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
+          case 58: {
+            // challengeRewardList
+            tag = input.readRepeatedMessage(challengeRewardList, tag);
+            bitField0_ |= 0x00000002;
             if (tag != 90) {
               break;
             }
@@ -344,14 +352,6 @@ public final class GetChallengeScRspOuterClass {
           case 90: {
             // challengeList
             tag = input.readRepeatedMessage(challengeList, tag);
-            bitField0_ |= 0x00000002;
-            if (tag != 106) {
-              break;
-            }
-          }
-          case 106: {
-            // challengeRewardList
-            tag = input.readRepeatedMessage(challengeRewardList, tag);
             bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
@@ -378,10 +378,10 @@ public final class GetChallengeScRspOuterClass {
         output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedMessage(FieldNames.challengeList, challengeList);
+        output.writeRepeatedMessage(FieldNames.challengeRewardList, challengeRewardList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.challengeRewardList, challengeRewardList);
+        output.writeRepeatedMessage(FieldNames.challengeList, challengeList);
       }
       output.endObject();
     }
@@ -404,11 +404,11 @@ public final class GetChallengeScRspOuterClass {
             }
             break;
           }
-          case -812402783:
-          case 602944250: {
-            if (input.isAtField(FieldNames.challengeList)) {
+          case 1371323696:
+          case -2132566574: {
+            if (input.isAtField(FieldNames.challengeRewardList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(challengeList);
+                input.readRepeatedMessage(challengeRewardList);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -416,11 +416,11 @@ public final class GetChallengeScRspOuterClass {
             }
             break;
           }
-          case 1371323696:
-          case -2132566574: {
-            if (input.isAtField(FieldNames.challengeRewardList)) {
+          case -812402783:
+          case 602944250: {
+            if (input.isAtField(FieldNames.challengeList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(challengeRewardList);
+                input.readRepeatedMessage(challengeList);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -483,9 +483,9 @@ public final class GetChallengeScRspOuterClass {
     static class FieldNames {
       static final FieldName retcode = FieldName.forField("retcode");
 
-      static final FieldName challengeList = FieldName.forField("challengeList", "challenge_list");
-
       static final FieldName challengeRewardList = FieldName.forField("challengeRewardList", "challenge_reward_list");
+
+      static final FieldName challengeList = FieldName.forField("challengeList", "challenge_list");
     }
   }
 }

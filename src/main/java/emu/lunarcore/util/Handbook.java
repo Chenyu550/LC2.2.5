@@ -36,7 +36,7 @@ public class Handbook {
         }
 
         // Save to file
-        String file = "./XeonSucks SR Handbook.txt";
+        String file = "./Lunar Core Handbook.txt";
 
         try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8), true)) {
             // Format date for header
@@ -44,7 +44,7 @@ public class Handbook {
             LocalDateTime now = LocalDateTime.now();
 
             // Header
-            writer.println("# XeonSucks SR " + GameConstants.VERSION + " Handbook");
+            writer.println("# Lunar Core " + GameConstants.VERSION + " Handbook");
             writer.println("# Created " + dtf.format(now));
 
             // Dump commands
@@ -112,6 +112,17 @@ public class Handbook {
                 writer.print(" : ");
                 writer.print("[Level " + excel.getLevel() + "] ");
                 writer.println(textMap.getOrDefault(excel.getStageName(), "null"));
+            }
+            
+            // Dump monsters
+            writer.println(System.lineSeparator());
+            writer.println("# Battle Monsters");
+            list = GameData.getMonsterExcelMap().keySet().intStream().sorted().boxed().toList();
+            for (int id : list) {
+                MonsterExcel excel = GameData.getMonsterExcelMap().get(id);
+                writer.print(excel.getId());
+                writer.print(" : ");
+                writer.println(textMap.getOrDefault(excel.getMonsterName(), "null"));
             }
 
             // Dump stages

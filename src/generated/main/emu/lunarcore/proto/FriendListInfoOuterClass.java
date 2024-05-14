@@ -19,6 +19,11 @@ public final class FriendListInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <code>optional .PlayingState playing_state = 5;</code>
+     */
+    private int playingState;
+
+    /**
      * <code>optional .SimpleInfo simple_info = 7;</code>
      */
     private final SimpleInfoOuterClass.SimpleInfo simpleInfo = SimpleInfoOuterClass.SimpleInfo.newInstance();
@@ -34,11 +39,73 @@ public final class FriendListInfoOuterClass {
     }
 
     /**
+     * <code>optional .PlayingState playing_state = 5;</code>
+     * @return whether the playingState field is set
+     */
+    public boolean hasPlayingState() {
+      return (bitField0_ & 0x00000001) != 0;
+    }
+
+    /**
+     * <code>optional .PlayingState playing_state = 5;</code>
+     * @return this
+     */
+    public FriendListInfo clearPlayingState() {
+      bitField0_ &= ~0x00000001;
+      playingState = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional .PlayingState playing_state = 5;</code>
+     * @return the playingState
+     */
+    public PlayingStateOuterClass.PlayingState getPlayingState() {
+      return PlayingStateOuterClass.PlayingState.forNumber(playingState);
+    }
+
+    /**
+     * Gets the value of the internal enum store. The result is
+     * equivalent to {@link FriendListInfo#getPlayingState()}.getNumber().
+     *
+     * @return numeric wire representation
+     */
+    public int getPlayingStateValue() {
+      return playingState;
+    }
+
+    /**
+     * Sets the value of the internal enum store. This does not
+     * do any validity checks, so be sure to use appropriate value
+     * constants from {@link PlayingStateOuterClass.PlayingState}. Setting an invalid value
+     * can cause {@link FriendListInfo#getPlayingState()} to return null
+     *
+     * @param value the numeric wire value to set
+     * @return this
+     */
+    public FriendListInfo setPlayingStateValue(final int value) {
+      bitField0_ |= 0x00000001;
+      playingState = value;
+      return this;
+    }
+
+    /**
+     * <code>optional .PlayingState playing_state = 5;</code>
+     * @param value the playingState to set
+     * @return this
+     */
+    public FriendListInfo setPlayingState(final PlayingStateOuterClass.PlayingState value) {
+      bitField0_ |= 0x00000001;
+      playingState = value.getNumber();
+      return this;
+    }
+
+    /**
      * <code>optional .SimpleInfo simple_info = 7;</code>
      * @return whether the simpleInfo field is set
      */
     public boolean hasSimpleInfo() {
-      return (bitField0_ & 0x00000001) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
@@ -46,7 +113,7 @@ public final class FriendListInfoOuterClass {
      * @return this
      */
     public FriendListInfo clearSimpleInfo() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       simpleInfo.clear();
       return this;
     }
@@ -75,7 +142,7 @@ public final class FriendListInfoOuterClass {
      * @return internal storage object for modifications
      */
     public SimpleInfoOuterClass.SimpleInfo getMutableSimpleInfo() {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       return simpleInfo;
     }
 
@@ -85,7 +152,7 @@ public final class FriendListInfoOuterClass {
      * @return this
      */
     public FriendListInfo setSimpleInfo(final SimpleInfoOuterClass.SimpleInfo value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       simpleInfo.copyFrom(value);
       return this;
     }
@@ -95,6 +162,7 @@ public final class FriendListInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        playingState = other.playingState;
         simpleInfo.copyFrom(other.simpleInfo);
       }
       return this;
@@ -106,6 +174,9 @@ public final class FriendListInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasPlayingState()) {
+        setPlayingStateValue(other.playingState);
+      }
       if (other.hasSimpleInfo()) {
         getMutableSimpleInfo().mergeFrom(other.simpleInfo);
       }
@@ -119,6 +190,7 @@ public final class FriendListInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      playingState = 0;
       simpleInfo.clear();
       return this;
     }
@@ -144,12 +216,17 @@ public final class FriendListInfoOuterClass {
       }
       FriendListInfo other = (FriendListInfo) o;
       return bitField0_ == other.bitField0_
+        && (!hasPlayingState() || playingState == other.playingState)
         && (!hasSimpleInfo() || simpleInfo.equals(other.simpleInfo));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 40);
+        output.writeEnumNoTag(playingState);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 58);
         output.writeMessageNoTag(simpleInfo);
       }
@@ -159,6 +236,9 @@ public final class FriendListInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
+        size += 1 + ProtoSink.computeEnumSizeNoTag(playingState);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(simpleInfo);
       }
       return size;
@@ -171,10 +251,22 @@ public final class FriendListInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
+          case 40: {
+            // playingState
+            final int value = input.readInt32();
+            if (PlayingStateOuterClass.PlayingState.forNumber(value) != null) {
+              playingState = value;
+              bitField0_ |= 0x00000001;
+            }
+            tag = input.readTag();
+            if (tag != 58) {
+              break;
+            }
+          }
           case 58: {
             // simpleInfo
             input.readMessage(simpleInfo);
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -198,6 +290,9 @@ public final class FriendListInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeEnum(FieldNames.playingState, playingState, PlayingStateOuterClass.PlayingState.converter());
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeMessage(FieldNames.simpleInfo, simpleInfo);
       }
       output.endObject();
@@ -210,12 +305,29 @@ public final class FriendListInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case -583798525:
+          case -574710464: {
+            if (input.isAtField(FieldNames.playingState)) {
+              if (!input.trySkipNullValue()) {
+                final PlayingStateOuterClass.PlayingState value = input.readEnum(PlayingStateOuterClass.PlayingState.converter());
+                if (value != null) {
+                  playingState = value.getNumber();
+                  bitField0_ |= 0x00000001;
+                } else {
+                  input.skipUnknownEnumValue();
+                }
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1431903872:
           case -1419171045: {
             if (input.isAtField(FieldNames.simpleInfo)) {
               if (!input.trySkipNullValue()) {
                 input.readMessage(simpleInfo);
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -275,6 +387,8 @@ public final class FriendListInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName playingState = FieldName.forField("playingState", "playing_state");
+
       static final FieldName simpleInfo = FieldName.forField("simpleInfo", "simple_info");
     }
   }

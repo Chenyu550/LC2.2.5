@@ -37,19 +37,9 @@ public class RegionInfo {
         var proto = RegionEntry.newInstance()
                 .setName(this.getId())
                 .setDispatchUrl(this.getGateAddress() + "/query_gateway")
-                .setEnvType("11")
+                .setEnvType("2")
                 .setDisplayName(this.getName());
         
-        return proto;
-    }
-
-    public RegionEntry toProtoIOS() {
-        var proto = RegionEntry.newInstance()
-            .setName(this.getId())
-            .setDispatchUrl(this.getGateAddress() + "/query_gateway")
-            .setEnvType("0")
-            .setDisplayName(this.getName());
-
         return proto;
     }
 

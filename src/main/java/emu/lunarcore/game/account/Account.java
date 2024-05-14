@@ -46,7 +46,6 @@ public class Account {
     }
 
     public void setReservedPlayerUid(int uid) {
-        if(uid > 0) this.uid = Long.toString(uid);
         this.reservedPlayerUid = uid;
     }
     

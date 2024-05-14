@@ -19,13 +19,22 @@ public final class RogueActionOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .RogueBonusSelectInfo bonus_select_info = 406;</code>
+     * <pre>
+     * CELLDKOCJIA DONMAOEJMEF = 618;
+     * RogueMiracleRepairAction IJGDIIAMLOO = 1746;
+     * RogueMiracleDestroyAction BAECAJOMOJM = 1403;
+     * RogueMiracleDropAction CDLPPJNNBIM = 196;
+     * RogueMiracleSelectDestroyedAction PKEFIKCMDOM = 1336;
+     * </pre>
+     *
+     * <code>optional .RogueBonusSelectInfo bonus_select_info = 515;</code>
      */
     private final RogueBonusSelectInfoOuterClass.RogueBonusSelectInfo bonusSelectInfo = RogueBonusSelectInfoOuterClass.RogueBonusSelectInfo.newInstance();
 
     /**
      * <pre>
-     *  done
+     * RogueBuffDropInfo BMIDONBKJNJ = 590;
+     * RogueBuffEnhanceSelectInfo BDLINKPALNL = 1837;
      * </pre>
      *
      * <code>optional .RogueMiracleSelectInfo miracle_select_info = 527;</code>
@@ -86,7 +95,15 @@ public final class RogueActionOuterClass {
     }
 
     /**
-     * <code>optional .RogueBonusSelectInfo bonus_select_info = 406;</code>
+     * <pre>
+     * CELLDKOCJIA DONMAOEJMEF = 618;
+     * RogueMiracleRepairAction IJGDIIAMLOO = 1746;
+     * RogueMiracleDestroyAction BAECAJOMOJM = 1403;
+     * RogueMiracleDropAction CDLPPJNNBIM = 196;
+     * RogueMiracleSelectDestroyedAction PKEFIKCMDOM = 1336;
+     * </pre>
+     *
+     * <code>optional .RogueBonusSelectInfo bonus_select_info = 515;</code>
      * @return whether the bonusSelectInfo field is set
      */
     public boolean hasBonusSelectInfo() {
@@ -94,7 +111,15 @@ public final class RogueActionOuterClass {
     }
 
     /**
-     * <code>optional .RogueBonusSelectInfo bonus_select_info = 406;</code>
+     * <pre>
+     * CELLDKOCJIA DONMAOEJMEF = 618;
+     * RogueMiracleRepairAction IJGDIIAMLOO = 1746;
+     * RogueMiracleDestroyAction BAECAJOMOJM = 1403;
+     * RogueMiracleDropAction CDLPPJNNBIM = 196;
+     * RogueMiracleSelectDestroyedAction PKEFIKCMDOM = 1336;
+     * </pre>
+     *
+     * <code>optional .RogueBonusSelectInfo bonus_select_info = 515;</code>
      * @return this
      */
     public RogueAction clearBonusSelectInfo() {
@@ -104,7 +129,15 @@ public final class RogueActionOuterClass {
     }
 
     /**
-     * <code>optional .RogueBonusSelectInfo bonus_select_info = 406;</code>
+     * <pre>
+     * CELLDKOCJIA DONMAOEJMEF = 618;
+     * RogueMiracleRepairAction IJGDIIAMLOO = 1746;
+     * RogueMiracleDestroyAction BAECAJOMOJM = 1403;
+     * RogueMiracleDropAction CDLPPJNNBIM = 196;
+     * RogueMiracleSelectDestroyedAction PKEFIKCMDOM = 1336;
+     * </pre>
+     *
+     * <code>optional .RogueBonusSelectInfo bonus_select_info = 515;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -118,7 +151,15 @@ public final class RogueActionOuterClass {
     }
 
     /**
-     * <code>optional .RogueBonusSelectInfo bonus_select_info = 406;</code>
+     * <pre>
+     * CELLDKOCJIA DONMAOEJMEF = 618;
+     * RogueMiracleRepairAction IJGDIIAMLOO = 1746;
+     * RogueMiracleDestroyAction BAECAJOMOJM = 1403;
+     * RogueMiracleDropAction CDLPPJNNBIM = 196;
+     * RogueMiracleSelectDestroyedAction PKEFIKCMDOM = 1336;
+     * </pre>
+     *
+     * <code>optional .RogueBonusSelectInfo bonus_select_info = 515;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -133,7 +174,15 @@ public final class RogueActionOuterClass {
     }
 
     /**
-     * <code>optional .RogueBonusSelectInfo bonus_select_info = 406;</code>
+     * <pre>
+     * CELLDKOCJIA DONMAOEJMEF = 618;
+     * RogueMiracleRepairAction IJGDIIAMLOO = 1746;
+     * RogueMiracleDestroyAction BAECAJOMOJM = 1403;
+     * RogueMiracleDropAction CDLPPJNNBIM = 196;
+     * RogueMiracleSelectDestroyedAction PKEFIKCMDOM = 1336;
+     * </pre>
+     *
+     * <code>optional .RogueBonusSelectInfo bonus_select_info = 515;</code>
      * @param value the bonusSelectInfo to set
      * @return this
      */
@@ -147,7 +196,8 @@ public final class RogueActionOuterClass {
 
     /**
      * <pre>
-     *  done
+     * RogueBuffDropInfo BMIDONBKJNJ = 590;
+     * RogueBuffEnhanceSelectInfo BDLINKPALNL = 1837;
      * </pre>
      *
      * <code>optional .RogueMiracleSelectInfo miracle_select_info = 527;</code>
@@ -159,7 +209,8 @@ public final class RogueActionOuterClass {
 
     /**
      * <pre>
-     *  done
+     * RogueBuffDropInfo BMIDONBKJNJ = 590;
+     * RogueBuffEnhanceSelectInfo BDLINKPALNL = 1837;
      * </pre>
      *
      * <code>optional .RogueMiracleSelectInfo miracle_select_info = 527;</code>
@@ -173,7 +224,8 @@ public final class RogueActionOuterClass {
 
     /**
      * <pre>
-     *  done
+     * RogueBuffDropInfo BMIDONBKJNJ = 590;
+     * RogueBuffEnhanceSelectInfo BDLINKPALNL = 1837;
      * </pre>
      *
      * <code>optional .RogueMiracleSelectInfo miracle_select_info = 527;</code>
@@ -191,7 +243,8 @@ public final class RogueActionOuterClass {
 
     /**
      * <pre>
-     *  done
+     * RogueBuffDropInfo BMIDONBKJNJ = 590;
+     * RogueBuffEnhanceSelectInfo BDLINKPALNL = 1837;
      * </pre>
      *
      * <code>optional .RogueMiracleSelectInfo miracle_select_info = 527;</code>
@@ -210,7 +263,8 @@ public final class RogueActionOuterClass {
 
     /**
      * <pre>
-     *  done
+     * RogueBuffDropInfo BMIDONBKJNJ = 590;
+     * RogueBuffEnhanceSelectInfo BDLINKPALNL = 1837;
      * </pre>
      *
      * <code>optional .RogueMiracleSelectInfo miracle_select_info = 527;</code>
@@ -380,7 +434,7 @@ public final class RogueActionOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawLittleEndian16((short) 6578);
+        output.writeRawLittleEndian16((short) 8346);
         output.writeMessageNoTag(bonusSelectInfo);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -415,7 +469,7 @@ public final class RogueActionOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 3250: {
+          case 4122: {
             // bonusSelectInfo
             clearActionOtherBonusSelectInfo();
             input.readMessage(bonusSelectInfo);

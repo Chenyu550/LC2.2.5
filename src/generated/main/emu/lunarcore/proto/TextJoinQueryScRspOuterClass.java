@@ -25,7 +25,7 @@ public final class TextJoinQueryScRspOuterClass {
     private int retcode;
 
     /**
-     * <code>repeated .TextJoinInfo text_join_list = 13;</code>
+     * <code>repeated .TextJoinInfo text_join_list = 2;</code>
      */
     private final RepeatedMessage<TextJoinInfoOuterClass.TextJoinInfo> textJoinList = RepeatedMessage.newEmptyInstance(TextJoinInfoOuterClass.TextJoinInfo.getFactory());
 
@@ -77,7 +77,7 @@ public final class TextJoinQueryScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TextJoinInfo text_join_list = 13;</code>
+     * <code>repeated .TextJoinInfo text_join_list = 2;</code>
      * @return whether the textJoinList field is set
      */
     public boolean hasTextJoinList() {
@@ -85,7 +85,7 @@ public final class TextJoinQueryScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TextJoinInfo text_join_list = 13;</code>
+     * <code>repeated .TextJoinInfo text_join_list = 2;</code>
      * @return this
      */
     public TextJoinQueryScRsp clearTextJoinList() {
@@ -95,7 +95,7 @@ public final class TextJoinQueryScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TextJoinInfo text_join_list = 13;</code>
+     * <code>repeated .TextJoinInfo text_join_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -109,7 +109,7 @@ public final class TextJoinQueryScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TextJoinInfo text_join_list = 13;</code>
+     * <code>repeated .TextJoinInfo text_join_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,7 +123,7 @@ public final class TextJoinQueryScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TextJoinInfo text_join_list = 13;</code>
+     * <code>repeated .TextJoinInfo text_join_list = 2;</code>
      * @param value the textJoinList to add
      * @return this
      */
@@ -134,7 +134,7 @@ public final class TextJoinQueryScRspOuterClass {
     }
 
     /**
-     * <code>repeated .TextJoinInfo text_join_list = 13;</code>
+     * <code>repeated .TextJoinInfo text_join_list = 2;</code>
      * @param values the textJoinList to add
      * @return this
      */
@@ -216,7 +216,7 @@ public final class TextJoinQueryScRspOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < textJoinList.length(); i++) {
-          output.writeRawByte((byte) 106);
+          output.writeRawByte((byte) 18);
           output.writeMessageNoTag(textJoinList.get(i));
         }
       }
@@ -246,11 +246,11 @@ public final class TextJoinQueryScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 18) {
               break;
             }
           }
-          case 106: {
+          case 18: {
             // textJoinList
             tag = input.readRepeatedMessage(textJoinList, tag);
             bitField0_ |= 0x00000002;

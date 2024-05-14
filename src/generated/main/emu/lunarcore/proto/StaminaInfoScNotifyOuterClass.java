@@ -24,6 +24,11 @@ public final class StaminaInfoScNotifyOuterClass {
     private long nextRecoverTime;
 
     /**
+     * <code>optional int64 DCGINCBODIG = 7;</code>
+     */
+    private long dCGINCBODIG;
+
+    /**
      * <code>optional uint32 stamina = 6;</code>
      */
     private int stamina;
@@ -81,11 +86,48 @@ public final class StaminaInfoScNotifyOuterClass {
     }
 
     /**
+     * <code>optional int64 DCGINCBODIG = 7;</code>
+     * @return whether the dCGINCBODIG field is set
+     */
+    public boolean hasDCGINCBODIG() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional int64 DCGINCBODIG = 7;</code>
+     * @return this
+     */
+    public StaminaInfoScNotify clearDCGINCBODIG() {
+      bitField0_ &= ~0x00000002;
+      dCGINCBODIG = 0L;
+      return this;
+    }
+
+    /**
+     * <code>optional int64 DCGINCBODIG = 7;</code>
+     * @return the dCGINCBODIG
+     */
+    public long getDCGINCBODIG() {
+      return dCGINCBODIG;
+    }
+
+    /**
+     * <code>optional int64 DCGINCBODIG = 7;</code>
+     * @param value the dCGINCBODIG to set
+     * @return this
+     */
+    public StaminaInfoScNotify setDCGINCBODIG(final long value) {
+      bitField0_ |= 0x00000002;
+      dCGINCBODIG = value;
+      return this;
+    }
+
+    /**
      * <code>optional uint32 stamina = 6;</code>
      * @return whether the stamina field is set
      */
     public boolean hasStamina() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
@@ -93,7 +135,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * @return this
      */
     public StaminaInfoScNotify clearStamina() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       stamina = 0;
       return this;
     }
@@ -112,7 +154,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * @return this
      */
     public StaminaInfoScNotify setStamina(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000004;
       stamina = value;
       return this;
     }
@@ -122,7 +164,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * @return whether the reserveStamina field is set
      */
     public boolean hasReserveStamina() {
-      return (bitField0_ & 0x00000004) != 0;
+      return (bitField0_ & 0x00000008) != 0;
     }
 
     /**
@@ -130,7 +172,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * @return this
      */
     public StaminaInfoScNotify clearReserveStamina() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000008;
       reserveStamina = 0;
       return this;
     }
@@ -149,7 +191,7 @@ public final class StaminaInfoScNotifyOuterClass {
      * @return this
      */
     public StaminaInfoScNotify setReserveStamina(final int value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000008;
       reserveStamina = value;
       return this;
     }
@@ -160,6 +202,7 @@ public final class StaminaInfoScNotifyOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         nextRecoverTime = other.nextRecoverTime;
+        dCGINCBODIG = other.dCGINCBODIG;
         stamina = other.stamina;
         reserveStamina = other.reserveStamina;
       }
@@ -174,6 +217,9 @@ public final class StaminaInfoScNotifyOuterClass {
       cachedSize = -1;
       if (other.hasNextRecoverTime()) {
         setNextRecoverTime(other.nextRecoverTime);
+      }
+      if (other.hasDCGINCBODIG()) {
+        setDCGINCBODIG(other.dCGINCBODIG);
       }
       if (other.hasStamina()) {
         setStamina(other.stamina);
@@ -192,6 +238,7 @@ public final class StaminaInfoScNotifyOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       nextRecoverTime = 0L;
+      dCGINCBODIG = 0L;
       stamina = 0;
       reserveStamina = 0;
       return this;
@@ -218,6 +265,7 @@ public final class StaminaInfoScNotifyOuterClass {
       StaminaInfoScNotify other = (StaminaInfoScNotify) o;
       return bitField0_ == other.bitField0_
         && (!hasNextRecoverTime() || nextRecoverTime == other.nextRecoverTime)
+        && (!hasDCGINCBODIG() || dCGINCBODIG == other.dCGINCBODIG)
         && (!hasStamina() || stamina == other.stamina)
         && (!hasReserveStamina() || reserveStamina == other.reserveStamina);
     }
@@ -229,10 +277,14 @@ public final class StaminaInfoScNotifyOuterClass {
         output.writeInt64NoTag(nextRecoverTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 56);
+        output.writeInt64NoTag(dCGINCBODIG);
+      }
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(stamina);
       }
-      if ((bitField0_ & 0x00000004) != 0) {
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(reserveStamina);
       }
@@ -245,9 +297,12 @@ public final class StaminaInfoScNotifyOuterClass {
         size += 1 + ProtoSink.computeInt64SizeNoTag(nextRecoverTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(stamina);
+        size += 1 + ProtoSink.computeInt64SizeNoTag(dCGINCBODIG);
       }
       if ((bitField0_ & 0x00000004) != 0) {
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stamina);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(reserveStamina);
       }
       return size;
@@ -265,6 +320,15 @@ public final class StaminaInfoScNotifyOuterClass {
             nextRecoverTime = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
+            if (tag != 56) {
+              break;
+            }
+          }
+          case 56: {
+            // dCGINCBODIG
+            dCGINCBODIG = input.readInt64();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
             if (tag != 48) {
               break;
             }
@@ -272,7 +336,7 @@ public final class StaminaInfoScNotifyOuterClass {
           case 48: {
             // stamina
             stamina = input.readUInt32();
-            bitField0_ |= 0x00000002;
+            bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 72) {
               break;
@@ -281,7 +345,7 @@ public final class StaminaInfoScNotifyOuterClass {
           case 72: {
             // reserveStamina
             reserveStamina = input.readUInt32();
-            bitField0_ |= 0x00000004;
+            bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
               break;
@@ -308,9 +372,12 @@ public final class StaminaInfoScNotifyOuterClass {
         output.writeInt64(FieldNames.nextRecoverTime, nextRecoverTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.stamina, stamina);
+        output.writeInt64(FieldNames.dCGINCBODIG, dCGINCBODIG);
       }
       if ((bitField0_ & 0x00000004) != 0) {
+        output.writeUInt32(FieldNames.stamina, stamina);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
         output.writeUInt32(FieldNames.reserveStamina, reserveStamina);
       }
       output.endObject();
@@ -335,11 +402,22 @@ public final class StaminaInfoScNotifyOuterClass {
             }
             break;
           }
+          case -831886433: {
+            if (input.isAtField(FieldNames.dCGINCBODIG)) {
+              if (!input.trySkipNullValue()) {
+                dCGINCBODIG = input.readInt64();
+                bitField0_ |= 0x00000002;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case -1897344401: {
             if (input.isAtField(FieldNames.stamina)) {
               if (!input.trySkipNullValue()) {
                 stamina = input.readUInt32();
-                bitField0_ |= 0x00000002;
+                bitField0_ |= 0x00000004;
               }
             } else {
               input.skipUnknownField();
@@ -351,7 +429,7 @@ public final class StaminaInfoScNotifyOuterClass {
             if (input.isAtField(FieldNames.reserveStamina)) {
               if (!input.trySkipNullValue()) {
                 reserveStamina = input.readUInt32();
-                bitField0_ |= 0x00000004;
+                bitField0_ |= 0x00000008;
               }
             } else {
               input.skipUnknownField();
@@ -412,6 +490,8 @@ public final class StaminaInfoScNotifyOuterClass {
      */
     static class FieldNames {
       static final FieldName nextRecoverTime = FieldName.forField("nextRecoverTime", "next_recover_time");
+
+      static final FieldName dCGINCBODIG = FieldName.forField("DCGINCBODIG");
 
       static final FieldName stamina = FieldName.forField("stamina");
 

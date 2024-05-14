@@ -49,7 +49,7 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     *  repeated MonsterBattleInfo monster_list = 8;
+     * repeated MonsterBattleInfo monster_list = 8;
      * </pre>
      *
      * <code>optional uint32 round_cnt = 9;</code>
@@ -293,7 +293,7 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     *  repeated MonsterBattleInfo monster_list = 8;
+     * repeated MonsterBattleInfo monster_list = 8;
      * </pre>
      *
      * <code>optional uint32 round_cnt = 9;</code>
@@ -305,7 +305,7 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     *  repeated MonsterBattleInfo monster_list = 8;
+     * repeated MonsterBattleInfo monster_list = 8;
      * </pre>
      *
      * <code>optional uint32 round_cnt = 9;</code>
@@ -319,7 +319,7 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     *  repeated MonsterBattleInfo monster_list = 8;
+     * repeated MonsterBattleInfo monster_list = 8;
      * </pre>
      *
      * <code>optional uint32 round_cnt = 9;</code>
@@ -331,7 +331,7 @@ public final class BattleStatisticsOuterClass {
 
     /**
      * <pre>
-     *  repeated MonsterBattleInfo monster_list = 8;
+     * repeated MonsterBattleInfo monster_list = 8;
      * </pre>
      *
      * <code>optional uint32 round_cnt = 9;</code>

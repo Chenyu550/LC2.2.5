@@ -14,10 +14,6 @@ import us.hebi.quickbuf.RepeatedInt;
 
 public final class DialogueResultOuterClass {
   /**
-   * <pre>
-   * give up
-   * </pre>
-   *
    * Protobuf type {@code DialogueResult}
    */
   public static final class DialogueResult extends ProtoMessage<DialogueResult> implements Cloneable {
@@ -42,10 +38,6 @@ public final class DialogueResultOuterClass {
     }
 
     /**
-     * <pre>
-     * give up
-     * </pre>
-     *
      * @return a new empty instance of {@code DialogueResult}
      */
     public static DialogueResult newInstance() {

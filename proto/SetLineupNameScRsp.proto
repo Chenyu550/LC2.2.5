@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message SetLineupNameScRsp {
-    uint32 index = 8;
-    uint32 retcode = 7;
-    string name = 6;
-}

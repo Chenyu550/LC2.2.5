@@ -19,14 +19,22 @@ public final class GroupStateInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 group_state = 2;</code>
+     * <pre>
+     *  OEKBJNJEEDF
+     * </pre>
+     *
+     * <code>optional uint32 player_uid = 2;</code>
      */
-    private int groupState;
+    private int playerUid;
 
     /**
-     * <code>optional uint32 EMFPPBJCLGP = 3;</code>
+     * <pre>
+     *  EMFPPBJCLGP
+     * </pre>
+     *
+     * <code>optional uint32 group_state = 3;</code>
      */
-    private int eMFPPBJCLGP;
+    private int groupState;
 
     /**
      * <code>optional uint32 entry_id = 4;</code>
@@ -49,25 +57,90 @@ public final class GroupStateInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_state = 2;</code>
-     * @return whether the groupState field is set
+     * <pre>
+     *  OEKBJNJEEDF
+     * </pre>
+     *
+     * <code>optional uint32 player_uid = 2;</code>
+     * @return whether the playerUid field is set
      */
-    public boolean hasGroupState() {
+    public boolean hasPlayerUid() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
-     * <code>optional uint32 group_state = 2;</code>
+     * <pre>
+     *  OEKBJNJEEDF
+     * </pre>
+     *
+     * <code>optional uint32 player_uid = 2;</code>
+     * @return this
+     */
+    public GroupStateInfo clearPlayerUid() {
+      bitField0_ &= ~0x00000001;
+      playerUid = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  OEKBJNJEEDF
+     * </pre>
+     *
+     * <code>optional uint32 player_uid = 2;</code>
+     * @return the playerUid
+     */
+    public int getPlayerUid() {
+      return playerUid;
+    }
+
+    /**
+     * <pre>
+     *  OEKBJNJEEDF
+     * </pre>
+     *
+     * <code>optional uint32 player_uid = 2;</code>
+     * @param value the playerUid to set
+     * @return this
+     */
+    public GroupStateInfo setPlayerUid(final int value) {
+      bitField0_ |= 0x00000001;
+      playerUid = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *  EMFPPBJCLGP
+     * </pre>
+     *
+     * <code>optional uint32 group_state = 3;</code>
+     * @return whether the groupState field is set
+     */
+    public boolean hasGroupState() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     *  EMFPPBJCLGP
+     * </pre>
+     *
+     * <code>optional uint32 group_state = 3;</code>
      * @return this
      */
     public GroupStateInfo clearGroupState() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       groupState = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 group_state = 2;</code>
+     * <pre>
+     *  EMFPPBJCLGP
+     * </pre>
+     *
+     * <code>optional uint32 group_state = 3;</code>
      * @return the groupState
      */
     public int getGroupState() {
@@ -75,50 +148,17 @@ public final class GroupStateInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_state = 2;</code>
+     * <pre>
+     *  EMFPPBJCLGP
+     * </pre>
+     *
+     * <code>optional uint32 group_state = 3;</code>
      * @param value the groupState to set
      * @return this
      */
     public GroupStateInfo setGroupState(final int value) {
-      bitField0_ |= 0x00000001;
-      groupState = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 EMFPPBJCLGP = 3;</code>
-     * @return whether the eMFPPBJCLGP field is set
-     */
-    public boolean hasEMFPPBJCLGP() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <code>optional uint32 EMFPPBJCLGP = 3;</code>
-     * @return this
-     */
-    public GroupStateInfo clearEMFPPBJCLGP() {
-      bitField0_ &= ~0x00000002;
-      eMFPPBJCLGP = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 EMFPPBJCLGP = 3;</code>
-     * @return the eMFPPBJCLGP
-     */
-    public int getEMFPPBJCLGP() {
-      return eMFPPBJCLGP;
-    }
-
-    /**
-     * <code>optional uint32 EMFPPBJCLGP = 3;</code>
-     * @param value the eMFPPBJCLGP to set
-     * @return this
-     */
-    public GroupStateInfo setEMFPPBJCLGP(final int value) {
       bitField0_ |= 0x00000002;
-      eMFPPBJCLGP = value;
+      groupState = value;
       return this;
     }
 
@@ -201,8 +241,8 @@ public final class GroupStateInfoOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        playerUid = other.playerUid;
         groupState = other.groupState;
-        eMFPPBJCLGP = other.eMFPPBJCLGP;
         entryId = other.entryId;
         groupId = other.groupId;
       }
@@ -215,11 +255,11 @@ public final class GroupStateInfoOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasPlayerUid()) {
+        setPlayerUid(other.playerUid);
+      }
       if (other.hasGroupState()) {
         setGroupState(other.groupState);
-      }
-      if (other.hasEMFPPBJCLGP()) {
-        setEMFPPBJCLGP(other.eMFPPBJCLGP);
       }
       if (other.hasEntryId()) {
         setEntryId(other.entryId);
@@ -237,8 +277,8 @@ public final class GroupStateInfoOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      playerUid = 0;
       groupState = 0;
-      eMFPPBJCLGP = 0;
       entryId = 0;
       groupId = 0;
       return this;
@@ -264,8 +304,8 @@ public final class GroupStateInfoOuterClass {
       }
       GroupStateInfo other = (GroupStateInfo) o;
       return bitField0_ == other.bitField0_
+        && (!hasPlayerUid() || playerUid == other.playerUid)
         && (!hasGroupState() || groupState == other.groupState)
-        && (!hasEMFPPBJCLGP() || eMFPPBJCLGP == other.eMFPPBJCLGP)
         && (!hasEntryId() || entryId == other.entryId)
         && (!hasGroupId() || groupId == other.groupId);
     }
@@ -274,11 +314,11 @@ public final class GroupStateInfoOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 16);
-        output.writeUInt32NoTag(groupState);
+        output.writeUInt32NoTag(playerUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 24);
-        output.writeUInt32NoTag(eMFPPBJCLGP);
+        output.writeUInt32NoTag(groupState);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 32);
@@ -294,10 +334,10 @@ public final class GroupStateInfoOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(groupState);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(playerUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(eMFPPBJCLGP);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(groupState);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
@@ -316,8 +356,8 @@ public final class GroupStateInfoOuterClass {
       while (true) {
         switch (tag) {
           case 16: {
-            // groupState
-            groupState = input.readUInt32();
+            // playerUid
+            playerUid = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 24) {
@@ -325,8 +365,8 @@ public final class GroupStateInfoOuterClass {
             }
           }
           case 24: {
-            // eMFPPBJCLGP
-            eMFPPBJCLGP = input.readUInt32();
+            // groupState
+            groupState = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 32) {
@@ -369,10 +409,10 @@ public final class GroupStateInfoOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.groupState, groupState);
+        output.writeUInt32(FieldNames.playerUid, playerUid);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.eMFPPBJCLGP, eMFPPBJCLGP);
+        output.writeUInt32(FieldNames.groupState, groupState);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeUInt32(FieldNames.entryId, entryId);
@@ -390,11 +430,11 @@ public final class GroupStateInfoOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case 1271403858:
-          case 1101988561: {
-            if (input.isAtField(FieldNames.groupState)) {
+          case -1872053841:
+          case 2096182770: {
+            if (input.isAtField(FieldNames.playerUid)) {
               if (!input.trySkipNullValue()) {
-                groupState = input.readUInt32();
+                playerUid = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -402,10 +442,11 @@ public final class GroupStateInfoOuterClass {
             }
             break;
           }
-          case -1718331400: {
-            if (input.isAtField(FieldNames.eMFPPBJCLGP)) {
+          case 1271403858:
+          case 1101988561: {
+            if (input.isAtField(FieldNames.groupState)) {
               if (!input.trySkipNullValue()) {
-                eMFPPBJCLGP = input.readUInt32();
+                groupState = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -490,9 +531,9 @@ public final class GroupStateInfoOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName groupState = FieldName.forField("groupState", "group_state");
+      static final FieldName playerUid = FieldName.forField("playerUid", "player_uid");
 
-      static final FieldName eMFPPBJCLGP = FieldName.forField("EMFPPBJCLGP");
+      static final FieldName groupState = FieldName.forField("groupState", "group_state");
 
       static final FieldName entryId = FieldName.forField("entryId", "entry_id");
 

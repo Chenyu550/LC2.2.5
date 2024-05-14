@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message SelectPhoneThemeScRsp {
-    uint32 cur_phone_theme = 11;
-    uint32 retcode = 7;
-}

@@ -26,14 +26,14 @@ public final class RogueRecordInfoOuterClass {
     private final RepeatedInt rogueMiracleList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .RogueBuff buff_list = 6;</code>
-     */
-    private final RepeatedMessage<RogueBuffOuterClass.RogueBuff> buffList = RepeatedMessage.newEmptyInstance(RogueBuffOuterClass.RogueBuff.getFactory());
-
-    /**
-     * <code>repeated .RogueRecordAvatar avatar_list = 7;</code>
+     * <code>repeated .RogueRecordAvatar avatar_list = 5;</code>
      */
     private final RepeatedMessage<RogueRecordAvatarOuterClass.RogueRecordAvatar> avatarList = RepeatedMessage.newEmptyInstance(RogueRecordAvatarOuterClass.RogueRecordAvatar.getFactory());
+
+    /**
+     * <code>repeated .RogueBuff buff_list = 14;</code>
+     */
+    private final RepeatedMessage<RogueBuffOuterClass.RogueBuff> buffList = RepeatedMessage.newEmptyInstance(RogueBuffOuterClass.RogueBuff.getFactory());
 
     private RogueRecordInfo() {
     }
@@ -114,93 +114,25 @@ public final class RogueRecordInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueBuff buff_list = 6;</code>
-     * @return whether the buffList field is set
+     * <code>repeated .RogueRecordAvatar avatar_list = 5;</code>
+     * @return whether the avatarList field is set
      */
-    public boolean hasBuffList() {
+    public boolean hasAvatarList() {
       return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
-     * <code>repeated .RogueBuff buff_list = 6;</code>
-     * @return this
-     */
-    public RogueRecordInfo clearBuffList() {
-      bitField0_ &= ~0x00000002;
-      buffList.clear();
-      return this;
-    }
-
-    /**
-     * <code>repeated .RogueBuff buff_list = 6;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableBuffList()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public RepeatedMessage<RogueBuffOuterClass.RogueBuff> getBuffList() {
-      return buffList;
-    }
-
-    /**
-     * <code>repeated .RogueBuff buff_list = 6;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public RepeatedMessage<RogueBuffOuterClass.RogueBuff> getMutableBuffList() {
-      bitField0_ |= 0x00000002;
-      return buffList;
-    }
-
-    /**
-     * <code>repeated .RogueBuff buff_list = 6;</code>
-     * @param value the buffList to add
-     * @return this
-     */
-    public RogueRecordInfo addBuffList(final RogueBuffOuterClass.RogueBuff value) {
-      bitField0_ |= 0x00000002;
-      buffList.add(value);
-      return this;
-    }
-
-    /**
-     * <code>repeated .RogueBuff buff_list = 6;</code>
-     * @param values the buffList to add
-     * @return this
-     */
-    public RogueRecordInfo addAllBuffList(final RogueBuffOuterClass.RogueBuff... values) {
-      bitField0_ |= 0x00000002;
-      buffList.addAll(values);
-      return this;
-    }
-
-    /**
-     * <code>repeated .RogueRecordAvatar avatar_list = 7;</code>
-     * @return whether the avatarList field is set
-     */
-    public boolean hasAvatarList() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>repeated .RogueRecordAvatar avatar_list = 7;</code>
+     * <code>repeated .RogueRecordAvatar avatar_list = 5;</code>
      * @return this
      */
     public RogueRecordInfo clearAvatarList() {
-      bitField0_ &= ~0x00000004;
+      bitField0_ &= ~0x00000002;
       avatarList.clear();
       return this;
     }
 
     /**
-     * <code>repeated .RogueRecordAvatar avatar_list = 7;</code>
+     * <code>repeated .RogueRecordAvatar avatar_list = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -214,7 +146,7 @@ public final class RogueRecordInfoOuterClass {
     }
 
     /**
-     * <code>repeated .RogueRecordAvatar avatar_list = 7;</code>
+     * <code>repeated .RogueRecordAvatar avatar_list = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -223,31 +155,99 @@ public final class RogueRecordInfoOuterClass {
      * @return internal storage object for modifications
      */
     public RepeatedMessage<RogueRecordAvatarOuterClass.RogueRecordAvatar> getMutableAvatarList() {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       return avatarList;
     }
 
     /**
-     * <code>repeated .RogueRecordAvatar avatar_list = 7;</code>
+     * <code>repeated .RogueRecordAvatar avatar_list = 5;</code>
      * @param value the avatarList to add
      * @return this
      */
     public RogueRecordInfo addAvatarList(
         final RogueRecordAvatarOuterClass.RogueRecordAvatar value) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       avatarList.add(value);
       return this;
     }
 
     /**
-     * <code>repeated .RogueRecordAvatar avatar_list = 7;</code>
+     * <code>repeated .RogueRecordAvatar avatar_list = 5;</code>
      * @param values the avatarList to add
      * @return this
      */
     public RogueRecordInfo addAllAvatarList(
         final RogueRecordAvatarOuterClass.RogueRecordAvatar... values) {
-      bitField0_ |= 0x00000004;
+      bitField0_ |= 0x00000002;
       avatarList.addAll(values);
+      return this;
+    }
+
+    /**
+     * <code>repeated .RogueBuff buff_list = 14;</code>
+     * @return whether the buffList field is set
+     */
+    public boolean hasBuffList() {
+      return (bitField0_ & 0x00000004) != 0;
+    }
+
+    /**
+     * <code>repeated .RogueBuff buff_list = 14;</code>
+     * @return this
+     */
+    public RogueRecordInfo clearBuffList() {
+      bitField0_ &= ~0x00000004;
+      buffList.clear();
+      return this;
+    }
+
+    /**
+     * <code>repeated .RogueBuff buff_list = 14;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableBuffList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public RepeatedMessage<RogueBuffOuterClass.RogueBuff> getBuffList() {
+      return buffList;
+    }
+
+    /**
+     * <code>repeated .RogueBuff buff_list = 14;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<RogueBuffOuterClass.RogueBuff> getMutableBuffList() {
+      bitField0_ |= 0x00000004;
+      return buffList;
+    }
+
+    /**
+     * <code>repeated .RogueBuff buff_list = 14;</code>
+     * @param value the buffList to add
+     * @return this
+     */
+    public RogueRecordInfo addBuffList(final RogueBuffOuterClass.RogueBuff value) {
+      bitField0_ |= 0x00000004;
+      buffList.add(value);
+      return this;
+    }
+
+    /**
+     * <code>repeated .RogueBuff buff_list = 14;</code>
+     * @param values the buffList to add
+     * @return this
+     */
+    public RogueRecordInfo addAllBuffList(final RogueBuffOuterClass.RogueBuff... values) {
+      bitField0_ |= 0x00000004;
+      buffList.addAll(values);
       return this;
     }
 
@@ -257,8 +257,8 @@ public final class RogueRecordInfoOuterClass {
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         rogueMiracleList.copyFrom(other.rogueMiracleList);
-        buffList.copyFrom(other.buffList);
         avatarList.copyFrom(other.avatarList);
+        buffList.copyFrom(other.buffList);
       }
       return this;
     }
@@ -272,11 +272,11 @@ public final class RogueRecordInfoOuterClass {
       if (other.hasRogueMiracleList()) {
         getMutableRogueMiracleList().addAll(other.rogueMiracleList);
       }
-      if (other.hasBuffList()) {
-        getMutableBuffList().addAll(other.buffList);
-      }
       if (other.hasAvatarList()) {
         getMutableAvatarList().addAll(other.avatarList);
+      }
+      if (other.hasBuffList()) {
+        getMutableBuffList().addAll(other.buffList);
       }
       return this;
     }
@@ -289,8 +289,8 @@ public final class RogueRecordInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       rogueMiracleList.clear();
-      buffList.clear();
       avatarList.clear();
+      buffList.clear();
       return this;
     }
 
@@ -302,8 +302,8 @@ public final class RogueRecordInfoOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       rogueMiracleList.clear();
-      buffList.clearQuick();
       avatarList.clearQuick();
+      buffList.clearQuick();
       return this;
     }
 
@@ -318,8 +318,8 @@ public final class RogueRecordInfoOuterClass {
       RogueRecordInfo other = (RogueRecordInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasRogueMiracleList() || rogueMiracleList.equals(other.rogueMiracleList))
-        && (!hasBuffList() || buffList.equals(other.buffList))
-        && (!hasAvatarList() || avatarList.equals(other.avatarList));
+        && (!hasAvatarList() || avatarList.equals(other.avatarList))
+        && (!hasBuffList() || buffList.equals(other.buffList));
     }
 
     @Override
@@ -331,15 +331,15 @@ public final class RogueRecordInfoOuterClass {
         }
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        for (int i = 0; i < buffList.length(); i++) {
-          output.writeRawByte((byte) 50);
-          output.writeMessageNoTag(buffList.get(i));
+        for (int i = 0; i < avatarList.length(); i++) {
+          output.writeRawByte((byte) 42);
+          output.writeMessageNoTag(avatarList.get(i));
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        for (int i = 0; i < avatarList.length(); i++) {
-          output.writeRawByte((byte) 58);
-          output.writeMessageNoTag(avatarList.get(i));
+        for (int i = 0; i < buffList.length(); i++) {
+          output.writeRawByte((byte) 114);
+          output.writeMessageNoTag(buffList.get(i));
         }
       }
     }
@@ -351,10 +351,10 @@ public final class RogueRecordInfoOuterClass {
         size += (1 * rogueMiracleList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(rogueMiracleList);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += (1 * buffList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(buffList);
+        size += (1 * avatarList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(avatarList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += (1 * avatarList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(avatarList);
+        size += (1 * buffList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(buffList);
       }
       return size;
     }
@@ -371,21 +371,21 @@ public final class RogueRecordInfoOuterClass {
             input.readPackedUInt32(rogueMiracleList, tag);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 42) {
               break;
             }
           }
-          case 50: {
-            // buffList
-            tag = input.readRepeatedMessage(buffList, tag);
-            bitField0_ |= 0x00000002;
-            if (tag != 58) {
-              break;
-            }
-          }
-          case 58: {
+          case 42: {
             // avatarList
             tag = input.readRepeatedMessage(avatarList, tag);
+            bitField0_ |= 0x00000002;
+            if (tag != 114) {
+              break;
+            }
+          }
+          case 114: {
+            // buffList
+            tag = input.readRepeatedMessage(buffList, tag);
             bitField0_ |= 0x00000004;
             if (tag != 0) {
               break;
@@ -418,10 +418,10 @@ public final class RogueRecordInfoOuterClass {
         output.writeRepeatedUInt32(FieldNames.rogueMiracleList, rogueMiracleList);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRepeatedMessage(FieldNames.buffList, buffList);
+        output.writeRepeatedMessage(FieldNames.avatarList, avatarList);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRepeatedMessage(FieldNames.avatarList, avatarList);
+        output.writeRepeatedMessage(FieldNames.buffList, buffList);
       }
       output.endObject();
     }
@@ -445,11 +445,11 @@ public final class RogueRecordInfoOuterClass {
             }
             break;
           }
-          case -1522789487:
-          case 55792906: {
-            if (input.isAtField(FieldNames.buffList)) {
+          case -403402345:
+          case 397055940: {
+            if (input.isAtField(FieldNames.avatarList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(buffList);
+                input.readRepeatedMessage(avatarList);
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -457,11 +457,11 @@ public final class RogueRecordInfoOuterClass {
             }
             break;
           }
-          case -403402345:
-          case 397055940: {
-            if (input.isAtField(FieldNames.avatarList)) {
+          case -1522789487:
+          case 55792906: {
+            if (input.isAtField(FieldNames.buffList)) {
               if (!input.trySkipNullValue()) {
-                input.readRepeatedMessage(avatarList);
+                input.readRepeatedMessage(buffList);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -524,9 +524,9 @@ public final class RogueRecordInfoOuterClass {
     static class FieldNames {
       static final FieldName rogueMiracleList = FieldName.forField("rogueMiracleList", "rogue_miracle_list");
 
-      static final FieldName buffList = FieldName.forField("buffList", "buff_list");
-
       static final FieldName avatarList = FieldName.forField("avatarList", "avatar_list");
+
+      static final FieldName buffList = FieldName.forField("buffList", "buff_list");
     }
   }
 }

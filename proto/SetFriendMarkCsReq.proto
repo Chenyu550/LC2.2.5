@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.lunarcore.proto";
-
-message SetFriendMarkCsReq {
-    bool is_set_mark = 7;
-    uint32 uid = 15;
-}

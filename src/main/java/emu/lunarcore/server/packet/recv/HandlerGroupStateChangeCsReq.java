@@ -7,7 +7,6 @@ import emu.lunarcore.server.packet.Opcodes;
 import emu.lunarcore.server.packet.PacketHandler;
 import emu.lunarcore.server.packet.send.PacketGroupStateChangeScNotify;
 import emu.lunarcore.server.packet.send.PacketGroupStateChangeScRsp;
-import emu.lunarcore.server.packet.send.PacketUpdateFloorSavedValueNotify;
 
 @Opcodes(CmdId.GroupStateChangeCsReq)
 public class HandlerGroupStateChangeCsReq extends PacketHandler {

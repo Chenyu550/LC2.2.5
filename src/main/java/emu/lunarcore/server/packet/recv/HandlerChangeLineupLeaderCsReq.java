@@ -13,7 +13,7 @@ public class HandlerChangeLineupLeaderCsReq extends PacketHandler {
     @Override
     public void handle(GameSession session, byte[] data) throws Exception {
         var req = ChangeLineupLeaderCsReq.parseFrom(data);
-        
+
         session.getPlayer().getLineupManager().changeLeader(req.getSlot());
         session.send(new PacketChangeLineupLeaderScRsp(req.getSlot()));
     }
