@@ -36,7 +36,9 @@ jobs:
             restore-keys: |
               ${{ runner.os }}-gradle-
         - name: Run Gradle
-          run: chmod +x gradlew && ./gradlew && ./gradlew -DGENERATE_PROTO=true jar
+          env:
+            GENERATE_PROTO: true
+          run: chmod +x gradlew && ./gradlew && ./gradlew jar
         - name: Upload build
           uses: actions/upload-artifact@v3
           with:
