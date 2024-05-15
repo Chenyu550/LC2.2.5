@@ -24,6 +24,10 @@ public final class SwitchLineupIndexScRspOuterClass {
     private int index;
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      */
     private int retcode;
@@ -76,6 +80,10 @@ public final class SwitchLineupIndexScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      * @return whether the retcode field is set
      */
@@ -84,6 +92,10 @@ public final class SwitchLineupIndexScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      * @return this
      */
@@ -94,6 +106,10 @@ public final class SwitchLineupIndexScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      * @return the retcode
      */
@@ -102,6 +118,10 @@ public final class SwitchLineupIndexScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      * @param value the retcode to set
      * @return this

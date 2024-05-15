@@ -24,10 +24,6 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     private int serverPrefsId;
 
     /**
-     * <pre>
-     *  PDBKKNJFBAJ FDAJEIDNMAK = 9;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 3;</code>
      */
     private int retcode;
@@ -80,10 +76,6 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  PDBKKNJFBAJ FDAJEIDNMAK = 9;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 3;</code>
      * @return whether the retcode field is set
      */
@@ -92,10 +84,6 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  PDBKKNJFBAJ FDAJEIDNMAK = 9;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 3;</code>
      * @return this
      */
@@ -106,10 +94,6 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  PDBKKNJFBAJ FDAJEIDNMAK = 9;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 3;</code>
      * @return the retcode
      */
@@ -118,10 +102,6 @@ public final class UpdateServerPrefsDataScRspOuterClass {
     }
 
     /**
-     * <pre>
-     *  PDBKKNJFBAJ FDAJEIDNMAK = 9;
-     * </pre>
-     *
      * <code>optional uint32 retcode = 3;</code>
      * @param value the retcode to set
      * @return this

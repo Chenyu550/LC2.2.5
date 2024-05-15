@@ -20,6 +20,10 @@ public final class PlayerDetailInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 uid = 5;</code>
      */
     private int uid;
@@ -55,11 +59,19 @@ public final class PlayerDetailInfoOuterClass {
     private final PlayerDisplaySettingsOuterClass.PlayerDisplaySettings displaySettings = PlayerDisplaySettingsOuterClass.PlayerDisplaySettings.newInstance();
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional string signature = 3;</code>
      */
     private final Utf8String signature = Utf8String.newEmptyInstance();
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional string nickname = 4;</code>
      */
     private final Utf8String nickname = Utf8String.newEmptyInstance();
@@ -75,6 +87,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 uid = 5;</code>
      * @return whether the uid field is set
      */
@@ -83,6 +99,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 uid = 5;</code>
      * @return this
      */
@@ -93,6 +113,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 uid = 5;</code>
      * @return the uid
      */
@@ -101,6 +125,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 uid = 5;</code>
      * @param value the uid to set
      * @return this
@@ -400,6 +428,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional string signature = 3;</code>
      * @return whether the signature field is set
      */
@@ -408,6 +440,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional string signature = 3;</code>
      * @return this
      */
@@ -418,6 +454,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional string signature = 3;</code>
      * @return the signature
      */
@@ -426,6 +466,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional string signature = 3;</code>
      * @return internal {@code Utf8String} representation of signature for reading
      */
@@ -434,6 +478,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional string signature = 3;</code>
      * @return internal {@code Utf8String} representation of signature for modifications
      */
@@ -443,6 +491,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional string signature = 3;</code>
      * @param value the signature to set
      * @return this
@@ -454,6 +506,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional string signature = 3;</code>
      * @param value the signature to set
      * @return this
@@ -465,6 +521,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional string nickname = 4;</code>
      * @return whether the nickname field is set
      */
@@ -473,6 +533,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional string nickname = 4;</code>
      * @return this
      */
@@ -483,6 +547,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional string nickname = 4;</code>
      * @return the nickname
      */
@@ -491,6 +559,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional string nickname = 4;</code>
      * @return internal {@code Utf8String} representation of nickname for reading
      */
@@ -499,6 +571,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional string nickname = 4;</code>
      * @return internal {@code Utf8String} representation of nickname for modifications
      */
@@ -508,6 +584,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional string nickname = 4;</code>
      * @param value the nickname to set
      * @return this
@@ -519,6 +599,10 @@ public final class PlayerDetailInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional string nickname = 4;</code>
      * @param value the nickname to set
      * @return this

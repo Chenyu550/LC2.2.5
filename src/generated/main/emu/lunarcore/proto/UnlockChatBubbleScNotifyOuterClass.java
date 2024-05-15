@@ -19,7 +19,11 @@ public final class UnlockChatBubbleScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 bubble_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 bubble_id = 12;</code>
      */
     private int bubbleId;
 
@@ -34,7 +38,11 @@ public final class UnlockChatBubbleScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 bubble_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 bubble_id = 12;</code>
      * @return whether the bubbleId field is set
      */
     public boolean hasBubbleId() {
@@ -42,7 +50,11 @@ public final class UnlockChatBubbleScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 bubble_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 bubble_id = 12;</code>
      * @return this
      */
     public UnlockChatBubbleScNotify clearBubbleId() {
@@ -52,7 +64,11 @@ public final class UnlockChatBubbleScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 bubble_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 bubble_id = 12;</code>
      * @return the bubbleId
      */
     public int getBubbleId() {
@@ -60,7 +76,11 @@ public final class UnlockChatBubbleScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 bubble_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 bubble_id = 12;</code>
      * @param value the bubbleId to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class UnlockChatBubbleScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 96);
         output.writeUInt32NoTag(bubbleId);
       }
     }
@@ -150,7 +170,7 @@ public final class UnlockChatBubbleScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 96: {
             // bubbleId
             bubbleId = input.readUInt32();
             bitField0_ |= 0x00000001;

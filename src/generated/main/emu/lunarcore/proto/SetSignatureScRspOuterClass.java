@@ -20,6 +20,10 @@ public final class SetSignatureScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      */
     private int retcode;
@@ -40,6 +44,10 @@ public final class SetSignatureScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return whether the retcode field is set
      */
@@ -48,6 +56,10 @@ public final class SetSignatureScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return this
      */
@@ -58,6 +70,10 @@ public final class SetSignatureScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return the retcode
      */
@@ -66,6 +82,10 @@ public final class SetSignatureScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @param value the retcode to set
      * @return this

@@ -19,11 +19,19 @@ public final class RelicParamOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 5;</code>
      */
     private int relicUniqueId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 slot = 13;</code>
      */
     private int slot;
@@ -39,6 +47,10 @@ public final class RelicParamOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 5;</code>
      * @return whether the relicUniqueId field is set
      */
@@ -47,6 +59,10 @@ public final class RelicParamOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 5;</code>
      * @return this
      */
@@ -57,6 +73,10 @@ public final class RelicParamOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 5;</code>
      * @return the relicUniqueId
      */
@@ -65,6 +85,10 @@ public final class RelicParamOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 relic_unique_id = 5;</code>
      * @param value the relicUniqueId to set
      * @return this
@@ -76,6 +100,10 @@ public final class RelicParamOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 slot = 13;</code>
      * @return whether the slot field is set
      */
@@ -84,6 +112,10 @@ public final class RelicParamOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 slot = 13;</code>
      * @return this
      */
@@ -94,6 +126,10 @@ public final class RelicParamOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 slot = 13;</code>
      * @return the slot
      */
@@ -102,6 +138,10 @@ public final class RelicParamOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 slot = 13;</code>
      * @param value the slot to set
      * @return this

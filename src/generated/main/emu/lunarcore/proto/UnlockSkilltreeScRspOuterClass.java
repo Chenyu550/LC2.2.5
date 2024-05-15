@@ -19,6 +19,10 @@ public final class UnlockSkilltreeScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 1;</code>
      */
     private int baseAvatarId;
@@ -49,6 +53,10 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 1;</code>
      * @return whether the baseAvatarId field is set
      */
@@ -57,6 +65,10 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 1;</code>
      * @return this
      */
@@ -67,6 +79,10 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 1;</code>
      * @return the baseAvatarId
      */
@@ -75,6 +91,10 @@ public final class UnlockSkilltreeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 1;</code>
      * @param value the baseAvatarId to set
      * @return this

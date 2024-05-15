@@ -29,6 +29,10 @@ public final class PlayBackGroundMusicScRspOuterClass {
     private int playMusicId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      */
     private int retcode;
@@ -118,6 +122,10 @@ public final class PlayBackGroundMusicScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return whether the retcode field is set
      */
@@ -126,6 +134,10 @@ public final class PlayBackGroundMusicScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return this
      */
@@ -136,6 +148,10 @@ public final class PlayBackGroundMusicScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return the retcode
      */
@@ -144,6 +160,10 @@ public final class PlayBackGroundMusicScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @param value the retcode to set
      * @return this

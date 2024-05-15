@@ -19,12 +19,20 @@ public final class MazeGroupOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional int64 modify_time = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional int64 modify_time = 15;</code>
      */
     private long modifyTime;
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 5;</code>
      */
     private int groupId;
 
@@ -39,7 +47,11 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional int64 modify_time = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional int64 modify_time = 15;</code>
      * @return whether the modifyTime field is set
      */
     public boolean hasModifyTime() {
@@ -47,7 +59,11 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional int64 modify_time = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional int64 modify_time = 15;</code>
      * @return this
      */
     public MazeGroup clearModifyTime() {
@@ -57,7 +73,11 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional int64 modify_time = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional int64 modify_time = 15;</code>
      * @return the modifyTime
      */
     public long getModifyTime() {
@@ -65,7 +85,11 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional int64 modify_time = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional int64 modify_time = 15;</code>
      * @param value the modifyTime to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 5;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -84,7 +112,11 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 5;</code>
      * @return this
      */
     public MazeGroup clearGroupId() {
@@ -94,7 +126,11 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 5;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -102,7 +138,11 @@ public final class MazeGroupOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 5;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -177,11 +217,11 @@ public final class MazeGroupOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 120);
         output.writeInt64NoTag(modifyTime);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(groupId);
       }
     }
@@ -205,16 +245,16 @@ public final class MazeGroupOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
+          case 120: {
             // modifyTime
             modifyTime = input.readInt64();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 40) {
               break;
             }
           }
-          case 64: {
+          case 40: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000002;

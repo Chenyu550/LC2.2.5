@@ -24,6 +24,10 @@ public final class UnlockedMusicOuterClass {
     private int id;
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 group_id = 10;</code>
      */
     private int groupId;
@@ -81,6 +85,10 @@ public final class UnlockedMusicOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 group_id = 10;</code>
      * @return whether the groupId field is set
      */
@@ -89,6 +97,10 @@ public final class UnlockedMusicOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 group_id = 10;</code>
      * @return this
      */
@@ -99,6 +111,10 @@ public final class UnlockedMusicOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 group_id = 10;</code>
      * @return the groupId
      */
@@ -107,6 +123,10 @@ public final class UnlockedMusicOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 group_id = 10;</code>
      * @param value the groupId to set
      * @return this

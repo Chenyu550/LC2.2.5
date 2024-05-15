@@ -20,12 +20,20 @@ public final class SyncLineupNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .LineupInfo lineup = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional .LineupInfo lineup = 9;</code>
      */
     private final LineupInfoOuterClass.LineupInfo lineup = LineupInfoOuterClass.LineupInfo.newInstance();
 
     /**
-     * <code>repeated .SyncReason reason_list = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>repeated .SyncReason reason_list = 4;</code>
      */
     private final RepeatedEnum<SyncReasonOuterClass.SyncReason> reasonList = RepeatedEnum.newEmptyInstance(SyncReasonOuterClass.SyncReason.converter());
 
@@ -40,7 +48,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional .LineupInfo lineup = 9;</code>
      * @return whether the lineup field is set
      */
     public boolean hasLineup() {
@@ -48,7 +60,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional .LineupInfo lineup = 9;</code>
      * @return this
      */
     public SyncLineupNotify clearLineup() {
@@ -58,7 +74,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional .LineupInfo lineup = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -72,7 +92,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional .LineupInfo lineup = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -86,7 +110,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>optional .LineupInfo lineup = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional .LineupInfo lineup = 9;</code>
      * @param value the lineup to set
      * @return this
      */
@@ -97,7 +125,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>repeated .SyncReason reason_list = 4;</code>
      * @return whether the reasonList field is set
      */
     public boolean hasReasonList() {
@@ -105,7 +137,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>repeated .SyncReason reason_list = 4;</code>
      * @return this
      */
     public SyncLineupNotify clearReasonList() {
@@ -115,7 +151,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>repeated .SyncReason reason_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -129,7 +169,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>repeated .SyncReason reason_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -143,7 +187,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>repeated .SyncReason reason_list = 4;</code>
      * @param value the reasonList to add
      * @return this
      */
@@ -154,7 +202,11 @@ public final class SyncLineupNotifyOuterClass {
     }
 
     /**
-     * <code>repeated .SyncReason reason_list = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>repeated .SyncReason reason_list = 4;</code>
      * @param values the reasonList to add
      * @return this
      */
@@ -231,12 +283,12 @@ public final class SyncLineupNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 34);
+        output.writeRawByte((byte) 74);
         output.writeMessageNoTag(lineup);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < reasonList.length(); i++) {
-          output.writeRawByte((byte) 72);
+          output.writeRawByte((byte) 32);
           output.writeEnumNoTag(reasonList.array()[i]);
         }
       }
@@ -261,16 +313,16 @@ public final class SyncLineupNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 34: {
+          case 74: {
             // lineup
             input.readMessage(lineup);
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 34) {
               break;
             }
           }
-          case 74: {
+          case 34: {
             // reasonList [packed=true]
             input.readPackedEnum(reasonList, tag);
             bitField0_ |= 0x00000002;
@@ -289,7 +341,7 @@ public final class SyncLineupNotifyOuterClass {
             tag = input.readTag();
             break;
           }
-          case 72: {
+          case 32: {
             // reasonList [packed=false]
             tag = input.readRepeatedEnum(reasonList, tag);
             bitField0_ |= 0x00000002;

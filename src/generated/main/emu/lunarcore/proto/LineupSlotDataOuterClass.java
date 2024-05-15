@@ -24,6 +24,10 @@ public final class LineupSlotDataOuterClass {
     private int slot;
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 id = 15;</code>
      */
     private int id;
@@ -81,6 +85,10 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 id = 15;</code>
      * @return whether the id field is set
      */
@@ -89,6 +97,10 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 id = 15;</code>
      * @return this
      */
@@ -99,6 +111,10 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 id = 15;</code>
      * @return the id
      */
@@ -107,6 +123,10 @@ public final class LineupSlotDataOuterClass {
     }
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 id = 15;</code>
      * @param value the id to set
      * @return this

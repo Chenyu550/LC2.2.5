@@ -19,6 +19,10 @@ public final class StartChallengeScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 10;</code>
      */
     private int retcode;
@@ -49,6 +53,10 @@ public final class StartChallengeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 10;</code>
      * @return whether the retcode field is set
      */
@@ -57,6 +65,10 @@ public final class StartChallengeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 10;</code>
      * @return this
      */
@@ -67,6 +79,10 @@ public final class StartChallengeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 10;</code>
      * @return the retcode
      */
@@ -75,6 +91,10 @@ public final class StartChallengeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 10;</code>
      * @param value the retcode to set
      * @return this

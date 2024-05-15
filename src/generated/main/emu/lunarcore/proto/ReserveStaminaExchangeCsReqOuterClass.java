@@ -19,6 +19,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 num = 8;</code>
      */
     private int num;
@@ -34,6 +38,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 num = 8;</code>
      * @return whether the num field is set
      */
@@ -42,6 +50,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 num = 8;</code>
      * @return this
      */
@@ -52,6 +64,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 num = 8;</code>
      * @return the num
      */
@@ -60,6 +76,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 num = 8;</code>
      * @param value the num to set
      * @return this

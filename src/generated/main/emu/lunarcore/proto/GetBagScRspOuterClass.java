@@ -20,21 +20,33 @@ public final class GetBagScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 10;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .Material material_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .Material material_list = 1;</code>
      */
     private final RepeatedMessage<MaterialOuterClass.Material> materialList = RepeatedMessage.newEmptyInstance(MaterialOuterClass.Material.getFactory());
 
     /**
-     * <code>repeated .Relic relic_list = 8;</code>
+     * <pre>
+     * 或者3
+     * </pre>
+     *
+     * <code>repeated .Relic relic_list = 2;</code>
      */
     private final RepeatedMessage<RelicOuterClass.Relic> relicList = RepeatedMessage.newEmptyInstance(RelicOuterClass.Relic.getFactory());
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>repeated .Equipment equipment_list = 15;</code>
      */
     private final RepeatedMessage<EquipmentOuterClass.Equipment> equipmentList = RepeatedMessage.newEmptyInstance(EquipmentOuterClass.Equipment.getFactory());
@@ -50,7 +62,7 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -58,7 +70,7 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return this
      */
     public GetBagScRsp clearRetcode() {
@@ -68,7 +80,7 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -76,7 +88,7 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 4;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -87,7 +99,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Material material_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .Material material_list = 1;</code>
      * @return whether the materialList field is set
      */
     public boolean hasMaterialList() {
@@ -95,7 +111,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Material material_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .Material material_list = 1;</code>
      * @return this
      */
     public GetBagScRsp clearMaterialList() {
@@ -105,7 +125,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Material material_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .Material material_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -119,7 +143,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Material material_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .Material material_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -133,7 +161,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Material material_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .Material material_list = 1;</code>
      * @param value the materialList to add
      * @return this
      */
@@ -144,7 +176,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Material material_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .Material material_list = 1;</code>
      * @param values the materialList to add
      * @return this
      */
@@ -155,7 +191,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Relic relic_list = 8;</code>
+     * <pre>
+     * 或者3
+     * </pre>
+     *
+     * <code>repeated .Relic relic_list = 2;</code>
      * @return whether the relicList field is set
      */
     public boolean hasRelicList() {
@@ -163,7 +203,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Relic relic_list = 8;</code>
+     * <pre>
+     * 或者3
+     * </pre>
+     *
+     * <code>repeated .Relic relic_list = 2;</code>
      * @return this
      */
     public GetBagScRsp clearRelicList() {
@@ -173,7 +217,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Relic relic_list = 8;</code>
+     * <pre>
+     * 或者3
+     * </pre>
+     *
+     * <code>repeated .Relic relic_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -187,7 +235,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Relic relic_list = 8;</code>
+     * <pre>
+     * 或者3
+     * </pre>
+     *
+     * <code>repeated .Relic relic_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -201,7 +253,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Relic relic_list = 8;</code>
+     * <pre>
+     * 或者3
+     * </pre>
+     *
+     * <code>repeated .Relic relic_list = 2;</code>
      * @param value the relicList to add
      * @return this
      */
@@ -212,7 +268,11 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
-     * <code>repeated .Relic relic_list = 8;</code>
+     * <pre>
+     * 或者3
+     * </pre>
+     *
+     * <code>repeated .Relic relic_list = 2;</code>
      * @param values the relicList to add
      * @return this
      */
@@ -223,6 +283,10 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>repeated .Equipment equipment_list = 15;</code>
      * @return whether the equipmentList field is set
      */
@@ -231,6 +295,10 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>repeated .Equipment equipment_list = 15;</code>
      * @return this
      */
@@ -241,6 +309,10 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>repeated .Equipment equipment_list = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -255,6 +327,10 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>repeated .Equipment equipment_list = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -269,6 +345,10 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>repeated .Equipment equipment_list = 15;</code>
      * @param value the equipmentList to add
      * @return this
@@ -280,6 +360,10 @@ public final class GetBagScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>repeated .Equipment equipment_list = 15;</code>
      * @param values the equipmentList to add
      * @return this
@@ -370,18 +454,18 @@ public final class GetBagScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < materialList.length(); i++) {
-          output.writeRawByte((byte) 58);
+          output.writeRawByte((byte) 10);
           output.writeMessageNoTag(materialList.get(i));
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < relicList.length(); i++) {
-          output.writeRawByte((byte) 66);
+          output.writeRawByte((byte) 18);
           output.writeMessageNoTag(relicList.get(i));
         }
       }
@@ -418,24 +502,24 @@ public final class GetBagScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 80: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 10) {
               break;
             }
           }
-          case 58: {
+          case 10: {
             // materialList
             tag = input.readRepeatedMessage(materialList, tag);
             bitField0_ |= 0x00000002;
-            if (tag != 66) {
+            if (tag != 18) {
               break;
             }
           }
-          case 66: {
+          case 18: {
             // relicList
             tag = input.readRepeatedMessage(relicList, tag);
             bitField0_ |= 0x00000004;

@@ -19,6 +19,10 @@ public final class SelectRogueDialogueEventCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 6;</code>
      */
     private int entityId;
@@ -39,6 +43,10 @@ public final class SelectRogueDialogueEventCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 6;</code>
      * @return whether the entityId field is set
      */
@@ -47,6 +55,10 @@ public final class SelectRogueDialogueEventCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 6;</code>
      * @return this
      */
@@ -57,6 +69,10 @@ public final class SelectRogueDialogueEventCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 6;</code>
      * @return the entityId
      */
@@ -65,6 +81,10 @@ public final class SelectRogueDialogueEventCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 6;</code>
      * @param value the entityId to set
      * @return this

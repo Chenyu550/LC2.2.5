@@ -34,6 +34,10 @@ public final class GetRollShopInfoScRspOuterClass {
     private int bBJIJINJAFK;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      */
     private int retcode;
@@ -144,6 +148,10 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return whether the retcode field is set
      */
@@ -152,6 +160,10 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return this
      */
@@ -162,6 +174,10 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return the retcode
      */
@@ -170,6 +186,10 @@ public final class GetRollShopInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @param value the retcode to set
      * @return this

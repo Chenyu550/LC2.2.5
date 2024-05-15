@@ -19,12 +19,20 @@ public final class GroupStateChangeScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional .GroupStateInfo group_info = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_info = 2;</code>
      */
     private final GroupStateInfoOuterClass.GroupStateInfo groupInfo = GroupStateInfoOuterClass.GroupStateInfo.newInstance();
 
@@ -39,6 +47,10 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return whether the retcode field is set
      */
@@ -47,6 +59,10 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return this
      */
@@ -57,6 +73,10 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @return the retcode
      */
@@ -65,6 +85,10 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 15;</code>
      * @param value the retcode to set
      * @return this
@@ -76,7 +100,11 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_info = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_info = 2;</code>
      * @return whether the groupInfo field is set
      */
     public boolean hasGroupInfo() {
@@ -84,7 +112,11 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_info = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_info = 2;</code>
      * @return this
      */
     public GroupStateChangeScRsp clearGroupInfo() {
@@ -94,7 +126,11 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_info = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_info = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +144,11 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_info = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_info = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +162,11 @@ public final class GroupStateChangeScRspOuterClass {
     }
 
     /**
-     * <code>optional .GroupStateInfo group_info = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional .GroupStateInfo group_info = 2;</code>
      * @param value the groupInfo to set
      * @return this
      */
@@ -202,7 +246,7 @@ public final class GroupStateChangeScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 66);
+        output.writeRawByte((byte) 18);
         output.writeMessageNoTag(groupInfo);
       }
     }
@@ -231,11 +275,11 @@ public final class GroupStateChangeScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 66) {
+            if (tag != 18) {
               break;
             }
           }
-          case 66: {
+          case 18: {
             // groupInfo
             input.readMessage(groupInfo);
             bitField0_ |= 0x00000002;

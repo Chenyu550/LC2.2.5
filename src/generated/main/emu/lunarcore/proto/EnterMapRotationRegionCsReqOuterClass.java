@@ -19,7 +19,11 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .MotionInfo motion = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional .MotionInfo motion = 5;</code>
      */
     private final MotionInfoOuterClass.MotionInfo motion = MotionInfoOuterClass.MotionInfo.newInstance();
 
@@ -34,7 +38,11 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional .MotionInfo motion = 5;</code>
      * @return whether the motion field is set
      */
     public boolean hasMotion() {
@@ -42,7 +50,11 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional .MotionInfo motion = 5;</code>
      * @return this
      */
     public EnterMapRotationRegionCsReq clearMotion() {
@@ -52,7 +64,11 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional .MotionInfo motion = 5;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -66,7 +82,11 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional .MotionInfo motion = 5;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -80,7 +100,11 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     }
 
     /**
-     * <code>optional .MotionInfo motion = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional .MotionInfo motion = 5;</code>
      * @param value the motion to set
      * @return this
      */
@@ -150,7 +174,7 @@ public final class EnterMapRotationRegionCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 58);
+        output.writeRawByte((byte) 42);
         output.writeMessageNoTag(motion);
       }
     }
@@ -171,7 +195,7 @@ public final class EnterMapRotationRegionCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 58: {
+          case 42: {
             // motion
             input.readMessage(motion);
             bitField0_ |= 0x00000001;

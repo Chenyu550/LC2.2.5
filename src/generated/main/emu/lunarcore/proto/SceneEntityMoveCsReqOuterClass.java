@@ -20,12 +20,20 @@ public final class SceneEntityMoveCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entry_id = 9;</code>
      */
     private int entryId;
 
     /**
-     * <code>repeated .EntityMotion entity_motion_list = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>repeated .EntityMotion entity_motion_list = 4;</code>
      */
     private final RepeatedMessage<EntityMotionOuterClass.EntityMotion> entityMotionList = RepeatedMessage.newEmptyInstance(EntityMotionOuterClass.EntityMotion.getFactory());
 
@@ -40,6 +48,10 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entry_id = 9;</code>
      * @return whether the entryId field is set
      */
@@ -48,6 +60,10 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entry_id = 9;</code>
      * @return this
      */
@@ -58,6 +74,10 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entry_id = 9;</code>
      * @return the entryId
      */
@@ -66,6 +86,10 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 entry_id = 9;</code>
      * @param value the entryId to set
      * @return this
@@ -77,7 +101,11 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .EntityMotion entity_motion_list = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>repeated .EntityMotion entity_motion_list = 4;</code>
      * @return whether the entityMotionList field is set
      */
     public boolean hasEntityMotionList() {
@@ -85,7 +113,11 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .EntityMotion entity_motion_list = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>repeated .EntityMotion entity_motion_list = 4;</code>
      * @return this
      */
     public SceneEntityMoveCsReq clearEntityMotionList() {
@@ -95,7 +127,11 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .EntityMotion entity_motion_list = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>repeated .EntityMotion entity_motion_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -109,7 +145,11 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .EntityMotion entity_motion_list = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>repeated .EntityMotion entity_motion_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -123,7 +163,11 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .EntityMotion entity_motion_list = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>repeated .EntityMotion entity_motion_list = 4;</code>
      * @param value the entityMotionList to add
      * @return this
      */
@@ -135,7 +179,11 @@ public final class SceneEntityMoveCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .EntityMotion entity_motion_list = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>repeated .EntityMotion entity_motion_list = 4;</code>
      * @param values the entityMotionList to add
      * @return this
      */
@@ -217,7 +265,7 @@ public final class SceneEntityMoveCsReqOuterClass {
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < entityMotionList.length(); i++) {
-          output.writeRawByte((byte) 90);
+          output.writeRawByte((byte) 34);
           output.writeMessageNoTag(entityMotionList.get(i));
         }
       }
@@ -247,11 +295,11 @@ public final class SceneEntityMoveCsReqOuterClass {
             entryId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 90) {
+            if (tag != 34) {
               break;
             }
           }
-          case 90: {
+          case 34: {
             // entityMotionList
             tag = input.readRepeatedMessage(entityMotionList, tag);
             bitField0_ |= 0x00000002;

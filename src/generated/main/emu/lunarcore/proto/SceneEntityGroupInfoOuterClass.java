@@ -20,17 +20,29 @@ public final class SceneEntityGroupInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 group_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 8;</code>
      */
     private int groupId;
 
     /**
-     * <code>optional uint32 state = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 state = 15;</code>
      */
     private int state;
 
     /**
-     * <code>repeated .SceneEntityInfo entity_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      */
     private final RepeatedMessage<SceneEntityInfoOuterClass.SceneEntityInfo> entityList = RepeatedMessage.newEmptyInstance(SceneEntityInfoOuterClass.SceneEntityInfo.getFactory());
 
@@ -45,7 +57,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 8;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -53,7 +69,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 8;</code>
      * @return this
      */
     public SceneEntityGroupInfo clearGroupId() {
@@ -63,7 +83,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 8;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -71,7 +95,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 group_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 group_id = 8;</code>
      * @param value the groupId to set
      * @return this
      */
@@ -82,7 +110,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 state = 15;</code>
      * @return whether the state field is set
      */
     public boolean hasState() {
@@ -90,7 +122,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 state = 15;</code>
      * @return this
      */
     public SceneEntityGroupInfo clearState() {
@@ -100,7 +136,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 state = 15;</code>
      * @return the state
      */
     public int getState() {
@@ -108,7 +148,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 state = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 state = 15;</code>
      * @param value the state to set
      * @return this
      */
@@ -119,7 +163,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>repeated .SceneEntityInfo entity_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      * @return whether the entityList field is set
      */
     public boolean hasEntityList() {
@@ -127,7 +175,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>repeated .SceneEntityInfo entity_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      * @return this
      */
     public SceneEntityGroupInfo clearEntityList() {
@@ -137,7 +189,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>repeated .SceneEntityInfo entity_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -151,7 +207,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>repeated .SceneEntityInfo entity_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -165,7 +225,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>repeated .SceneEntityInfo entity_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      * @param value the entityList to add
      * @return this
      */
@@ -177,7 +241,11 @@ public final class SceneEntityGroupInfoOuterClass {
     }
 
     /**
-     * <code>repeated .SceneEntityInfo entity_list = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      * @param values the entityList to add
      * @return this
      */
@@ -260,16 +328,16 @@ public final class SceneEntityGroupInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(state);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < entityList.length(); i++) {
-          output.writeRawByte((byte) 58);
+          output.writeRawByte((byte) 18);
           output.writeMessageNoTag(entityList.get(i));
         }
       }
@@ -297,25 +365,25 @@ public final class SceneEntityGroupInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 64: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 120) {
               break;
             }
           }
-          case 48: {
+          case 120: {
             // state
             state = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 18) {
               break;
             }
           }
-          case 58: {
+          case 18: {
             // entityList
             tag = input.readRepeatedMessage(entityList, tag);
             bitField0_ |= 0x00000004;

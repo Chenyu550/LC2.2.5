@@ -29,14 +29,18 @@ public final class GachaItemOuterClass {
     private final ItemListOuterClass.ItemList tokenItem = ItemListOuterClass.ItemList.newInstance();
 
     /**
-     * <code>optional .Item gacha_item = 6;</code>
-     */
-    private final ItemOuterClass.Item gachaItem = ItemOuterClass.Item.newInstance();
-
-    /**
      * <code>optional .ItemList transfer_item_list = 9;</code>
      */
     private final ItemListOuterClass.ItemList transferItemList = ItemListOuterClass.ItemList.newInstance();
+
+    /**
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .Item gacha_item = 13;</code>
+     */
+    private final ItemOuterClass.Item gachaItem = ItemOuterClass.Item.newInstance();
 
     private GachaItem() {
     }
@@ -143,68 +147,11 @@ public final class GachaItemOuterClass {
     }
 
     /**
-     * <code>optional .Item gacha_item = 6;</code>
-     * @return whether the gachaItem field is set
-     */
-    public boolean hasGachaItem() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional .Item gacha_item = 6;</code>
-     * @return this
-     */
-    public GachaItem clearGachaItem() {
-      bitField0_ &= ~0x00000004;
-      gachaItem.clear();
-      return this;
-    }
-
-    /**
-     * <code>optional .Item gacha_item = 6;</code>
-     *
-     * This method returns the internal storage object without modifying any has state.
-     * The returned object should not be modified and be treated as read-only.
-     *
-     * Use {@link #getMutableGachaItem()} if you want to modify it.
-     *
-     * @return internal storage object for reading
-     */
-    public ItemOuterClass.Item getGachaItem() {
-      return gachaItem;
-    }
-
-    /**
-     * <code>optional .Item gacha_item = 6;</code>
-     *
-     * This method returns the internal storage object and sets the corresponding
-     * has state. The returned object will become part of this message and its
-     * contents may be modified as long as the has state is not cleared.
-     *
-     * @return internal storage object for modifications
-     */
-    public ItemOuterClass.Item getMutableGachaItem() {
-      bitField0_ |= 0x00000004;
-      return gachaItem;
-    }
-
-    /**
-     * <code>optional .Item gacha_item = 6;</code>
-     * @param value the gachaItem to set
-     * @return this
-     */
-    public GachaItem setGachaItem(final ItemOuterClass.Item value) {
-      bitField0_ |= 0x00000004;
-      gachaItem.copyFrom(value);
-      return this;
-    }
-
-    /**
      * <code>optional .ItemList transfer_item_list = 9;</code>
      * @return whether the transferItemList field is set
      */
     public boolean hasTransferItemList() {
-      return (bitField0_ & 0x00000008) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
@@ -212,7 +159,7 @@ public final class GachaItemOuterClass {
      * @return this
      */
     public GachaItem clearTransferItemList() {
-      bitField0_ &= ~0x00000008;
+      bitField0_ &= ~0x00000004;
       transferItemList.clear();
       return this;
     }
@@ -241,7 +188,7 @@ public final class GachaItemOuterClass {
      * @return internal storage object for modifications
      */
     public ItemListOuterClass.ItemList getMutableTransferItemList() {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       return transferItemList;
     }
 
@@ -251,8 +198,85 @@ public final class GachaItemOuterClass {
      * @return this
      */
     public GachaItem setTransferItemList(final ItemListOuterClass.ItemList value) {
-      bitField0_ |= 0x00000008;
+      bitField0_ |= 0x00000004;
       transferItemList.copyFrom(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .Item gacha_item = 13;</code>
+     * @return whether the gachaItem field is set
+     */
+    public boolean hasGachaItem() {
+      return (bitField0_ & 0x00000008) != 0;
+    }
+
+    /**
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .Item gacha_item = 13;</code>
+     * @return this
+     */
+    public GachaItem clearGachaItem() {
+      bitField0_ &= ~0x00000008;
+      gachaItem.clear();
+      return this;
+    }
+
+    /**
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .Item gacha_item = 13;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableGachaItem()} if you want to modify it.
+     *
+     * @return internal storage object for reading
+     */
+    public ItemOuterClass.Item getGachaItem() {
+      return gachaItem;
+    }
+
+    /**
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .Item gacha_item = 13;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public ItemOuterClass.Item getMutableGachaItem() {
+      bitField0_ |= 0x00000008;
+      return gachaItem;
+    }
+
+    /**
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .Item gacha_item = 13;</code>
+     * @param value the gachaItem to set
+     * @return this
+     */
+    public GachaItem setGachaItem(final ItemOuterClass.Item value) {
+      bitField0_ |= 0x00000008;
+      gachaItem.copyFrom(value);
       return this;
     }
 
@@ -263,8 +287,8 @@ public final class GachaItemOuterClass {
         bitField0_ = other.bitField0_;
         isNew = other.isNew;
         tokenItem.copyFrom(other.tokenItem);
-        gachaItem.copyFrom(other.gachaItem);
         transferItemList.copyFrom(other.transferItemList);
+        gachaItem.copyFrom(other.gachaItem);
       }
       return this;
     }
@@ -281,11 +305,11 @@ public final class GachaItemOuterClass {
       if (other.hasTokenItem()) {
         getMutableTokenItem().mergeFrom(other.tokenItem);
       }
-      if (other.hasGachaItem()) {
-        getMutableGachaItem().mergeFrom(other.gachaItem);
-      }
       if (other.hasTransferItemList()) {
         getMutableTransferItemList().mergeFrom(other.transferItemList);
+      }
+      if (other.hasGachaItem()) {
+        getMutableGachaItem().mergeFrom(other.gachaItem);
       }
       return this;
     }
@@ -299,8 +323,8 @@ public final class GachaItemOuterClass {
       bitField0_ = 0;
       isNew = false;
       tokenItem.clear();
-      gachaItem.clear();
       transferItemList.clear();
+      gachaItem.clear();
       return this;
     }
 
@@ -312,8 +336,8 @@ public final class GachaItemOuterClass {
       cachedSize = -1;
       bitField0_ = 0;
       tokenItem.clearQuick();
-      gachaItem.clearQuick();
       transferItemList.clearQuick();
+      gachaItem.clearQuick();
       return this;
     }
 
@@ -329,8 +353,8 @@ public final class GachaItemOuterClass {
       return bitField0_ == other.bitField0_
         && (!hasIsNew() || isNew == other.isNew)
         && (!hasTokenItem() || tokenItem.equals(other.tokenItem))
-        && (!hasGachaItem() || gachaItem.equals(other.gachaItem))
-        && (!hasTransferItemList() || transferItemList.equals(other.transferItemList));
+        && (!hasTransferItemList() || transferItemList.equals(other.transferItemList))
+        && (!hasGachaItem() || gachaItem.equals(other.gachaItem));
     }
 
     @Override
@@ -344,12 +368,12 @@ public final class GachaItemOuterClass {
         output.writeMessageNoTag(tokenItem);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 50);
-        output.writeMessageNoTag(gachaItem);
-      }
-      if ((bitField0_ & 0x00000008) != 0) {
         output.writeRawByte((byte) 74);
         output.writeMessageNoTag(transferItemList);
+      }
+      if ((bitField0_ & 0x00000008) != 0) {
+        output.writeRawByte((byte) 106);
+        output.writeMessageNoTag(gachaItem);
       }
     }
 
@@ -363,10 +387,10 @@ public final class GachaItemOuterClass {
         size += 1 + ProtoSink.computeMessageSizeNoTag(tokenItem);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(gachaItem);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(transferItemList);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        size += 1 + ProtoSink.computeMessageSizeNoTag(transferItemList);
+        size += 1 + ProtoSink.computeMessageSizeNoTag(gachaItem);
       }
       return size;
     }
@@ -392,15 +416,6 @@ public final class GachaItemOuterClass {
             input.readMessage(tokenItem);
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 50) {
-              break;
-            }
-          }
-          case 50: {
-            // gachaItem
-            input.readMessage(gachaItem);
-            bitField0_ |= 0x00000004;
-            tag = input.readTag();
             if (tag != 74) {
               break;
             }
@@ -408,6 +423,15 @@ public final class GachaItemOuterClass {
           case 74: {
             // transferItemList
             input.readMessage(transferItemList);
+            bitField0_ |= 0x00000004;
+            tag = input.readTag();
+            if (tag != 106) {
+              break;
+            }
+          }
+          case 106: {
+            // gachaItem
+            input.readMessage(gachaItem);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
             if (tag != 0) {
@@ -438,10 +462,10 @@ public final class GachaItemOuterClass {
         output.writeMessage(FieldNames.tokenItem, tokenItem);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeMessage(FieldNames.gachaItem, gachaItem);
+        output.writeMessage(FieldNames.transferItemList, transferItemList);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeMessage(FieldNames.transferItemList, transferItemList);
+        output.writeMessage(FieldNames.gachaItem, gachaItem);
       }
       output.endObject();
     }
@@ -477,11 +501,11 @@ public final class GachaItemOuterClass {
             }
             break;
           }
-          case 802515893:
-          case -871807056: {
-            if (input.isAtField(FieldNames.gachaItem)) {
+          case -997597348:
+          case 263056118: {
+            if (input.isAtField(FieldNames.transferItemList)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(gachaItem);
+                input.readMessage(transferItemList);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -489,11 +513,11 @@ public final class GachaItemOuterClass {
             }
             break;
           }
-          case -997597348:
-          case 263056118: {
-            if (input.isAtField(FieldNames.transferItemList)) {
+          case 802515893:
+          case -871807056: {
+            if (input.isAtField(FieldNames.gachaItem)) {
               if (!input.trySkipNullValue()) {
-                input.readMessage(transferItemList);
+                input.readMessage(gachaItem);
                 bitField0_ |= 0x00000008;
               }
             } else {
@@ -557,9 +581,9 @@ public final class GachaItemOuterClass {
 
       static final FieldName tokenItem = FieldName.forField("tokenItem", "token_item");
 
-      static final FieldName gachaItem = FieldName.forField("gachaItem", "gacha_item");
-
       static final FieldName transferItemList = FieldName.forField("transferItemList", "transfer_item_list");
+
+      static final FieldName gachaItem = FieldName.forField("gachaItem", "gacha_item");
     }
   }
 }

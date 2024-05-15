@@ -25,6 +25,10 @@ public final class RegionEntryOuterClass {
     private final Utf8String name = Utf8String.newEmptyInstance();
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional string title = 2;</code>
      */
     private final Utf8String title = Utf8String.newEmptyInstance();
@@ -125,6 +129,10 @@ public final class RegionEntryOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional string title = 2;</code>
      * @return whether the title field is set
      */
@@ -133,6 +141,10 @@ public final class RegionEntryOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional string title = 2;</code>
      * @return this
      */
@@ -143,6 +155,10 @@ public final class RegionEntryOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional string title = 2;</code>
      * @return the title
      */
@@ -151,6 +167,10 @@ public final class RegionEntryOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional string title = 2;</code>
      * @return internal {@code Utf8String} representation of title for reading
      */
@@ -159,6 +179,10 @@ public final class RegionEntryOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional string title = 2;</code>
      * @return internal {@code Utf8String} representation of title for modifications
      */
@@ -168,6 +192,10 @@ public final class RegionEntryOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional string title = 2;</code>
      * @param value the title to set
      * @return this
@@ -179,6 +207,10 @@ public final class RegionEntryOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional string title = 2;</code>
      * @param value the title to set
      * @return this

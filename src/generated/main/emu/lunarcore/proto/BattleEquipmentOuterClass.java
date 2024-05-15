@@ -24,6 +24,10 @@ public final class BattleEquipmentOuterClass {
     private int id;
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      */
     private int level;
@@ -86,6 +90,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return whether the level field is set
      */
@@ -94,6 +102,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return this
      */
@@ -104,6 +116,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return the level
      */
@@ -112,6 +128,10 @@ public final class BattleEquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @param value the level to set
      * @return this

@@ -25,6 +25,10 @@ public final class BattleRelicOuterClass {
     private int id;
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      */
     private int level;
@@ -92,6 +96,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return whether the level field is set
      */
@@ -100,6 +108,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return this
      */
@@ -110,6 +122,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @return the level
      */
@@ -118,6 +134,10 @@ public final class BattleRelicOuterClass {
     }
 
     /**
+     * <pre>
+     * 7a
+     * </pre>
+     *
      * <code>optional uint32 level = 2;</code>
      * @param value the level to set
      * @return this

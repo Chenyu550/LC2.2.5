@@ -20,17 +20,25 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 10;</code>
      */
     private int retcode;
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
      */
     private final RepeatedMessage<ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo> subStoryInfo = RepeatedMessage.newEmptyInstance(ChessRogueNousSubStoryInfoOuterClass.ChessRogueNousSubStoryInfo.getFactory());
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <pre>
+     * or 14
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
      */
     private final RepeatedMessage<ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo> mainStoryInfo = RepeatedMessage.newEmptyInstance(ChessRogueNousMainStoryInfoOuterClass.ChessRogueNousMainStoryInfo.getFactory());
 
@@ -45,7 +53,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -53,7 +61,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return this
      */
     public GetChessRogueNousStoryInfoScRsp clearRetcode() {
@@ -63,7 +71,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -71,7 +79,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 12;</code>
+     * <code>optional uint32 retcode = 10;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -82,7 +90,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
      * @return whether the subStoryInfo field is set
      */
     public boolean hasSubStoryInfo() {
@@ -90,7 +102,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
      * @return this
      */
     public GetChessRogueNousStoryInfoScRsp clearSubStoryInfo() {
@@ -100,7 +116,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -115,7 +135,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -130,7 +154,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
      * @param value the subStoryInfo to add
      * @return this
      */
@@ -142,7 +170,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 6;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
      * @param values the subStoryInfo to add
      * @return this
      */
@@ -154,7 +186,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <pre>
+     * or 14
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
      * @return whether the mainStoryInfo field is set
      */
     public boolean hasMainStoryInfo() {
@@ -162,7 +198,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <pre>
+     * or 14
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
      * @return this
      */
     public GetChessRogueNousStoryInfoScRsp clearMainStoryInfo() {
@@ -172,7 +212,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <pre>
+     * or 14
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -187,7 +231,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <pre>
+     * or 14
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -202,7 +250,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <pre>
+     * or 14
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
      * @param value the mainStoryInfo to add
      * @return this
      */
@@ -214,7 +266,11 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 10;</code>
+     * <pre>
+     * or 14
+     * </pre>
+     *
+     * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
      * @param values the mainStoryInfo to add
      * @return this
      */
@@ -298,18 +354,18 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < subStoryInfo.length(); i++) {
-          output.writeRawByte((byte) 50);
+          output.writeRawByte((byte) 114);
           output.writeMessageNoTag(subStoryInfo.get(i));
         }
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < mainStoryInfo.length(); i++) {
-          output.writeRawByte((byte) 82);
+          output.writeRawByte((byte) 122);
           output.writeMessageNoTag(mainStoryInfo.get(i));
         }
       }
@@ -337,24 +393,24 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 80: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 114) {
               break;
             }
           }
-          case 50: {
+          case 114: {
             // subStoryInfo
             tag = input.readRepeatedMessage(subStoryInfo, tag);
             bitField0_ |= 0x00000002;
-            if (tag != 82) {
+            if (tag != 122) {
               break;
             }
           }
-          case 82: {
+          case 122: {
             // mainStoryInfo
             tag = input.readRepeatedMessage(mainStoryInfo, tag);
             bitField0_ |= 0x00000004;

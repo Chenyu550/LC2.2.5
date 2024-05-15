@@ -20,7 +20,11 @@ public final class NewMailScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>repeated uint32 mail_id_list = 2;</code>
      */
     private final RepeatedInt mailIdList = RepeatedInt.newEmptyInstance();
 
@@ -35,7 +39,11 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>repeated uint32 mail_id_list = 2;</code>
      * @return whether the mailIdList field is set
      */
     public boolean hasMailIdList() {
@@ -43,7 +51,11 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>repeated uint32 mail_id_list = 2;</code>
      * @return this
      */
     public NewMailScNotify clearMailIdList() {
@@ -53,7 +65,11 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>repeated uint32 mail_id_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -67,7 +83,11 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>repeated uint32 mail_id_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -81,7 +101,11 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>repeated uint32 mail_id_list = 2;</code>
      * @param value the mailIdList to add
      * @return this
      */
@@ -92,7 +116,11 @@ public final class NewMailScNotifyOuterClass {
     }
 
     /**
-     * <code>repeated uint32 mail_id_list = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>repeated uint32 mail_id_list = 2;</code>
      * @param values the mailIdList to add
      * @return this
      */
@@ -163,7 +191,7 @@ public final class NewMailScNotifyOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < mailIdList.length(); i++) {
-          output.writeRawByte((byte) 64);
+          output.writeRawByte((byte) 16);
           output.writeUInt32NoTag(mailIdList.array()[i]);
         }
       }
@@ -185,7 +213,7 @@ public final class NewMailScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 66: {
+          case 18: {
             // mailIdList [packed=true]
             input.readPackedUInt32(mailIdList, tag);
             bitField0_ |= 0x00000001;
@@ -204,7 +232,7 @@ public final class NewMailScNotifyOuterClass {
             tag = input.readTag();
             break;
           }
-          case 64: {
+          case 16: {
             // mailIdList [packed=false]
             tag = input.readRepeatedUInt32(mailIdList, tag);
             bitField0_ |= 0x00000001;

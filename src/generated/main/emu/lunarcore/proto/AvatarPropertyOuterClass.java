@@ -14,6 +14,10 @@ import us.hebi.quickbuf.ProtoUtil;
 
 public final class AvatarPropertyOuterClass {
   /**
+   * <pre>
+   * 没变
+   * </pre>
+   *
    * Protobuf type {@code AvatarProperty}
    */
   public static final class AvatarProperty extends ProtoMessage<AvatarProperty> implements Cloneable {
@@ -58,6 +62,10 @@ public final class AvatarPropertyOuterClass {
     }
 
     /**
+     * <pre>
+     * 没变
+     * </pre>
+     *
      * @return a new empty instance of {@code AvatarProperty}
      */
     public static AvatarProperty newInstance() {

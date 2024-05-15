@@ -19,7 +19,11 @@ public final class EnterSceneCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 entry_id = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 5;</code>
      */
     private int entryId;
 
@@ -39,7 +43,11 @@ public final class EnterSceneCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 5;</code>
      * @return whether the entryId field is set
      */
     public boolean hasEntryId() {
@@ -47,7 +55,11 @@ public final class EnterSceneCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 5;</code>
      * @return this
      */
     public EnterSceneCsReq clearEntryId() {
@@ -57,7 +69,11 @@ public final class EnterSceneCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 5;</code>
      * @return the entryId
      */
     public int getEntryId() {
@@ -65,7 +81,11 @@ public final class EnterSceneCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 entry_id = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>optional uint32 entry_id = 5;</code>
      * @param value the entryId to set
      * @return this
      */
@@ -177,7 +197,7 @@ public final class EnterSceneCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(entryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -205,7 +225,7 @@ public final class EnterSceneCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 40: {
             // entryId
             entryId = input.readUInt32();
             bitField0_ |= 0x00000001;

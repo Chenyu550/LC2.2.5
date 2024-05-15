@@ -19,12 +19,20 @@ public final class SetClientPausedScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 10;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional bool paused = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional bool paused = 1;</code>
      */
     private boolean paused;
 
@@ -39,7 +47,11 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 10;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +59,11 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 10;</code>
      * @return this
      */
     public SetClientPausedScRsp clearRetcode() {
@@ -57,7 +73,11 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 10;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +85,11 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 10;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional bool paused = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional bool paused = 1;</code>
      * @return whether the paused field is set
      */
     public boolean hasPaused() {
@@ -84,7 +112,11 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional bool paused = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional bool paused = 1;</code>
      * @return this
      */
     public SetClientPausedScRsp clearPaused() {
@@ -94,7 +126,11 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional bool paused = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional bool paused = 1;</code>
      * @return the paused
      */
     public boolean getPaused() {
@@ -102,7 +138,11 @@ public final class SetClientPausedScRspOuterClass {
     }
 
     /**
-     * <code>optional bool paused = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional bool paused = 1;</code>
      * @param value the paused to set
      * @return this
      */
@@ -177,11 +217,11 @@ public final class SetClientPausedScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 8);
         output.writeBoolNoTag(paused);
       }
     }
@@ -205,16 +245,16 @@ public final class SetClientPausedScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 80: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 8) {
               break;
             }
           }
-          case 88: {
+          case 8: {
             // paused
             paused = input.readBool();
             bitField0_ |= 0x00000002;

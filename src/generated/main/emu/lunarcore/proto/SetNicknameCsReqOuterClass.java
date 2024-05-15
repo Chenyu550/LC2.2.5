@@ -20,7 +20,11 @@ public final class SetNicknameCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional string nickname = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional string nickname = 12;</code>
      */
     private final Utf8String nickname = Utf8String.newEmptyInstance();
 
@@ -35,7 +39,11 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional string nickname = 12;</code>
      * @return whether the nickname field is set
      */
     public boolean hasNickname() {
@@ -43,7 +51,11 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional string nickname = 12;</code>
      * @return this
      */
     public SetNicknameCsReq clearNickname() {
@@ -53,7 +65,11 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional string nickname = 12;</code>
      * @return the nickname
      */
     public String getNickname() {
@@ -61,7 +77,11 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional string nickname = 12;</code>
      * @return internal {@code Utf8String} representation of nickname for reading
      */
     public Utf8String getNicknameBytes() {
@@ -69,7 +89,11 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional string nickname = 12;</code>
      * @return internal {@code Utf8String} representation of nickname for modifications
      */
     public Utf8String getMutableNicknameBytes() {
@@ -78,7 +102,11 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional string nickname = 12;</code>
      * @param value the nickname to set
      * @return this
      */
@@ -89,7 +117,11 @@ public final class SetNicknameCsReqOuterClass {
     }
 
     /**
-     * <code>optional string nickname = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional string nickname = 12;</code>
      * @param value the nickname to set
      * @return this
      */
@@ -159,7 +191,7 @@ public final class SetNicknameCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 82);
+        output.writeRawByte((byte) 98);
         output.writeStringNoTag(nickname);
       }
     }
@@ -180,7 +212,7 @@ public final class SetNicknameCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 82: {
+          case 98: {
             // nickname
             input.readString(nickname);
             bitField0_ |= 0x00000001;

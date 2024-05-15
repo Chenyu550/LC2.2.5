@@ -20,6 +20,10 @@ public final class RogueHandbookEventOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 event_id = 11;</code>
      */
     private int eventId;
@@ -45,6 +49,10 @@ public final class RogueHandbookEventOuterClass {
     }
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 event_id = 11;</code>
      * @return whether the eventId field is set
      */
@@ -53,6 +61,10 @@ public final class RogueHandbookEventOuterClass {
     }
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 event_id = 11;</code>
      * @return this
      */
@@ -63,6 +75,10 @@ public final class RogueHandbookEventOuterClass {
     }
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 event_id = 11;</code>
      * @return the eventId
      */
@@ -71,6 +87,10 @@ public final class RogueHandbookEventOuterClass {
     }
 
     /**
+     * <pre>
+     * 8
+     * </pre>
+     *
      * <code>optional uint32 event_id = 11;</code>
      * @param value the eventId to set
      * @return this

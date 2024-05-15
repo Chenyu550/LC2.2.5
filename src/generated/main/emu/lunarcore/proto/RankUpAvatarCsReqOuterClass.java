@@ -19,11 +19,19 @@ public final class RankUpAvatarCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 9;</code>
      */
     private int baseAvatarId;
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 rank = 11;</code>
      */
     private int rank;
@@ -44,6 +52,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 9;</code>
      * @return whether the baseAvatarId field is set
      */
@@ -52,6 +64,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 9;</code>
      * @return this
      */
@@ -62,6 +78,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 9;</code>
      * @return the baseAvatarId
      */
@@ -70,6 +90,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 11
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 9;</code>
      * @param value the baseAvatarId to set
      * @return this
@@ -81,6 +105,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 rank = 11;</code>
      * @return whether the rank field is set
      */
@@ -89,6 +117,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 rank = 11;</code>
      * @return this
      */
@@ -99,6 +131,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 rank = 11;</code>
      * @return the rank
      */
@@ -107,6 +143,10 @@ public final class RankUpAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 15
+     * </pre>
+     *
      * <code>optional uint32 rank = 11;</code>
      * @param value the rank to set
      * @return this

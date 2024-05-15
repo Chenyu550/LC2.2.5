@@ -35,6 +35,10 @@ public final class RogueHandbookAeonOuterClass {
     private int maxLevel;
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 level = 13;</code>
      */
     private int level;
@@ -179,6 +183,10 @@ public final class RogueHandbookAeonOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 level = 13;</code>
      * @return whether the level field is set
      */
@@ -187,6 +195,10 @@ public final class RogueHandbookAeonOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 level = 13;</code>
      * @return this
      */
@@ -197,6 +209,10 @@ public final class RogueHandbookAeonOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 level = 13;</code>
      * @return the level
      */
@@ -205,6 +221,10 @@ public final class RogueHandbookAeonOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional uint32 level = 13;</code>
      * @param value the level to set
      * @return this

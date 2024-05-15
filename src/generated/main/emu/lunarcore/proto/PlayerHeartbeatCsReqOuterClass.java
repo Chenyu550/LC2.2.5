@@ -19,7 +19,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint64 client_time_ms = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 11;</code>
      */
     private long clientTimeMs;
 
@@ -34,7 +38,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 client_time_ms = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 11;</code>
      * @return whether the clientTimeMs field is set
      */
     public boolean hasClientTimeMs() {
@@ -42,7 +50,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 client_time_ms = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 11;</code>
      * @return this
      */
     public PlayerHeartbeatCsReq clearClientTimeMs() {
@@ -52,7 +64,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 client_time_ms = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 11;</code>
      * @return the clientTimeMs
      */
     public long getClientTimeMs() {
@@ -60,7 +76,11 @@ public final class PlayerHeartbeatCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint64 client_time_ms = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint64 client_time_ms = 11;</code>
      * @param value the clientTimeMs to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class PlayerHeartbeatCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 88);
         output.writeUInt64NoTag(clientTimeMs);
       }
     }
@@ -150,7 +170,7 @@ public final class PlayerHeartbeatCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 88: {
             // clientTimeMs
             clientTimeMs = input.readUInt64();
             bitField0_ |= 0x00000001;

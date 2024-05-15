@@ -20,17 +20,29 @@ public final class TakeOffRelicCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 1;</code>
      */
     private int equipAvatarId;
 
     /**
-     * <code>optional uint32 base_avatar_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      */
     private int baseAvatarId;
 
     /**
-     * <code>repeated uint32 slot_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>repeated uint32 slot_list = 8;</code>
      */
     private final RepeatedInt slotList = RepeatedInt.newEmptyInstance();
 
@@ -45,6 +57,10 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 1;</code>
      * @return whether the equipAvatarId field is set
      */
@@ -53,6 +69,10 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 1;</code>
      * @return this
      */
@@ -63,6 +83,10 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 1;</code>
      * @return the equipAvatarId
      */
@@ -71,6 +95,10 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 1;</code>
      * @param value the equipAvatarId to set
      * @return this
@@ -82,7 +110,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      * @return whether the baseAvatarId field is set
      */
     public boolean hasBaseAvatarId() {
@@ -90,7 +122,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      * @return this
      */
     public TakeOffRelicCsReq clearBaseAvatarId() {
@@ -100,7 +136,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      * @return the baseAvatarId
      */
     public int getBaseAvatarId() {
@@ -108,7 +148,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 8;</code>
+     * <pre>
+     * 8
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      * @param value the baseAvatarId to set
      * @return this
      */
@@ -119,7 +163,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 slot_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>repeated uint32 slot_list = 8;</code>
      * @return whether the slotList field is set
      */
     public boolean hasSlotList() {
@@ -127,7 +175,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 slot_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>repeated uint32 slot_list = 8;</code>
      * @return this
      */
     public TakeOffRelicCsReq clearSlotList() {
@@ -137,7 +189,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 slot_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>repeated uint32 slot_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -151,7 +207,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 slot_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>repeated uint32 slot_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -165,7 +225,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 slot_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>repeated uint32 slot_list = 8;</code>
      * @param value the slotList to add
      * @return this
      */
@@ -176,7 +240,11 @@ public final class TakeOffRelicCsReqOuterClass {
     }
 
     /**
-     * <code>repeated uint32 slot_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>repeated uint32 slot_list = 8;</code>
      * @param values the slotList to add
      * @return this
      */
@@ -262,12 +330,12 @@ public final class TakeOffRelicCsReqOuterClass {
         output.writeUInt32NoTag(equipAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         for (int i = 0; i < slotList.length(); i++) {
-          output.writeRawByte((byte) 48);
+          output.writeRawByte((byte) 64);
           output.writeUInt32NoTag(slotList.array()[i]);
         }
       }
@@ -300,20 +368,20 @@ public final class TakeOffRelicCsReqOuterClass {
             equipAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 16) {
               break;
             }
           }
-          case 64: {
+          case 16: {
             // baseAvatarId
             baseAvatarId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 66) {
               break;
             }
           }
-          case 50: {
+          case 66: {
             // slotList [packed=true]
             input.readPackedUInt32(slotList, tag);
             bitField0_ |= 0x00000004;
@@ -332,7 +400,7 @@ public final class TakeOffRelicCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 48: {
+          case 64: {
             // slotList [packed=false]
             tag = input.readRepeatedUInt32(slotList, tag);
             bitField0_ |= 0x00000004;

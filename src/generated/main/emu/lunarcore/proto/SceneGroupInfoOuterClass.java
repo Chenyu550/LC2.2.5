@@ -10,57 +10,58 @@ import us.hebi.quickbuf.MessageFactory;
 import us.hebi.quickbuf.ProtoMessage;
 import us.hebi.quickbuf.ProtoSink;
 import us.hebi.quickbuf.ProtoSource;
+import us.hebi.quickbuf.RepeatedMessage;
 
-public final class SceneGroupStateOuterClass {
+public final class SceneGroupInfoOuterClass {
   /**
-   * Protobuf type {@code SceneGroupState}
+   * Protobuf type {@code SceneGroupInfo}
    */
-  public static final class SceneGroupState extends ProtoMessage<SceneGroupState> implements Cloneable {
+  public static final class SceneGroupInfo extends ProtoMessage<SceneGroupInfo> implements Cloneable {
     private static final long serialVersionUID = 0L;
 
     /**
      * <pre>
-     * 11
+     * 4
      * </pre>
      *
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      */
     private int groupId;
 
     /**
      * <pre>
-     *
+     * 6
      * </pre>
      *
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 15;</code>
      */
     private int state;
 
     /**
      * <pre>
-     * 10
+     * 7
      * </pre>
      *
-     * <code>optional bool is_default = 3;</code>
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      */
-    private boolean isDefault;
+    private final RepeatedMessage<SceneEntityInfoOuterClass.SceneEntityInfo> entityList = RepeatedMessage.newEmptyInstance(SceneEntityInfoOuterClass.SceneEntityInfo.getFactory());
 
-    private SceneGroupState() {
+    private SceneGroupInfo() {
     }
 
     /**
-     * @return a new empty instance of {@code SceneGroupState}
+     * @return a new empty instance of {@code SceneGroupInfo}
      */
-    public static SceneGroupState newInstance() {
-      return new SceneGroupState();
+    public static SceneGroupInfo newInstance() {
+      return new SceneGroupInfo();
     }
 
     /**
      * <pre>
-     * 11
+     * 4
      * </pre>
      *
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return whether the groupId field is set
      */
     public boolean hasGroupId() {
@@ -69,13 +70,13 @@ public final class SceneGroupStateOuterClass {
 
     /**
      * <pre>
-     * 11
+     * 4
      * </pre>
      *
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return this
      */
-    public SceneGroupState clearGroupId() {
+    public SceneGroupInfo clearGroupId() {
       bitField0_ &= ~0x00000001;
       groupId = 0;
       return this;
@@ -83,10 +84,10 @@ public final class SceneGroupStateOuterClass {
 
     /**
      * <pre>
-     * 11
+     * 4
      * </pre>
      *
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @return the groupId
      */
     public int getGroupId() {
@@ -95,14 +96,14 @@ public final class SceneGroupStateOuterClass {
 
     /**
      * <pre>
-     * 11
+     * 4
      * </pre>
      *
-     * <code>optional uint32 group_id = 6;</code>
+     * <code>optional uint32 group_id = 8;</code>
      * @param value the groupId to set
      * @return this
      */
-    public SceneGroupState setGroupId(final int value) {
+    public SceneGroupInfo setGroupId(final int value) {
       bitField0_ |= 0x00000001;
       groupId = value;
       return this;
@@ -110,10 +111,10 @@ public final class SceneGroupStateOuterClass {
 
     /**
      * <pre>
-     *
+     * 6
      * </pre>
      *
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 15;</code>
      * @return whether the state field is set
      */
     public boolean hasState() {
@@ -122,13 +123,13 @@ public final class SceneGroupStateOuterClass {
 
     /**
      * <pre>
-     *
+     * 6
      * </pre>
      *
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 15;</code>
      * @return this
      */
-    public SceneGroupState clearState() {
+    public SceneGroupInfo clearState() {
       bitField0_ &= ~0x00000002;
       state = 0;
       return this;
@@ -136,10 +137,10 @@ public final class SceneGroupStateOuterClass {
 
     /**
      * <pre>
-     *
+     * 6
      * </pre>
      *
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 15;</code>
      * @return the state
      */
     public int getState() {
@@ -148,14 +149,14 @@ public final class SceneGroupStateOuterClass {
 
     /**
      * <pre>
-     *
+     * 6
      * </pre>
      *
-     * <code>optional uint32 state = 8;</code>
+     * <code>optional uint32 state = 15;</code>
      * @param value the state to set
      * @return this
      */
-    public SceneGroupState setState(final int value) {
+    public SceneGroupInfo setState(final int value) {
       bitField0_ |= 0x00000002;
       state = value;
       return this;
@@ -163,71 +164,111 @@ public final class SceneGroupStateOuterClass {
 
     /**
      * <pre>
-     * 10
+     * 7
      * </pre>
      *
-     * <code>optional bool is_default = 3;</code>
-     * @return whether the isDefault field is set
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
+     * @return whether the entityList field is set
      */
-    public boolean hasIsDefault() {
+    public boolean hasEntityList() {
       return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
      * <pre>
-     * 10
+     * 7
      * </pre>
      *
-     * <code>optional bool is_default = 3;</code>
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
      * @return this
      */
-    public SceneGroupState clearIsDefault() {
+    public SceneGroupInfo clearEntityList() {
       bitField0_ &= ~0x00000004;
-      isDefault = false;
+      entityList.clear();
       return this;
     }
 
     /**
      * <pre>
-     * 10
+     * 7
      * </pre>
      *
-     * <code>optional bool is_default = 3;</code>
-     * @return the isDefault
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
+     *
+     * This method returns the internal storage object without modifying any has state.
+     * The returned object should not be modified and be treated as read-only.
+     *
+     * Use {@link #getMutableEntityList()} if you want to modify it.
+     *
+     * @return internal storage object for reading
      */
-    public boolean getIsDefault() {
-      return isDefault;
+    public RepeatedMessage<SceneEntityInfoOuterClass.SceneEntityInfo> getEntityList() {
+      return entityList;
     }
 
     /**
      * <pre>
-     * 10
+     * 7
      * </pre>
      *
-     * <code>optional bool is_default = 3;</code>
-     * @param value the isDefault to set
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
+     *
+     * This method returns the internal storage object and sets the corresponding
+     * has state. The returned object will become part of this message and its
+     * contents may be modified as long as the has state is not cleared.
+     *
+     * @return internal storage object for modifications
+     */
+    public RepeatedMessage<SceneEntityInfoOuterClass.SceneEntityInfo> getMutableEntityList() {
+      bitField0_ |= 0x00000004;
+      return entityList;
+    }
+
+    /**
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
+     * @param value the entityList to add
      * @return this
      */
-    public SceneGroupState setIsDefault(final boolean value) {
+    public SceneGroupInfo addEntityList(final SceneEntityInfoOuterClass.SceneEntityInfo value) {
       bitField0_ |= 0x00000004;
-      isDefault = value;
+      entityList.add(value);
+      return this;
+    }
+
+    /**
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>repeated .SceneEntityInfo entity_list = 2;</code>
+     * @param values the entityList to add
+     * @return this
+     */
+    public SceneGroupInfo addAllEntityList(
+        final SceneEntityInfoOuterClass.SceneEntityInfo... values) {
+      bitField0_ |= 0x00000004;
+      entityList.addAll(values);
       return this;
     }
 
     @Override
-    public SceneGroupState copyFrom(final SceneGroupState other) {
+    public SceneGroupInfo copyFrom(final SceneGroupInfo other) {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
         groupId = other.groupId;
         state = other.state;
-        isDefault = other.isDefault;
+        entityList.copyFrom(other.entityList);
       }
       return this;
     }
 
     @Override
-    public SceneGroupState mergeFrom(final SceneGroupState other) {
+    public SceneGroupInfo mergeFrom(final SceneGroupInfo other) {
       if (other.isEmpty()) {
         return this;
       }
@@ -238,14 +279,14 @@ public final class SceneGroupStateOuterClass {
       if (other.hasState()) {
         setState(other.state);
       }
-      if (other.hasIsDefault()) {
-        setIsDefault(other.isDefault);
+      if (other.hasEntityList()) {
+        getMutableEntityList().addAll(other.entityList);
       }
       return this;
     }
 
     @Override
-    public SceneGroupState clear() {
+    public SceneGroupInfo clear() {
       if (isEmpty()) {
         return this;
       }
@@ -253,17 +294,18 @@ public final class SceneGroupStateOuterClass {
       bitField0_ = 0;
       groupId = 0;
       state = 0;
-      isDefault = false;
+      entityList.clear();
       return this;
     }
 
     @Override
-    public SceneGroupState clearQuick() {
+    public SceneGroupInfo clearQuick() {
       if (isEmpty()) {
         return this;
       }
       cachedSize = -1;
       bitField0_ = 0;
+      entityList.clearQuick();
       return this;
     }
 
@@ -272,29 +314,31 @@ public final class SceneGroupStateOuterClass {
       if (o == this) {
         return true;
       }
-      if (!(o instanceof SceneGroupState)) {
+      if (!(o instanceof SceneGroupInfo)) {
         return false;
       }
-      SceneGroupState other = (SceneGroupState) o;
+      SceneGroupInfo other = (SceneGroupInfo) o;
       return bitField0_ == other.bitField0_
         && (!hasGroupId() || groupId == other.groupId)
         && (!hasState() || state == other.state)
-        && (!hasIsDefault() || isDefault == other.isDefault);
+        && (!hasEntityList() || entityList.equals(other.entityList));
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 64);
         output.writeUInt32NoTag(groupId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(state);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 24);
-        output.writeBoolNoTag(isDefault);
+        for (int i = 0; i < entityList.length(); i++) {
+          output.writeRawByte((byte) 18);
+          output.writeMessageNoTag(entityList.get(i));
+        }
       }
     }
 
@@ -308,41 +352,40 @@ public final class SceneGroupStateOuterClass {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(state);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 2;
+        size += (1 * entityList.length()) + ProtoSink.computeRepeatedMessageSizeNoTag(entityList);
       }
       return size;
     }
 
     @Override
     @SuppressWarnings("fallthrough")
-    public SceneGroupState mergeFrom(final ProtoSource input) throws IOException {
+    public SceneGroupInfo mergeFrom(final ProtoSource input) throws IOException {
       // Enabled Fall-Through Optimization (QuickBuffers)
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 64: {
             // groupId
             groupId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 64) {
+            if (tag != 120) {
               break;
             }
           }
-          case 64: {
+          case 120: {
             // state
             state = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 18) {
               break;
             }
           }
-          case 24: {
-            // isDefault
-            isDefault = input.readBool();
+          case 18: {
+            // entityList
+            tag = input.readRepeatedMessage(entityList, tag);
             bitField0_ |= 0x00000004;
-            tag = input.readTag();
             if (tag != 0) {
               break;
             }
@@ -371,13 +414,13 @@ public final class SceneGroupStateOuterClass {
         output.writeUInt32(FieldNames.state, state);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeBool(FieldNames.isDefault, isDefault);
+        output.writeRepeatedMessage(FieldNames.entityList, entityList);
       }
       output.endObject();
     }
 
     @Override
-    public SceneGroupState mergeFrom(final JsonSource input) throws IOException {
+    public SceneGroupInfo mergeFrom(final JsonSource input) throws IOException {
       if (!input.beginObject()) {
         return this;
       }
@@ -406,11 +449,11 @@ public final class SceneGroupStateOuterClass {
             }
             break;
           }
-          case 965025207:
-          case -1249853396: {
-            if (input.isAtField(FieldNames.isDefault)) {
+          case -1483251935:
+          case 1281457018: {
+            if (input.isAtField(FieldNames.entityList)) {
               if (!input.trySkipNullValue()) {
-                isDefault = input.readBool();
+                input.readRepeatedMessage(entityList);
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -429,8 +472,8 @@ public final class SceneGroupStateOuterClass {
     }
 
     @Override
-    public SceneGroupState clone() {
-      return new SceneGroupState().copyFrom(this);
+    public SceneGroupInfo clone() {
+      return new SceneGroupInfo().copyFrom(this);
     }
 
     @Override
@@ -438,32 +481,32 @@ public final class SceneGroupStateOuterClass {
       return ((bitField0_) == 0);
     }
 
-    public static SceneGroupState parseFrom(final byte[] data) throws
+    public static SceneGroupInfo parseFrom(final byte[] data) throws
         InvalidProtocolBufferException {
-      return ProtoMessage.mergeFrom(new SceneGroupState(), data).checkInitialized();
+      return ProtoMessage.mergeFrom(new SceneGroupInfo(), data).checkInitialized();
     }
 
-    public static SceneGroupState parseFrom(final ProtoSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new SceneGroupState(), input).checkInitialized();
+    public static SceneGroupInfo parseFrom(final ProtoSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new SceneGroupInfo(), input).checkInitialized();
     }
 
-    public static SceneGroupState parseFrom(final JsonSource input) throws IOException {
-      return ProtoMessage.mergeFrom(new SceneGroupState(), input).checkInitialized();
+    public static SceneGroupInfo parseFrom(final JsonSource input) throws IOException {
+      return ProtoMessage.mergeFrom(new SceneGroupInfo(), input).checkInitialized();
     }
 
     /**
-     * @return factory for creating SceneGroupState messages
+     * @return factory for creating SceneGroupInfo messages
      */
-    public static MessageFactory<SceneGroupState> getFactory() {
-      return SceneGroupStateFactory.INSTANCE;
+    public static MessageFactory<SceneGroupInfo> getFactory() {
+      return SceneGroupInfoFactory.INSTANCE;
     }
 
-    private enum SceneGroupStateFactory implements MessageFactory<SceneGroupState> {
+    private enum SceneGroupInfoFactory implements MessageFactory<SceneGroupInfo> {
       INSTANCE;
 
       @Override
-      public SceneGroupState create() {
-        return SceneGroupState.newInstance();
+      public SceneGroupInfo create() {
+        return SceneGroupInfo.newInstance();
       }
     }
 
@@ -475,7 +518,7 @@ public final class SceneGroupStateOuterClass {
 
       static final FieldName state = FieldName.forField("state");
 
-      static final FieldName isDefault = FieldName.forField("isDefault", "is_default");
+      static final FieldName entityList = FieldName.forField("entityList", "entity_list");
     }
   }
 }
