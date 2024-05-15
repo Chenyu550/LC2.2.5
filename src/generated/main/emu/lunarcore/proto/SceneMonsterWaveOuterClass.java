@@ -38,11 +38,19 @@ public final class SceneMonsterWaveOuterClass {
     private int stageId;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .SceneMonsterWaveParam wave_param = 8;</code>
      */
     private final SceneMonsterWaveParamOuterClass.SceneMonsterWaveParam waveParam = SceneMonsterWaveParamOuterClass.SceneMonsterWaveParam.newInstance();
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .SceneMonster monster_list = 3;</code>
      */
     private final RepeatedMessage<SceneMonsterOuterClass.SceneMonster> monsterList = RepeatedMessage.newEmptyInstance(SceneMonsterOuterClass.SceneMonster.getFactory());
@@ -173,6 +181,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .SceneMonsterWaveParam wave_param = 8;</code>
      * @return whether the waveParam field is set
      */
@@ -181,6 +193,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .SceneMonsterWaveParam wave_param = 8;</code>
      * @return this
      */
@@ -191,6 +207,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .SceneMonsterWaveParam wave_param = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -205,6 +225,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .SceneMonsterWaveParam wave_param = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -219,6 +243,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional .SceneMonsterWaveParam wave_param = 8;</code>
      * @param value the waveParam to set
      * @return this
@@ -231,6 +259,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .SceneMonster monster_list = 3;</code>
      * @return whether the monsterList field is set
      */
@@ -239,6 +271,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .SceneMonster monster_list = 3;</code>
      * @return this
      */
@@ -249,6 +285,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .SceneMonster monster_list = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -263,6 +303,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .SceneMonster monster_list = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -277,6 +321,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .SceneMonster monster_list = 3;</code>
      * @param value the monsterList to add
      * @return this
@@ -288,6 +336,10 @@ public final class SceneMonsterWaveOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .SceneMonster monster_list = 3;</code>
      * @param values the monsterList to add
      * @return this

@@ -20,6 +20,10 @@ public final class PromoteAvatarCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 7;</code>
      */
     private int baseAvatarId;
@@ -40,6 +44,10 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 7;</code>
      * @return whether the baseAvatarId field is set
      */
@@ -48,6 +56,10 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 7;</code>
      * @return this
      */
@@ -58,6 +70,10 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 7;</code>
      * @return the baseAvatarId
      */
@@ -66,6 +82,10 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 7;</code>
      * @param value the baseAvatarId to set
      * @return this

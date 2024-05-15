@@ -19,12 +19,20 @@ public final class SetHeadIconScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 9;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 current_head_icon_id = 15;</code>
+     * <pre>
+     * 15
+     * </pre>
+     *
+     * <code>optional uint32 current_head_icon_id = 14;</code>
      */
     private int currentHeadIconId;
 
@@ -39,6 +47,10 @@ public final class SetHeadIconScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 9;</code>
      * @return whether the retcode field is set
      */
@@ -47,6 +59,10 @@ public final class SetHeadIconScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 9;</code>
      * @return this
      */
@@ -57,6 +73,10 @@ public final class SetHeadIconScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 9;</code>
      * @return the retcode
      */
@@ -65,6 +85,10 @@ public final class SetHeadIconScRspOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional uint32 retcode = 9;</code>
      * @param value the retcode to set
      * @return this
@@ -76,7 +100,11 @@ public final class SetHeadIconScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 current_head_icon_id = 15;</code>
+     * <pre>
+     * 15
+     * </pre>
+     *
+     * <code>optional uint32 current_head_icon_id = 14;</code>
      * @return whether the currentHeadIconId field is set
      */
     public boolean hasCurrentHeadIconId() {
@@ -84,7 +112,11 @@ public final class SetHeadIconScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 current_head_icon_id = 15;</code>
+     * <pre>
+     * 15
+     * </pre>
+     *
+     * <code>optional uint32 current_head_icon_id = 14;</code>
      * @return this
      */
     public SetHeadIconScRsp clearCurrentHeadIconId() {
@@ -94,7 +126,11 @@ public final class SetHeadIconScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 current_head_icon_id = 15;</code>
+     * <pre>
+     * 15
+     * </pre>
+     *
+     * <code>optional uint32 current_head_icon_id = 14;</code>
      * @return the currentHeadIconId
      */
     public int getCurrentHeadIconId() {
@@ -102,7 +138,11 @@ public final class SetHeadIconScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 current_head_icon_id = 15;</code>
+     * <pre>
+     * 15
+     * </pre>
+     *
+     * <code>optional uint32 current_head_icon_id = 14;</code>
      * @param value the currentHeadIconId to set
      * @return this
      */
@@ -181,7 +221,7 @@ public final class SetHeadIconScRspOuterClass {
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 120);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(currentHeadIconId);
       }
     }
@@ -210,11 +250,11 @@ public final class SetHeadIconScRspOuterClass {
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 120) {
+            if (tag != 112) {
               break;
             }
           }
-          case 120: {
+          case 112: {
             // currentHeadIconId
             currentHeadIconId = input.readUInt32();
             bitField0_ |= 0x00000002;

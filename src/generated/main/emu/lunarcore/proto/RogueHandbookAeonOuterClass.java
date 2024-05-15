@@ -20,6 +20,10 @@ public final class RogueHandbookAeonOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 exp = 1;</code>
      */
     private int exp;
@@ -72,6 +76,10 @@ public final class RogueHandbookAeonOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 exp = 1;</code>
      * @return whether the exp field is set
      */
@@ -80,6 +88,10 @@ public final class RogueHandbookAeonOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 exp = 1;</code>
      * @return this
      */
@@ -90,6 +102,10 @@ public final class RogueHandbookAeonOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 exp = 1;</code>
      * @return the exp
      */
@@ -98,6 +114,10 @@ public final class RogueHandbookAeonOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 exp = 1;</code>
      * @param value the exp to set
      * @return this

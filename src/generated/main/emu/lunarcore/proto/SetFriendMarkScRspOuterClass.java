@@ -24,6 +24,10 @@ public final class SetFriendMarkScRspOuterClass {
     private int uid;
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 6;</code>
      */
     private int retcode;
@@ -81,6 +85,10 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 6;</code>
      * @return whether the retcode field is set
      */
@@ -89,6 +97,10 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
@@ -99,6 +111,10 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 6;</code>
      * @return the retcode
      */
@@ -107,6 +123,10 @@ public final class SetFriendMarkScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 7
+     * </pre>
+     *
      * <code>optional uint32 retcode = 6;</code>
      * @param value the retcode to set
      * @return this

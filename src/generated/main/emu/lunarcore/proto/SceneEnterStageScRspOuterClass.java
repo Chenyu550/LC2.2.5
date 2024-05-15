@@ -19,20 +19,16 @@ public final class SceneEnterStageScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <pre>
-     * 2
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      */
     private int retcode;
 
     /**
      * <pre>
-     * bqd
+     * bqd  2
      * </pre>
      *
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 9;</code>
      */
     private final SceneBattleInfoOuterClass.SceneBattleInfo battleInfo = SceneBattleInfoOuterClass.SceneBattleInfo.newInstance();
 
@@ -47,11 +43,7 @@ public final class SceneEnterStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * 2
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -59,11 +51,7 @@ public final class SceneEnterStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * 2
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return this
      */
     public SceneEnterStageScRsp clearRetcode() {
@@ -73,11 +61,7 @@ public final class SceneEnterStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * 2
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -85,11 +69,7 @@ public final class SceneEnterStageScRspOuterClass {
     }
 
     /**
-     * <pre>
-     * 2
-     * </pre>
-     *
-     * <code>optional uint32 retcode = 5;</code>
+     * <code>optional uint32 retcode = 1;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -101,10 +81,10 @@ public final class SceneEnterStageScRspOuterClass {
 
     /**
      * <pre>
-     * bqd
+     * bqd  2
      * </pre>
      *
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 9;</code>
      * @return whether the battleInfo field is set
      */
     public boolean hasBattleInfo() {
@@ -113,10 +93,10 @@ public final class SceneEnterStageScRspOuterClass {
 
     /**
      * <pre>
-     * bqd
+     * bqd  2
      * </pre>
      *
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 9;</code>
      * @return this
      */
     public SceneEnterStageScRsp clearBattleInfo() {
@@ -127,10 +107,10 @@ public final class SceneEnterStageScRspOuterClass {
 
     /**
      * <pre>
-     * bqd
+     * bqd  2
      * </pre>
      *
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 9;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -145,10 +125,10 @@ public final class SceneEnterStageScRspOuterClass {
 
     /**
      * <pre>
-     * bqd
+     * bqd  2
      * </pre>
      *
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 9;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -163,10 +143,10 @@ public final class SceneEnterStageScRspOuterClass {
 
     /**
      * <pre>
-     * bqd
+     * bqd  2
      * </pre>
      *
-     * <code>optional .SceneBattleInfo battle_info = 2;</code>
+     * <code>optional .SceneBattleInfo battle_info = 9;</code>
      * @param value the battleInfo to set
      * @return this
      */
@@ -243,11 +223,11 @@ public final class SceneEnterStageScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 8);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 18);
+        output.writeRawByte((byte) 74);
         output.writeMessageNoTag(battleInfo);
       }
     }
@@ -271,16 +251,16 @@ public final class SceneEnterStageScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 8: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 74) {
               break;
             }
           }
-          case 18: {
+          case 74: {
             // battleInfo
             input.readMessage(battleInfo);
             bitField0_ |= 0x00000002;

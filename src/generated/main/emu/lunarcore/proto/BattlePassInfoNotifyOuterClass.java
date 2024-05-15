@@ -51,14 +51,18 @@ public final class BattlePassInfoNotifyOuterClass {
     private long takenPremiumExtendedReward;
 
     /**
-     * <code>optional uint32 cur_bp_id = 1;</code>
-     */
-    private int curBpId;
-
-    /**
-     * <code>optional uint32 exp = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 exp = 1;</code>
      */
     private int exp;
+
+    /**
+     * <code>optional uint32 cur_bp_id = 7;</code>
+     */
+    private int curBpId;
 
     /**
      * <pre>
@@ -316,62 +320,37 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_bp_id = 1;</code>
-     * @return whether the curBpId field is set
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 exp = 1;</code>
+     * @return whether the exp field is set
      */
-    public boolean hasCurBpId() {
+    public boolean hasExp() {
       return (bitField0_ & 0x00000040) != 0;
     }
 
     /**
-     * <code>optional uint32 cur_bp_id = 1;</code>
-     * @return this
-     */
-    public BattlePassInfoNotify clearCurBpId() {
-      bitField0_ &= ~0x00000040;
-      curBpId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 cur_bp_id = 1;</code>
-     * @return the curBpId
-     */
-    public int getCurBpId() {
-      return curBpId;
-    }
-
-    /**
-     * <code>optional uint32 cur_bp_id = 1;</code>
-     * @param value the curBpId to set
-     * @return this
-     */
-    public BattlePassInfoNotify setCurBpId(final int value) {
-      bitField0_ |= 0x00000040;
-      curBpId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 exp = 7;</code>
-     * @return whether the exp field is set
-     */
-    public boolean hasExp() {
-      return (bitField0_ & 0x00000080) != 0;
-    }
-
-    /**
-     * <code>optional uint32 exp = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 exp = 1;</code>
      * @return this
      */
     public BattlePassInfoNotify clearExp() {
-      bitField0_ &= ~0x00000080;
+      bitField0_ &= ~0x00000040;
       exp = 0;
       return this;
     }
 
     /**
-     * <code>optional uint32 exp = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 exp = 1;</code>
      * @return the exp
      */
     public int getExp() {
@@ -379,13 +358,54 @@ public final class BattlePassInfoNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 exp = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 exp = 1;</code>
      * @param value the exp to set
      * @return this
      */
     public BattlePassInfoNotify setExp(final int value) {
-      bitField0_ |= 0x00000080;
+      bitField0_ |= 0x00000040;
       exp = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 cur_bp_id = 7;</code>
+     * @return whether the curBpId field is set
+     */
+    public boolean hasCurBpId() {
+      return (bitField0_ & 0x00000080) != 0;
+    }
+
+    /**
+     * <code>optional uint32 cur_bp_id = 7;</code>
+     * @return this
+     */
+    public BattlePassInfoNotify clearCurBpId() {
+      bitField0_ &= ~0x00000080;
+      curBpId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 cur_bp_id = 7;</code>
+     * @return the curBpId
+     */
+    public int getCurBpId() {
+      return curBpId;
+    }
+
+    /**
+     * <code>optional uint32 cur_bp_id = 7;</code>
+     * @param value the curBpId to set
+     * @return this
+     */
+    public BattlePassInfoNotify setCurBpId(final int value) {
+      bitField0_ |= 0x00000080;
+      curBpId = value;
       return this;
     }
 
@@ -568,8 +588,8 @@ public final class BattlePassInfoNotifyOuterClass {
         takenPremiumOptionalReward = other.takenPremiumOptionalReward;
         takenPremiumReward1 = other.takenPremiumReward1;
         takenPremiumExtendedReward = other.takenPremiumExtendedReward;
-        curBpId = other.curBpId;
         exp = other.exp;
+        curBpId = other.curBpId;
         level = other.level;
         curWeekAddExpSum = other.curWeekAddExpSum;
         bpTierType = other.bpTierType;
@@ -601,11 +621,11 @@ public final class BattlePassInfoNotifyOuterClass {
       if (other.hasTakenPremiumExtendedReward()) {
         setTakenPremiumExtendedReward(other.takenPremiumExtendedReward);
       }
-      if (other.hasCurBpId()) {
-        setCurBpId(other.curBpId);
-      }
       if (other.hasExp()) {
         setExp(other.exp);
+      }
+      if (other.hasCurBpId()) {
+        setCurBpId(other.curBpId);
       }
       if (other.hasLevel()) {
         setLevel(other.level);
@@ -632,8 +652,8 @@ public final class BattlePassInfoNotifyOuterClass {
       takenPremiumOptionalReward = 0L;
       takenPremiumReward1 = 0L;
       takenPremiumExtendedReward = 0L;
-      curBpId = 0;
       exp = 0;
+      curBpId = 0;
       level = 0;
       curWeekAddExpSum = 0;
       bpTierType = 0;
@@ -666,8 +686,8 @@ public final class BattlePassInfoNotifyOuterClass {
         && (!hasTakenPremiumOptionalReward() || takenPremiumOptionalReward == other.takenPremiumOptionalReward)
         && (!hasTakenPremiumReward1() || takenPremiumReward1 == other.takenPremiumReward1)
         && (!hasTakenPremiumExtendedReward() || takenPremiumExtendedReward == other.takenPremiumExtendedReward)
-        && (!hasCurBpId() || curBpId == other.curBpId)
         && (!hasExp() || exp == other.exp)
+        && (!hasCurBpId() || curBpId == other.curBpId)
         && (!hasLevel() || level == other.level)
         && (!hasCurWeekAddExpSum() || curWeekAddExpSum == other.curWeekAddExpSum)
         && (!hasBpTierType() || bpTierType == other.bpTierType);
@@ -701,11 +721,11 @@ public final class BattlePassInfoNotifyOuterClass {
       }
       if ((bitField0_ & 0x00000040) != 0) {
         output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(curBpId);
+        output.writeUInt32NoTag(exp);
       }
       if ((bitField0_ & 0x00000080) != 0) {
         output.writeRawByte((byte) 56);
-        output.writeUInt32NoTag(exp);
+        output.writeUInt32NoTag(curBpId);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeRawByte((byte) 104);
@@ -743,10 +763,10 @@ public final class BattlePassInfoNotifyOuterClass {
         size += 1 + ProtoSink.computeUInt64SizeNoTag(takenPremiumExtendedReward);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(curBpId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(exp);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(exp);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(curBpId);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         size += 1 + ProtoSink.computeUInt32SizeNoTag(level);
@@ -822,8 +842,8 @@ public final class BattlePassInfoNotifyOuterClass {
             }
           }
           case 8: {
-            // curBpId
-            curBpId = input.readUInt32();
+            // exp
+            exp = input.readUInt32();
             bitField0_ |= 0x00000040;
             tag = input.readTag();
             if (tag != 56) {
@@ -831,8 +851,8 @@ public final class BattlePassInfoNotifyOuterClass {
             }
           }
           case 56: {
-            // exp
-            exp = input.readUInt32();
+            // curBpId
+            curBpId = input.readUInt32();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
             if (tag != 104) {
@@ -905,10 +925,10 @@ public final class BattlePassInfoNotifyOuterClass {
         output.writeUInt64(FieldNames.takenPremiumExtendedReward, takenPremiumExtendedReward);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeUInt32(FieldNames.curBpId, curBpId);
+        output.writeUInt32(FieldNames.exp, exp);
       }
       if ((bitField0_ & 0x00000080) != 0) {
-        output.writeUInt32(FieldNames.exp, exp);
+        output.writeUInt32(FieldNames.curBpId, curBpId);
       }
       if ((bitField0_ & 0x00000100) != 0) {
         output.writeUInt32(FieldNames.level, level);
@@ -1001,11 +1021,10 @@ public final class BattlePassInfoNotifyOuterClass {
             }
             break;
           }
-          case 1125519465:
-          case 110923757: {
-            if (input.isAtField(FieldNames.curBpId)) {
+          case 100893: {
+            if (input.isAtField(FieldNames.exp)) {
               if (!input.trySkipNullValue()) {
-                curBpId = input.readUInt32();
+                exp = input.readUInt32();
                 bitField0_ |= 0x00000040;
               }
             } else {
@@ -1013,10 +1032,11 @@ public final class BattlePassInfoNotifyOuterClass {
             }
             break;
           }
-          case 100893: {
-            if (input.isAtField(FieldNames.exp)) {
+          case 1125519465:
+          case 110923757: {
+            if (input.isAtField(FieldNames.curBpId)) {
               if (!input.trySkipNullValue()) {
-                exp = input.readUInt32();
+                curBpId = input.readUInt32();
                 bitField0_ |= 0x00000080;
               }
             } else {
@@ -1271,9 +1291,9 @@ public final class BattlePassInfoNotifyOuterClass {
 
       static final FieldName takenPremiumExtendedReward = FieldName.forField("takenPremiumExtendedReward", "taken_premium_extended_reward");
 
-      static final FieldName curBpId = FieldName.forField("curBpId", "cur_bp_id");
-
       static final FieldName exp = FieldName.forField("exp");
+
+      static final FieldName curBpId = FieldName.forField("curBpId", "cur_bp_id");
 
       static final FieldName level = FieldName.forField("level");
 

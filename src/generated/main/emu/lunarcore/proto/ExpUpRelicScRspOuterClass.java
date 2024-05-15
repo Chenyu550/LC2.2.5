@@ -20,6 +20,10 @@ public final class ExpUpRelicScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 5;</code>
      */
     private int retcode;
@@ -40,6 +44,10 @@ public final class ExpUpRelicScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 5;</code>
      * @return whether the retcode field is set
      */
@@ -48,6 +56,10 @@ public final class ExpUpRelicScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 5;</code>
      * @return this
      */
@@ -58,6 +70,10 @@ public final class ExpUpRelicScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 5;</code>
      * @return the retcode
      */
@@ -66,6 +82,10 @@ public final class ExpUpRelicScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 5;</code>
      * @param value the retcode to set
      * @return this

@@ -20,7 +20,11 @@ public final class ItemListOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>repeated .Item item_list = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 2;</code>
      */
     private final RepeatedMessage<ItemOuterClass.Item> itemList = RepeatedMessage.newEmptyInstance(ItemOuterClass.Item.getFactory());
 
@@ -35,7 +39,11 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 2;</code>
      * @return whether the itemList field is set
      */
     public boolean hasItemList() {
@@ -43,7 +51,11 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 2;</code>
      * @return this
      */
     public ItemList clearItemList() {
@@ -53,7 +65,11 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 2;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -67,7 +83,11 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 2;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -81,7 +101,11 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 2;</code>
      * @param value the itemList to add
      * @return this
      */
@@ -92,7 +116,11 @@ public final class ItemListOuterClass {
     }
 
     /**
-     * <code>repeated .Item item_list = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>repeated .Item item_list = 2;</code>
      * @param values the itemList to add
      * @return this
      */
@@ -163,7 +191,7 @@ public final class ItemListOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         for (int i = 0; i < itemList.length(); i++) {
-          output.writeRawByte((byte) 34);
+          output.writeRawByte((byte) 18);
           output.writeMessageNoTag(itemList.get(i));
         }
       }
@@ -185,7 +213,7 @@ public final class ItemListOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 34: {
+          case 18: {
             // itemList
             tag = input.readRepeatedMessage(itemList, tag);
             bitField0_ |= 0x00000001;

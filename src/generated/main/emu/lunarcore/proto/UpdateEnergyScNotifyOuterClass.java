@@ -19,7 +19,11 @@ public final class UpdateEnergyScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
      */
     private final RotatorEnergyInfoOuterClass.RotatorEnergyInfo energyInfo = RotatorEnergyInfoOuterClass.RotatorEnergyInfo.newInstance();
 
@@ -34,7 +38,11 @@ public final class UpdateEnergyScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
      * @return whether the energyInfo field is set
      */
     public boolean hasEnergyInfo() {
@@ -42,7 +50,11 @@ public final class UpdateEnergyScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
      * @return this
      */
     public UpdateEnergyScNotify clearEnergyInfo() {
@@ -52,7 +64,11 @@ public final class UpdateEnergyScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -66,7 +82,11 @@ public final class UpdateEnergyScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -80,7 +100,11 @@ public final class UpdateEnergyScNotifyOuterClass {
     }
 
     /**
-     * <code>optional .RotatorEnergyInfo energy_info = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional .RotatorEnergyInfo energy_info = 12;</code>
      * @param value the energyInfo to set
      * @return this
      */
@@ -151,7 +175,7 @@ public final class UpdateEnergyScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 90);
+        output.writeRawByte((byte) 98);
         output.writeMessageNoTag(energyInfo);
       }
     }
@@ -172,7 +196,7 @@ public final class UpdateEnergyScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 90: {
+          case 98: {
             // energyInfo
             input.readMessage(energyInfo);
             bitField0_ |= 0x00000001;

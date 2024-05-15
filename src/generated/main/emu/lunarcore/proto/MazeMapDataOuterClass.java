@@ -66,7 +66,7 @@ public final class MazeMapDataOuterClass {
      * 15
      * </pre>
      *
-     * <code>repeated .MazeProp maze_prop_list = 7;</code>
+     * <code>repeated .MazeProp maze_prop_list = 3;</code>
      */
     private final RepeatedMessage<MazePropOuterClass.MazeProp> mazePropList = RepeatedMessage.newEmptyInstance(MazePropOuterClass.MazeProp.getFactory());
 
@@ -430,7 +430,7 @@ public final class MazeMapDataOuterClass {
      * 15
      * </pre>
      *
-     * <code>repeated .MazeProp maze_prop_list = 7;</code>
+     * <code>repeated .MazeProp maze_prop_list = 3;</code>
      * @return whether the mazePropList field is set
      */
     public boolean hasMazePropList() {
@@ -442,7 +442,7 @@ public final class MazeMapDataOuterClass {
      * 15
      * </pre>
      *
-     * <code>repeated .MazeProp maze_prop_list = 7;</code>
+     * <code>repeated .MazeProp maze_prop_list = 3;</code>
      * @return this
      */
     public MazeMapData clearMazePropList() {
@@ -456,7 +456,7 @@ public final class MazeMapDataOuterClass {
      * 15
      * </pre>
      *
-     * <code>repeated .MazeProp maze_prop_list = 7;</code>
+     * <code>repeated .MazeProp maze_prop_list = 3;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -474,7 +474,7 @@ public final class MazeMapDataOuterClass {
      * 15
      * </pre>
      *
-     * <code>repeated .MazeProp maze_prop_list = 7;</code>
+     * <code>repeated .MazeProp maze_prop_list = 3;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -492,7 +492,7 @@ public final class MazeMapDataOuterClass {
      * 15
      * </pre>
      *
-     * <code>repeated .MazeProp maze_prop_list = 7;</code>
+     * <code>repeated .MazeProp maze_prop_list = 3;</code>
      * @param value the mazePropList to add
      * @return this
      */
@@ -507,7 +507,7 @@ public final class MazeMapDataOuterClass {
      * 15
      * </pre>
      *
-     * <code>repeated .MazeProp maze_prop_list = 7;</code>
+     * <code>repeated .MazeProp maze_prop_list = 3;</code>
      * @param values the mazePropList to add
      * @return this
      */
@@ -832,7 +832,7 @@ public final class MazeMapDataOuterClass {
       }
       if ((bitField0_ & 0x00000020) != 0) {
         for (int i = 0; i < mazePropList.length(); i++) {
-          output.writeRawByte((byte) 58);
+          output.writeRawByte((byte) 26);
           output.writeMessageNoTag(mazePropList.get(i));
         }
       }
@@ -928,11 +928,11 @@ public final class MazeMapDataOuterClass {
             input.readPackedUInt32(lightenSectionList, tag);
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 58) {
+            if (tag != 26) {
               break;
             }
           }
-          case 58: {
+          case 26: {
             // mazePropList
             tag = input.readRepeatedMessage(mazePropList, tag);
             bitField0_ |= 0x00000020;

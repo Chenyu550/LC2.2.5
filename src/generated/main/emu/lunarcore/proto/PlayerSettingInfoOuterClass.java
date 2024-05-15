@@ -19,7 +19,11 @@ public final class PlayerSettingInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional .DisplayRecordType display_record_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .DisplayRecordType display_record_type = 15;</code>
      */
     private int displayRecordType;
 
@@ -64,7 +68,11 @@ public final class PlayerSettingInfoOuterClass {
     }
 
     /**
-     * <code>optional .DisplayRecordType display_record_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .DisplayRecordType display_record_type = 15;</code>
      * @return whether the displayRecordType field is set
      */
     public boolean hasDisplayRecordType() {
@@ -72,7 +80,11 @@ public final class PlayerSettingInfoOuterClass {
     }
 
     /**
-     * <code>optional .DisplayRecordType display_record_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .DisplayRecordType display_record_type = 15;</code>
      * @return this
      */
     public PlayerSettingInfo clearDisplayRecordType() {
@@ -82,7 +94,11 @@ public final class PlayerSettingInfoOuterClass {
     }
 
     /**
-     * <code>optional .DisplayRecordType display_record_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .DisplayRecordType display_record_type = 15;</code>
      * @return the displayRecordType
      */
     public DisplayRecordTypeOuterClass.DisplayRecordType getDisplayRecordType() {
@@ -115,7 +131,11 @@ public final class PlayerSettingInfoOuterClass {
     }
 
     /**
-     * <code>optional .DisplayRecordType display_record_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .DisplayRecordType display_record_type = 15;</code>
      * @param value the displayRecordType to set
      * @return this
      */
@@ -443,7 +463,7 @@ public final class PlayerSettingInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 120);
         output.writeEnumNoTag(displayRecordType);
       }
       if ((bitField0_ & 0x00000002) != 0) {
@@ -506,7 +526,7 @@ public final class PlayerSettingInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 96: {
+          case 120: {
             // displayRecordType
             final int value = input.readInt32();
             if (DisplayRecordTypeOuterClass.DisplayRecordType.forNumber(value) != null) {

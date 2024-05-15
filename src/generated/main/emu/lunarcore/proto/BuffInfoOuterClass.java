@@ -41,10 +41,10 @@ public final class BuffInfoOuterClass {
 
     /**
      * <pre>
-     * 没找到
+     * 4 6
      * </pre>
      *
-     * <code>optional uint32 buff_id = 6;</code>
+     * <code>optional uint32 buff_id = 4;</code>
      */
     private int buffId;
 
@@ -202,10 +202,10 @@ public final class BuffInfoOuterClass {
 
     /**
      * <pre>
-     * 没找到
+     * 4 6
      * </pre>
      *
-     * <code>optional uint32 buff_id = 6;</code>
+     * <code>optional uint32 buff_id = 4;</code>
      * @return whether the buffId field is set
      */
     public boolean hasBuffId() {
@@ -214,10 +214,10 @@ public final class BuffInfoOuterClass {
 
     /**
      * <pre>
-     * 没找到
+     * 4 6
      * </pre>
      *
-     * <code>optional uint32 buff_id = 6;</code>
+     * <code>optional uint32 buff_id = 4;</code>
      * @return this
      */
     public BuffInfo clearBuffId() {
@@ -228,10 +228,10 @@ public final class BuffInfoOuterClass {
 
     /**
      * <pre>
-     * 没找到
+     * 4 6
      * </pre>
      *
-     * <code>optional uint32 buff_id = 6;</code>
+     * <code>optional uint32 buff_id = 4;</code>
      * @return the buffId
      */
     public int getBuffId() {
@@ -240,10 +240,10 @@ public final class BuffInfoOuterClass {
 
     /**
      * <pre>
-     * 没找到
+     * 4 6
      * </pre>
      *
-     * <code>optional uint32 buff_id = 6;</code>
+     * <code>optional uint32 buff_id = 4;</code>
      * @param value the buffId to set
      * @return this
      */
@@ -608,7 +608,7 @@ public final class BuffInfoOuterClass {
         output.writeFloatNoTag(lifeTime);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 32);
         output.writeUInt32NoTag(buffId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
@@ -679,11 +679,11 @@ public final class BuffInfoOuterClass {
             lifeTime = input.readFloat();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 32) {
               break;
             }
           }
-          case 48: {
+          case 32: {
             // buffId
             buffId = input.readUInt32();
             bitField0_ |= 0x00000004;

@@ -66,6 +66,10 @@ public final class SceneCastSkillCsReqOuterClass {
     private final RepeatedInt hitTargetEntityIdList = RepeatedInt.newEmptyInstance();
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .AssistMonsterWave assist_monster_wave_list = 1;</code>
      */
     private final RepeatedMessage<AssistMonsterWaveOuterClass.AssistMonsterWave> assistMonsterWaveList = RepeatedMessage.newEmptyInstance(AssistMonsterWaveOuterClass.AssistMonsterWave.getFactory());
@@ -409,6 +413,10 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .AssistMonsterWave assist_monster_wave_list = 1;</code>
      * @return whether the assistMonsterWaveList field is set
      */
@@ -417,6 +425,10 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .AssistMonsterWave assist_monster_wave_list = 1;</code>
      * @return this
      */
@@ -427,6 +439,10 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .AssistMonsterWave assist_monster_wave_list = 1;</code>
      *
      * This method returns the internal storage object without modifying any has state.
@@ -442,6 +458,10 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .AssistMonsterWave assist_monster_wave_list = 1;</code>
      *
      * This method returns the internal storage object and sets the corresponding
@@ -457,6 +477,10 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .AssistMonsterWave assist_monster_wave_list = 1;</code>
      * @param value the assistMonsterWaveList to add
      * @return this
@@ -469,6 +493,10 @@ public final class SceneCastSkillCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>repeated .AssistMonsterWave assist_monster_wave_list = 1;</code>
      * @param values the assistMonsterWaveList to add
      * @return this

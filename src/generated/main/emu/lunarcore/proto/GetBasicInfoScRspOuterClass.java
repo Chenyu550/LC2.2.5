@@ -56,7 +56,7 @@ public final class GetBasicInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 5
+     * 110
      * </pre>
      *
      * <code>optional uint32 retcode = 6;</code>
@@ -314,7 +314,7 @@ public final class GetBasicInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 5
+     * 110
      * </pre>
      *
      * <code>optional uint32 retcode = 6;</code>
@@ -326,7 +326,7 @@ public final class GetBasicInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 5
+     * 110
      * </pre>
      *
      * <code>optional uint32 retcode = 6;</code>
@@ -340,7 +340,7 @@ public final class GetBasicInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 5
+     * 110
      * </pre>
      *
      * <code>optional uint32 retcode = 6;</code>
@@ -352,7 +352,7 @@ public final class GetBasicInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 5
+     * 110
      * </pre>
      *
      * <code>optional uint32 retcode = 6;</code>

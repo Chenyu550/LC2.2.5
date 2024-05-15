@@ -47,7 +47,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 1
      * </pre>
      *
      * <code>optional .MotionInfo motion = 4;</code>
@@ -225,7 +225,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 1
      * </pre>
      *
      * <code>optional .MotionInfo motion = 4;</code>
@@ -237,7 +237,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 1
      * </pre>
      *
      * <code>optional .MotionInfo motion = 4;</code>
@@ -251,7 +251,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 1
      * </pre>
      *
      * <code>optional .MotionInfo motion = 4;</code>
@@ -269,7 +269,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 1
      * </pre>
      *
      * <code>optional .MotionInfo motion = 4;</code>
@@ -287,7 +287,7 @@ public final class SceneEntityMoveScNotifyOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 1
      * </pre>
      *
      * <code>optional .MotionInfo motion = 4;</code>

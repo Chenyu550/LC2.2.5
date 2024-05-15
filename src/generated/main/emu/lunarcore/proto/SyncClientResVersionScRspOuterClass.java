@@ -29,7 +29,7 @@ public final class SyncClientResVersionScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>
@@ -101,7 +101,7 @@ public final class SyncClientResVersionScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>
@@ -113,7 +113,7 @@ public final class SyncClientResVersionScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>
@@ -127,7 +127,7 @@ public final class SyncClientResVersionScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>
@@ -139,7 +139,7 @@ public final class SyncClientResVersionScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>

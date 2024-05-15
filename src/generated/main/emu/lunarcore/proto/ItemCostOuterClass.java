@@ -19,17 +19,29 @@ public final class ItemCostOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      */
     private int equipmentUniqueId;
 
     /**
-     * <code>optional uint32 relic_unique_id = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 11;</code>
      */
     private int relicUniqueId;
 
     /**
-     * <code>optional .PileItem pile_item = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional .PileItem pile_item = 6;</code>
      */
     private final PileItemOuterClass.PileItem pileItem = PileItemOuterClass.PileItem.newInstance();
 
@@ -44,7 +56,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      * @return whether the equipmentUniqueId field is set
      */
     public boolean hasEquipmentUniqueId() {
@@ -52,7 +68,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      * @return this
      */
     public ItemCost clearEquipmentUniqueId() {
@@ -62,7 +82,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      * @return the equipmentUniqueId
      */
     public int getEquipmentUniqueId() {
@@ -70,7 +94,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 4;</code>
+     * <pre>
+     * 4
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 7;</code>
      * @param value the equipmentUniqueId to set
      * @return this
      */
@@ -81,7 +109,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 11;</code>
      * @return whether the relicUniqueId field is set
      */
     public boolean hasRelicUniqueId() {
@@ -89,7 +121,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 11;</code>
      * @return this
      */
     public ItemCost clearRelicUniqueId() {
@@ -99,7 +135,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 11;</code>
      * @return the relicUniqueId
      */
     public int getRelicUniqueId() {
@@ -107,7 +147,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional uint32 relic_unique_id = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 relic_unique_id = 11;</code>
      * @param value the relicUniqueId to set
      * @return this
      */
@@ -118,7 +162,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional .PileItem pile_item = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional .PileItem pile_item = 6;</code>
      * @return whether the pileItem field is set
      */
     public boolean hasPileItem() {
@@ -126,7 +174,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional .PileItem pile_item = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional .PileItem pile_item = 6;</code>
      * @return this
      */
     public ItemCost clearPileItem() {
@@ -136,7 +188,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional .PileItem pile_item = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional .PileItem pile_item = 6;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -150,7 +206,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional .PileItem pile_item = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional .PileItem pile_item = 6;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -164,7 +224,11 @@ public final class ItemCostOuterClass {
     }
 
     /**
-     * <code>optional .PileItem pile_item = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional .PileItem pile_item = 6;</code>
      * @param value the pileItem to set
      * @return this
      */
@@ -246,15 +310,15 @@ public final class ItemCostOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(equipmentUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(relicUniqueId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 114);
+        output.writeRawByte((byte) 50);
         output.writeMessageNoTag(pileItem);
       }
     }
@@ -281,25 +345,25 @@ public final class ItemCostOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 32: {
+          case 56: {
             // equipmentUniqueId
             equipmentUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 80) {
+            if (tag != 88) {
               break;
             }
           }
-          case 80: {
+          case 88: {
             // relicUniqueId
             relicUniqueId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 50) {
               break;
             }
           }
-          case 114: {
+          case 50: {
             // pileItem
             input.readMessage(pileItem);
             bitField0_ |= 0x00000004;

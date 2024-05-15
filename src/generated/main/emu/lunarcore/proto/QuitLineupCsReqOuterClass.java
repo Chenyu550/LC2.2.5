@@ -19,6 +19,10 @@ public final class QuitLineupCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 5;</code>
      */
     private int baseAvatarId;
@@ -79,6 +83,10 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 5;</code>
      * @return whether the baseAvatarId field is set
      */
@@ -87,6 +95,10 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 5;</code>
      * @return this
      */
@@ -97,6 +109,10 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 5;</code>
      * @return the baseAvatarId
      */
@@ -105,6 +121,10 @@ public final class QuitLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 base_avatar_id = 5;</code>
      * @param value the baseAvatarId to set
      * @return this

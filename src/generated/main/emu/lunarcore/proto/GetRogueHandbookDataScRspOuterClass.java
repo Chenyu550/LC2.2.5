@@ -19,6 +19,10 @@ public final class GetRogueHandbookDataScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 retcode = 11;</code>
      */
     private int retcode;
@@ -39,6 +43,10 @@ public final class GetRogueHandbookDataScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 retcode = 11;</code>
      * @return whether the retcode field is set
      */
@@ -47,6 +55,10 @@ public final class GetRogueHandbookDataScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 retcode = 11;</code>
      * @return this
      */
@@ -57,6 +69,10 @@ public final class GetRogueHandbookDataScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 retcode = 11;</code>
      * @return the retcode
      */
@@ -65,6 +81,10 @@ public final class GetRogueHandbookDataScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 14
+     * </pre>
+     *
      * <code>optional uint32 retcode = 11;</code>
      * @param value the retcode to set
      * @return this

@@ -19,12 +19,20 @@ public final class AvatarExpUpCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      */
     private int baseAvatarId;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -39,7 +47,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      * @return whether the baseAvatarId field is set
      */
     public boolean hasBaseAvatarId() {
@@ -47,7 +59,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      * @return this
      */
     public AvatarExpUpCsReq clearBaseAvatarId() {
@@ -57,7 +73,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      * @return the baseAvatarId
      */
     public int getBaseAvatarId() {
@@ -65,7 +85,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 base_avatar_id = 5;</code>
+     * <pre>
+     * 5
+     * </pre>
+     *
+     * <code>optional uint32 base_avatar_id = 2;</code>
      * @param value the baseAvatarId to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -84,7 +112,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      * @return this
      */
     public AvatarExpUpCsReq clearItemCostList() {
@@ -94,7 +126,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +144,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +162,11 @@ public final class AvatarExpUpCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 8;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -198,11 +242,11 @@ public final class AvatarExpUpCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 50);
+        output.writeRawByte((byte) 66);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -226,16 +270,16 @@ public final class AvatarExpUpCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
+          case 16: {
             // baseAvatarId
             baseAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 50) {
+            if (tag != 66) {
               break;
             }
           }
-          case 50: {
+          case 66: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000002;

@@ -21,7 +21,7 @@ public final class TakeMailAttachmentScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>
@@ -58,7 +58,7 @@ public final class TakeMailAttachmentScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>
@@ -70,7 +70,7 @@ public final class TakeMailAttachmentScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>
@@ -84,7 +84,7 @@ public final class TakeMailAttachmentScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>
@@ -96,7 +96,7 @@ public final class TakeMailAttachmentScRspOuterClass {
 
     /**
      * <pre>
-     * 2
+     * 7
      * </pre>
      *
      * <code>optional uint32 retcode = 5;</code>

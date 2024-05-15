@@ -19,6 +19,10 @@ public final class RogueCommonBuffSelectResultOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 4 6
+     * </pre>
+     *
      * <code>optional uint32 buff_id = 4;</code>
      */
     private int buffId;
@@ -34,6 +38,10 @@ public final class RogueCommonBuffSelectResultOuterClass {
     }
 
     /**
+     * <pre>
+     * 4 6
+     * </pre>
+     *
      * <code>optional uint32 buff_id = 4;</code>
      * @return whether the buffId field is set
      */
@@ -42,6 +50,10 @@ public final class RogueCommonBuffSelectResultOuterClass {
     }
 
     /**
+     * <pre>
+     * 4 6
+     * </pre>
+     *
      * <code>optional uint32 buff_id = 4;</code>
      * @return this
      */
@@ -52,6 +64,10 @@ public final class RogueCommonBuffSelectResultOuterClass {
     }
 
     /**
+     * <pre>
+     * 4 6
+     * </pre>
+     *
      * <code>optional uint32 buff_id = 4;</code>
      * @return the buffId
      */
@@ -60,6 +76,10 @@ public final class RogueCommonBuffSelectResultOuterClass {
     }
 
     /**
+     * <pre>
+     * 4 6
+     * </pre>
+     *
      * <code>optional uint32 buff_id = 4;</code>
      * @param value the buffId to set
      * @return this

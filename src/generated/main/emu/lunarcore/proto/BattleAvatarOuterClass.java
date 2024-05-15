@@ -25,6 +25,10 @@ public final class BattleAvatarOuterClass {
     private int id;
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 level = 3;</code>
      */
     private int level;
@@ -132,6 +136,10 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 level = 3;</code>
      * @return whether the level field is set
      */
@@ -140,6 +148,10 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 level = 3;</code>
      * @return this
      */
@@ -150,6 +162,10 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 level = 3;</code>
      * @return the level
      */
@@ -158,6 +174,10 @@ public final class BattleAvatarOuterClass {
     }
 
     /**
+     * <pre>
+     * 10
+     * </pre>
+     *
      * <code>optional uint32 level = 3;</code>
      * @param value the level to set
      * @return this

@@ -20,7 +20,7 @@ public final class MaterialOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 13
      * </pre>
      *
      * <code>optional uint32 tid = 6;</code>
@@ -48,7 +48,7 @@ public final class MaterialOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 13
      * </pre>
      *
      * <code>optional uint32 tid = 6;</code>
@@ -60,7 +60,7 @@ public final class MaterialOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 13
      * </pre>
      *
      * <code>optional uint32 tid = 6;</code>
@@ -74,7 +74,7 @@ public final class MaterialOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 13
      * </pre>
      *
      * <code>optional uint32 tid = 6;</code>
@@ -86,7 +86,7 @@ public final class MaterialOuterClass {
 
     /**
      * <pre>
-     * 12
+     * 13
      * </pre>
      *
      * <code>optional uint32 tid = 6;</code>

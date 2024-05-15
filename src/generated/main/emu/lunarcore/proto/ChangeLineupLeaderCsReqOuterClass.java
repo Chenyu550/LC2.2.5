@@ -19,7 +19,11 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 slot = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional uint32 slot = 6;</code>
      */
     private int slot;
 
@@ -34,7 +38,11 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional uint32 slot = 6;</code>
      * @return whether the slot field is set
      */
     public boolean hasSlot() {
@@ -42,7 +50,11 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional uint32 slot = 6;</code>
      * @return this
      */
     public ChangeLineupLeaderCsReq clearSlot() {
@@ -52,7 +64,11 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional uint32 slot = 6;</code>
      * @return the slot
      */
     public int getSlot() {
@@ -60,7 +76,11 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 slot = 14;</code>
+     * <pre>
+     * 14
+     * </pre>
+     *
+     * <code>optional uint32 slot = 6;</code>
      * @param value the slot to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class ChangeLineupLeaderCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(slot);
       }
     }
@@ -150,7 +170,7 @@ public final class ChangeLineupLeaderCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 112: {
+          case 48: {
             // slot
             slot = input.readUInt32();
             bitField0_ |= 0x00000001;

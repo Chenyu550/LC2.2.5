@@ -90,7 +90,7 @@ public final class AvatarOuterClass {
 
     /**
      * <pre>
-     * z找不到
+     * 找不到
      * </pre>
      *
      * <code>optional bool is_marked = 666;</code>
@@ -544,7 +544,7 @@ public final class AvatarOuterClass {
 
     /**
      * <pre>
-     * z找不到
+     * 找不到
      * </pre>
      *
      * <code>optional bool is_marked = 666;</code>
@@ -556,7 +556,7 @@ public final class AvatarOuterClass {
 
     /**
      * <pre>
-     * z找不到
+     * 找不到
      * </pre>
      *
      * <code>optional bool is_marked = 666;</code>
@@ -570,7 +570,7 @@ public final class AvatarOuterClass {
 
     /**
      * <pre>
-     * z找不到
+     * 找不到
      * </pre>
      *
      * <code>optional bool is_marked = 666;</code>
@@ -582,7 +582,7 @@ public final class AvatarOuterClass {
 
     /**
      * <pre>
-     * z找不到
+     * 找不到
      * </pre>
      *
      * <code>optional bool is_marked = 666;</code>

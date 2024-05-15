@@ -19,6 +19,10 @@ public final class MarkReadMailScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 1
+     * </pre>
+     *
      * <code>optional uint32 id = 4;</code>
      */
     private int id;
@@ -43,6 +47,10 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 1
+     * </pre>
+     *
      * <code>optional uint32 id = 4;</code>
      * @return whether the id field is set
      */
@@ -51,6 +59,10 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 1
+     * </pre>
+     *
      * <code>optional uint32 id = 4;</code>
      * @return this
      */
@@ -61,6 +73,10 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 1
+     * </pre>
+     *
      * <code>optional uint32 id = 4;</code>
      * @return the id
      */
@@ -69,6 +85,10 @@ public final class MarkReadMailScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 1
+     * </pre>
+     *
      * <code>optional uint32 id = 4;</code>
      * @param value the id to set
      * @return this

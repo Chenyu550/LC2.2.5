@@ -42,6 +42,10 @@ public final class GoodsOuterClass {
     private int goodsId;
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 item_id = 11;</code>
      */
     private int itemId;
@@ -209,6 +213,10 @@ public final class GoodsOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 item_id = 11;</code>
      * @return whether the itemId field is set
      */
@@ -217,6 +225,10 @@ public final class GoodsOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 item_id = 11;</code>
      * @return this
      */
@@ -227,6 +239,10 @@ public final class GoodsOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 item_id = 11;</code>
      * @return the itemId
      */
@@ -235,6 +251,10 @@ public final class GoodsOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 item_id = 11;</code>
      * @param value the itemId to set
      * @return this

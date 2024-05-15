@@ -19,12 +19,20 @@ public final class SelectPhoneThemeScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 6;</code>
      */
     private int retcode;
 
     /**
-     * <code>optional uint32 cur_phone_theme = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional uint32 cur_phone_theme = 14;</code>
      */
     private int curPhoneTheme;
 
@@ -39,7 +47,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 6;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
@@ -47,7 +59,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 6;</code>
      * @return this
      */
     public SelectPhoneThemeScRsp clearRetcode() {
@@ -57,7 +73,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 6;</code>
      * @return the retcode
      */
     public int getRetcode() {
@@ -65,7 +85,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 retcode = 7;</code>
+     * <pre>
+     * 7
+     * </pre>
+     *
+     * <code>optional uint32 retcode = 6;</code>
      * @param value the retcode to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_phone_theme = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional uint32 cur_phone_theme = 14;</code>
      * @return whether the curPhoneTheme field is set
      */
     public boolean hasCurPhoneTheme() {
@@ -84,7 +112,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_phone_theme = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional uint32 cur_phone_theme = 14;</code>
      * @return this
      */
     public SelectPhoneThemeScRsp clearCurPhoneTheme() {
@@ -94,7 +126,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_phone_theme = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional uint32 cur_phone_theme = 14;</code>
      * @return the curPhoneTheme
      */
     public int getCurPhoneTheme() {
@@ -102,7 +138,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     }
 
     /**
-     * <code>optional uint32 cur_phone_theme = 11;</code>
+     * <pre>
+     * 11
+     * </pre>
+     *
+     * <code>optional uint32 cur_phone_theme = 14;</code>
      * @param value the curPhoneTheme to set
      * @return this
      */
@@ -177,11 +217,11 @@ public final class SelectPhoneThemeScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 48);
         output.writeUInt32NoTag(retcode);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 112);
         output.writeUInt32NoTag(curPhoneTheme);
       }
     }
@@ -205,16 +245,16 @@ public final class SelectPhoneThemeScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 48: {
             // retcode
             retcode = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 88) {
+            if (tag != 112) {
               break;
             }
           }
-          case 88: {
+          case 112: {
             // curPhoneTheme
             curPhoneTheme = input.readUInt32();
             bitField0_ |= 0x00000002;

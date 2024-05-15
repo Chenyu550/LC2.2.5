@@ -24,6 +24,10 @@ public final class EntityBuffChangeInfoOuterClass {
     private int removeBuffId;
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 10;</code>
      */
     private int entityId;
@@ -81,6 +85,10 @@ public final class EntityBuffChangeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 10;</code>
      * @return whether the entityId field is set
      */
@@ -89,6 +97,10 @@ public final class EntityBuffChangeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 10;</code>
      * @return this
      */
@@ -99,6 +111,10 @@ public final class EntityBuffChangeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 10;</code>
      * @return the entityId
      */
@@ -107,6 +123,10 @@ public final class EntityBuffChangeInfoOuterClass {
     }
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 entity_id = 10;</code>
      * @param value the entityId to set
      * @return this

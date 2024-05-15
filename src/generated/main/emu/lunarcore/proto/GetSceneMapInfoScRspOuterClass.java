@@ -21,6 +21,15 @@ public final class GetSceneMapInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 13 8 2
+     * </pre>
+     *
+     * <code>optional uint32 cur_map_entry_id = 2;</code>
+     */
+    private int curMapEntryId;
+
+    /**
      * <code>optional uint32 retcode = 10;</code>
      */
     private int retcode;
@@ -33,11 +42,6 @@ public final class GetSceneMapInfoScRspOuterClass {
      * <code>optional uint32 entry_id = 11;</code>
      */
     private int entryId;
-
-    /**
-     * <code>optional uint32 cur_map_entry_id = 12;</code>
-     */
-    private int curMapEntryId;
 
     /**
      * <pre>
@@ -58,7 +62,11 @@ public final class GetSceneMapInfoScRspOuterClass {
     private final RepeatedInt unlockedTeleportList = RepeatedInt.newEmptyInstance();
 
     /**
-     * <code>repeated .MazeMapData map_list = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>repeated .MazeMapData map_list = 4;</code>
      */
     private final RepeatedMessage<MazeMapDataOuterClass.MazeMapData> mapList = RepeatedMessage.newEmptyInstance(MazeMapDataOuterClass.MazeMapData.getFactory());
 
@@ -73,7 +81,7 @@ public final class GetSceneMapInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
      * <code>repeated .MazeProp maze_prop_list = 7;</code>
@@ -100,11 +108,64 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 13 8 2
+     * </pre>
+     *
+     * <code>optional uint32 cur_map_entry_id = 2;</code>
+     * @return whether the curMapEntryId field is set
+     */
+    public boolean hasCurMapEntryId() {
+      return (bitField0_ & 0x00000001) != 0;
+    }
+
+    /**
+     * <pre>
+     * 13 8 2
+     * </pre>
+     *
+     * <code>optional uint32 cur_map_entry_id = 2;</code>
+     * @return this
+     */
+    public GetSceneMapInfoScRsp clearCurMapEntryId() {
+      bitField0_ &= ~0x00000001;
+      curMapEntryId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     * 13 8 2
+     * </pre>
+     *
+     * <code>optional uint32 cur_map_entry_id = 2;</code>
+     * @return the curMapEntryId
+     */
+    public int getCurMapEntryId() {
+      return curMapEntryId;
+    }
+
+    /**
+     * <pre>
+     * 13 8 2
+     * </pre>
+     *
+     * <code>optional uint32 cur_map_entry_id = 2;</code>
+     * @param value the curMapEntryId to set
+     * @return this
+     */
+    public GetSceneMapInfoScRsp setCurMapEntryId(final int value) {
+      bitField0_ |= 0x00000001;
+      curMapEntryId = value;
+      return this;
+    }
+
+    /**
      * <code>optional uint32 retcode = 10;</code>
      * @return whether the retcode field is set
      */
     public boolean hasRetcode() {
-      return (bitField0_ & 0x00000001) != 0;
+      return (bitField0_ & 0x00000002) != 0;
     }
 
     /**
@@ -112,7 +173,7 @@ public final class GetSceneMapInfoScRspOuterClass {
      * @return this
      */
     public GetSceneMapInfoScRsp clearRetcode() {
-      bitField0_ &= ~0x00000001;
+      bitField0_ &= ~0x00000002;
       retcode = 0;
       return this;
     }
@@ -131,7 +192,7 @@ public final class GetSceneMapInfoScRspOuterClass {
      * @return this
      */
     public GetSceneMapInfoScRsp setRetcode(final int value) {
-      bitField0_ |= 0x00000001;
+      bitField0_ |= 0x00000002;
       retcode = value;
       return this;
     }
@@ -145,7 +206,7 @@ public final class GetSceneMapInfoScRspOuterClass {
      * @return whether the entryId field is set
      */
     public boolean hasEntryId() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000004) != 0;
     }
 
     /**
@@ -157,7 +218,7 @@ public final class GetSceneMapInfoScRspOuterClass {
      * @return this
      */
     public GetSceneMapInfoScRsp clearEntryId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000004;
       entryId = 0;
       return this;
     }
@@ -184,45 +245,8 @@ public final class GetSceneMapInfoScRspOuterClass {
      * @return this
      */
     public GetSceneMapInfoScRsp setEntryId(final int value) {
-      bitField0_ |= 0x00000002;
-      entryId = value;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 cur_map_entry_id = 12;</code>
-     * @return whether the curMapEntryId field is set
-     */
-    public boolean hasCurMapEntryId() {
-      return (bitField0_ & 0x00000004) != 0;
-    }
-
-    /**
-     * <code>optional uint32 cur_map_entry_id = 12;</code>
-     * @return this
-     */
-    public GetSceneMapInfoScRsp clearCurMapEntryId() {
-      bitField0_ &= ~0x00000004;
-      curMapEntryId = 0;
-      return this;
-    }
-
-    /**
-     * <code>optional uint32 cur_map_entry_id = 12;</code>
-     * @return the curMapEntryId
-     */
-    public int getCurMapEntryId() {
-      return curMapEntryId;
-    }
-
-    /**
-     * <code>optional uint32 cur_map_entry_id = 12;</code>
-     * @param value the curMapEntryId to set
-     * @return this
-     */
-    public GetSceneMapInfoScRsp setCurMapEntryId(final int value) {
       bitField0_ |= 0x00000004;
-      curMapEntryId = value;
+      entryId = value;
       return this;
     }
 
@@ -411,7 +435,11 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>repeated .MazeMapData map_list = 4;</code>
      * @return whether the mapList field is set
      */
     public boolean hasMapList() {
@@ -419,7 +447,11 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>repeated .MazeMapData map_list = 4;</code>
      * @return this
      */
     public GetSceneMapInfoScRsp clearMapList() {
@@ -429,7 +461,11 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>repeated .MazeMapData map_list = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -443,7 +479,11 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>repeated .MazeMapData map_list = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -457,7 +497,11 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>repeated .MazeMapData map_list = 4;</code>
      * @param value the mapList to add
      * @return this
      */
@@ -468,7 +512,11 @@ public final class GetSceneMapInfoScRspOuterClass {
     }
 
     /**
-     * <code>repeated .MazeMapData map_list = 2;</code>
+     * <pre>
+     * 2
+     * </pre>
+     *
+     * <code>repeated .MazeMapData map_list = 4;</code>
      * @param values the mapList to add
      * @return this
      */
@@ -573,7 +621,7 @@ public final class GetSceneMapInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
      * <code>repeated .MazeProp maze_prop_list = 7;</code>
@@ -585,7 +633,7 @@ public final class GetSceneMapInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
      * <code>repeated .MazeProp maze_prop_list = 7;</code>
@@ -599,7 +647,7 @@ public final class GetSceneMapInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
      * <code>repeated .MazeProp maze_prop_list = 7;</code>
@@ -617,7 +665,7 @@ public final class GetSceneMapInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
      * <code>repeated .MazeProp maze_prop_list = 7;</code>
@@ -635,7 +683,7 @@ public final class GetSceneMapInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
      * <code>repeated .MazeProp maze_prop_list = 7;</code>
@@ -650,7 +698,7 @@ public final class GetSceneMapInfoScRspOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
      * <code>repeated .MazeProp maze_prop_list = 7;</code>
@@ -760,9 +808,9 @@ public final class GetSceneMapInfoScRspOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
+        curMapEntryId = other.curMapEntryId;
         retcode = other.retcode;
         entryId = other.entryId;
-        curMapEntryId = other.curMapEntryId;
         lightenSectionList.copyFrom(other.lightenSectionList);
         unlockedTeleportList.copyFrom(other.unlockedTeleportList);
         mapList.copyFrom(other.mapList);
@@ -779,14 +827,14 @@ public final class GetSceneMapInfoScRspOuterClass {
         return this;
       }
       cachedSize = -1;
+      if (other.hasCurMapEntryId()) {
+        setCurMapEntryId(other.curMapEntryId);
+      }
       if (other.hasRetcode()) {
         setRetcode(other.retcode);
       }
       if (other.hasEntryId()) {
         setEntryId(other.entryId);
-      }
-      if (other.hasCurMapEntryId()) {
-        setCurMapEntryId(other.curMapEntryId);
       }
       if (other.hasLightenSectionList()) {
         getMutableLightenSectionList().addAll(other.lightenSectionList);
@@ -816,9 +864,9 @@ public final class GetSceneMapInfoScRspOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
+      curMapEntryId = 0;
       retcode = 0;
       entryId = 0;
-      curMapEntryId = 0;
       lightenSectionList.clear();
       unlockedTeleportList.clear();
       mapList.clear();
@@ -854,9 +902,9 @@ public final class GetSceneMapInfoScRspOuterClass {
       }
       GetSceneMapInfoScRsp other = (GetSceneMapInfoScRsp) o;
       return bitField0_ == other.bitField0_
+        && (!hasCurMapEntryId() || curMapEntryId == other.curMapEntryId)
         && (!hasRetcode() || retcode == other.retcode)
         && (!hasEntryId() || entryId == other.entryId)
-        && (!hasCurMapEntryId() || curMapEntryId == other.curMapEntryId)
         && (!hasLightenSectionList() || lightenSectionList.equals(other.lightenSectionList))
         && (!hasUnlockedTeleportList() || unlockedTeleportList.equals(other.unlockedTeleportList))
         && (!hasMapList() || mapList.equals(other.mapList))
@@ -868,16 +916,16 @@ public final class GetSceneMapInfoScRspOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
+        output.writeRawByte((byte) 16);
+        output.writeUInt32NoTag(curMapEntryId);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(retcode);
       }
-      if ((bitField0_ & 0x00000002) != 0) {
+      if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(entryId);
-      }
-      if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 96);
-        output.writeUInt32NoTag(curMapEntryId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         for (int i = 0; i < lightenSectionList.length(); i++) {
@@ -893,7 +941,7 @@ public final class GetSceneMapInfoScRspOuterClass {
       }
       if ((bitField0_ & 0x00000020) != 0) {
         for (int i = 0; i < mapList.length(); i++) {
-          output.writeRawByte((byte) 18);
+          output.writeRawByte((byte) 34);
           output.writeMessageNoTag(mapList.get(i));
         }
       }
@@ -921,13 +969,13 @@ public final class GetSceneMapInfoScRspOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(curMapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(curMapEntryId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(entryId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         size += (1 * lightenSectionList.length()) + ProtoSink.computeRepeatedUInt32SizeNoTag(lightenSectionList);
@@ -957,10 +1005,19 @@ public final class GetSceneMapInfoScRspOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
+          case 16: {
+            // curMapEntryId
+            curMapEntryId = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 80) {
+              break;
+            }
+          }
           case 80: {
             // retcode
             retcode = input.readUInt32();
-            bitField0_ |= 0x00000001;
+            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 88) {
               break;
@@ -969,15 +1026,6 @@ public final class GetSceneMapInfoScRspOuterClass {
           case 88: {
             // entryId
             entryId = input.readUInt32();
-            bitField0_ |= 0x00000002;
-            tag = input.readTag();
-            if (tag != 96) {
-              break;
-            }
-          }
-          case 96: {
-            // curMapEntryId
-            curMapEntryId = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
             if (tag != 10) {
@@ -998,11 +1046,11 @@ public final class GetSceneMapInfoScRspOuterClass {
             input.readPackedUInt32(unlockedTeleportList, tag);
             bitField0_ |= 0x00000010;
             tag = input.readTag();
-            if (tag != 18) {
+            if (tag != 34) {
               break;
             }
           }
-          case 18: {
+          case 34: {
             // mapList
             tag = input.readRepeatedMessage(mapList, tag);
             bitField0_ |= 0x00000020;
@@ -1064,13 +1112,13 @@ public final class GetSceneMapInfoScRspOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.retcode, retcode);
+        output.writeUInt32(FieldNames.curMapEntryId, curMapEntryId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.entryId, entryId);
+        output.writeUInt32(FieldNames.retcode, retcode);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeUInt32(FieldNames.curMapEntryId, curMapEntryId);
+        output.writeUInt32(FieldNames.entryId, entryId);
       }
       if ((bitField0_ & 0x00000008) != 0) {
         output.writeRepeatedUInt32(FieldNames.lightenSectionList, lightenSectionList);
@@ -1100,11 +1148,23 @@ public final class GetSceneMapInfoScRspOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
+          case 764919441:
+          case 2115673898: {
+            if (input.isAtField(FieldNames.curMapEntryId)) {
+              if (!input.trySkipNullValue()) {
+                curMapEntryId = input.readUInt32();
+                bitField0_ |= 0x00000001;
+              }
+            } else {
+              input.skipUnknownField();
+            }
+            break;
+          }
           case 1097936398: {
             if (input.isAtField(FieldNames.retcode)) {
               if (!input.trySkipNullValue()) {
                 retcode = input.readUInt32();
-                bitField0_ |= 0x00000001;
+                bitField0_ |= 0x00000002;
               }
             } else {
               input.skipUnknownField();
@@ -1116,18 +1176,6 @@ public final class GetSceneMapInfoScRspOuterClass {
             if (input.isAtField(FieldNames.entryId)) {
               if (!input.trySkipNullValue()) {
                 entryId = input.readUInt32();
-                bitField0_ |= 0x00000002;
-              }
-            } else {
-              input.skipUnknownField();
-            }
-            break;
-          }
-          case 764919441:
-          case 2115673898: {
-            if (input.isAtField(FieldNames.curMapEntryId)) {
-              if (!input.trySkipNullValue()) {
-                curMapEntryId = input.readUInt32();
                 bitField0_ |= 0x00000004;
               }
             } else {
@@ -1260,11 +1308,11 @@ public final class GetSceneMapInfoScRspOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
+      static final FieldName curMapEntryId = FieldName.forField("curMapEntryId", "cur_map_entry_id");
+
       static final FieldName retcode = FieldName.forField("retcode");
 
       static final FieldName entryId = FieldName.forField("entryId", "entry_id");
-
-      static final FieldName curMapEntryId = FieldName.forField("curMapEntryId", "cur_map_entry_id");
 
       static final FieldName lightenSectionList = FieldName.forField("lightenSectionList", "lighten_section_list");
 
