@@ -21,21 +21,21 @@ public final class SceneMonsterWaveOuterClass {
 
     /**
      * <pre>
-     * 或14
+     *
      * </pre>
      *
-     * <code>optional uint32 wave_id = 1;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      */
-    private int waveId;
+    private int stageId;
 
     /**
      * <pre>
-     * 或1
+     *
      * </pre>
      *
-     * <code>optional uint32 stage_id = 14;</code>
+     * <code>optional uint32 wave_id = 14;</code>
      */
-    private int stageId;
+    private int waveId;
 
     /**
      * <pre>
@@ -76,89 +76,36 @@ public final class SceneMonsterWaveOuterClass {
 
     /**
      * <pre>
-     * 或14
+     *
      * </pre>
      *
-     * <code>optional uint32 wave_id = 1;</code>
-     * @return whether the waveId field is set
+     * <code>optional uint32 stage_id = 1;</code>
+     * @return whether the stageId field is set
      */
-    public boolean hasWaveId() {
+    public boolean hasStageId() {
       return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
      * <pre>
-     * 或14
+     *
      * </pre>
      *
-     * <code>optional uint32 wave_id = 1;</code>
-     * @return this
-     */
-    public SceneMonsterWave clearWaveId() {
-      bitField0_ &= ~0x00000001;
-      waveId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * 或14
-     * </pre>
-     *
-     * <code>optional uint32 wave_id = 1;</code>
-     * @return the waveId
-     */
-    public int getWaveId() {
-      return waveId;
-    }
-
-    /**
-     * <pre>
-     * 或14
-     * </pre>
-     *
-     * <code>optional uint32 wave_id = 1;</code>
-     * @param value the waveId to set
-     * @return this
-     */
-    public SceneMonsterWave setWaveId(final int value) {
-      bitField0_ |= 0x00000001;
-      waveId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     * 或1
-     * </pre>
-     *
-     * <code>optional uint32 stage_id = 14;</code>
-     * @return whether the stageId field is set
-     */
-    public boolean hasStageId() {
-      return (bitField0_ & 0x00000002) != 0;
-    }
-
-    /**
-     * <pre>
-     * 或1
-     * </pre>
-     *
-     * <code>optional uint32 stage_id = 14;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      * @return this
      */
     public SceneMonsterWave clearStageId() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       stageId = 0;
       return this;
     }
 
     /**
      * <pre>
-     * 或1
+     *
      * </pre>
      *
-     * <code>optional uint32 stage_id = 14;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      * @return the stageId
      */
     public int getStageId() {
@@ -167,16 +114,69 @@ public final class SceneMonsterWaveOuterClass {
 
     /**
      * <pre>
-     * 或1
+     *
      * </pre>
      *
-     * <code>optional uint32 stage_id = 14;</code>
+     * <code>optional uint32 stage_id = 1;</code>
      * @param value the stageId to set
      * @return this
      */
     public SceneMonsterWave setStageId(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       stageId = value;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 wave_id = 14;</code>
+     * @return whether the waveId field is set
+     */
+    public boolean hasWaveId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 wave_id = 14;</code>
+     * @return this
+     */
+    public SceneMonsterWave clearWaveId() {
+      bitField0_ &= ~0x00000002;
+      waveId = 0;
+      return this;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 wave_id = 14;</code>
+     * @return the waveId
+     */
+    public int getWaveId() {
+      return waveId;
+    }
+
+    /**
+     * <pre>
+     *
+     * </pre>
+     *
+     * <code>optional uint32 wave_id = 14;</code>
+     * @param value the waveId to set
+     * @return this
+     */
+    public SceneMonsterWave setWaveId(final int value) {
+      bitField0_ |= 0x00000002;
+      waveId = value;
       return this;
     }
 
@@ -447,8 +447,8 @@ public final class SceneMonsterWaveOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        waveId = other.waveId;
         stageId = other.stageId;
+        waveId = other.waveId;
         waveParam.copyFrom(other.waveParam);
         monsterList.copyFrom(other.monsterList);
         dropList.copyFrom(other.dropList);
@@ -462,11 +462,11 @@ public final class SceneMonsterWaveOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasWaveId()) {
-        setWaveId(other.waveId);
-      }
       if (other.hasStageId()) {
         setStageId(other.stageId);
+      }
+      if (other.hasWaveId()) {
+        setWaveId(other.waveId);
       }
       if (other.hasWaveParam()) {
         getMutableWaveParam().mergeFrom(other.waveParam);
@@ -487,8 +487,8 @@ public final class SceneMonsterWaveOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      waveId = 0;
       stageId = 0;
+      waveId = 0;
       waveParam.clear();
       monsterList.clear();
       dropList.clear();
@@ -518,8 +518,8 @@ public final class SceneMonsterWaveOuterClass {
       }
       SceneMonsterWave other = (SceneMonsterWave) o;
       return bitField0_ == other.bitField0_
-        && (!hasWaveId() || waveId == other.waveId)
         && (!hasStageId() || stageId == other.stageId)
+        && (!hasWaveId() || waveId == other.waveId)
         && (!hasWaveParam() || waveParam.equals(other.waveParam))
         && (!hasMonsterList() || monsterList.equals(other.monsterList))
         && (!hasDropList() || dropList.equals(other.dropList));
@@ -529,11 +529,11 @@ public final class SceneMonsterWaveOuterClass {
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
         output.writeRawByte((byte) 8);
-        output.writeUInt32NoTag(waveId);
+        output.writeUInt32NoTag(stageId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 112);
-        output.writeUInt32NoTag(stageId);
+        output.writeUInt32NoTag(waveId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeRawByte((byte) 66);
@@ -557,10 +557,10 @@ public final class SceneMonsterWaveOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(waveId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(stageId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(waveId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         size += 1 + ProtoSink.computeMessageSizeNoTag(waveParam);
@@ -582,8 +582,8 @@ public final class SceneMonsterWaveOuterClass {
       while (true) {
         switch (tag) {
           case 8: {
-            // waveId
-            waveId = input.readUInt32();
+            // stageId
+            stageId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
             if (tag != 112) {
@@ -591,8 +591,8 @@ public final class SceneMonsterWaveOuterClass {
             }
           }
           case 112: {
-            // stageId
-            stageId = input.readUInt32();
+            // waveId
+            waveId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 66) {
@@ -642,10 +642,10 @@ public final class SceneMonsterWaveOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.waveId, waveId);
+        output.writeUInt32(FieldNames.stageId, stageId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.stageId, stageId);
+        output.writeUInt32(FieldNames.waveId, waveId);
       }
       if ((bitField0_ & 0x00000004) != 0) {
         output.writeMessage(FieldNames.waveParam, waveParam);
@@ -666,11 +666,11 @@ public final class SceneMonsterWaveOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -794902028:
-          case 1127862305: {
-            if (input.isAtField(FieldNames.waveId)) {
+          case -1897528135:
+          case 1306191356: {
+            if (input.isAtField(FieldNames.stageId)) {
               if (!input.trySkipNullValue()) {
-                waveId = input.readUInt32();
+                stageId = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -678,11 +678,11 @@ public final class SceneMonsterWaveOuterClass {
             }
             break;
           }
-          case -1897528135:
-          case 1306191356: {
-            if (input.isAtField(FieldNames.stageId)) {
+          case -794902028:
+          case 1127862305: {
+            if (input.isAtField(FieldNames.waveId)) {
               if (!input.trySkipNullValue()) {
-                stageId = input.readUInt32();
+                waveId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -779,9 +779,9 @@ public final class SceneMonsterWaveOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName waveId = FieldName.forField("waveId", "wave_id");
-
       static final FieldName stageId = FieldName.forField("stageId", "stage_id");
+
+      static final FieldName waveId = FieldName.forField("waveId", "wave_id");
 
       static final FieldName waveParam = FieldName.forField("waveParam", "wave_param");
 

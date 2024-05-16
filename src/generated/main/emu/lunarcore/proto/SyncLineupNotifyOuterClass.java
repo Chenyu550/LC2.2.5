@@ -21,7 +21,7 @@ public final class SyncLineupNotifyOuterClass {
 
     /**
      * <pre>
-     * 4
+     * 12
      * </pre>
      *
      * <code>optional .LineupInfo lineup = 9;</code>
@@ -49,7 +49,7 @@ public final class SyncLineupNotifyOuterClass {
 
     /**
      * <pre>
-     * 4
+     * 12
      * </pre>
      *
      * <code>optional .LineupInfo lineup = 9;</code>
@@ -61,7 +61,7 @@ public final class SyncLineupNotifyOuterClass {
 
     /**
      * <pre>
-     * 4
+     * 12
      * </pre>
      *
      * <code>optional .LineupInfo lineup = 9;</code>
@@ -75,7 +75,7 @@ public final class SyncLineupNotifyOuterClass {
 
     /**
      * <pre>
-     * 4
+     * 12
      * </pre>
      *
      * <code>optional .LineupInfo lineup = 9;</code>
@@ -93,7 +93,7 @@ public final class SyncLineupNotifyOuterClass {
 
     /**
      * <pre>
-     * 4
+     * 12
      * </pre>
      *
      * <code>optional .LineupInfo lineup = 9;</code>
@@ -111,7 +111,7 @@ public final class SyncLineupNotifyOuterClass {
 
     /**
      * <pre>
-     * 4
+     * 12
      * </pre>
      *
      * <code>optional .LineupInfo lineup = 9;</code>

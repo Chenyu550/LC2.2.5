@@ -21,15 +21,19 @@ public final class PromoteAvatarCsReqOuterClass {
 
     /**
      * <pre>
-     * 10
+     * 11
      * </pre>
      *
-     * <code>optional uint32 base_avatar_id = 7;</code>
+     * <code>optional uint32 base_avatar_id = 9;</code>
      */
     private int baseAvatarId;
 
     /**
-     * <code>repeated .ItemCost item_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>repeated .ItemCost item_list = 7;</code>
      */
     private final RepeatedMessage<ItemCostOuterClass.ItemCost> itemList = RepeatedMessage.newEmptyInstance(ItemCostOuterClass.ItemCost.getFactory());
 
@@ -45,10 +49,10 @@ public final class PromoteAvatarCsReqOuterClass {
 
     /**
      * <pre>
-     * 10
+     * 11
      * </pre>
      *
-     * <code>optional uint32 base_avatar_id = 7;</code>
+     * <code>optional uint32 base_avatar_id = 9;</code>
      * @return whether the baseAvatarId field is set
      */
     public boolean hasBaseAvatarId() {
@@ -57,10 +61,10 @@ public final class PromoteAvatarCsReqOuterClass {
 
     /**
      * <pre>
-     * 10
+     * 11
      * </pre>
      *
-     * <code>optional uint32 base_avatar_id = 7;</code>
+     * <code>optional uint32 base_avatar_id = 9;</code>
      * @return this
      */
     public PromoteAvatarCsReq clearBaseAvatarId() {
@@ -71,10 +75,10 @@ public final class PromoteAvatarCsReqOuterClass {
 
     /**
      * <pre>
-     * 10
+     * 11
      * </pre>
      *
-     * <code>optional uint32 base_avatar_id = 7;</code>
+     * <code>optional uint32 base_avatar_id = 9;</code>
      * @return the baseAvatarId
      */
     public int getBaseAvatarId() {
@@ -83,10 +87,10 @@ public final class PromoteAvatarCsReqOuterClass {
 
     /**
      * <pre>
-     * 10
+     * 11
      * </pre>
      *
-     * <code>optional uint32 base_avatar_id = 7;</code>
+     * <code>optional uint32 base_avatar_id = 9;</code>
      * @param value the baseAvatarId to set
      * @return this
      */
@@ -97,7 +101,11 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>repeated .ItemCost item_list = 7;</code>
      * @return whether the itemList field is set
      */
     public boolean hasItemList() {
@@ -105,7 +113,11 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>repeated .ItemCost item_list = 7;</code>
      * @return this
      */
     public PromoteAvatarCsReq clearItemList() {
@@ -115,7 +127,11 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>repeated .ItemCost item_list = 7;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -129,7 +145,11 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>repeated .ItemCost item_list = 7;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -143,7 +163,11 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>repeated .ItemCost item_list = 7;</code>
      * @param value the itemList to add
      * @return this
      */
@@ -154,7 +178,11 @@ public final class PromoteAvatarCsReqOuterClass {
     }
 
     /**
-     * <code>repeated .ItemCost item_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>repeated .ItemCost item_list = 7;</code>
      * @param values the itemList to add
      * @return this
      */
@@ -230,12 +258,12 @@ public final class PromoteAvatarCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 56);
+        output.writeRawByte((byte) 72);
         output.writeUInt32NoTag(baseAvatarId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
         for (int i = 0; i < itemList.length(); i++) {
-          output.writeRawByte((byte) 106);
+          output.writeRawByte((byte) 58);
           output.writeMessageNoTag(itemList.get(i));
         }
       }
@@ -260,16 +288,16 @@ public final class PromoteAvatarCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 56: {
+          case 72: {
             // baseAvatarId
             baseAvatarId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 58) {
               break;
             }
           }
-          case 106: {
+          case 58: {
             // itemList
             tag = input.readRepeatedMessage(itemList, tag);
             bitField0_ |= 0x00000002;

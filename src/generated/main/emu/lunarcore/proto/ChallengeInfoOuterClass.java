@@ -19,37 +19,53 @@ public final class ChallengeInfoOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 round_count = 2;</code>
+     * <code>optional uint32 round_count = 3;</code>
      */
     private int roundCount;
 
     /**
-     * <code>optional uint32 score = 3;</code>
+     * <code>optional uint32 score = 5;</code>
      */
     private int score;
 
     /**
-     * <code>optional uint32 score_two = 4;</code>
+     * <code>optional uint32 score_two = 10;</code>
      */
     private int scoreTwo;
 
     /**
-     * <code>optional uint32 challenge_id = 14;</code>
+     * <pre>
+     * 15 3 10 5
+     * </pre>
+     *
+     * <code>optional uint32 challenge_id = 15;</code>
      */
     private int challengeId;
 
     /**
-     * <code>optional .ChallengeStatus status = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ChallengeStatus status = 13;</code>
      */
     private int status;
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
      */
     private int extraLineupType;
 
     /**
-     * <code>optional .ChallengeStoryInfo story_info = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>optional .ChallengeStoryInfo story_info = 4;</code>
      */
     private final ChallengeStoryInfoOuterClass.ChallengeStoryInfo storyInfo = ChallengeStoryInfoOuterClass.ChallengeStoryInfo.newInstance();
 
@@ -64,7 +80,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 round_count = 2;</code>
+     * <code>optional uint32 round_count = 3;</code>
      * @return whether the roundCount field is set
      */
     public boolean hasRoundCount() {
@@ -72,7 +88,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 round_count = 2;</code>
+     * <code>optional uint32 round_count = 3;</code>
      * @return this
      */
     public ChallengeInfo clearRoundCount() {
@@ -82,7 +98,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 round_count = 2;</code>
+     * <code>optional uint32 round_count = 3;</code>
      * @return the roundCount
      */
     public int getRoundCount() {
@@ -90,7 +106,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 round_count = 2;</code>
+     * <code>optional uint32 round_count = 3;</code>
      * @param value the roundCount to set
      * @return this
      */
@@ -101,7 +117,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 score = 3;</code>
+     * <code>optional uint32 score = 5;</code>
      * @return whether the score field is set
      */
     public boolean hasScore() {
@@ -109,7 +125,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 score = 3;</code>
+     * <code>optional uint32 score = 5;</code>
      * @return this
      */
     public ChallengeInfo clearScore() {
@@ -119,7 +135,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 score = 3;</code>
+     * <code>optional uint32 score = 5;</code>
      * @return the score
      */
     public int getScore() {
@@ -127,7 +143,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 score = 3;</code>
+     * <code>optional uint32 score = 5;</code>
      * @param value the score to set
      * @return this
      */
@@ -138,7 +154,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 score_two = 4;</code>
+     * <code>optional uint32 score_two = 10;</code>
      * @return whether the scoreTwo field is set
      */
     public boolean hasScoreTwo() {
@@ -146,7 +162,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 score_two = 4;</code>
+     * <code>optional uint32 score_two = 10;</code>
      * @return this
      */
     public ChallengeInfo clearScoreTwo() {
@@ -156,7 +172,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 score_two = 4;</code>
+     * <code>optional uint32 score_two = 10;</code>
      * @return the scoreTwo
      */
     public int getScoreTwo() {
@@ -164,7 +180,7 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 score_two = 4;</code>
+     * <code>optional uint32 score_two = 10;</code>
      * @param value the scoreTwo to set
      * @return this
      */
@@ -175,7 +191,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 14;</code>
+     * <pre>
+     * 15 3 10 5
+     * </pre>
+     *
+     * <code>optional uint32 challenge_id = 15;</code>
      * @return whether the challengeId field is set
      */
     public boolean hasChallengeId() {
@@ -183,7 +203,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 14;</code>
+     * <pre>
+     * 15 3 10 5
+     * </pre>
+     *
+     * <code>optional uint32 challenge_id = 15;</code>
      * @return this
      */
     public ChallengeInfo clearChallengeId() {
@@ -193,7 +217,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 14;</code>
+     * <pre>
+     * 15 3 10 5
+     * </pre>
+     *
+     * <code>optional uint32 challenge_id = 15;</code>
      * @return the challengeId
      */
     public int getChallengeId() {
@@ -201,7 +229,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional uint32 challenge_id = 14;</code>
+     * <pre>
+     * 15 3 10 5
+     * </pre>
+     *
+     * <code>optional uint32 challenge_id = 15;</code>
      * @param value the challengeId to set
      * @return this
      */
@@ -212,7 +244,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStatus status = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ChallengeStatus status = 13;</code>
      * @return whether the status field is set
      */
     public boolean hasStatus() {
@@ -220,7 +256,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStatus status = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ChallengeStatus status = 13;</code>
      * @return this
      */
     public ChallengeInfo clearStatus() {
@@ -230,7 +270,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStatus status = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ChallengeStatus status = 13;</code>
      * @return the status
      */
     public ChallengeStatusOuterClass.ChallengeStatus getStatus() {
@@ -263,7 +307,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStatus status = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional .ChallengeStatus status = 13;</code>
      * @param value the status to set
      * @return this
      */
@@ -274,7 +322,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
      * @return whether the extraLineupType field is set
      */
     public boolean hasExtraLineupType() {
@@ -282,7 +334,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
      * @return this
      */
     public ChallengeInfo clearExtraLineupType() {
@@ -292,7 +348,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
      * @return the extraLineupType
      */
     public ExtraLineupTypeOuterClass.ExtraLineupType getExtraLineupType() {
@@ -325,7 +385,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
+     * <pre>
+     * 12
+     * </pre>
+     *
+     * <code>optional .ExtraLineupType extra_lineup_type = 14;</code>
      * @param value the extraLineupType to set
      * @return this
      */
@@ -336,7 +400,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryInfo story_info = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>optional .ChallengeStoryInfo story_info = 4;</code>
      * @return whether the storyInfo field is set
      */
     public boolean hasStoryInfo() {
@@ -344,7 +412,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryInfo story_info = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>optional .ChallengeStoryInfo story_info = 4;</code>
      * @return this
      */
     public ChallengeInfo clearStoryInfo() {
@@ -354,7 +426,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryInfo story_info = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>optional .ChallengeStoryInfo story_info = 4;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -368,7 +444,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryInfo story_info = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>optional .ChallengeStoryInfo story_info = 4;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -382,7 +462,11 @@ public final class ChallengeInfoOuterClass {
     }
 
     /**
-     * <code>optional .ChallengeStoryInfo story_info = 9;</code>
+     * <pre>
+     * 9
+     * </pre>
+     *
+     * <code>optional .ChallengeStoryInfo story_info = 4;</code>
      * @param value the storyInfo to set
      * @return this
      */
@@ -488,31 +572,31 @@ public final class ChallengeInfoOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 24);
         output.writeUInt32NoTag(roundCount);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 40);
         output.writeUInt32NoTag(score);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(scoreTwo);
       }
       if ((bitField0_ & 0x00000008) != 0) {
-        output.writeRawByte((byte) 112);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(challengeId);
       }
       if ((bitField0_ & 0x00000010) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 104);
         output.writeEnumNoTag(status);
       }
       if ((bitField0_ & 0x00000020) != 0) {
-        output.writeRawByte((byte) 96);
+        output.writeRawByte((byte) 112);
         output.writeEnumNoTag(extraLineupType);
       }
       if ((bitField0_ & 0x00000040) != 0) {
-        output.writeRawByte((byte) 74);
+        output.writeRawByte((byte) 34);
         output.writeMessageNoTag(storyInfo);
       }
     }
@@ -551,43 +635,43 @@ public final class ChallengeInfoOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 24: {
             // roundCount
             roundCount = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 24) {
+            if (tag != 40) {
               break;
             }
           }
-          case 24: {
+          case 40: {
             // score
             score = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 80) {
               break;
             }
           }
-          case 32: {
+          case 80: {
             // scoreTwo
             scoreTwo = input.readUInt32();
             bitField0_ |= 0x00000004;
             tag = input.readTag();
-            if (tag != 112) {
+            if (tag != 120) {
               break;
             }
           }
-          case 112: {
+          case 120: {
             // challengeId
             challengeId = input.readUInt32();
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 48) {
+            if (tag != 104) {
               break;
             }
           }
-          case 48: {
+          case 104: {
             // status
             final int value = input.readInt32();
             if (ChallengeStatusOuterClass.ChallengeStatus.forNumber(value) != null) {
@@ -595,11 +679,11 @@ public final class ChallengeInfoOuterClass {
               bitField0_ |= 0x00000010;
             }
             tag = input.readTag();
-            if (tag != 96) {
+            if (tag != 112) {
               break;
             }
           }
-          case 96: {
+          case 112: {
             // extraLineupType
             final int value = input.readInt32();
             if (ExtraLineupTypeOuterClass.ExtraLineupType.forNumber(value) != null) {
@@ -607,11 +691,11 @@ public final class ChallengeInfoOuterClass {
               bitField0_ |= 0x00000020;
             }
             tag = input.readTag();
-            if (tag != 74) {
+            if (tag != 34) {
               break;
             }
           }
-          case 74: {
+          case 34: {
             // storyInfo
             input.readMessage(storyInfo);
             bitField0_ |= 0x00000040;

@@ -26,7 +26,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 15
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
@@ -35,7 +35,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 14
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
@@ -91,7 +91,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 15
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
@@ -103,7 +103,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 15
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
@@ -117,7 +117,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 15
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
@@ -136,7 +136,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 15
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
@@ -155,7 +155,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 15
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
@@ -171,7 +171,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 15
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousSubStoryInfo sub_story_info = 14;</code>
@@ -187,7 +187,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 14
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
@@ -199,7 +199,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 14
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
@@ -213,7 +213,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 14
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
@@ -232,7 +232,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 14
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
@@ -251,7 +251,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 14
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>
@@ -267,7 +267,7 @@ public final class GetChessRogueNousStoryInfoScRspOuterClass {
 
     /**
      * <pre>
-     * or 14
+     *
      * </pre>
      *
      * <code>repeated .ChessRogueNousMainStoryInfo main_story_info = 15;</code>

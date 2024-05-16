@@ -78,6 +78,10 @@ public final class EquipmentOuterClass {
     private int tid;
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 13;</code>
      */
     private int equipAvatarId;
@@ -87,7 +91,7 @@ public final class EquipmentOuterClass {
      * 12
      * </pre>
      *
-     * <code>optional bool is_protected = 4;</code>
+     * <code>optional bool is_protected = 14;</code>
      */
     private boolean isProtected;
 
@@ -457,6 +461,10 @@ public final class EquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 13;</code>
      * @return whether the equipAvatarId field is set
      */
@@ -465,6 +473,10 @@ public final class EquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 13;</code>
      * @return this
      */
@@ -475,6 +487,10 @@ public final class EquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 13;</code>
      * @return the equipAvatarId
      */
@@ -483,6 +499,10 @@ public final class EquipmentOuterClass {
     }
 
     /**
+     * <pre>
+     * 6
+     * </pre>
+     *
      * <code>optional uint32 equip_avatar_id = 13;</code>
      * @param value the equipAvatarId to set
      * @return this
@@ -498,7 +518,7 @@ public final class EquipmentOuterClass {
      * 12
      * </pre>
      *
-     * <code>optional bool is_protected = 4;</code>
+     * <code>optional bool is_protected = 14;</code>
      * @return whether the isProtected field is set
      */
     public boolean hasIsProtected() {
@@ -510,7 +530,7 @@ public final class EquipmentOuterClass {
      * 12
      * </pre>
      *
-     * <code>optional bool is_protected = 4;</code>
+     * <code>optional bool is_protected = 14;</code>
      * @return this
      */
     public Equipment clearIsProtected() {
@@ -524,7 +544,7 @@ public final class EquipmentOuterClass {
      * 12
      * </pre>
      *
-     * <code>optional bool is_protected = 4;</code>
+     * <code>optional bool is_protected = 14;</code>
      * @return the isProtected
      */
     public boolean getIsProtected() {
@@ -536,7 +556,7 @@ public final class EquipmentOuterClass {
      * 12
      * </pre>
      *
-     * <code>optional bool is_protected = 4;</code>
+     * <code>optional bool is_protected = 14;</code>
      * @param value the isProtected to set
      * @return this
      */
@@ -685,7 +705,7 @@ public final class EquipmentOuterClass {
         output.writeUInt32NoTag(equipAvatarId);
       }
       if ((bitField0_ & 0x00000100) != 0) {
-        output.writeRawByte((byte) 32);
+        output.writeRawByte((byte) 112);
         output.writeBoolNoTag(isProtected);
       }
     }
@@ -798,11 +818,11 @@ public final class EquipmentOuterClass {
             equipAvatarId = input.readUInt32();
             bitField0_ |= 0x00000080;
             tag = input.readTag();
-            if (tag != 32) {
+            if (tag != 112) {
               break;
             }
           }
-          case 32: {
+          case 112: {
             // isProtected
             isProtected = input.readBool();
             bitField0_ |= 0x00000100;

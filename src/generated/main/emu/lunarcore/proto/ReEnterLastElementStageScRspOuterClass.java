@@ -19,6 +19,10 @@ public final class ReEnterLastElementStageScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 stage_id = 8;</code>
      */
     private int stageId;
@@ -44,6 +48,10 @@ public final class ReEnterLastElementStageScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 stage_id = 8;</code>
      * @return whether the stageId field is set
      */
@@ -52,6 +60,10 @@ public final class ReEnterLastElementStageScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 stage_id = 8;</code>
      * @return this
      */
@@ -62,6 +74,10 @@ public final class ReEnterLastElementStageScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 stage_id = 8;</code>
      * @return the stageId
      */
@@ -70,6 +86,10 @@ public final class ReEnterLastElementStageScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 2
+     * </pre>
+     *
      * <code>optional uint32 stage_id = 8;</code>
      * @param value the stageId to set
      * @return this

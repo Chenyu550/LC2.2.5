@@ -20,7 +20,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 14
+     * or 10
      * </pre>
      *
      * <code>optional uint32 slot = 4;</code>
@@ -43,7 +43,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 6
+     * 4
      * </pre>
      *
      * <code>optional uint32 base_avatar_id = 15;</code>
@@ -60,6 +60,10 @@ public final class JoinLineupCsReqOuterClass {
     private int avatarType;
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
      */
     private int extraLineupType;
@@ -85,7 +89,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 14
+     * or 10
      * </pre>
      *
      * <code>optional uint32 slot = 4;</code>
@@ -97,7 +101,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 14
+     * or 10
      * </pre>
      *
      * <code>optional uint32 slot = 4;</code>
@@ -111,7 +115,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 14
+     * or 10
      * </pre>
      *
      * <code>optional uint32 slot = 4;</code>
@@ -123,7 +127,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 14
+     * or 10
      * </pre>
      *
      * <code>optional uint32 slot = 4;</code>
@@ -228,7 +232,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 6
+     * 4
      * </pre>
      *
      * <code>optional uint32 base_avatar_id = 15;</code>
@@ -240,7 +244,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 6
+     * 4
      * </pre>
      *
      * <code>optional uint32 base_avatar_id = 15;</code>
@@ -254,7 +258,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 6
+     * 4
      * </pre>
      *
      * <code>optional uint32 base_avatar_id = 15;</code>
@@ -266,7 +270,7 @@ public final class JoinLineupCsReqOuterClass {
 
     /**
      * <pre>
-     * 6
+     * 4
      * </pre>
      *
      * <code>optional uint32 base_avatar_id = 15;</code>
@@ -358,6 +362,10 @@ public final class JoinLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
      * @return whether the extraLineupType field is set
      */
@@ -366,6 +374,10 @@ public final class JoinLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
      * @return this
      */
@@ -376,6 +388,10 @@ public final class JoinLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
      * @return the extraLineupType
      */
@@ -409,6 +425,10 @@ public final class JoinLineupCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     * 9
+     * </pre>
+     *
      * <code>optional .ExtraLineupType extra_lineup_type = 12;</code>
      * @param value the extraLineupType to set
      * @return this

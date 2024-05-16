@@ -19,6 +19,10 @@ public final class GetCurSceneInfoScRspOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      */
     private int retcode;
@@ -43,6 +47,10 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      * @return whether the retcode field is set
      */
@@ -51,6 +59,10 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      * @return this
      */
@@ -61,6 +73,10 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      * @return the retcode
      */
@@ -69,6 +85,10 @@ public final class GetCurSceneInfoScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 12
+     * </pre>
+     *
      * <code>optional uint32 retcode = 14;</code>
      * @param value the retcode to set
      * @return this

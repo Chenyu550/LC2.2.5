@@ -19,7 +19,11 @@ public final class SwitchLineupIndexCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 index = 2;</code>
      */
     private int index;
 
@@ -34,7 +38,11 @@ public final class SwitchLineupIndexCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 index = 2;</code>
      * @return whether the index field is set
      */
     public boolean hasIndex() {
@@ -42,7 +50,11 @@ public final class SwitchLineupIndexCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 index = 2;</code>
      * @return this
      */
     public SwitchLineupIndexCsReq clearIndex() {
@@ -52,7 +64,11 @@ public final class SwitchLineupIndexCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 index = 2;</code>
      * @return the index
      */
     public int getIndex() {
@@ -60,7 +76,11 @@ public final class SwitchLineupIndexCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 index = 10;</code>
+     * <pre>
+     * 10
+     * </pre>
+     *
+     * <code>optional uint32 index = 2;</code>
      * @param value the index to set
      * @return this
      */
@@ -129,7 +149,7 @@ public final class SwitchLineupIndexCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 80);
+        output.writeRawByte((byte) 16);
         output.writeUInt32NoTag(index);
       }
     }
@@ -150,7 +170,7 @@ public final class SwitchLineupIndexCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 80: {
+          case 16: {
             // index
             index = input.readUInt32();
             bitField0_ |= 0x00000001;

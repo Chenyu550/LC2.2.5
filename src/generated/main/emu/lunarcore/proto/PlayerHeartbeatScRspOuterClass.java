@@ -37,6 +37,10 @@ public final class PlayerHeartbeatScRspOuterClass {
     private long clientTimeMs;
 
     /**
+     * <pre>
+     * 3
+     * </pre>
+     *
      * <code>optional uint32 retcode = 13;</code>
      */
     private int retcode;
@@ -158,6 +162,10 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 3
+     * </pre>
+     *
      * <code>optional uint32 retcode = 13;</code>
      * @return whether the retcode field is set
      */
@@ -166,6 +174,10 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 3
+     * </pre>
+     *
      * <code>optional uint32 retcode = 13;</code>
      * @return this
      */
@@ -176,6 +188,10 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 3
+     * </pre>
+     *
      * <code>optional uint32 retcode = 13;</code>
      * @return the retcode
      */
@@ -184,6 +200,10 @@ public final class PlayerHeartbeatScRspOuterClass {
     }
 
     /**
+     * <pre>
+     * 3
+     * </pre>
+     *
      * <code>optional uint32 retcode = 13;</code>
      * @param value the retcode to set
      * @return this

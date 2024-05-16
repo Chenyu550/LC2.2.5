@@ -20,17 +20,29 @@ public final class RevcMsgScNotifyOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 emote = 2;</code>
+     * <pre>
+     * bqd
+     * </pre>
+     *
+     * <code>optional uint32 emote = 7;</code>
      */
     private int emote;
 
     /**
-     * <code>optional uint32 to_uid = 3;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>optional uint32 to_uid = 11;</code>
      */
     private int toUid;
 
     /**
-     * <code>optional uint32 from_uid = 11;</code>
+     * <pre>
+     * or 11
+     * </pre>
+     *
+     * <code>optional uint32 from_uid = 15;</code>
      */
     private int fromUid;
 
@@ -72,7 +84,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 emote = 2;</code>
+     * <pre>
+     * bqd
+     * </pre>
+     *
+     * <code>optional uint32 emote = 7;</code>
      * @return whether the emote field is set
      */
     public boolean hasEmote() {
@@ -80,7 +96,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 emote = 2;</code>
+     * <pre>
+     * bqd
+     * </pre>
+     *
+     * <code>optional uint32 emote = 7;</code>
      * @return this
      */
     public RevcMsgScNotify clearEmote() {
@@ -90,7 +110,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 emote = 2;</code>
+     * <pre>
+     * bqd
+     * </pre>
+     *
+     * <code>optional uint32 emote = 7;</code>
      * @return the emote
      */
     public int getEmote() {
@@ -98,7 +122,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 emote = 2;</code>
+     * <pre>
+     * bqd
+     * </pre>
+     *
+     * <code>optional uint32 emote = 7;</code>
      * @param value the emote to set
      * @return this
      */
@@ -109,7 +137,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 to_uid = 3;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>optional uint32 to_uid = 11;</code>
      * @return whether the toUid field is set
      */
     public boolean hasToUid() {
@@ -117,7 +149,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 to_uid = 3;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>optional uint32 to_uid = 11;</code>
      * @return this
      */
     public RevcMsgScNotify clearToUid() {
@@ -127,7 +163,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 to_uid = 3;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>optional uint32 to_uid = 11;</code>
      * @return the toUid
      */
     public int getToUid() {
@@ -135,7 +175,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 to_uid = 3;</code>
+     * <pre>
+     * or 15
+     * </pre>
+     *
+     * <code>optional uint32 to_uid = 11;</code>
      * @param value the toUid to set
      * @return this
      */
@@ -146,7 +190,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 from_uid = 11;</code>
+     * <pre>
+     * or 11
+     * </pre>
+     *
+     * <code>optional uint32 from_uid = 15;</code>
      * @return whether the fromUid field is set
      */
     public boolean hasFromUid() {
@@ -154,7 +202,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 from_uid = 11;</code>
+     * <pre>
+     * or 11
+     * </pre>
+     *
+     * <code>optional uint32 from_uid = 15;</code>
      * @return this
      */
     public RevcMsgScNotify clearFromUid() {
@@ -164,7 +216,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 from_uid = 11;</code>
+     * <pre>
+     * or 11
+     * </pre>
+     *
+     * <code>optional uint32 from_uid = 15;</code>
      * @return the fromUid
      */
     public int getFromUid() {
@@ -172,7 +228,11 @@ public final class RevcMsgScNotifyOuterClass {
     }
 
     /**
-     * <code>optional uint32 from_uid = 11;</code>
+     * <pre>
+     * or 11
+     * </pre>
+     *
+     * <code>optional uint32 from_uid = 15;</code>
      * @param value the fromUid to set
      * @return this
      */
@@ -521,15 +581,15 @@ public final class RevcMsgScNotifyOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 16);
+        output.writeRawByte((byte) 56);
         output.writeUInt32NoTag(emote);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 24);
+        output.writeRawByte((byte) 88);
         output.writeUInt32NoTag(toUid);
       }
       if ((bitField0_ & 0x00000004) != 0) {
-        output.writeRawByte((byte) 88);
+        output.writeRawByte((byte) 120);
         output.writeUInt32NoTag(fromUid);
       }
       if ((bitField0_ & 0x00000008) != 0) {
@@ -577,25 +637,25 @@ public final class RevcMsgScNotifyOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 16: {
+          case 56: {
             // emote
             emote = input.readUInt32();
             bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 24) {
-              break;
-            }
-          }
-          case 24: {
-            // toUid
-            toUid = input.readUInt32();
-            bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 88) {
               break;
             }
           }
           case 88: {
+            // toUid
+            toUid = input.readUInt32();
+            bitField0_ |= 0x00000002;
+            tag = input.readTag();
+            if (tag != 120) {
+              break;
+            }
+          }
+          case 120: {
             // fromUid
             fromUid = input.readUInt32();
             bitField0_ |= 0x00000004;

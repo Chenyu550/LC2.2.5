@@ -19,12 +19,20 @@ public final class PromoteEquipmentCsReqOuterClass {
     private static final long serialVersionUID = 0L;
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 10;</code>
      */
     private int equipmentUniqueId;
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 12;</code>
      */
     private final ItemCostListOuterClass.ItemCostList itemCostList = ItemCostListOuterClass.ItemCostList.newInstance();
 
@@ -39,7 +47,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 10;</code>
      * @return whether the equipmentUniqueId field is set
      */
     public boolean hasEquipmentUniqueId() {
@@ -47,7 +59,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 10;</code>
      * @return this
      */
     public PromoteEquipmentCsReq clearEquipmentUniqueId() {
@@ -57,7 +73,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 10;</code>
      * @return the equipmentUniqueId
      */
     public int getEquipmentUniqueId() {
@@ -65,7 +85,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional uint32 equipment_unique_id = 6;</code>
+     * <pre>
+     * 6
+     * </pre>
+     *
+     * <code>optional uint32 equipment_unique_id = 10;</code>
      * @param value the equipmentUniqueId to set
      * @return this
      */
@@ -76,7 +100,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 12;</code>
      * @return whether the itemCostList field is set
      */
     public boolean hasItemCostList() {
@@ -84,7 +112,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 12;</code>
      * @return this
      */
     public PromoteEquipmentCsReq clearItemCostList() {
@@ -94,7 +126,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 12;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -108,7 +144,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 12;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -122,7 +162,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     }
 
     /**
-     * <code>optional .ItemCostList item_cost_list = 13;</code>
+     * <pre>
+     * 13
+     * </pre>
+     *
+     * <code>optional .ItemCostList item_cost_list = 12;</code>
      * @param value the itemCostList to set
      * @return this
      */
@@ -198,11 +242,11 @@ public final class PromoteEquipmentCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 48);
+        output.writeRawByte((byte) 80);
         output.writeUInt32NoTag(equipmentUniqueId);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeRawByte((byte) 106);
+        output.writeRawByte((byte) 98);
         output.writeMessageNoTag(itemCostList);
       }
     }
@@ -226,16 +270,16 @@ public final class PromoteEquipmentCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 48: {
+          case 80: {
             // equipmentUniqueId
             equipmentUniqueId = input.readUInt32();
             bitField0_ |= 0x00000001;
             tag = input.readTag();
-            if (tag != 106) {
+            if (tag != 98) {
               break;
             }
           }
-          case 106: {
+          case 98: {
             // itemCostList
             input.readMessage(itemCostList);
             bitField0_ |= 0x00000002;

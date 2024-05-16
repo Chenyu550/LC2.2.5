@@ -20,10 +20,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 13;</code>
      */
     private int num;
 
@@ -39,10 +39,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 13;</code>
      * @return whether the num field is set
      */
     public boolean hasNum() {
@@ -51,10 +51,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 13;</code>
      * @return this
      */
     public ReserveStaminaExchangeCsReq clearNum() {
@@ -65,10 +65,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 13;</code>
      * @return the num
      */
     public int getNum() {
@@ -77,10 +77,10 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
 
     /**
      * <pre>
-     * 15
+     * 8
      * </pre>
      *
-     * <code>optional uint32 num = 8;</code>
+     * <code>optional uint32 num = 13;</code>
      * @param value the num to set
      * @return this
      */
@@ -149,7 +149,7 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 64);
+        output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(num);
       }
     }
@@ -170,7 +170,7 @@ public final class ReserveStaminaExchangeCsReqOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 64: {
+          case 104: {
             // num
             num = input.readUInt32();
             bitField0_ |= 0x00000001;

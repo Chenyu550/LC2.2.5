@@ -23,18 +23,14 @@ public final class RelicParamOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 relic_unique_id = 5;</code>
-     */
-    private int relicUniqueId;
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
      * <code>optional uint32 slot = 13;</code>
      */
     private int slot;
+
+    /**
+     * <code>optional uint32 relic_unique_id = 14;</code>
+     */
+    private int relicUniqueId;
 
     private RelicParam() {
     }
@@ -51,64 +47,11 @@ public final class RelicParamOuterClass {
      *
      * </pre>
      *
-     * <code>optional uint32 relic_unique_id = 5;</code>
-     * @return whether the relicUniqueId field is set
-     */
-    public boolean hasRelicUniqueId() {
-      return (bitField0_ & 0x00000001) != 0;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 relic_unique_id = 5;</code>
-     * @return this
-     */
-    public RelicParam clearRelicUniqueId() {
-      bitField0_ &= ~0x00000001;
-      relicUniqueId = 0;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 relic_unique_id = 5;</code>
-     * @return the relicUniqueId
-     */
-    public int getRelicUniqueId() {
-      return relicUniqueId;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
-     * <code>optional uint32 relic_unique_id = 5;</code>
-     * @param value the relicUniqueId to set
-     * @return this
-     */
-    public RelicParam setRelicUniqueId(final int value) {
-      bitField0_ |= 0x00000001;
-      relicUniqueId = value;
-      return this;
-    }
-
-    /**
-     * <pre>
-     *
-     * </pre>
-     *
      * <code>optional uint32 slot = 13;</code>
      * @return whether the slot field is set
      */
     public boolean hasSlot() {
-      return (bitField0_ & 0x00000002) != 0;
+      return (bitField0_ & 0x00000001) != 0;
     }
 
     /**
@@ -120,7 +63,7 @@ public final class RelicParamOuterClass {
      * @return this
      */
     public RelicParam clearSlot() {
-      bitField0_ &= ~0x00000002;
+      bitField0_ &= ~0x00000001;
       slot = 0;
       return this;
     }
@@ -147,8 +90,45 @@ public final class RelicParamOuterClass {
      * @return this
      */
     public RelicParam setSlot(final int value) {
-      bitField0_ |= 0x00000002;
+      bitField0_ |= 0x00000001;
       slot = value;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 relic_unique_id = 14;</code>
+     * @return whether the relicUniqueId field is set
+     */
+    public boolean hasRelicUniqueId() {
+      return (bitField0_ & 0x00000002) != 0;
+    }
+
+    /**
+     * <code>optional uint32 relic_unique_id = 14;</code>
+     * @return this
+     */
+    public RelicParam clearRelicUniqueId() {
+      bitField0_ &= ~0x00000002;
+      relicUniqueId = 0;
+      return this;
+    }
+
+    /**
+     * <code>optional uint32 relic_unique_id = 14;</code>
+     * @return the relicUniqueId
+     */
+    public int getRelicUniqueId() {
+      return relicUniqueId;
+    }
+
+    /**
+     * <code>optional uint32 relic_unique_id = 14;</code>
+     * @param value the relicUniqueId to set
+     * @return this
+     */
+    public RelicParam setRelicUniqueId(final int value) {
+      bitField0_ |= 0x00000002;
+      relicUniqueId = value;
       return this;
     }
 
@@ -157,8 +137,8 @@ public final class RelicParamOuterClass {
       cachedSize = other.cachedSize;
       if ((bitField0_ | other.bitField0_) != 0) {
         bitField0_ = other.bitField0_;
-        relicUniqueId = other.relicUniqueId;
         slot = other.slot;
+        relicUniqueId = other.relicUniqueId;
       }
       return this;
     }
@@ -169,11 +149,11 @@ public final class RelicParamOuterClass {
         return this;
       }
       cachedSize = -1;
-      if (other.hasRelicUniqueId()) {
-        setRelicUniqueId(other.relicUniqueId);
-      }
       if (other.hasSlot()) {
         setSlot(other.slot);
+      }
+      if (other.hasRelicUniqueId()) {
+        setRelicUniqueId(other.relicUniqueId);
       }
       return this;
     }
@@ -185,8 +165,8 @@ public final class RelicParamOuterClass {
       }
       cachedSize = -1;
       bitField0_ = 0;
-      relicUniqueId = 0;
       slot = 0;
+      relicUniqueId = 0;
       return this;
     }
 
@@ -210,19 +190,19 @@ public final class RelicParamOuterClass {
       }
       RelicParam other = (RelicParam) o;
       return bitField0_ == other.bitField0_
-        && (!hasRelicUniqueId() || relicUniqueId == other.relicUniqueId)
-        && (!hasSlot() || slot == other.slot);
+        && (!hasSlot() || slot == other.slot)
+        && (!hasRelicUniqueId() || relicUniqueId == other.relicUniqueId);
     }
 
     @Override
     public void writeTo(final ProtoSink output) throws IOException {
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeRawByte((byte) 40);
-        output.writeUInt32NoTag(relicUniqueId);
-      }
-      if ((bitField0_ & 0x00000002) != 0) {
         output.writeRawByte((byte) 104);
         output.writeUInt32NoTag(slot);
+      }
+      if ((bitField0_ & 0x00000002) != 0) {
+        output.writeRawByte((byte) 112);
+        output.writeUInt32NoTag(relicUniqueId);
       }
     }
 
@@ -230,10 +210,10 @@ public final class RelicParamOuterClass {
     protected int computeSerializedSize() {
       int size = 0;
       if ((bitField0_ & 0x00000001) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(relicUniqueId);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(slot);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        size += 1 + ProtoSink.computeUInt32SizeNoTag(slot);
+        size += 1 + ProtoSink.computeUInt32SizeNoTag(relicUniqueId);
       }
       return size;
     }
@@ -245,18 +225,18 @@ public final class RelicParamOuterClass {
       int tag = input.readTag();
       while (true) {
         switch (tag) {
-          case 40: {
-            // relicUniqueId
-            relicUniqueId = input.readUInt32();
-            bitField0_ |= 0x00000001;
-            tag = input.readTag();
-            if (tag != 104) {
-              break;
-            }
-          }
           case 104: {
             // slot
             slot = input.readUInt32();
+            bitField0_ |= 0x00000001;
+            tag = input.readTag();
+            if (tag != 112) {
+              break;
+            }
+          }
+          case 112: {
+            // relicUniqueId
+            relicUniqueId = input.readUInt32();
             bitField0_ |= 0x00000002;
             tag = input.readTag();
             if (tag != 0) {
@@ -281,10 +261,10 @@ public final class RelicParamOuterClass {
     public void writeTo(final JsonSink output) throws IOException {
       output.beginObject();
       if ((bitField0_ & 0x00000001) != 0) {
-        output.writeUInt32(FieldNames.relicUniqueId, relicUniqueId);
+        output.writeUInt32(FieldNames.slot, slot);
       }
       if ((bitField0_ & 0x00000002) != 0) {
-        output.writeUInt32(FieldNames.slot, slot);
+        output.writeUInt32(FieldNames.relicUniqueId, relicUniqueId);
       }
       output.endObject();
     }
@@ -296,11 +276,10 @@ public final class RelicParamOuterClass {
       }
       while (!input.isAtEnd()) {
         switch (input.readFieldHash()) {
-          case -1966200481:
-          case 49648253: {
-            if (input.isAtField(FieldNames.relicUniqueId)) {
+          case 3533310: {
+            if (input.isAtField(FieldNames.slot)) {
               if (!input.trySkipNullValue()) {
-                relicUniqueId = input.readUInt32();
+                slot = input.readUInt32();
                 bitField0_ |= 0x00000001;
               }
             } else {
@@ -308,10 +287,11 @@ public final class RelicParamOuterClass {
             }
             break;
           }
-          case 3533310: {
-            if (input.isAtField(FieldNames.slot)) {
+          case -1966200481:
+          case 49648253: {
+            if (input.isAtField(FieldNames.relicUniqueId)) {
               if (!input.trySkipNullValue()) {
-                slot = input.readUInt32();
+                relicUniqueId = input.readUInt32();
                 bitField0_ |= 0x00000002;
               }
             } else {
@@ -371,9 +351,9 @@ public final class RelicParamOuterClass {
      * Contains name constants used for serializing JSON
      */
     static class FieldNames {
-      static final FieldName relicUniqueId = FieldName.forField("relicUniqueId", "relic_unique_id");
-
       static final FieldName slot = FieldName.forField("slot");
+
+      static final FieldName relicUniqueId = FieldName.forField("relicUniqueId", "relic_unique_id");
     }
   }
 }

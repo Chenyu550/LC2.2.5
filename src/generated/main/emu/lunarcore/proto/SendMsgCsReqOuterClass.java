@@ -48,6 +48,10 @@ public final class SendMsgCsReqOuterClass {
     private int chatType;
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string text = 2;</code>
      */
     private final Utf8String text = Utf8String.newEmptyInstance();
@@ -57,7 +61,7 @@ public final class SendMsgCsReqOuterClass {
      * 4
      * </pre>
      *
-     * <code>repeated uint32 to_uid_list = 14;</code>
+     * <code>repeated uint32 to_uid_list = 15;</code>
      */
     private final RepeatedInt toUidList = RepeatedInt.newEmptyInstance();
 
@@ -281,6 +285,10 @@ public final class SendMsgCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string text = 2;</code>
      * @return whether the text field is set
      */
@@ -289,6 +297,10 @@ public final class SendMsgCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string text = 2;</code>
      * @return this
      */
@@ -299,6 +311,10 @@ public final class SendMsgCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string text = 2;</code>
      * @return the text
      */
@@ -307,6 +323,10 @@ public final class SendMsgCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string text = 2;</code>
      * @return internal {@code Utf8String} representation of text for reading
      */
@@ -315,6 +335,10 @@ public final class SendMsgCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string text = 2;</code>
      * @return internal {@code Utf8String} representation of text for modifications
      */
@@ -324,6 +348,10 @@ public final class SendMsgCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string text = 2;</code>
      * @param value the text to set
      * @return this
@@ -335,6 +363,10 @@ public final class SendMsgCsReqOuterClass {
     }
 
     /**
+     * <pre>
+     *
+     * </pre>
+     *
      * <code>optional string text = 2;</code>
      * @param value the text to set
      * @return this
@@ -350,7 +382,7 @@ public final class SendMsgCsReqOuterClass {
      * 4
      * </pre>
      *
-     * <code>repeated uint32 to_uid_list = 14;</code>
+     * <code>repeated uint32 to_uid_list = 15;</code>
      * @return whether the toUidList field is set
      */
     public boolean hasToUidList() {
@@ -362,7 +394,7 @@ public final class SendMsgCsReqOuterClass {
      * 4
      * </pre>
      *
-     * <code>repeated uint32 to_uid_list = 14;</code>
+     * <code>repeated uint32 to_uid_list = 15;</code>
      * @return this
      */
     public SendMsgCsReq clearToUidList() {
@@ -376,7 +408,7 @@ public final class SendMsgCsReqOuterClass {
      * 4
      * </pre>
      *
-     * <code>repeated uint32 to_uid_list = 14;</code>
+     * <code>repeated uint32 to_uid_list = 15;</code>
      *
      * This method returns the internal storage object without modifying any has state.
      * The returned object should not be modified and be treated as read-only.
@@ -394,7 +426,7 @@ public final class SendMsgCsReqOuterClass {
      * 4
      * </pre>
      *
-     * <code>repeated uint32 to_uid_list = 14;</code>
+     * <code>repeated uint32 to_uid_list = 15;</code>
      *
      * This method returns the internal storage object and sets the corresponding
      * has state. The returned object will become part of this message and its
@@ -412,7 +444,7 @@ public final class SendMsgCsReqOuterClass {
      * 4
      * </pre>
      *
-     * <code>repeated uint32 to_uid_list = 14;</code>
+     * <code>repeated uint32 to_uid_list = 15;</code>
      * @param value the toUidList to add
      * @return this
      */
@@ -427,7 +459,7 @@ public final class SendMsgCsReqOuterClass {
      * 4
      * </pre>
      *
-     * <code>repeated uint32 to_uid_list = 14;</code>
+     * <code>repeated uint32 to_uid_list = 15;</code>
      * @param values the toUidList to add
      * @return this
      */
@@ -539,7 +571,7 @@ public final class SendMsgCsReqOuterClass {
       }
       if ((bitField0_ & 0x00000010) != 0) {
         for (int i = 0; i < toUidList.length(); i++) {
-          output.writeRawByte((byte) 112);
+          output.writeRawByte((byte) 120);
           output.writeUInt32NoTag(toUidList.array()[i]);
         }
       }
@@ -611,11 +643,11 @@ public final class SendMsgCsReqOuterClass {
             input.readString(text);
             bitField0_ |= 0x00000008;
             tag = input.readTag();
-            if (tag != 114) {
+            if (tag != 122) {
               break;
             }
           }
-          case 114: {
+          case 122: {
             // toUidList [packed=true]
             input.readPackedUInt32(toUidList, tag);
             bitField0_ |= 0x00000010;
@@ -634,7 +666,7 @@ public final class SendMsgCsReqOuterClass {
             tag = input.readTag();
             break;
           }
-          case 112: {
+          case 120: {
             // toUidList [packed=false]
             tag = input.readRepeatedUInt32(toUidList, tag);
             bitField0_ |= 0x00000010;

@@ -28,6 +28,10 @@ public final class EquipRelicOuterClass {
     private int relicUniqueId;
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 slot = 12;</code>
      */
     private int slot;
@@ -96,6 +100,10 @@ public final class EquipRelicOuterClass {
     }
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 slot = 12;</code>
      * @return whether the slot field is set
      */
@@ -104,6 +112,10 @@ public final class EquipRelicOuterClass {
     }
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 slot = 12;</code>
      * @return this
      */
@@ -114,6 +126,10 @@ public final class EquipRelicOuterClass {
     }
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 slot = 12;</code>
      * @return the slot
      */
@@ -122,6 +138,10 @@ public final class EquipRelicOuterClass {
     }
 
     /**
+     * <pre>
+     * 4
+     * </pre>
+     *
      * <code>optional uint32 slot = 12;</code>
      * @param value the slot to set
      * @return this
